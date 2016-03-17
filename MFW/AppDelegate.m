@@ -31,9 +31,12 @@
     UINavigationController *desNav = destinationSB.instantiateInitialViewController;
     desNav.tabBarItem.title = @"目的地";
     desNav.tabBarItem.image = [UIImage imageNamed:@"ic_bottom_nav_local"];
-    
+    UIStoryboard *LZ_Mine = [UIStoryboard storyboardWithName:@"LZ_Mine" bundle:nil];
+    UINavigationController *LZ_Mine_Nav = LZ_Mine.instantiateInitialViewController;
+    LZ_Mine_Nav.tabBarItem.title = @"我的";
+    LZ_Mine_Nav.tabBarItem.image = [UIImage imageNamed:@"ic_bottom_nav_mine"];
     self.tabBar =[[UITabBarController alloc]init];
-    self.tabBar.viewControllers = @[mainNav,desNav];
+    self.tabBar.viewControllers = @[mainNav,desNav,LZ_Mine_Nav];
     self.tabBar.tabBar.tintColor = [UIColor orangeColor];
     self.window.rootViewController = self.tabBar;
     
