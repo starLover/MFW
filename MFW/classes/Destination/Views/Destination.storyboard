@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HKU-Y8-7SO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HKU-Y8-7SO">
+                                <rect key="frame" x="-4" y="-64" width="383" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="dataSource" destination="deN-t8-6vx" id="hR5-0H-NjX"/>
@@ -29,10 +29,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HKU-Y8-7SO" firstAttribute="top" secondItem="JMe-6j-H4U" secondAttribute="bottom" id="7D3-1k-4nW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HKU-Y8-7SO" secondAttribute="trailing" constant="-20" id="7nt-D3-iXy"/>
-                            <constraint firstItem="7dz-jP-JBr" firstAttribute="top" secondItem="HKU-Y8-7SO" secondAttribute="bottom" id="KzC-2h-1pn"/>
-                            <constraint firstItem="HKU-Y8-7SO" firstAttribute="leading" secondItem="d1u-cx-IRL" secondAttribute="leadingMargin" constant="-20" id="oQv-60-LRs"/>
+                            <constraint firstItem="HKU-Y8-7SO" firstAttribute="leading" secondItem="d1u-cx-IRL" secondAttribute="leadingMargin" constant="-20" id="7Nf-a8-41L"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HKU-Y8-7SO" secondAttribute="trailing" constant="-20" id="99c-td-MCA"/>
+                            <constraint firstItem="7dz-jP-JBr" firstAttribute="top" secondItem="HKU-Y8-7SO" secondAttribute="bottom" id="Rm8-PX-CDY"/>
+                            <constraint firstItem="HKU-Y8-7SO" firstAttribute="top" secondItem="JMe-6j-H4U" secondAttribute="bottom" constant="-64" id="dp8-J7-TFh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kbc-Sw-jxa"/>
@@ -51,7 +51,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aLW-iu-zC1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="VMr-ZJ-RAO">
+                    <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" translucent="NO" id="VMr-ZJ-RAO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -62,7 +62,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYq-K1-07t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="606.5" y="380.5"/>
+            <point key="canvasLocation" x="856.5" y="415.5"/>
         </scene>
     </scenes>
 </document>
