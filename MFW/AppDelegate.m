@@ -7,9 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "DestinationViewController.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
-
+@property(nonatomic ,strong) UITabBarController *tabBar;
 @end
 
 @implementation AppDelegate
@@ -18,6 +20,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    
+    UIStoryboard *MainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UINavigationController *mainNav = MainSB.instantiateInitialViewController;
+    mainNav.tabBarItem.title = @"首页";
+    mainNav.tabBarItem.image = [UIImage imageNamed:@"ic_bottom_nav_discover"];
+    
+    UIStoryboard *destinationSB = [UIStoryboard storyboardWithName:@"Destination" bundle:nil];
+    UINavigationController *desNav = destinationSB.instantiateInitialViewController;
+    desNav.tabBarItem.title = @"目的地";
+    desNav.tabBarItem.image = [UIImage imageNamed:@"ic_bottom_nav_local"];
+    
+    self.tabBar =[[UITabBarController alloc]init];
+    self.tabBar.viewControllers = @[mainNav,desNav];
+    self.tabBar.tabBar.tintColor = [UIColor orangeColor];
+    self.window.rootViewController = self.tabBar;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
