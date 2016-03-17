@@ -27,6 +27,7 @@
 		7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */; };
 		7AB1334B1C9AE599002B0F94 /* LZ_Mine_Head.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB1334A1C9AE599002B0F94 /* LZ_Mine_Head.storyboard */; };
 		EA637D993CACC04A8D70916F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527401B3CEFECDBDAE025B36 /* libPods.a */; };
+		F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39D7FDA1C9AD3C300F8D333 /* Destination.plist */; };
 		F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */; };
 		F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -66,6 +67,7 @@
 		7AB1334A1C9AE599002B0F94 /* LZ_Mine_Head.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZ_Mine_Head.storyboard; sourceTree = "<group>"; };
 		A5326F219EB1AA51899CAB56 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F39D7FDA1C9AD3C300F8D333 /* Destination.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destination.plist; sourceTree = "<group>"; };
 		F3C874391C9AAE66006BD9AF /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
 		F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
@@ -140,8 +142,8 @@
 		0114453A1C9AA8CC0057E69F /* Destination */ = {
 			isa = PBXGroup;
 			children = (
+				F39D7FD91C9AD39F00F8D333 /* Models */,
 				0114453B1C9AA8CC0057E69F /* Controllers */,
-				0114453C1C9AA8CC0057E69F /* Models */,
 				0114453D1C9AA8CC0057E69F /* Views */,
 			);
 			path = Destination;
@@ -155,13 +157,6 @@
 				F3C874391C9AAE66006BD9AF /* Define.h */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		0114453C1C9AA8CC0057E69F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		0114453D1C9AA8CC0057E69F /* Views */ = {
@@ -298,6 +293,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F39D7FD91C9AD39F00F8D333 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F39D7FDA1C9AD3C300F8D333 /* Destination.plist */,
+			);
+			name = Models;
+			path = Controllers/Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,6 +371,7 @@
 				011445601C9AE5520057E69F /* Main.plist in Resources */,
 				7AB1334B1C9AE599002B0F94 /* LZ_Mine_Head.storyboard in Resources */,
 				011445521C9AA9F60057E69F /* Destination.storyboard in Resources */,
+				F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */,
 				7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
