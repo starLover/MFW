@@ -19,6 +19,9 @@
 		011445581C9AB1910057E69F /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 011445541C9AB1910057E69F /* blueArrow.png */; };
 		011445591C9AB1910057E69F /* blueArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 011445551C9AB1910057E69F /* blueArrowDown.png */; };
 		0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445571C9AB1910057E69F /* PullingRefreshTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0114455D1C9AC5300057E69F /* HeadViewController.m */; };
+		011445601C9AE5520057E69F /* Main.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0114455F1C9AE5520057E69F /* Main.plist */; };
+		011445631C9AE5CF0057E69F /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445621C9AE5CF0057E69F /* MainModel.m */; };
 		EA637D993CACC04A8D70916F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527401B3CEFECDBDAE025B36 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,11 @@
 		011445561C9AB1910057E69F /* PullingRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingRefreshTableView.h; sourceTree = "<group>"; };
 		011445571C9AB1910057E69F /* PullingRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullingRefreshTableView.m; sourceTree = "<group>"; };
 		0114455B1C9AB7130057E69F /* MainDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainDefine.h; sourceTree = "<group>"; };
+		0114455C1C9AC5300057E69F /* HeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewController.h; sourceTree = "<group>"; };
+		0114455D1C9AC5300057E69F /* HeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadViewController.m; sourceTree = "<group>"; };
+		0114455F1C9AE5520057E69F /* Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main.plist; sourceTree = "<group>"; };
+		011445611C9AE5CF0057E69F /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
+		011445621C9AE5CF0057E69F /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
 		527401B3CEFECDBDAE025B36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5326F219EB1AA51899CAB56 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,6 +169,8 @@
 			children = (
 				011445491C9AA9860057E69F /* MainViewController.h */,
 				0114454A1C9AA9860057E69F /* MainViewController.m */,
+				0114455C1C9AC5300057E69F /* HeadViewController.h */,
+				0114455D1C9AC5300057E69F /* HeadViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,6 +178,9 @@
 		011445401C9AA8CC0057E69F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0114455F1C9AE5520057E69F /* Main.plist */,
+				011445611C9AE5CF0057E69F /* MainModel.h */,
+				011445621C9AE5CF0057E69F /* MainModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -322,6 +335,7 @@
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
 				011445321C9AA6A50057E69F /* LaunchScreen.storyboard in Resources */,
+				011445601C9AE5520057E69F /* Main.plist in Resources */,
 				011445521C9AA9F60057E69F /* Destination.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +398,8 @@
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
 				0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */,
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
+				0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */,
+				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
 				0114454B1C9AA9860057E69F /* MainViewController.m in Sources */,
