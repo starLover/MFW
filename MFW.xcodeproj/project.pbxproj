@@ -17,6 +17,8 @@
 		011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0114454F1C9AA9E00057E69F /* DestinationViewController.m */; };
 		011445521C9AA9F60057E69F /* Destination.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011445511C9AA9F60057E69F /* Destination.storyboard */; };
 		EA637D993CACC04A8D70916F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527401B3CEFECDBDAE025B36 /* libPods.a */; };
+		F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */; };
+		F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,11 @@
 		527401B3CEFECDBDAE025B36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5326F219EB1AA51899CAB56 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F3C874391C9AAE66006BD9AF /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
+		F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
+		F3C8743D1C9AB790006BD9AF /* DestinationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationTableViewCell.h; sourceTree = "<group>"; };
+		F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +126,7 @@
 			children = (
 				0114454E1C9AA9E00057E69F /* DestinationViewController.h */,
 				0114454F1C9AA9E00057E69F /* DestinationViewController.m */,
+				F3C874391C9AAE66006BD9AF /* Define.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				011445511C9AA9F60057E69F /* Destination.storyboard */,
+				F3C8743D1C9AB790006BD9AF /* DestinationTableViewCell.h */,
+				F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +225,8 @@
 			isa = PBXGroup;
 			children = (
 				011445481C9AA8EC0057E69F /* PrefixHeader.pch */,
+				F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */,
+				F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */,
 			);
 			path = HWTools;
 			sourceTree = "<group>";
@@ -359,9 +371,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
+				F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */,
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
+				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
 				0114454B1C9AA9860057E69F /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
