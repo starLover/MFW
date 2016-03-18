@@ -49,23 +49,23 @@ style = "main_icons";
 {
 data =                 {
 note =                     {
-ctime = 1446654692;
-id = 5326730;
-"jump_url" = "http://m.mafengwo.cn/nb/public/sharejump.php?type=7&id=5326730";
+ctime = 1457405372;
+id = 5427782;
+"jump_url" = "http://m.mafengwo.cn/nb/public/sharejump.php?type=7&id=5427782";
 mdds =                         (
 {
-id = 13061;
-name = "\U65b0\U7586";
+id = 10202;
+name = "\U6fb3\U5927\U5229\U4e9a";
 }
 );
-"num_visit" = 21605;
-thumbnail = "http://file109.mafengwo.net/s9/M00/4C/FB/wKgBs1bpGsyAX4DLAAg9aTA2H6U16.jpeg";
-title = "\U65b0\U7586\Uff5c\U6709\U4e00\U5929\Uff0c\U897f\U57df\U7684\U9633\U5149\U6d12\U5728\U5fc3\U4e0a";
+"num_visit" = 15195;
+thumbnail = "http://file108.mafengwo.net/s9/M00/72/0B/wKgBs1bnplKAfNuAAAeduxpvJ8k75.jpeg";
+title = "\U679c\U5c0f\U59d0\U7684\U6162\U751f\U6d3b\U4e4b\U88ab\U98ce\U5439\U8fc7\U7684\U590f\U5929";
 user =                         {
-id = 91550807;
-"jump_url" = "http://m.mafengwo.cn/nb/public/sharejump.php?type=25&uid=91550807";
-logo = "http://file109.mafengwo.net/s9/M00/8F/82/wKgBs1bjibGAJGCYAAK4-P0d52439.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
-name = "\U6728\U843d\U77b3\U6cfd";
+id = 10304491;
+"jump_url" = "http://m.mafengwo.cn/nb/public/sharejump.php?type=25&uid=10304491";
+logo = "http://file102.mafengwo.net/s5/M00/CC/6B/wKgB21BZ18H_zz7GAAHzAbBJsr035.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "Kyle_Shi";
 };
 };
 "sub_title_text" = "\U5f80\U671f\U8702\U9996";
@@ -229,4 +229,3 @@ style = "common_squares";
 rc = 0;
 rm = "";
 }
-

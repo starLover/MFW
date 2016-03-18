@@ -21,5 +21,7 @@
 @property (nonatomic, copy) NSString *thumbnail;
 @property (nonatomic, copy) NSString *price;
 @property (nonatomic, copy) NSString *price_suffix;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *logo;
 
 @end
