@@ -19,6 +19,10 @@
 		011445581C9AB1910057E69F /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 011445541C9AB1910057E69F /* blueArrow.png */; };
 		011445591C9AB1910057E69F /* blueArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 011445551C9AB1910057E69F /* blueArrowDown.png */; };
 		0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445571C9AB1910057E69F /* PullingRefreshTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0114455D1C9AC5300057E69F /* HeadViewController.m */; };
+		011445601C9AE5520057E69F /* Main.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0114455F1C9AE5520057E69F /* Main.plist */; };
+		011445631C9AE5CF0057E69F /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445621C9AE5CF0057E69F /* MainModel.m */; };
+		01AD7AAD1C9B970D003C336D /* TimeStamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AAC1C9B970D003C336D /* TimeStamp.m */; };
 		7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */; };
 		7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB133451C9ADF65002B0F94 /* LZ_Mine.storyboard */; };
 		7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */; };
@@ -52,6 +56,13 @@
 		011445561C9AB1910057E69F /* PullingRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingRefreshTableView.h; sourceTree = "<group>"; };
 		011445571C9AB1910057E69F /* PullingRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullingRefreshTableView.m; sourceTree = "<group>"; };
 		0114455B1C9AB7130057E69F /* MainDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainDefine.h; sourceTree = "<group>"; };
+		0114455C1C9AC5300057E69F /* HeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewController.h; sourceTree = "<group>"; };
+		0114455D1C9AC5300057E69F /* HeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadViewController.m; sourceTree = "<group>"; };
+		0114455F1C9AE5520057E69F /* Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main.plist; sourceTree = "<group>"; };
+		011445611C9AE5CF0057E69F /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
+		011445621C9AE5CF0057E69F /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
+		01AD7AAB1C9B970D003C336D /* TimeStamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStamp.h; sourceTree = "<group>"; };
+		01AD7AAC1C9B970D003C336D /* TimeStamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStamp.m; sourceTree = "<group>"; };
 		527401B3CEFECDBDAE025B36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB133421C9ADF46002B0F94 /* LZ_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_MineViewController.h; sourceTree = "<group>"; };
 		7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_MineViewController.m; sourceTree = "<group>"; };
@@ -182,6 +193,8 @@
 			children = (
 				011445491C9AA9860057E69F /* MainViewController.h */,
 				0114454A1C9AA9860057E69F /* MainViewController.m */,
+				0114455C1C9AC5300057E69F /* HeadViewController.h */,
+				0114455D1C9AC5300057E69F /* HeadViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,6 +202,9 @@
 		011445401C9AA8CC0057E69F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0114455F1C9AE5520057E69F /* Main.plist */,
+				011445611C9AE5CF0057E69F /* MainModel.h */,
+				011445621C9AE5CF0057E69F /* MainModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -213,6 +229,8 @@
 		011445471C9AA8CC0057E69F /* HWTools */ = {
 			isa = PBXGroup;
 			children = (
+				01AD7AAB1C9B970D003C336D /* TimeStamp.h */,
+				01AD7AAC1C9B970D003C336D /* TimeStamp.m */,
 				011445481C9AA8EC0057E69F /* PrefixHeader.pch */,
 				F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */,
 				F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */,
@@ -364,6 +382,7 @@
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
 				011445321C9AA6A50057E69F /* LaunchScreen.storyboard in Resources */,
+				011445601C9AE5520057E69F /* Main.plist in Resources */,
 				7AB1334B1C9AE599002B0F94 /* LZ_Mine_Head.storyboard in Resources */,
 				011445521C9AA9F60057E69F /* Destination.storyboard in Resources */,
 				F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */,
@@ -432,6 +451,9 @@
 				F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */,
 				0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */,
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
+				0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */,
+				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
+				01AD7AAD1C9B970D003C336D /* TimeStamp.m in Sources */,
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
