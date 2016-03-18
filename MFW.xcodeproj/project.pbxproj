@@ -30,7 +30,9 @@
 		7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */; };
 		7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB133451C9ADF65002B0F94 /* LZ_Mine.storyboard */; };
 		7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */; };
-		7AB1334B1C9AE599002B0F94 /* LZ_Mine_Head.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB1334A1C9AE599002B0F94 /* LZ_Mine_Head.storyboard */; };
+		7AB1334D1C9B8795002B0F94 /* LZ_Mine_Head.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB1334C1C9B8795002B0F94 /* LZ_Mine_Head.xib */; };
+		7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133521C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m */; };
+		7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */; };
 		EA637D993CACC04A8D70916F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527401B3CEFECDBDAE025B36 /* libPods.a */; };
 		F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39D7FDA1C9AD3C300F8D333 /* Destination.plist */; };
 		F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */; };
@@ -77,7 +79,10 @@
 		7AB133451C9ADF65002B0F94 /* LZ_Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZ_Mine.storyboard; sourceTree = "<group>"; };
 		7AB133471C9AE57B002B0F94 /* LZ_Mine_Head.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_Mine_Head.h; sourceTree = "<group>"; };
 		7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_Mine_Head.m; sourceTree = "<group>"; };
-		7AB1334A1C9AE599002B0F94 /* LZ_Mine_Head.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZ_Mine_Head.storyboard; sourceTree = "<group>"; };
+		7AB1334C1C9B8795002B0F94 /* LZ_Mine_Head.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZ_Mine_Head.xib; sourceTree = "<group>"; };
+		7AB133511C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_Mine_Head_DetailViewController.h; sourceTree = "<group>"; };
+		7AB133521C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_Mine_Head_DetailViewController.m; sourceTree = "<group>"; };
+		7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZ_Mine_Head_DetailViewController.xib; sourceTree = "<group>"; };
 		A5326F219EB1AA51899CAB56 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F39D7FDA1C9AD3C300F8D333 /* Destination.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destination.plist; sourceTree = "<group>"; };
@@ -283,6 +288,9 @@
 			children = (
 				7AB133421C9ADF46002B0F94 /* LZ_MineViewController.h */,
 				7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */,
+				7AB133511C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.h */,
+				7AB133521C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m */,
+				7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,7 +308,7 @@
 				7AB133451C9ADF65002B0F94 /* LZ_Mine.storyboard */,
 				7AB133471C9AE57B002B0F94 /* LZ_Mine_Head.h */,
 				7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */,
-				7AB1334A1C9AE599002B0F94 /* LZ_Mine_Head.storyboard */,
+				7AB1334C1C9B8795002B0F94 /* LZ_Mine_Head.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,7 +392,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB1334D1C9B8795002B0F94 /* LZ_Mine_Head.xib in Resources */,
 				0114454D1C9AA99A0057E69F /* Main.storyboard in Resources */,
+				7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */,
 				011445591C9AB1910057E69F /* blueArrowDown.png in Resources */,
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
@@ -467,6 +477,7 @@
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
+				7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */,
 				0114454B1C9AA9860057E69F /* MainViewController.m in Sources */,
 				7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */,
 			);
