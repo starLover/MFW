@@ -11,7 +11,8 @@
 #import "DestinationTableViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "DestinationModel.h"
-@interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate>
+#import <MapKit/MKMapView.h>
+@interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)UIView *tableViewHeaderView;
 @property(nonatomic,strong)NSMutableArray *btnArray;
@@ -21,6 +22,7 @@
 @property(nonatomic,strong)NSMutableArray *numUrlArray;
 @property(nonatomic,strong)UIImage *header_img;
 @property(nonatomic,strong)UIButton *nameBtn;
+@property(nonatomic,strong)MKMapView *mapView;
 
 @end
 
@@ -52,12 +54,14 @@
 #pragma mark --------- UITableViewDataSource
 - (void)configTableViewHeaderView{
     
-    self.tableViewHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, -64, kScreenWidth, kScreenHeight/4*3-40)];
+    self.tableViewHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, -64, kScreenWidth, kScreenHeight/4*3-20)];
 //    self.tableViewHeaderView.backgroundColor = [UIColor cyanColor];
     
-    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight/4*3/2)];
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight/4*3/2+20)];
     [imageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",self.header_img]] placeholderImage:nil];
-//    imageView.alpha = 0.3;
+    UILabel *back = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight/4*3/2+20)];
+    back.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.2];
+    [imageView addSubview:back];
     
     [self.tableViewHeaderView addSubview:imageView];
     self.tableView.tableHeaderView = self.tableViewHeaderView;
@@ -68,18 +72,43 @@
     if (cell == nil) {
         cell = [[DestinationTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     }
+    if (indexPath.row == 0) {
+        self.mapView = [[MKMapView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight/2)];
+        self.mapView.delegate = self;
+        [cell.contentView addSubview:self.mapView];
+    }
     return cell;
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return 5;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 150;
+    if (indexPath.row == 0 && indexPath.row == 1) {
+        return kScreenHeight/2;
+    }
+    return kScreenHeight/4*3;
 }
 #pragma mark ---------
 #pragma mark --------- 
 #pragma mark --------- 
-#pragma mark --------- 
+#pragma mark ---------  CustomMethod
+- (void)firstCell{
+    
+//    [view addSubview:self.mapView];
+}
+- (void)secondCell{
+    
+}
+
+- (void)thirdCell{
+    
+}
+
+- (void)forthCell{
+    
+}
+
 
 #pragma mark --------- 网络请求
 - (void)requestModel{
@@ -123,42 +152,114 @@
     }];
 }
 - (void)navBarBtn{
+    //左边栏按钮
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backBtn.frame = CGRectMake(0, 0, 20, 44);
+    backBtn.frame = CGRectMake(0, 0, 30, 44);
     [backBtn setImage:[UIImage imageNamed:@"left"] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftBarBtn = [[UIBarButtonItem alloc]initWithCustomView:backBtn];
-    backBtn.tag = 1;
+    backBtn.tag = 100;
     self.navigationItem.leftBarButtonItem = leftBarBtn;
-    
+    //收藏按钮
     UIButton *collectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    collectBtn.frame = CGRectMake(kScreenWidth-30, 0, 20, 44);
+    collectBtn.frame = CGRectMake(30, 0, 30, 44);
     [collectBtn setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
     [collectBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
-    collectBtn.tag = 2;
+    collectBtn.tag = 101;
     UIBarButtonItem *rightBarBtn = [[UIBarButtonItem alloc]initWithCustomView:collectBtn];
     self.navigationItem.rightBarButtonItem = rightBarBtn;
     
     self.nameBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.nameBtn.frame = CGRectMake(20, 70, 50, 40);
+    self.nameBtn.frame = CGRectMake(20, collectBtn.frame.size.height+30, 50, 40);
+    [self.nameBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     DestinationModel *model = self.mddArray[0];
     [self.nameBtn setTitle:model.name forState:UIControlStateNormal];
     self.nameBtn.titleLabel.font = [UIFont systemFontOfSize:25];
-    self.nameBtn.tag = 3;
-    [self.nameBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.tableViewHeaderView addSubview:self.nameBtn];
     
-    UILabel *timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 110, 70, 35)];
+    UILabel *timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, collectBtn.frame.size.height+60, 100, 35)];
     DestinationModel *numModel = self.numUrlArray[0];
     timeLabel.text = numModel.title;
-    timeLabel.font = [UIFont systemFontOfSize:13];
+    timeLabel.font = [UIFont systemFontOfSize:14];
     timeLabel.textColor = [UIColor whiteColor];
     [self.tableViewHeaderView addSubview:timeLabel];
     
+    UILabel *textLabel = [[UILabel alloc]initWithFrame:CGRectMake(70, collectBtn.frame.size.height+85, 120, 40)];
+    textLabel.text = @"人正在这里旅行";
+    textLabel.textColor = [UIColor whiteColor];
+    [self.tableViewHeaderView addSubview:textLabel];
+    UILabel *numLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, collectBtn.frame.size.height+85, 60, 40)];
+    numLabel.text = [numModel.num stringValue];
+    numLabel.textColor = [UIColor whiteColor];
+    numLabel.font = [UIFont systemFontOfSize:24];
+    [self.tableViewHeaderView addSubview:numLabel];
+    //地方按钮
+    UIButton *numBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    numBtn.frame = CGRectMake(20, self.tableViewHeaderView.frame.size.height/8, kScreenWidth,  self.tableViewHeaderView.frame.size.height/8*3);
+    numBtn.tag = 102;
+    [self.tableViewHeaderView addSubview:numBtn];
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(kScreenWidth-40, self.tableViewHeaderView.frame.size.height/5, 40, 50)];
+    imageView.image = [UIImage imageNamed:@"icon_back_nromal"];
+    [self.tableViewHeaderView addSubview:imageView];
+    
+    //图片集
+    for (int i = 0; i < self.albumArray.count; i++) {
+            UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*i, collectBtn.frame.size.height+130, (kScreenWidth-60)/3,(kScreenHeight-40)/7)];
+            [imageView sd_setImageWithURL:[NSURL URLWithString:self.albumArray[i]] placeholderImage:nil];
+            [self.tableViewHeaderView addSubview:imageView];
+        UIButton *imageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        imageBtn.tag = 103+i;
+        imageBtn.frame = CGRectMake(20+(((kScreenWidth-60)/3)+10)*i, collectBtn.frame.size.height+125, (kScreenWidth-60)/3,(kScreenHeight-40)/7);
+        [imageBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
+        [imageView addSubview:imageBtn];
+        
+    }
+    UILabel *more = [[UILabel alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*2, collectBtn.frame.size.height+130, (kScreenWidth-60)/3,(kScreenHeight-40)/7)];
+    more.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+    DestinationModel *moreModel = self.mddArray[0];
+    more.text = [moreModel.num_album stringValue];
+    more.textAlignment = NSTextAlignmentCenter;
+    more.textColor = [UIColor whiteColor];
+    [self.tableViewHeaderView addSubview:more];
+    UILabel *much = [[UILabel alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*2, collectBtn.frame.size.height+130+65, (kScreenWidth-60)/3,15)];
+    much.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+    much.textAlignment = NSTextAlignmentCenter;
+    much.textColor = [UIColor whiteColor];
+    much.text = @"张照片";
+    [self.tableViewHeaderView addSubview:much];
+
+    
+    
+    for (NSInteger i = 0; i < 2; i++) {
+        for (NSInteger j = 0; j < 4; j++) {
+            DestinationModel *btnModel = self.btnArray[i * 4 + j];
+            //按钮图片
+            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20 + j * kScreenWidth / 4, 10 + i * kScreenWidth / 4+self.tableViewHeaderView.frame.size.height/2+40, (kScreenWidth - 40) / 4 - 30, (kScreenWidth - 40) / 4 - 30)];
+            [imageView sd_setImageWithURL:[NSURL URLWithString:btnModel.icon]];
+            //按钮标题
+            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15 + j * kScreenWidth / 4, kScreenWidth / 4 * (i + 1) - 20+self.tableViewHeaderView.frame.size.height/2+40, (kScreenWidth - 40) / 4 - 20, 20)];
+            label.textAlignment = NSTextAlignmentCenter;
+            label.text = btnModel.title;
+            [self.tableViewHeaderView addSubview:imageView];
+            [self.tableViewHeaderView addSubview:label];
+            
+            //按钮
+            UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+            btn.tag = i * 4 + j + 100;
+            btn.frame = CGRectMake(j * kScreenWidth / 4, i * kScreenWidth / 4+self.tableViewHeaderView.frame.size.height/2+40, kScreenWidth / 4, kScreenWidth / 4);
+            [btn addTarget:self action:@selector(eightAction:) forControlEvents:UIControlEventTouchUpInside];
+            [self.tableViewHeaderView addSubview:btn];
+        }
+    }
     
 }
 - (void)goAction:(UIButton *)btn{
-    switch (btn.tag) {
+    switch (btn.tag-100) {
+        case 0:
+        {
+        }
+            break;
         case 1:
         {
         }
@@ -167,10 +268,35 @@
         {
         }
             break;
+        case 3:
+        {
+        }
+            break;
+        case 4:
+        {
+        }
+            break;
+        case 5:
+        {
+        }
+            break;
             
         default:
             break;
     }
+}
+- (void)eightAction:(UIButton *)btn{
+    switch (btn.tag - 100) {
+        case 0:
+        {
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+
 }
 
 

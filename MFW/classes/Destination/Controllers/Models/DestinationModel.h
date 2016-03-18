@@ -19,8 +19,8 @@
 @property(nonatomic,copy)NSString *header_img;
 @property(nonatomic,copy)NSString *lat;
 @property(nonatomic,copy)NSString *lng;
-@property(nonatomic,copy)NSString *num_album;
-@property(nonatomic,copy)NSString *num;
+@property(nonatomic,copy)NSNumber *num_album;
+@property(nonatomic,copy)NSNumber *num;
 @property(nonatomic,copy)NSString *map_provider;
 
 

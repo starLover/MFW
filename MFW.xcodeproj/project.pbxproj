@@ -28,6 +28,7 @@
 		7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */; };
 		7AB1334B1C9AE599002B0F94 /* LZ_Mine_Head.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB1334A1C9AE599002B0F94 /* LZ_Mine_Head.storyboard */; };
 		EA637D993CACC04A8D70916F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527401B3CEFECDBDAE025B36 /* libPods.a */; };
+		F3363BB21C9C32270001B82C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3363BB11C9C32270001B82C /* MapKit.framework */; };
 		F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F399E0231C9B82C000019B37 /* DestinationModel.m */; };
 		F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F399E0251C9BADF100019B37 /* CoreImage.framework */; };
 		F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39D7FDA1C9AD3C300F8D333 /* Destination.plist */; };
@@ -72,6 +73,7 @@
 		7AB1334A1C9AE599002B0F94 /* LZ_Mine_Head.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZ_Mine_Head.storyboard; sourceTree = "<group>"; };
 		A5326F219EB1AA51899CAB56 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F3363BB11C9C32270001B82C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F399E0221C9B82C000019B37 /* DestinationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationModel.h; sourceTree = "<group>"; };
 		F399E0231C9B82C000019B37 /* DestinationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationModel.m; sourceTree = "<group>"; };
 		F399E0251C9BADF100019B37 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -88,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3363BB21C9C32270001B82C /* MapKit.framework in Frameworks */,
 				F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */,
 				EA637D993CACC04A8D70916F /* libPods.a in Frameworks */,
 			);
@@ -253,6 +256,7 @@
 		2B49E7E20405D2E58579C53F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3363BB11C9C32270001B82C /* MapKit.framework */,
 				F399E0251C9BADF100019B37 /* CoreImage.framework */,
 				527401B3CEFECDBDAE025B36 /* libPods.a */,
 			);
