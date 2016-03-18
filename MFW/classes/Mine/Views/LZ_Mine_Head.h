@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface LZ_Mine_Head : UIView
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
