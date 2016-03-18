@@ -22,7 +22,11 @@
 		0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0114455D1C9AC5300057E69F /* HeadViewController.m */; };
 		011445601C9AE5520057E69F /* Main.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0114455F1C9AE5520057E69F /* Main.plist */; };
 		011445631C9AE5CF0057E69F /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445621C9AE5CF0057E69F /* MainModel.m */; };
+		015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */; };
+		015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */; };
 		01AD7AAD1C9B970D003C336D /* TimeStamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AAC1C9B970D003C336D /* TimeStamp.m */; };
+		01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */; };
+		01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */; };
 		7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */; };
 		7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB133451C9ADF65002B0F94 /* LZ_Mine.storyboard */; };
 		7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */; };
@@ -59,8 +63,14 @@
 		0114455F1C9AE5520057E69F /* Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main.plist; sourceTree = "<group>"; };
 		011445611C9AE5CF0057E69F /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
 		011445621C9AE5CF0057E69F /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
+		015FCE301C9C28BF002C44FF /* SalesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesCollectionViewCell.h; sourceTree = "<group>"; };
+		015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesCollectionViewCell.m; sourceTree = "<group>"; };
+		015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalesCollectionViewCell.xib; sourceTree = "<group>"; };
 		01AD7AAB1C9B970D003C336D /* TimeStamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStamp.h; sourceTree = "<group>"; };
 		01AD7AAC1C9B970D003C336D /* TimeStamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStamp.m; sourceTree = "<group>"; };
+		01AD7AB01C9BD1A8003C336D /* CommonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCollectionViewCell.h; sourceTree = "<group>"; };
+		01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewCell.m; sourceTree = "<group>"; };
+		01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
 		527401B3CEFECDBDAE025B36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB133421C9ADF46002B0F94 /* LZ_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_MineViewController.h; sourceTree = "<group>"; };
 		7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_MineViewController.m; sourceTree = "<group>"; };
@@ -207,6 +217,12 @@
 			isa = PBXGroup;
 			children = (
 				0114454C1C9AA99A0057E69F /* Main.storyboard */,
+				01AD7AB01C9BD1A8003C336D /* CommonCollectionViewCell.h */,
+				01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */,
+				01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */,
+				015FCE301C9C28BF002C44FF /* SalesCollectionViewCell.h */,
+				015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */,
+				015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,10 +387,12 @@
 				0114454D1C9AA99A0057E69F /* Main.storyboard in Resources */,
 				011445591C9AB1910057E69F /* blueArrowDown.png in Resources */,
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
+				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
 				011445321C9AA6A50057E69F /* LaunchScreen.storyboard in Resources */,
 				011445601C9AE5520057E69F /* Main.plist in Resources */,
 				7AB1334B1C9AE599002B0F94 /* LZ_Mine_Head.storyboard in Resources */,
+				01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */,
 				011445521C9AA9F60057E69F /* Destination.storyboard in Resources */,
 				F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */,
 				7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */,
@@ -436,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */,
 				7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */,
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
 				F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */,
@@ -443,6 +462,7 @@
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
 				0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */,
 				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
+				01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */,
 				01AD7AAD1C9B970D003C336D /* TimeStamp.m in Sources */,
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
