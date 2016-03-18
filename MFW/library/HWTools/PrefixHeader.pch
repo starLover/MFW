@@ -22,5 +22,35 @@
 #else
 #   define fSLog(...)
 #endif
-
+#define SCREEN_WIDTH    [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT    [[UIScreen mainScreen] bounds].size.height
+#define kDD [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
+#define kPath [NSString stringWithFormat:@"%@/%@.png",kDD,@"head"]
 #endif /* PrefixHeader_pch */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

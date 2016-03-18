@@ -10,17 +10,28 @@
 #import <UIImageView+WebCache.h>
 #import <AFHTTPSessionManager.h>
 #import "MainModel.h"
+#import "CommonCollectionViewCell.h"
+#import "SalesCollectionViewCell.h"
 
-@interface MainViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface MainViewController ()<UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+{
+    NSInteger section1;
+}
 @property(nonatomic, strong) UITableView *tableView;
 @property(nonatomic, strong) NSMutableArray *eightArray;
 @property(nonatomic, strong) NSMutableArray *todayArray;
 @property(nonatomic, strong) NSMutableArray *noteArray;
 @property(nonatomic, strong) NSMutableArray *commonArray;
 @property(nonatomic, strong) NSMutableArray *salesArray;
+@property(nonatomic, strong) NSMutableArray *salesArray318;
+@property(nonatomic, strong) NSArray *saleArray;
 @property(nonatomic, strong) NSMutableArray *mddsArray;
 @property(nonatomic, strong) NSMutableArray *userArray;
+@property(nonatomic, strong) NSMutableArray *listArray318;
 @property(nonatomic, strong) NSArray *listArray;
+@property(nonatomic, strong) NSArray *commonArray318;
+@property(nonatomic, strong) NSMutableArray *common4Array318;
+@property(nonatomic, strong) NSMutableArray *common4Array;
 @property(nonatomic, strong) UIView *todayView;
 @end
 
@@ -36,14 +47,76 @@
 #pragma mark    ---------------    UITableViewDataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *cellIdentifier = @"cellIdentifier";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellIdentifier"];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
-    if (indexPath.row == 0) {
-        [self firstCellView];
-        [cell.contentView addSubview:self.todayView];
+    //
+
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 60, kScreenWidth, kScreenWidth + 20) collectionViewLayout:flowLayout];
+    collectionView.backgroundColor = [UIColor whiteColor];
+    //设置每一行的间距
+    flowLayout.minimumLineSpacing = 10;
+    //设置item的间距
+    flowLayout.minimumInteritemSpacing = 5;
+    collectionView.dataSource = self;
+    collectionView.delegate = self;
+    collectionView.scrollEnabled = NO;
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, kScreenWidth - 40, 30)];
+    UIButton *lookMoreBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    if (indexPath.row > 0) {
+        MainModel *mainModel = self.listArray318[0];
+        label.text = mainModel.title;
+        [cell.contentView addSubview:label];
+        lookMoreBtn.frame = CGRectMake(kScreenWidth / 3, kScreenHeight / 4 * 3 - 50, kScreenWidth / 3, 44);
+        [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
+        [lookMoreBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+        lookMoreBtn.layer.cornerRadius = 5;
+        lookMoreBtn.layer.borderWidth = 1;
+        lookMoreBtn.layer.borderColor = [UIColor orangeColor].CGColor;
+        lookMoreBtn.clipsToBounds = YES;
+        [cell.contentView addSubview:lookMoreBtn];
     }
+    
+    switch (indexPath.row) {
+        case 0:
+        {
+            [self firstCellView];
+            [cell.contentView addSubview:self.todayView];
+        }
+            break;
+        case 1:
+        {
+            section1 = 1;
+            [collectionView registerNib:[UINib nibWithNibName:@"CommonCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell1"];
+            [cell.contentView addSubview:collectionView];
+        }
+            break;
+//        case 2:
+//        {
+//            MainModel *mainModel = self.salesArray318[0];
+//            label.text = mainModel.title;
+//            [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
+//            section1 = NO;
+//            [collectionView registerNib:[UINib nibWithNibName:@"SalesCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell1"];
+//            [cell.contentView addSubview:collectionView];
+//        }
+//            break;
+        case 3:
+        {
+            section1 = 3;
+            [collectionView registerNib:[UINib nibWithNibName:@"CommonCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell3"];
+            [cell.contentView addSubview:collectionView];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -54,13 +127,42 @@
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 64)];
     return view;
 }
+
+#pragma mark     --------------     UICollectionViewDataSource
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (section1 == 1) {
+        CommonCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell1" forIndexPath:indexPath];
+        cell.mainModel = self.commonArray[indexPath.row + 1];
+        return cell;
+    } else if (section1 == 3) {
+        CommonCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell3" forIndexPath:indexPath];
+
+        cell.mainModel = self.common4Array[indexPath.row];
+        return cell;
+    }
+    SalesCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell3" forIndexPath:indexPath];
+    cell.mainModel = self.salesArray[indexPath.row + 1];
+    return cell;
+}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    if (section1 == 1 || section1 == 3) {
+        return self.commonArray318.count;
+    }
+    return self.saleArray.count;
+}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    return CGSizeMake((kScreenWidth - 40) / 3, (kScreenWidth + 20 - 30) / 2);
+}
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
+    return UIEdgeInsetsMake(10, 10, 10, 10);
+}
 #pragma mark    ---------------    UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
         return kScreenHeight / 3 * 2 - 30;
     }
-    return 120;
+        return kScreenHeight / 4 * 3;
 }
 
 
@@ -112,10 +214,12 @@
     [self.todayView addSubview:headImage];
     
     UILabel *placeLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, kScreenWidth / 2 + 125 , kScreenWidth - 40, 30)];
+    placeLabel.textColor = [UIColor orangeColor];
     placeLabel.textAlignment = NSTextAlignmentCenter;
     MainModel *mddsModel = self.mddsArray[0];
     placeLabel.text = [NSString stringWithFormat:@"%@在%@", userModel.name, mddsModel.name];
     [self.todayView addSubview:placeLabel];
+    
     UILabel *lifeLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, kScreenWidth / 2 + 160 , kScreenWidth - 40, 60)];
     lifeLabel.text = noteModel.title;
     lifeLabel.textAlignment = NSTextAlignmentCenter;
@@ -131,6 +235,7 @@
     [manager GET:kButtonList parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        BOOL item3 = NO;
         NSDictionary *responseDic = responseObject;
         NSDictionary *dataDic = responseDic[@"data"];
         self.listArray = dataDic[@"list"];
@@ -159,8 +264,45 @@
                 
             } else if ([style isEqualToString:@"common_squares"]) {
                 //item2 and item4
+                if (item3 && self.commonArray.count > 0) {
+                    NSDictionary *dataDic1 = listDic[@"data"];
+                    MainModel *model318 = [[MainModel alloc] init];
+                    [model318 setValuesForKeysWithDictionary:dataDic1];
+                    [self.common4Array318 addObject:model318];
+                    
+                    self.commonArray318 = dataDic1[@"list"];
+                    for (NSDictionary *dic in self.commonArray318) {
+                        MainModel *listModel = [[MainModel alloc] init];
+                        [listModel setValuesForKeysWithDictionary:dic];
+                        [self.common4Array addObject:listModel];
+                    }
+                    
+                }
+                NSDictionary *dataDic1 = listDic[@"data"];
+                MainModel *model318 = [[MainModel alloc] init];
+                [model318 setValuesForKeysWithDictionary:dataDic1];
+                [self.commonArray addObject:model318];
+                [self.listArray318 addObject:model318];
+                
+                self.commonArray318 = dataDic1[@"list"];
+                for (NSDictionary *dic in self.commonArray318) {
+                    MainModel *listModel = [[MainModel alloc] init];
+                    [listModel setValuesForKeysWithDictionary:dic];
+                    [self.commonArray addObject:listModel];
+                }
+                item3 = YES;
             } else if ([style isEqualToString:@"sales_mdds"]){
                 //item3
+                NSDictionary *dataDic = listDic[@"data"];
+                MainModel *model318 = [[MainModel alloc] init];
+                [model318 setValuesForKeysWithDictionary:dataDic];
+                [self.salesArray318 addObject:model318];
+                self.saleArray = dataDic[@"list"];
+                for (NSDictionary *dic in self.saleArray) {
+                    MainModel *model = [[MainModel alloc] init];
+                    [model setValuesForKeysWithDictionary:dic];
+                    [self.salesArray addObject:model];
+                }
             }
             //
             
@@ -234,6 +376,30 @@
     }
     return _noteArray;
 }
+- (NSMutableArray *)listArray318{
+    if (_listArray318 == nil) {
+        self.listArray318 = [NSMutableArray new];
+    }
+    return _listArray318;
+}
+- (NSMutableArray *)salesArray318{
+    if (_salesArray318 == nil) {
+        self.salesArray318 = [NSMutableArray new];
+    }
+    return _salesArray318;
+}
+- (NSMutableArray *)common4Array{
+    if (_common4Array == nil) {
+        self.common4Array = [NSMutableArray new];
+    }
+    return _common4Array;
+}
+- (NSMutableArray *)common4Array318{
+    if (_common4Array318 == nil) {
+        self.common4Array318 = [NSMutableArray new];
+    }
+    return _common4Array318;
+}
 #pragma mark   -------------   EightButton
 - (void)eightButton{
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenWidth / 2)];
@@ -245,7 +411,8 @@
             UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20 + j * kScreenWidth / 4, 10 + i * kScreenWidth / 4, (kScreenWidth - 40) / 4 - 30, (kScreenWidth - 40) / 4 - 30)];
             [imageView sd_setImageWithURL:[NSURL URLWithString:model.icon]];
             //按钮标题
-            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10 + j * kScreenWidth / 4, kScreenWidth / 4 * (i + 1) - 20, (kScreenWidth - 40) / 4 - 20, 20)];
+            UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15 + j * kScreenWidth / 4, kScreenWidth / 4 * (i + 1) - 20, (kScreenWidth - 40) / 4 - 20, 20)];
+            label.font = [UIFont systemFontOfSize:16.0];
             label.textAlignment = NSTextAlignmentCenter;
             label.text = model.title;
             [view addSubview:imageView];
@@ -267,11 +434,11 @@
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-//    self.navigationController.navigationBarHidden = NO;
+    //    self.navigationController.navigationBarHidden = NO;
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-//    self.navigationController.navigationBarHidden = YES;
+    //    self.navigationController.navigationBarHidden = YES;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -279,13 +446,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
