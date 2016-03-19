@@ -9,11 +9,18 @@
 #import "HeadImageViewController.h"
 #import "HeadImageTableViewCell.h"
 #import "DestinationViewController.h"
+#import "DestinationModel.h"
 
 #import <AFNetworking/AFHTTPSessionManager.h>
 
 @interface HeadImageViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)UITableView *tableView;
+@property(nonatomic,strong)UISegmentedControl *segmentControl;
+@property(nonatomic,strong)NSMutableArray *poiArray;
+@property(nonatomic,strong)NSMutableArray *areaArray;
+@property(nonatomic,strong)NSMutableArray *itemArray;
+@property(nonatomic,strong)NSMutableArray *otherArray;
+
 
 @end
 
@@ -50,6 +57,7 @@
     }
     return _tableView;
 }
+#pragma mark --------- 自定义BlackView
 - (void)headViewAction{
     UIView *blackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight/4)];
     blackView.backgroundColor = [UIColor blackColor] ;
@@ -65,33 +73,107 @@
     timeLabel.text = @"过去24小时,";
     timeLabel.textColor = [UIColor whiteColor];
     [blackView addSubview:timeLabel];
-    UILabel *numLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 50, kScreenWidth/3, 40)];
+    UILabel *numLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 50, kScreenWidth/3, 50)];
     numLabel.text = @"626";
     numLabel.textColor = [UIColor whiteColor];
-    numLabel.font = [UIFont systemFontOfSize:24];
+    numLabel.font = [UIFont systemFontOfSize:26];
     [blackView addSubview:numLabel];
-    UILabel *placeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 90, kScreenWidth/3, 40)];
+    UILabel *placeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20,80, kScreenWidth/2, 40)];
     placeLabel.text = @"人，正在%@旅行";
-    placeLabel.textColor = [UIColor whiteColor];
+    placeLabel.textColor = [UIColor grayColor];
+    placeLabel.font = [UIFont systemFontOfSize:14];
     [blackView addSubview:placeLabel];
+    [blackView addSubview:self.segmentControl];
     
-    
-    
-    
-
 }
 - (void)closeAction{
      [self.navigationController popViewControllerAnimated:YES];
 }
+#pragma mark ---------  网络请求
 - (void)requestModel{
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", nil];
     [sessionManager GET:kHeaderImage parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+        NSDictionary *resultDic = responseObject;
+        NSDictionary *dataDic = resultDic[@"data"];
+        NSArray *blocks = dataDic[@"blocks"];
+        for (NSDictionary *dic in blocks) {
+            
+            NSArray *listArray = dic[@"list"];
+            for (NSDictionary *dit in listArray) {
+                DestinationModel *model = [[DestinationModel alloc]init];
+                [model setValuesForKeysWithDictionary:dit];
+                [self.itemArray addObject:model];
+                for (NSDictionary *dict in self.itemArray) {
+                    DestinationModel *bModel = [[DestinationModel alloc]init];
+                    [bModel setValuesForKeysWithDictionary:dict];
+                    [self.otherArray addObject:bModel];
+                }
+                
+            }
+            
+        }
+        NSLog(@"%lu",self.itemArray.count);
+        NSLog(@"%lu",self.otherArray.count);
+//
+        NSLog(@"%lu",self.itemArray.count);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     }];
+}
+#pragma mark --------- segmentControl
+- (UISegmentedControl *)segmentControl{
+    if (!_segmentControl) {
+        self.segmentControl = [[UISegmentedControl alloc]initWithItems:@[@"餐厅",@"景点",@"购物"]];
+        self.segmentControl.frame = CGRectMake(40, 120, kScreenWidth-80, 40);
+        self.segmentControl.tintColor = [UIColor orangeColor];
+        [self.segmentControl addTarget:self action:@selector(segmentControlChangeAction:) forControlEvents:UIControlEventValueChanged];
+    }
+    return _segmentControl;
+}
+- (void)segmentControlChangeAction:(UISegmentedControl *)segment{
+    switch (segment.selectedSegmentIndex) {
+        case 0:
+        {
+        }
+            break;
+        case 1:
+        {
+        }
+            break;
+        case 2:
+        {
+        }
+            break;
+        default:
+            break;
+    }
+}
+#pragma mark --------- Lazy
+- (NSMutableArray *)poiArray{
+    if (!_poiArray) {
+        self.poiArray = [NSMutableArray new];
+    }
+    return _poiArray;
+}
+- (NSMutableArray *)itemArray{
+    if (!_itemArray) {
+        self.itemArray = [NSMutableArray new];
+    }
+    return _itemArray;
+}
+- (NSMutableArray *)areaArray{
+    if (!_areaArray) {
+        self.areaArray = [NSMutableArray new];
+    }
+    return _areaArray;
+}
+- (NSMutableArray *)otherArray{
+    if (!_otherArray) {
+        self.otherArray = [NSMutableArray new];
+    }
+    return _otherArray;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
