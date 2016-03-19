@@ -13,7 +13,7 @@
 - (void)showBackBtn{
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(0, 0, 20, 44);
-    [backBtn setImage:[UIImage imageNamed:@"icon_back_nromal"] forState:UIControlStateNormal];
+    [backBtn setImage:[UIImage imageNamed:@"ic_topbar_back"] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(goBackAction) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftBarBtn = [[UIBarButtonItem alloc]initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem = leftBarBtn;
