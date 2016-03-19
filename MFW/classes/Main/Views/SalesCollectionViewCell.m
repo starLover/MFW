@@ -26,7 +26,8 @@
 - (void)setMainModel:(MainModel *)mainModel{
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:mainModel.thumbnail]];
     self.bigLabel.text = mainModel.title;
-    self.timeLabel.text = mainModel.sub_title_text;
+    self.timeLabel.text = mainModel.sub_title;
+    
     self.priceLabel.text = [NSString stringWithFormat:@"%@起/人", mainModel.price];
 }
 
