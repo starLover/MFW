@@ -13,6 +13,7 @@
 #import "CommonCollectionViewCell.h"
 #import "SalesCollectionViewCell.h"
 #import "HeadViewController.h"
+#import "SearchCityViewController.h"
 
 @interface MainViewController ()<UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
@@ -95,6 +96,7 @@
         {
             section1 = 1;
             [collectionView registerNib:[UINib nibWithNibName:@"CommonCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell1"];
+            collectionView.tag = 1;
             [cell.contentView addSubview:collectionView];
         }
             break;
@@ -104,6 +106,7 @@
                         label.text = mainModel.title;
                         [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
                         section1 = 2;
+                        collectionView.tag = 2;
                         [collectionView registerNib:[UINib nibWithNibName:@"SalesCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell2"];
                         [cell.contentView addSubview:collectionView];
                     }
@@ -115,6 +118,7 @@
             label.text = mainModel.title;
             [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
             section1 = 3;
+            collectionView.tag = 3;
             [collectionView registerNib:[UINib nibWithNibName:@"CommonCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell3"];
             [cell.contentView addSubview:collectionView];
         }
@@ -157,12 +161,42 @@
     }
     return self.saleArray.count;
 }
+
+#pragma mark     -------------------     UICollectionViewDelegate
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     return CGSizeMake((kScreenWidth - 40) / 3, (kScreenWidth + 20 - 30) / 2);
 }
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
     return UIEdgeInsetsMake(10, 10, 10, 10);
 }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    MainModel *mainModel = nil;
+
+    switch (collectionView.tag) {
+        case 1:
+        {
+            mainModel = self.commonArray[indexPath.row + 1];
+        }
+            break;
+        case 2:
+        {
+            mainModel = self.salesArray[indexPath.row];
+        }
+            break;
+        case 3:
+        {
+            mainModel = self.common4Array[indexPath.row];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    HeadViewController *headVC = [[HeadViewController alloc] init];
+    headVC.urlString = mainModel.jump_url;
+    [self.navigationController pushViewController:headVC animated:YES];
+}
+
 #pragma mark    ---------------    UITableViewDelegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -200,6 +234,8 @@
 }
 //搜索方法
 - (void)goToMap{
+    SearchCityViewController *searchVC = [[SearchCityViewController alloc] init];
+    [self.navigationController pushViewController:searchVC animated:YES];
 }
 
 - (void)firstCellView{
@@ -232,8 +268,9 @@
     lifeLabel.textAlignment = NSTextAlignmentCenter;
     [self.todayView addSubview:lifeLabel];
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.tag = 100;
     btn.frame = self.todayView.frame;
-    [btn addTarget:self action:@selector(jumpToFirst) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(jumpToFirst:) forControlEvents:UIControlEventTouchUpInside];
     [self.todayView addSubview:btn];
 }
 
@@ -331,9 +368,18 @@
     }];
 }
 #pragma mark     -------------   Jump To OtherViewController
-- (void)jumpToFirst{
+- (void)jumpToFirst:(UIButton *)btn{
+    MainModel *model = nil;
+    switch (btn.tag - 100) {
+        case 0:
+        {
+            model = self.noteArray[0];
+        }
+            break;
+        default:
+            break;
+    }
     HeadViewController *headVC = [[HeadViewController alloc] init];
-    MainModel *model = self.noteArray[0];
     headVC.urlString = model.jump_url;
     [self.navigationController pushViewController:headVC animated:YES];
 }
@@ -446,16 +492,28 @@
 }
 
 - (void)eightAction:(UIButton *)btn{
+    switch (btn.tag - 100) {
+        case 0:
+        {
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
+    self.tabBarController.tabBar.hidden = YES;
     [self.searchView removeFromSuperview];
 }
-//- (void)viewWillAppear:(BOOL)animated{
-//    [super viewWillAppear:animated];
-//    self.navigationController.navigationBarHidden = NO;
-//}
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar addSubview:self.searchView];
+    self.tabBarController.tabBar.hidden = NO;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
