@@ -38,6 +38,10 @@
 		F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F399E0231C9B82C000019B37 /* DestinationModel.m */; };
 		F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F399E0251C9BADF100019B37 /* CoreImage.framework */; };
 		F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39D7FDA1C9AD3C300F8D333 /* Destination.plist */; };
+		F39EF9A61C9CF43B00382A36 /* HeadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */; };
+		F39EF9AA1C9CF48C00382A36 /* HeadImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F39EF9A81C9CF48C00382A36 /* HeadImageTableViewCell.m */; };
+		F39EF9AB1C9CF48C00382A36 /* HeadImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F39EF9A91C9CF48C00382A36 /* HeadImageTableViewCell.xib */; };
+		F39EF9AD1C9D209F00382A36 /* HeadImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39EF9AC1C9D209F00382A36 /* HeadImage.plist */; };
 		F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */; };
 		F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -93,6 +97,12 @@
 		F399E0231C9B82C000019B37 /* DestinationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationModel.m; sourceTree = "<group>"; };
 		F399E0251C9BADF100019B37 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		F39D7FDA1C9AD3C300F8D333 /* Destination.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destination.plist; sourceTree = "<group>"; };
+		F39EF9A41C9CF43B00382A36 /* HeadImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadImageViewController.h; sourceTree = "<group>"; };
+		F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadImageViewController.m; sourceTree = "<group>"; };
+		F39EF9A71C9CF48B00382A36 /* HeadImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadImageTableViewCell.h; sourceTree = "<group>"; };
+		F39EF9A81C9CF48C00382A36 /* HeadImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadImageTableViewCell.m; sourceTree = "<group>"; };
+		F39EF9A91C9CF48C00382A36 /* HeadImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadImageTableViewCell.xib; sourceTree = "<group>"; };
+		F39EF9AC1C9D209F00382A36 /* HeadImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HeadImage.plist; sourceTree = "<group>"; };
 		F3C874391C9AAE66006BD9AF /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
 		F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
@@ -181,6 +191,8 @@
 			children = (
 				0114454E1C9AA9E00057E69F /* DestinationViewController.h */,
 				0114454F1C9AA9E00057E69F /* DestinationViewController.m */,
+				F39EF9A41C9CF43B00382A36 /* HeadImageViewController.h */,
+				F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */,
 				F3C874391C9AAE66006BD9AF /* Define.h */,
 			);
 			path = Controllers;
@@ -192,6 +204,9 @@
 				011445511C9AA9F60057E69F /* Destination.storyboard */,
 				F3C8743D1C9AB790006BD9AF /* DestinationTableViewCell.h */,
 				F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */,
+				F39EF9A71C9CF48B00382A36 /* HeadImageTableViewCell.h */,
+				F39EF9A81C9CF48C00382A36 /* HeadImageTableViewCell.m */,
+				F39EF9A91C9CF48C00382A36 /* HeadImageTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				F39D7FDA1C9AD3C300F8D333 /* Destination.plist */,
+				F39EF9AC1C9D209F00382A36 /* HeadImage.plist */,
 				F399E0221C9B82C000019B37 /* DestinationModel.h */,
 				F399E0231C9B82C000019B37 /* DestinationModel.m */,
 			);
@@ -406,15 +422,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB1334D1C9B8795002B0F94 /* LZ_Mine_Head.xib in Resources */,
+				F39EF9AD1C9D209F00382A36 /* HeadImage.plist in Resources */,
 				0114454D1C9AA99A0057E69F /* Main.storyboard in Resources */,
 				7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */,
 				011445591C9AB1910057E69F /* blueArrowDown.png in Resources */,
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
+				F39EF9AB1C9CF48C00382A36 /* HeadImageTableViewCell.xib in Resources */,
 				011445321C9AA6A50057E69F /* LaunchScreen.storyboard in Resources */,
 				011445601C9AE5520057E69F /* Main.plist in Resources */,
-				7AB1334B1C9AE599002B0F94 /* LZ_Mine_Head.storyboard in Resources */,
 				01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */,
 				011445521C9AA9F60057E69F /* Destination.storyboard in Resources */,
 				F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */,
@@ -480,6 +497,7 @@
 				015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */,
 				7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */,
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
+				F39EF9AA1C9CF48C00382A36 /* HeadImageTableViewCell.m in Sources */,
 				F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */,
 				F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */,
 				0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */,
@@ -489,6 +507,7 @@
 				01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */,
 				01AD7AAD1C9B970D003C336D /* TimeStamp.m in Sources */,
 				011445271C9AA6A50057E69F /* main.m in Sources */,
+				F39EF9A61C9CF43B00382A36 /* HeadImageViewController.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
 				7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */,

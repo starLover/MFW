@@ -3,7 +3,7 @@
 //  MFW
 //
 //  Created by wanghongxiao on 16/3/17.
-//  Copyright © 2016年 聂欣欣. All rights reserved.
+//  Copyright © 2016年 马娟娟. All rights reserved.
 //
 
 #import "DestinationViewController.h"
@@ -12,6 +12,7 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "DestinationModel.h"
 #import <MapKit/MKMapView.h>
+#import "HeadImageViewController.h"
 @interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)UIView *tableViewHeaderView;
@@ -20,6 +21,9 @@
 @property(nonatomic,strong)NSMutableArray *albumArray;
 @property(nonatomic,strong)NSMutableArray *mddArray;
 @property(nonatomic,strong)NSMutableArray *numUrlArray;
+@property(nonatomic,strong)NSMutableArray *titleArray;
+@property(nonatomic,strong)NSMutableArray *itemArray;
+
 @property(nonatomic,strong)UIImage *header_img;
 @property(nonatomic,strong)UIButton *nameBtn;
 @property(nonatomic,strong)MKMapView *mapView;
@@ -73,21 +77,31 @@
         cell = [[DestinationTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
     }
     if (indexPath.row == 0) {
-        self.mapView = [[MKMapView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight/2)];
+        self.mapView = [[MKMapView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight/3)];
         self.mapView.delegate = self;
         [cell.contentView addSubview:self.mapView];
     }
+//    if (indexPath.row == 1) {
+//        <#statements#>
+//    }
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    return 1;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row == 0 && indexPath.row == 1) {
-        return kScreenHeight/2;
-    }
-    return kScreenHeight/4*3;
+    return kScreenHeight/3;
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return self.titleArray.count;
+}
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    DestinationModel *titleModel = self.titleArray[section];
+    return titleModel.title;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 60;
 }
 #pragma mark ---------
 #pragma mark --------- 
@@ -95,7 +109,7 @@
 #pragma mark ---------  CustomMethod
 - (void)firstCell{
     
-//    [view addSubview:self.mapView];
+
 }
 - (void)secondCell{
     
@@ -126,12 +140,25 @@
             [self.btnArray addObject:model];
         }
         NSArray *list = dataDic[@"list"];
-        for (NSDictionary *dic in list) {
+        for (NSDictionary *itemDic in list) {
+            
+//            DestinationModel *model = [[DestinationModel alloc]init];
+//            [model setValuesForKeysWithDictionary:itemDic];
+//            [self.listArray addObject:model];
+            NSDictionary *datadic = itemDic[@"data"];
             DestinationModel *model = [[DestinationModel alloc]init];
-            [model setValuesForKeysWithDictionary:dic];
-            [self.listArray addObject:model];
+            [model setValuesForKeysWithDictionary:datadic];
+            [self.titleArray addObject:model];
+            self.listArray = datadic[@"list"];
+            for (NSDictionary *dic in self.listArray) {
+                DestinationModel *cmodel = [[DestinationModel alloc]init];
+                [cmodel setValuesForKeysWithDictionary:dic];
+                [self.itemArray addObject:cmodel];
+            }
         }
-      
+        NSLog(@"title = %lu",self.titleArray.count);
+        NSLog(@"list = %lu",self.listArray.count);
+        NSLog(@"item = %lu",self.itemArray.count);
         NSDictionary *mdd = dataDic[@"mdd"];
         self.albumArray = mdd[@"album_example"];
         self.header_img = mdd[@"header_img"];
@@ -197,6 +224,7 @@
     UIButton *numBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     numBtn.frame = CGRectMake(20, self.tableViewHeaderView.frame.size.height/8, kScreenWidth,  self.tableViewHeaderView.frame.size.height/8*3);
     numBtn.tag = 102;
+    [numBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.tableViewHeaderView addSubview:numBtn];
     
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(kScreenWidth-40, self.tableViewHeaderView.frame.size.height/5, 40, 50)];
@@ -266,6 +294,8 @@
             break;
         case 2:
         {
+            HeadImageViewController *headVC = [[HeadImageViewController alloc]init];
+            [self.navigationController pushViewController:headVC animated:YES];
         }
             break;
         case 3:
@@ -331,6 +361,19 @@
     }
     return _numUrlArray;
 }
+- (NSMutableArray *)titleArray{
+    if (!_titleArray) {
+        self.titleArray = [NSMutableArray new];
+    }
+    return _titleArray;
+}
+- (NSMutableArray *)itemArray{
+    if (!_itemArray) {
+        self.itemArray = [NSMutableArray new];
+    }
+    return _itemArray;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
