@@ -12,6 +12,7 @@
 #import "MainModel.h"
 #import "CommonCollectionViewCell.h"
 #import "SalesCollectionViewCell.h"
+#import "HeadViewController.h"
 
 @interface MainViewController ()<UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
@@ -33,6 +34,7 @@
 @property(nonatomic, strong) NSMutableArray *common4Array318;
 @property(nonatomic, strong) NSMutableArray *common4Array;
 @property(nonatomic, strong) UIView *todayView;
+@property(nonatomic, strong) UIView *searchView;
 @end
 
 @implementation MainViewController
@@ -86,6 +88,7 @@
         {
             [self firstCellView];
             [cell.contentView addSubview:self.todayView];
+            
         }
             break;
         case 1:
@@ -174,24 +177,24 @@
 
 - (void)configHeaderView{
     //导航栏搜索
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 20, kScreenWidth, 44)];
-    [self.navigationController.view addSubview:view];
+    self.searchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 44)];
+    [self.navigationController.navigationBar addSubview:self.searchView];
     UIImageView *headImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 5, 34, 34)];
     headImageView.image = [UIImage imageNamed:@"common_loading_logo"];
-    [view addSubview:headImageView];
+    [self.searchView addSubview:headImageView];
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(40, 0, kScreenWidth / 4, 44)];
     label.text = @"小蜜蜂";
     label.textAlignment = NSTextAlignmentCenter;
-    [view addSubview:label];
+    [self.searchView addSubview:label];
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth / 3 - 10, 0, kScreenWidth / 3 * 2, 44)];
     imageView.image = [UIImage imageNamed:@"5E0492E0-20B3-46C8-8E56-8BB964210ECC"];
-    [view addSubview:imageView];
+    [self.searchView addSubview:imageView];
     
     UIButton *bigBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    bigBtn.frame = view.frame;
+    bigBtn.frame = self.searchView.frame;
     [bigBtn addTarget:self action:@selector(goToMap) forControlEvents:UIControlEventTouchUpInside];
-    [view addSubview:bigBtn];
+    [self.searchView addSubview:bigBtn];
     //八个按钮
     [self eightButton];
 }
@@ -228,6 +231,10 @@
     lifeLabel.text = noteModel.title;
     lifeLabel.textAlignment = NSTextAlignmentCenter;
     [self.todayView addSubview:lifeLabel];
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = self.todayView.frame;
+    [btn addTarget:self action:@selector(jumpToFirst) forControlEvents:UIControlEventTouchUpInside];
+    [self.todayView addSubview:btn];
 }
 
 
@@ -323,13 +330,19 @@
         NSLog(@"%@", error);
     }];
 }
-
+#pragma mark     -------------   Jump To OtherViewController
+- (void)jumpToFirst{
+    HeadViewController *headVC = [[HeadViewController alloc] init];
+    MainModel *model = self.noteArray[0];
+    headVC.urlString = model.jump_url;
+    [self.navigationController pushViewController:headVC animated:YES];
+}
 
 
 #pragma mark      ---------- LazyLoading
 - (UITableView *)tableView{
     if (_tableView == nil) {
-        self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - 44)];
+        self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - 64)];
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         self.tableView.rowHeight = 120;
@@ -437,12 +450,12 @@
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    //    self.navigationController.navigationBarHidden = NO;
+    [self.searchView removeFromSuperview];
 }
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    //    self.navigationController.navigationBarHidden = YES;
-}
+//- (void)viewWillAppear:(BOOL)animated{
+//    [super viewWillAppear:animated];
+//    self.navigationController.navigationBarHidden = NO;
+//}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

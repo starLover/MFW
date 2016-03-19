@@ -18,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.tabBarController.tabBar.hidden = YES;
+    [self showBackBtn];
     [self.view addSubview:self.webView];
     [self.view addSubview:self.activityView];
 }
@@ -33,7 +35,8 @@
 #pragma mark     ----------- LazyLoading
 - (UIWebView *)webView{
     if (_webView == nil) {
-        self.webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+        self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, -100, kScreenWidth, kScreenHeight + 160)];
+        self.webView.scrollView.bounces = NO;
         self.webView.delegate = self;
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.urlString]];
         [request setTimeoutInterval:10.0];
