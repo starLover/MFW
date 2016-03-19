@@ -53,7 +53,6 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
     //
-
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 60, kScreenWidth, kScreenWidth + 20) collectionViewLayout:flowLayout];
     collectionView.backgroundColor = [UIColor whiteColor];
@@ -67,6 +66,7 @@
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, kScreenWidth - 40, 30)];
     UIButton *lookMoreBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    lookMoreBtn.titleLabel.font = [UIFont systemFontOfSize:16.0];
     if (indexPath.row > 0) {
         MainModel *mainModel = self.listArray318[0];
         label.text = mainModel.title;
@@ -95,18 +95,22 @@
             [cell.contentView addSubview:collectionView];
         }
             break;
-//        case 2:
-//        {
-//            MainModel *mainModel = self.salesArray318[0];
-//            label.text = mainModel.title;
-//            [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
-//            section1 = NO;
-//            [collectionView registerNib:[UINib nibWithNibName:@"SalesCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell1"];
-//            [cell.contentView addSubview:collectionView];
-//        }
-//            break;
+                    case 2:
+                    {
+                        MainModel *mainModel = self.salesArray318[0];
+                        label.text = mainModel.title;
+                        [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
+                        section1 = 2;
+                        [collectionView registerNib:[UINib nibWithNibName:@"SalesCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell2"];
+                        [cell.contentView addSubview:collectionView];
+                    }
+                        break;
         case 3:
         {
+            
+            MainModel *mainModel = self.common4Array318[0];
+            label.text = mainModel.title;
+            [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
             section1 = 3;
             [collectionView registerNib:[UINib nibWithNibName:@"CommonCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell3"];
             [cell.contentView addSubview:collectionView];
@@ -136,12 +140,12 @@
         return cell;
     } else if (section1 == 3) {
         CommonCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell3" forIndexPath:indexPath];
-
+        
         cell.mainModel = self.common4Array[indexPath.row];
         return cell;
     }
-    SalesCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell3" forIndexPath:indexPath];
-    cell.mainModel = self.salesArray[indexPath.row + 1];
+    SalesCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell2" forIndexPath:indexPath];
+    cell.mainModel = self.salesArray[indexPath.row];
     return cell;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -162,7 +166,7 @@
     if (indexPath.row == 0) {
         return kScreenHeight / 3 * 2 - 30;
     }
-        return kScreenHeight / 4 * 3;
+    return kScreenHeight / 4 * 3;
 }
 
 
@@ -305,7 +309,6 @@
                 }
             }
             //
-            
         }
         
         NSArray *dataArray = self.listArray[0][@"data"];
