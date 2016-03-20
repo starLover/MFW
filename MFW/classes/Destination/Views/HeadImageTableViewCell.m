@@ -11,6 +11,7 @@
 @interface HeadImageTableViewCell ()
 
 
+
 @end
 @implementation HeadImageTableViewCell
 

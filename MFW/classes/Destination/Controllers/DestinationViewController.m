@@ -13,6 +13,7 @@
 #import "DestinationModel.h"
 #import <MapKit/MKMapView.h>
 #import "HeadImageViewController.h"
+#import "AlubmViewController.h"
 @interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)UIView *tableViewHeaderView;
@@ -222,7 +223,7 @@
     [self.tableViewHeaderView addSubview:numLabel];
     //地方按钮
     UIButton *numBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    numBtn.frame = CGRectMake(20, self.tableViewHeaderView.frame.size.height/8, kScreenWidth,  self.tableViewHeaderView.frame.size.height/8*3);
+    numBtn.frame = CGRectMake(20, self.tableViewHeaderView.frame.size.height/8, kScreenWidth,  self.tableViewHeaderView.frame.size.height/8+20);
     numBtn.tag = 102;
     [numBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.tableViewHeaderView addSubview:numBtn];
@@ -233,14 +234,14 @@
     
     //图片集
     for (int i = 0; i < self.albumArray.count; i++) {
-            UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*i, collectBtn.frame.size.height+130, (kScreenWidth-60)/3,(kScreenHeight-40)/7)];
-            [imageView sd_setImageWithURL:[NSURL URLWithString:self.albumArray[i]] placeholderImage:nil];
-            [self.tableViewHeaderView addSubview:imageView];
+            UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*i, collectBtn.frame.size.height+130, (kScreenWidth-60)/3,(kScreenHeight-40)/7)];
+            [imageV sd_setImageWithURL:[NSURL URLWithString:self.albumArray[i]] placeholderImage:nil];
+            [self.tableViewHeaderView addSubview:imageV];
         UIButton *imageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        imageBtn.frame = CGRectMake(20+(((kScreenWidth-60)/3)+10)*i, collectBtn.frame.size.height+130, (kScreenWidth-60)/3,(kScreenHeight-40)/7);
         imageBtn.tag = 103+i;
-        imageBtn.frame = CGRectMake(20+(((kScreenWidth-60)/3)+10)*i, collectBtn.frame.size.height+125, (kScreenWidth-60)/3,(kScreenHeight-40)/7);
         [imageBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
-        [imageView addSubview:imageBtn];
+        [self.tableViewHeaderView addSubview:imageBtn];
         
     }
     UILabel *more = [[UILabel alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*2, collectBtn.frame.size.height+130, (kScreenWidth-60)/3,(kScreenHeight-40)/7)];
@@ -263,13 +264,13 @@
         for (NSInteger j = 0; j < 4; j++) {
             DestinationModel *btnModel = self.btnArray[i * 4 + j];
             //按钮图片
-            UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20 + j * kScreenWidth / 4, 10 + i * kScreenWidth / 4+self.tableViewHeaderView.frame.size.height/2+40, (kScreenWidth - 40) / 4 - 30, (kScreenWidth - 40) / 4 - 30)];
-            [imageView sd_setImageWithURL:[NSURL URLWithString:btnModel.icon]];
+            UIImageView *imageview = [[UIImageView alloc] initWithFrame:CGRectMake(20 + j * kScreenWidth / 4, 10 + i * kScreenWidth / 4+self.tableViewHeaderView.frame.size.height/2+40, (kScreenWidth - 40) / 4 - 30, (kScreenWidth - 40) / 4 - 30)];
+            [imageview sd_setImageWithURL:[NSURL URLWithString:btnModel.icon]];
             //按钮标题
             UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(15 + j * kScreenWidth / 4, kScreenWidth / 4 * (i + 1) - 20+self.tableViewHeaderView.frame.size.height/2+40, (kScreenWidth - 40) / 4 - 20, 20)];
             label.textAlignment = NSTextAlignmentCenter;
             label.text = btnModel.title;
-            [self.tableViewHeaderView addSubview:imageView];
+            [self.tableViewHeaderView addSubview:imageview];
             [self.tableViewHeaderView addSubview:label];
             
             //按钮
@@ -300,14 +301,20 @@
             break;
         case 3:
         {
+            AlubmViewController *alubmVC = [[AlubmViewController alloc]init];
+            [self.navigationController pushViewController:alubmVC animated:YES];
         }
             break;
         case 4:
         {
+            AlubmViewController *alubmVC = [[AlubmViewController alloc]init];
+            [self.navigationController pushViewController:alubmVC animated:YES];
         }
             break;
         case 5:
         {
+            AlubmViewController *alubmVC = [[AlubmViewController alloc]init];
+            [self.navigationController pushViewController:alubmVC animated:YES];
         }
             break;
             
@@ -318,6 +325,41 @@
 - (void)eightAction:(UIButton *)btn{
     switch (btn.tag - 100) {
         case 0:
+        {
+            
+        }
+            break;
+        case 1:
+        {
+            
+        }
+            break;
+        case 2:
+        {
+            
+        }
+            break;
+        case 3:
+        {
+            
+        }
+            break;
+        case 4:
+        {
+            
+        }
+            break;
+        case 5:
+        {
+            
+        }
+            break;
+        case 6:
+        {
+            
+        }
+            break;
+        case 7:
         {
             
         }
