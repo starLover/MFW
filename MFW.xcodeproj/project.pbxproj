@@ -37,7 +37,13 @@
 		7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133521C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m */; };
 		7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */; };
 		EA637D993CACC04A8D70916F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527401B3CEFECDBDAE025B36 /* libPods.a */; };
+		F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30485C81C9E723A002751C4 /* AlubmViewController.m */; };
 		F3363BB21C9C32270001B82C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3363BB11C9C32270001B82C /* MapKit.framework */; };
+		F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631A1C9E86D90060F63F /* BLImageSize.m */; };
+		F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */; };
+		F33B63201C9E87B00060F63F /* Alubm.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33B631F1C9E87B00060F63F /* Alubm.plist */; };
+		F33B63231C9E8A3E0060F63F /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */; };
+		F3851EA51C9E9C9000F75EB7 /* AlubmModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */; };
 		F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F399E0231C9B82C000019B37 /* DestinationModel.m */; };
 		F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F399E0251C9BADF100019B37 /* CoreImage.framework */; };
 		F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39D7FDA1C9AD3C300F8D333 /* Destination.plist */; };
@@ -100,7 +106,18 @@
 		7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZ_Mine_Head_DetailViewController.xib; sourceTree = "<group>"; };
 		A5326F219EB1AA51899CAB56 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F30485C71C9E723A002751C4 /* AlubmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlubmViewController.h; sourceTree = "<group>"; };
+		F30485C81C9E723A002751C4 /* AlubmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlubmViewController.m; sourceTree = "<group>"; };
 		F3363BB11C9C32270001B82C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F33B63191C9E86D90060F63F /* BLImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImageSize.h; sourceTree = "<group>"; };
+		F33B631A1C9E86D90060F63F /* BLImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImageSize.m; sourceTree = "<group>"; };
+		F33B631B1C9E86D90060F63F /* AoiroSoraLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AoiroSoraLayout.h; sourceTree = "<group>"; };
+		F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AoiroSoraLayout.m; sourceTree = "<group>"; };
+		F33B631F1C9E87B00060F63F /* Alubm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Alubm.plist; sourceTree = "<group>"; };
+		F33B63211C9E8A3E0060F63F /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		F3851EA31C9E9C9000F75EB7 /* AlubmModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlubmModel.h; sourceTree = "<group>"; };
+		F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlubmModel.m; sourceTree = "<group>"; };
 		F399E0221C9B82C000019B37 /* DestinationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationModel.h; sourceTree = "<group>"; };
 		F399E0231C9B82C000019B37 /* DestinationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationModel.m; sourceTree = "<group>"; };
 		F399E0251C9BADF100019B37 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -201,6 +218,8 @@
 				0114454F1C9AA9E00057E69F /* DestinationViewController.m */,
 				F39EF9A41C9CF43B00382A36 /* HeadImageViewController.h */,
 				F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */,
+				F30485C71C9E723A002751C4 /* AlubmViewController.h */,
+				F30485C81C9E723A002751C4 /* AlubmViewController.m */,
 				F3C874391C9AAE66006BD9AF /* Define.h */,
 			);
 			path = Controllers;
@@ -215,6 +234,8 @@
 				F39EF9A71C9CF48B00382A36 /* HeadImageTableViewCell.h */,
 				F39EF9A81C9CF48C00382A36 /* HeadImageTableViewCell.m */,
 				F39EF9A91C9CF48C00382A36 /* HeadImageTableViewCell.xib */,
+				F33B63211C9E8A3E0060F63F /* CollectionViewCell.h */,
+				F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -287,6 +308,10 @@
 				F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */,
 				F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */,
 				0114455B1C9AB7130057E69F /* MainDefine.h */,
+				F33B63191C9E86D90060F63F /* BLImageSize.h */,
+				F33B631A1C9E86D90060F63F /* BLImageSize.m */,
+				F33B631B1C9E86D90060F63F /* AoiroSoraLayout.h */,
+				F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */,
 			);
 			path = HWTools;
 			sourceTree = "<group>";
@@ -366,8 +391,11 @@
 			children = (
 				F39D7FDA1C9AD3C300F8D333 /* Destination.plist */,
 				F39EF9AC1C9D209F00382A36 /* HeadImage.plist */,
+				F33B631F1C9E87B00060F63F /* Alubm.plist */,
 				F399E0221C9B82C000019B37 /* DestinationModel.h */,
 				F399E0231C9B82C000019B37 /* DestinationModel.m */,
+				F3851EA31C9E9C9000F75EB7 /* AlubmModel.h */,
+				F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */,
 			);
 			name = Models;
 			path = Controllers/Models;
@@ -440,6 +468,7 @@
 				7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */,
 				011445591C9AB1910057E69F /* blueArrowDown.png in Resources */,
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
+				F33B63201C9E87B00060F63F /* Alubm.plist in Resources */,
 				01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */,
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
@@ -508,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */,
 				015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */,
 				7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */,
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
@@ -516,7 +546,10 @@
 				F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */,
 				0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */,
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
+				F3851EA51C9E9C9000F75EB7 /* AlubmModel.m in Sources */,
+				F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */,
 				0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */,
+				F33B63231C9E8A3E0060F63F /* CollectionViewCell.m in Sources */,
 				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
 				01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */,
 				01AD7AAD1C9B970D003C336D /* TimeStamp.m in Sources */,
@@ -527,6 +560,7 @@
 				01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */,
 				7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */,
 				0114454B1C9AA9860057E69F /* MainViewController.m in Sources */,
+				F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */,
 				7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */,
 				01F95BE01C9D4E6C00CCD539 /* SearchCityViewController.m in Sources */,
 			);

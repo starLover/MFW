@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface HeadImageTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *placeName;
+@property (weak, nonatomic) IBOutlet UILabel *userNum;
 
 @end
