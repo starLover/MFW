@@ -56,6 +56,9 @@
     
     
 }
+- (void)viewWillAppear:(BOOL)animated{
+    self.tabBarController.tabBar.hidden = NO;
+}
 #pragma mark --------- UITableViewDataSource
 - (void)configTableViewHeaderView{
     
