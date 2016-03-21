@@ -37,7 +37,7 @@
     [self.collectionView registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
 //    [self.view addSubview:self.collectionView];
     [self showBackBtn];
-//    [self requestModel];
+    [self requestModel];
 }
 #pragma mark ---------
 #pragma mark ---------
@@ -102,9 +102,9 @@
 - (void)requestModel{
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", nil];
-    NSString *urlString = [NSString stringWithFormat:@"%@&offset=%lu",kAlbum,(long)_offset];
+//    NSString *urlString = [NSString stringWithFormat:@"%@&offset=%lu",kAlbum,(long)_offset];
 //    NSString *url= [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    [sessionManager GET:urlString parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    [sessionManager GET:kAlbum parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *resultDic = responseObject;
         NSDictionary *data = resultDic[@"data"];
