@@ -15,9 +15,10 @@
 @implementation LZ_Mine_Head
 - (instancetype)initWithFrame:(CGRect)frame{
     if ([super initWithFrame:frame]) {
-
+        self = [[[NSBundle mainBundle] loadNibNamed:@"LZ_Mine_Head" owner:self options:nil] lastObject];
     }
-    return [[[NSBundle mainBundle] loadNibNamed:@"LZ_Mine_Head" owner:self options:nil] lastObject];;;
+    
+    return self;
 }
 
 @end

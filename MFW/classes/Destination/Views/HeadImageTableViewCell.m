@@ -1,14 +1,19 @@
 //
-//  DestinationTableViewCell.m
+//  HeadImageTableViewCell.m
 //  MFW
 //
-//  Created by scjy on 16/3/17.
+//  Created by scjy on 16/3/19.
 //  Copyright © 2016年 马娟娟. All rights reserved.
 //
 
-#import "DestinationTableViewCell.h"
+#import "HeadImageTableViewCell.h"
 
-@implementation DestinationTableViewCell
+@interface HeadImageTableViewCell ()
+
+
+
+@end
+@implementation HeadImageTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

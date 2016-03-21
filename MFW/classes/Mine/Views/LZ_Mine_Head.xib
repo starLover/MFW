@@ -56,7 +56,7 @@
             <connections>
                 <outlet property="imageView" destination="2Dl-jA-MNS" id="E6D-Hg-hOc"/>
             </connections>
-            <point key="canvasLocation" x="613.5" y="385"/>
+            <point key="canvasLocation" x="731.5" y="439"/>
         </view>
     </objects>
 </document>

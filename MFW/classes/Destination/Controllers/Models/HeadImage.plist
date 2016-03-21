@@ -1,0 +1,3477 @@
+data =     {
+blocks =         (
+{
+list =                 (
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6811654;
+lat = "34.683168350377";
+lng = "112.47880082714";
+name = "\U8001\U57ce\U5341\U5b57\U8857\U591c\U5e02";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+},
+{
+id = 7668;
+name = "\U7f8e\U98df\U8857\U533a";
+},
+{
+id = 7670;
+name = "\U591c\U5e02";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5641992;
+logo = "http://file106.mafengwo.net/s5/M00/49/3C/wKgB3FFFpl-AJ-hIAAAeAPudKRY71.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = BrownPea;
+}
+);
+"user_number" = 12;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 7916979;
+lat = "34.671395";
+lng = "112.435061";
+name = "\U56db\U5c0f\U59d0\U7684\U5e97";
+rank = 4;
+tags =                             (
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+{
+id = 53725222;
+logo = "http://file104.mafengwo.net/s9/M00/CD/A5/wKgBs1bBckeAUJGmAAJbPG1dz5E35.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U5c0f\U4ed9\U5973\U513f";
+}
+);
+"user_number" = 7;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6811373;
+lat = "34.681560970726";
+lng = "112.47647201272";
+name = "\U7ba1\U8bb0\U6c34\U5e2d\U8001\U5e97";
+rank = 4;
+tags =                             (
+{
+id = 15972;
+name = "\U8c6b\U83dc";
+},
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 7;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 1252;
+lat = "34.6718995";
+lng = "112.4459086";
+name = "\U5c0f\U8857\U9505\U8d34(\U5c0f\U8857\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+}
+);
+};
+"user_list" =                         (
+{
+id = 53725222;
+logo = "http://file104.mafengwo.net/s9/M00/CD/A5/wKgBs1bBckeAUJGmAAJbPG1dz5E35.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U5c0f\U4ed9\U5973\U513f";
+},
+{
+id = 5334000;
+logo = "http://file103.mafengwo.net/s5/M00/0E/59/wKgB21ACZ8fAznMxAAAtctrsteU61.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8fb9\U5c0f\U585e";
+}
+);
+"user_number" = 5;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 96;
+lat = "34.683529260988";
+lng = "112.47735276818";
+name = "\U771f\U4e0d\U540c\U996d\U5e97(\U4e2d\U5dde\U4e1c\U8def\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 13703;
+name = "\U8001\U5b57\U53f7";
+},
+{
+id = 15972;
+name = "\U8c6b\U83dc";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 5;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6812957;
+lat = "34.685090282757";
+lng = "112.47850523365";
+name = "\U5c0f\U5403\U8857";
+rank = 4;
+tags =                             (
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 4;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 35589;
+lat = "34.681179046631";
+lng = "112.4712677002";
+name = "\U767e\U7897\U7f8a\U6c64(\U4e3d\U666f\U95e8\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 16089;
+name = "\U8fde\U9501/\U52a0\U76df";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6811493;
+lat = "34.68121434274";
+lng = "112.47144568728";
+name = "\U9ad8\U8bb0\U6e05\U9999\U56ed\U4e0d\U7ffb\U6c64";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 1250;
+lat = "34.661185961201";
+lng = "112.38308504223";
+name = "\U9676\U9676\U5c45\U5305\U5b50\U5e97(\U7261\U4e39\U516c\U56ed\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 7665;
+name = "\U7ca5\U5e97\U9762\U98df";
+},
+{
+id = 13703;
+name = "\U8001\U5b57\U53f7";
+},
+{
+id = 16089;
+name = "\U8fde\U9501/\U52a0\U76df";
+}
+);
+};
+"user_list" =                         (
+{
+id = 33439116;
+logo = "http://file111.mafengwo.net/s9/M00/B3/02/wKgBs1avoqGAGwxIAANIBaKxf6426.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U9ed1\U773c\U775b";
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 19845;
+lat = "34.665190017177";
+lng = "112.42766690255";
+name = "\U8001\U6d1b\U9633\U9762\U9986(\U738b\U57ce\U5927\U9053\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 7665;
+name = "\U7ca5\U5e97\U9762\U98df";
+},
+{
+id = 13703;
+name = "\U8001\U5b57\U53f7";
+},
+{
+id = 16089;
+name = "\U8fde\U9501/\U52a0\U76df";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 8799;
+name = "\U700d\U6cb3\U56de\U65cf\U533a";
+};
+id = 6811416;
+lat = "34.695881652907";
+lng = "112.50542621838";
+name = "\U9a6c\U6770\U5c71\U725b\U8089\U6c64\U9986\U542f\U660e\U4e1c\U8def";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+},
+{
+id = 7658;
+name = "\U6e05\U771f";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 6811381;
+lat = "34.671319243099";
+lng = "112.44577767174";
+name = "\U98ce\U5473\U697c\U5c0f\U8857\U9505\U8d34\U98d8\U9999\U82b1\U57ce";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6811517;
+lat = "34.678855940367";
+lng = "112.46028990489";
+name = "\U5efa\U5764\U6c34\U5e2d\U5bab";
+rank = 4;
+tags =                             (
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 6945380;
+lat = "34.629839444924";
+lng = "112.40870878928";
+name = "\U91d1\U94ed\U8bb0\U6e05\U771f\U725b\U8089\U6c64\U6d77\U68e0\U8def";
+rank = 0;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+},
+{
+id = 7658;
+name = "\U6e05\U771f";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 1518038;
+lat = "34.668234592298";
+lng = "112.37883161227";
+name = "\U7389\U82f1\U7c73\U76ae";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 11846;
+lat = "34.662721153702";
+lng = "112.39460653066";
+name = "\U6c34\U5e2d\U56ed";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 1503590;
+lat = "34.681956";
+lng = "112.47754";
+name = "\U674f\U82b1\U6751\U6c34\U5e2d\U697c";
+rank = 4;
+tags =                             (
+{
+id = 7527;
+name = "\U7279\U8272\U996e\U54c1";
+},
+{
+id = 7668;
+name = "\U7f8e\U98df\U8857\U533a";
+},
+{
+id = 16070;
+name = "\U897f\U5317\U83dc";
+},
+{
+id = 16089;
+name = "\U8fde\U9501/\U52a0\U76df";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 6813083;
+lat = "34.625769262074";
+lng = "112.44129532407";
+name = "\U8001\U674e\U5bb6\U725b\U8089\U6c64\U5b9c\U4eba\U8def";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+},
+{
+id = 7658;
+name = "\U6e05\U771f";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 6945534;
+lat = "34.655956542236";
+lng = "112.46544419823";
+name = "\U6d1b\U9633\U6c34\U5e2d";
+rank = 4;
+tags =                             (
+{
+id = 15972;
+name = "\U8c6b\U83dc";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 6811469;
+lat = "34.621425406656";
+lng = "112.451684317";
+name = "\U771f\U4e0d\U540c\U996d\U5e97(\U653f\U548c\U8def\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 13703;
+name = "\U8001\U5b57\U53f7";
+},
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 1502688;
+lat = "34.624512";
+lng = "112.445535";
+name = "\U9a6c\U6770\U5c71\U725b\U8089\U6c64\U9986(\U9526\U79c0\U5e97)";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 8799;
+name = "\U700d\U6cb3\U56de\U65cf\U533a";
+};
+id = 1515319;
+lat = "34.686324699487";
+lng = "112.4895759828";
+name = "\U6e05\U9999\U56ed";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 1503515;
+lat = "34.681854830658";
+lng = "112.47601563558";
+name = "\U53f8\U9a6c\U6c34\U5e2d\U697c";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 6813490;
+lat = "34.629396873936";
+lng = "112.44230903497";
+name = "\U6843\U82b1\U5e84\U6e90";
+rank = 4;
+tags =                             (
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+{
+id = 33439116;
+logo = "http://file111.mafengwo.net/s9/M00/B3/02/wKgBs1avoqGAGwxIAANIBaKxf6426.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U9ed1\U773c\U775b";
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6812457;
+lat = "34.680970143984";
+lng = "112.47137903401";
+name = "\U7cd6\U679c\U9152\U5427";
+rank = 0;
+tags =                             (
+{
+id = 7671;
+name = "\U5176\U4ed6";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+}
+);
+"poi_type_id" = 1;
+"poi_type_name" = "\U7f8e\U98df";
+},
+{
+list =                 (
+{
+poi =                         {
+area =                             {
+id = 8798;
+name = "\U9f99\U95e8\U77f3\U7a9f";
+};
+id = 16;
+lat = "34.559499246124";
+lng = "112.46788156032";
+name = "\U9f99\U95e8\U77f3\U7a9f";
+rank = 4;
+tags =                             (
+{
+id = 13710;
+name = "\U5fc5\U6e38";
+},
+{
+id = 13713;
+name = "\U5b97\U6559\U573a\U6240";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 74712922;
+logo = "http://file102.mafengwo.net/s9/M00/63/A3/wKgBs1bHT2iAARxbAAFjwWBodZM73.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "One \U5143";
+},
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+},
+{
+id = 5043620;
+logo = "http://file109.mafengwo.net/s2/M00/9C/99/wKgBpU5wNJv2HekqAAAIzEd8-5s43.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U51dd\U51b0\U98de\U96ea";
+},
+{
+id = 61876614;
+logo = "http://file107.mafengwo.net/s9/M00/4B/BB/wKgBs1aUZ66AReikAAAvfpKNzr031.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8096\U743c";
+},
+{
+id = 5254201;
+logo = "http://file106.mafengwo.net/s5/M00/30/A5/wKgB21BByXCmy-TZAAYXIVFoZu833.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U7834\U5589\U5499xManaMa";
+}
+);
+"user_number" = 34;
+},
+{
+poi =                         {
+area =                             {
+id = 11632;
+name = "\U767d\U9a6c\U5bfa";
+};
+id = 212;
+lat = "34.72579737535";
+lng = "112.60633540154";
+name = "\U6d1b\U9633\U767d\U9a6c\U5bfa";
+rank = 4;
+tags =                             (
+{
+id = 13710;
+name = "\U5fc5\U6e38";
+},
+{
+id = 13713;
+name = "\U5b97\U6559\U573a\U6240";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5043620;
+logo = "http://file109.mafengwo.net/s2/M00/9C/99/wKgBpU5wNJv2HekqAAAIzEd8-5s43.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U51dd\U51b0\U98de\U96ea";
+},
+{
+id = 74712922;
+logo = "http://file102.mafengwo.net/s9/M00/63/A3/wKgBs1bHT2iAARxbAAFjwWBodZM73.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "One \U5143";
+},
+{
+id = 5641992;
+logo = "http://file106.mafengwo.net/s5/M00/49/3C/wKgB3FFFpl-AJ-hIAAAeAPudKRY71.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = BrownPea;
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 77632188;
+logo = "http://file101.mafengwo.net/s8/M00/A8/C5/wKgBpVU0BAaAGhCSAABIliVl7QA28.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "~~";
+}
+);
+"user_number" = 30;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 211;
+lat = "34.681362658182";
+lng = "112.47129404545";
+name = "\U4e3d\U666f\U95e8";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 74712922;
+logo = "http://file102.mafengwo.net/s9/M00/63/A3/wKgBs1bHT2iAARxbAAFjwWBodZM73.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "One \U5143";
+},
+{
+id = 5641992;
+logo = "http://file106.mafengwo.net/s5/M00/49/3C/wKgB3FFFpl-AJ-hIAAAeAPudKRY71.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = BrownPea;
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 87749959;
+logo = "http://file109.mafengwo.net/s9/M00/00/87/wKgBs1bkuYaABpifAAA-Lub4xHQ98.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = simone;
+},
+{
+id = 92801831;
+logo = "http://file104.mafengwo.net/s9/M00/8E/D7/wKgBs1ZpkkqAe6LnAAARi0uA0aU34.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Loser;
+}
+);
+"user_number" = 29;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 11826;
+lat = "34.731957455092";
+lng = "112.41550683975";
+name = "\U6d1b\U9633\U53e4\U5893\U535a\U7269\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+},
+{
+id = 65440515;
+logo = "http://file106.mafengwo.net/s9/M00/35/70/wKgBs1aqJCaAfKcVAAAHRKaBa4I76.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "whatever\U6d0b";
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 92955693;
+logo = "http://file107.mafengwo.net/s9/M00/0C/88/wKgBs1Z6CDmAFXlIAAAGUNhxojs74.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U968f\U4fbf\U53eb\U4ec0\U4e48\U540d\U5b57\U600e\U4e48\U6837";
+},
+{
+id = 91633357;
+logo = "http://file106.mafengwo.net/s9/M00/77/85/wKgBs1ZFOsGAKeAxAAAy1tsNPtM786.png?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "Dylan\U4e3602";
+}
+);
+"user_number" = 26;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 11825;
+lat = "34.681859";
+lng = "112.476458";
+name = "\U6d1b\U9633\U8001\U8857";
+rank = 4;
+tags =                             (
+{
+id = 20411;
+name = "\U7279\U8272\U8857\U533a";
+}
+);
+};
+"user_list" =                         (
+{
+id = 87749959;
+logo = "http://file109.mafengwo.net/s9/M00/00/87/wKgBs1bkuYaABpifAAA-Lub4xHQ98.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = simone;
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 63520881;
+logo = "http://file110.mafengwo.net/s9/M00/CD/6F/wKgBs1bkBL2AIvzPAAK2jx-Z0n853.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U5fc3\U60c5\U65c5\U884c";
+}
+);
+"user_number" = 21;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 28509;
+lat = "34.64200412969";
+lng = "112.45385410313";
+name = "\U6d1b\U9633\U535a\U7269\U9986\U65b0\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 65440515;
+logo = "http://file106.mafengwo.net/s9/M00/35/70/wKgBs1aqJCaAfKcVAAAHRKaBa4I76.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "whatever\U6d0b";
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 18;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 204;
+lat = "34.673425987243";
+lng = "112.44358181953";
+name = "\U6d1b\U9633\U5468\U738b\U57ce\U5929\U5b50\U9a7e\U516d\U535a\U7269\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13710;
+name = "\U5fc5\U6e38";
+},
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+}
+);
+};
+"user_list" =                         (
+{
+id = 65440515;
+logo = "http://file106.mafengwo.net/s9/M00/35/70/wKgBs1aqJCaAfKcVAAAHRKaBa4I76.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "whatever\U6d0b";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 15;
+},
+{
+poi =                         {
+area =                             {
+id = 8653;
+name = "\U9ad8\U94c1\U7ad9\U5468\U8fb9";
+};
+id = 203;
+lat = "34.607711669157";
+lng = "112.48335742951";
+name = "\U6d1b\U9633\U5173\U6797";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5043620;
+logo = "http://file109.mafengwo.net/s2/M00/9C/99/wKgBpU5wNJv2HekqAAAIzEd8-5s43.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U51dd\U51b0\U98de\U96ea";
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+}
+);
+"user_number" = 10;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 208;
+lat = "34.669075275001";
+lng = "112.42049978833";
+name = "\U738b\U57ce\U516c\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13710;
+name = "\U5fc5\U6e38";
+},
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+}
+);
+};
+"user_list" =                         (
+{
+id = 61494076;
+logo = "http://file106.mafengwo.net/s9/M00/67/E6/wKgBs1bnmS2AISoYAAC0hPyP0MY73.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8682\U8702\U7a9d\U7528\U6237";
+}
+);
+"user_number" = 10;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 11843;
+lat = "34.706489722101";
+lng = "112.39971530437";
+name = "\U6d1b\U9633\U56fd\U5bb6\U7261\U4e39\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 10;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 5428350;
+lat = "34.68186";
+lng = "112.4447";
+name = "\U6d1b\U9633\U660e\U5802\U5929\U5802\U666f\U533a";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+},
+{
+id = 91468274;
+logo = "http://file103.mafengwo.net/s5/M00/B2/C8/wKgB3FYp9U2ATZU3AAC6xL-CiP031.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U6ee1\U5929\U90fd\U662f\U859b\U6676\U6676";
+}
+);
+"user_number" = 8;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 11836;
+lat = "34.633956522568";
+lng = "112.44548654556";
+name = "\U968b\U5510\U9057\U5740\U690d\U7269\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 7;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6628580;
+lat = "34.680269";
+lng = "112.460234";
+name = "\U968b\U5510\U6d1b\U9633\U57ce\U9057\U5740";
+rank = 4;
+tags =                             (
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 6;
+},
+{
+poi =                         {
+area =                             {
+id = 11632;
+name = "\U767d\U9a6c\U5bfa";
+};
+id = 28507;
+lat = "34.723300933838";
+lng = "112.60399627686";
+name = "\U72c4\U4ec1\U6770\U5893";
+rank = 4;
+tags =                             (
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 4;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 28527;
+lat = "34.616968658855";
+lng = "112.45446166138";
+name = "\U5f00\U5143\U6e56\U97f3\U4e50\U55b7\U6cc9";
+rank = 4;
+tags =                             (
+{
+id = 16103;
+name = "\U5730\U6807";
+},
+{
+id = 16104;
+name = "\U5efa\U7b51";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 4;
+},
+{
+poi =                         {
+area =                             {
+id = 8798;
+name = "\U9f99\U95e8\U77f3\U7a9f";
+};
+id = 28537;
+lat = "34.579562005448";
+lng = "112.47579366138";
+name = "\U4e2d\U56fd\U56fd\U82b1\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 4;
+},
+{
+poi =                         {
+area =                             {
+id = 16;
+name = "\U9f99\U95e8\U77f3\U7a9f";
+};
+id = 11823;
+lat = "34.55916193704";
+lng = "112.4678401947";
+name = "\U767d\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 1506871;
+lat = "34.659325";
+lng = "112.471375";
+name = "\U767d\U5c45\U6613\U6545\U5c45";
+rank = 4;
+tags =                             (
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+},
+{
+id = 13715;
+name = "\U540d\U4eba\U6545\U5c45";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+}
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 8653;
+name = "\U9ad8\U94c1\U7ad9\U5468\U8fb9";
+};
+id = 5423479;
+lat = "34.607851";
+lng = "112.483358";
+name = "\U5173\U6797\U5e99";
+rank = 4;
+tags =                             (
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 91633357;
+logo = "http://file106.mafengwo.net/s9/M00/77/85/wKgBs1ZFOsGAKeAxAAAy1tsNPtM786.png?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "Dylan\U4e3602";
+}
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 1503987;
+lat = "34.677051831236";
+lng = "112.46170561227";
+name = "\U6d1b\U9633\U90fd\U57ce\U535a\U7269\U9986";
+rank = 3;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+},
+{
+id = 13713;
+name = "\U5b97\U6559\U573a\U6240";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 16;
+name = "\U9f99\U95e8\U77f3\U7a9f";
+};
+id = 11822;
+lat = "34.55386632758";
+lng = "112.47946834565";
+name = "\U9999\U5c71\U5bfa";
+rank = 4;
+tags =                             (
+{
+id = 13713;
+name = "\U5b97\U6559\U573a\U6240";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 28522;
+lat = "34.680698394775";
+lng = "112.45899963379";
+name = "\U5510\U4e1c\U90fd\U660e\U5802\U9057\U5740";
+rank = 4;
+tags =                             (
+{
+id = 16104;
+name = "\U5efa\U7b51";
+},
+{
+id = 16264;
+name = "\U5bab\U6bbf\U57ce\U5821";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 28528;
+lat = "34.682651049017";
+lng = "112.48314118385";
+name = "\U949f\U9f13\U697c";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 11871;
+lat = "34.675701141357";
+lng = "112.46299743652";
+name = "\U6d1b\U9633\U5468\U516c\U5e99\U535a\U7269\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13713;
+name = "\U5b97\U6559\U573a\U6240";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 11839;
+lat = "34.665298461914";
+lng = "112.41999816895";
+name = "\U6c49\U5893\U58c1\U753b\U5730\U4e0b\U5c55\U5ba4";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+};
+id = 5503759;
+lat = "34.724709026415";
+lng = "112.41939987887";
+name = "\U56fd\U9645\U7261\U4e39\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+},
+{
+id = 13716;
+name = "\U4eba\U5de5\U666f\U89c2";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 11838;
+lat = "34.665599822998";
+lng = "112.42099761963";
+name = "\U5468\U738b\U57ce\U57ce\U5899\U9057\U5740";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 7047039;
+lat = "34.630365742293";
+lng = "112.46722287842";
+name = "\U5b9a\U9f0e\U95e8\U9057\U5740\U535a\U7269\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 207;
+lat = "34.679247894947";
+lng = "112.4889125824";
+name = "\U6d1b\U9633\U6c11\U4fd7\U535a\U7269\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+};
+id = 28529;
+lat = "34.7320111";
+lng = "112.4155038";
+name = "\U9099\U5c71\U9675\U5893\U7fa4";
+rank = 4;
+tags =                             (
+{
+id = 20381;
+name = "\U81ea\U7136";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+}
+);
+"poi_type_id" = 3;
+"poi_type_name" = "\U666f\U70b9";
+},
+{
+list =                 (
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 35603;
+lat = "34.681426957348";
+lng = "112.47139562667";
+name = "\U4e09\U5f69\U827a\U672f\U9986";
+rank = 4;
+tags =                             (
+{
+id = 7555;
+name = "\U7279\U4ea7/\U7eaa\U5ff5\U54c1";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 6050965;
+lat = "34.662892";
+lng = "112.42143";
+name = "\U4e5d\U90fd\U724c\U5510\U4e09\U5f69\U9500\U552e\U4e2d\U5fc3";
+rank = 4;
+tags =                             (
+{
+id = 7555;
+name = "\U7279\U4ea7/\U7eaa\U5ff5\U54c1";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 35558;
+lat = "34.654079437256";
+lng = "112.40767669678";
+name = "\U4e07\U8fbe\U5e7f\U573a";
+rank = 4;
+tags =                             (
+{
+id = 7540;
+name = "\U5546\U573a";
+},
+{
+id = 7541;
+name = "\U8d2d\U7269\U8857\U533a";
+},
+{
+id = 16110;
+name = "\U8d2d\U7269\U4e2d\U5fc3";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+}
+);
+"poi_type_id" = 4;
+"poi_type_name" = "\U8d2d\U7269\U5730";
+}
+);
+mdd =         {
+id = 10094;
+lat = "34.618517213797";
+lng = "112.45330810547";
+name = "\U6d1b\U9633";
+};
+"user_number" = 586;
+};
+rc = 0;
+rm = "";
+}
+2016-03-19 13:47:28.857 MFW[3645:98761] {
+data =     {
+blocks =         (
+{
+list =                 (
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6811654;
+lat = "34.683168350377";
+lng = "112.47880082714";
+name = "\U8001\U57ce\U5341\U5b57\U8857\U591c\U5e02";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+},
+{
+id = 7668;
+name = "\U7f8e\U98df\U8857\U533a";
+},
+{
+id = 7670;
+name = "\U591c\U5e02";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5641992;
+logo = "http://file106.mafengwo.net/s5/M00/49/3C/wKgB3FFFpl-AJ-hIAAAeAPudKRY71.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = BrownPea;
+}
+);
+"user_number" = 12;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6811373;
+lat = "34.681560970726";
+lng = "112.47647201272";
+name = "\U7ba1\U8bb0\U6c34\U5e2d\U8001\U5e97";
+rank = 4;
+tags =                             (
+{
+id = 15972;
+name = "\U8c6b\U83dc";
+},
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+{
+id = 119214;
+logo = "http://file102.mafengwo.net/s2/M00/AB/50/wKgBpU4vc4uWlu3gAAAcjsLtCh038.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8ff7\U5931\U9c7c";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 8;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 7916979;
+lat = "34.671395";
+lng = "112.435061";
+name = "\U56db\U5c0f\U59d0\U7684\U5e97";
+rank = 4;
+tags =                             (
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+{
+id = 53725222;
+logo = "http://file104.mafengwo.net/s9/M00/CD/A5/wKgBs1bBckeAUJGmAAJbPG1dz5E35.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U5c0f\U4ed9\U5973\U513f";
+}
+);
+"user_number" = 7;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 1252;
+lat = "34.6718995";
+lng = "112.4459086";
+name = "\U5c0f\U8857\U9505\U8d34(\U5c0f\U8857\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+}
+);
+};
+"user_list" =                         (
+{
+id = 53725222;
+logo = "http://file104.mafengwo.net/s9/M00/CD/A5/wKgBs1bBckeAUJGmAAJbPG1dz5E35.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U5c0f\U4ed9\U5973\U513f";
+},
+{
+id = 5334000;
+logo = "http://file103.mafengwo.net/s5/M00/0E/59/wKgB21ACZ8fAznMxAAAtctrsteU61.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8fb9\U5c0f\U585e";
+}
+);
+"user_number" = 5;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 96;
+lat = "34.683529260988";
+lng = "112.47735276818";
+name = "\U771f\U4e0d\U540c\U996d\U5e97(\U4e2d\U5dde\U4e1c\U8def\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 13703;
+name = "\U8001\U5b57\U53f7";
+},
+{
+id = 15972;
+name = "\U8c6b\U83dc";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 5;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6812957;
+lat = "34.685090282757";
+lng = "112.47850523365";
+name = "\U5c0f\U5403\U8857";
+rank = 4;
+tags =                             (
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 4;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6811493;
+lat = "34.68121434274";
+lng = "112.47144568728";
+name = "\U9ad8\U8bb0\U6e05\U9999\U56ed\U4e0d\U7ffb\U6c64";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 35589;
+lat = "34.681179046631";
+lng = "112.4712677002";
+name = "\U767e\U7897\U7f8a\U6c64(\U4e3d\U666f\U95e8\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 16089;
+name = "\U8fde\U9501/\U52a0\U76df";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 19845;
+lat = "34.665190017177";
+lng = "112.42766690255";
+name = "\U8001\U6d1b\U9633\U9762\U9986(\U738b\U57ce\U5927\U9053\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 7665;
+name = "\U7ca5\U5e97\U9762\U98df";
+},
+{
+id = 13703;
+name = "\U8001\U5b57\U53f7";
+},
+{
+id = 16089;
+name = "\U8fde\U9501/\U52a0\U76df";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 1250;
+lat = "34.661185961201";
+lng = "112.38308504223";
+name = "\U9676\U9676\U5c45\U5305\U5b50\U5e97(\U7261\U4e39\U516c\U56ed\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 7665;
+name = "\U7ca5\U5e97\U9762\U98df";
+},
+{
+id = 13703;
+name = "\U8001\U5b57\U53f7";
+},
+{
+id = 16089;
+name = "\U8fde\U9501/\U52a0\U76df";
+}
+);
+};
+"user_list" =                         (
+{
+id = 33439116;
+logo = "http://file111.mafengwo.net/s9/M00/B3/02/wKgBs1avoqGAGwxIAANIBaKxf6426.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U9ed1\U773c\U775b";
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 6811381;
+lat = "34.671319243099";
+lng = "112.44577767174";
+name = "\U98ce\U5473\U697c\U5c0f\U8857\U9505\U8d34\U98d8\U9999\U82b1\U57ce";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 8799;
+name = "\U700d\U6cb3\U56de\U65cf\U533a";
+};
+id = 6811416;
+lat = "34.695881652907";
+lng = "112.50542621838";
+name = "\U9a6c\U6770\U5c71\U725b\U8089\U6c64\U9986\U542f\U660e\U4e1c\U8def";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+},
+{
+id = 7658;
+name = "\U6e05\U771f";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6811517;
+lat = "34.678855940367";
+lng = "112.46028990489";
+name = "\U5efa\U5764\U6c34\U5e2d\U5bab";
+rank = 4;
+tags =                             (
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 11846;
+lat = "34.662721153702";
+lng = "112.39460653066";
+name = "\U6c34\U5e2d\U56ed";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 1518038;
+lat = "34.668234592298";
+lng = "112.37883161227";
+name = "\U7389\U82f1\U7c73\U76ae";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 1503590;
+lat = "34.681956";
+lng = "112.47754";
+name = "\U674f\U82b1\U6751\U6c34\U5e2d\U697c";
+rank = 4;
+tags =                             (
+{
+id = 7527;
+name = "\U7279\U8272\U996e\U54c1";
+},
+{
+id = 7668;
+name = "\U7f8e\U98df\U8857\U533a";
+},
+{
+id = 16070;
+name = "\U897f\U5317\U83dc";
+},
+{
+id = 16089;
+name = "\U8fde\U9501/\U52a0\U76df";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 6945380;
+lat = "34.629839444924";
+lng = "112.40870878928";
+name = "\U91d1\U94ed\U8bb0\U6e05\U771f\U725b\U8089\U6c64\U6d77\U68e0\U8def";
+rank = 0;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+},
+{
+id = 7658;
+name = "\U6e05\U771f";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 6813083;
+lat = "34.625769262074";
+lng = "112.44129532407";
+name = "\U8001\U674e\U5bb6\U725b\U8089\U6c64\U5b9c\U4eba\U8def";
+rank = 4;
+tags =                             (
+{
+id = 7535;
+name = "\U5c0f\U5403";
+},
+{
+id = 7658;
+name = "\U6e05\U771f";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 1503515;
+lat = "34.681854830658";
+lng = "112.47601563558";
+name = "\U53f8\U9a6c\U6c34\U5e2d\U697c";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 6945534;
+lat = "34.655956542236";
+lng = "112.46544419823";
+name = "\U6d1b\U9633\U6c34\U5e2d";
+rank = 4;
+tags =                             (
+{
+id = 15972;
+name = "\U8c6b\U83dc";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 6811469;
+lat = "34.621425406656";
+lng = "112.451684317";
+name = "\U771f\U4e0d\U540c\U996d\U5e97(\U653f\U548c\U8def\U5e97)";
+rank = 4;
+tags =                             (
+{
+id = 13703;
+name = "\U8001\U5b57\U53f7";
+},
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 8799;
+name = "\U700d\U6cb3\U56de\U65cf\U533a";
+};
+id = 1515319;
+lat = "34.686324699487";
+lng = "112.4895759828";
+name = "\U6e05\U9999\U56ed";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 1502688;
+lat = "34.624512";
+lng = "112.445535";
+name = "\U9a6c\U6770\U5c71\U725b\U8089\U6c64\U9986(\U9526\U79c0\U5e97)";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 6813490;
+lat = "34.629396873936";
+lng = "112.44230903497";
+name = "\U6843\U82b1\U5e84\U6e90";
+rank = 4;
+tags =                             (
+{
+id = 16051;
+name = "\U4e2d\U9910";
+}
+);
+};
+"user_list" =                         (
+{
+id = 33439116;
+logo = "http://file111.mafengwo.net/s9/M00/B3/02/wKgBs1avoqGAGwxIAANIBaKxf6426.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U9ed1\U773c\U775b";
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6812457;
+lat = "34.680970143984";
+lng = "112.47137903401";
+name = "\U7cd6\U679c\U9152\U5427";
+rank = 0;
+tags =                             (
+{
+id = 7671;
+name = "\U5176\U4ed6";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+}
+);
+"poi_type_id" = 1;
+"poi_type_name" = "\U7f8e\U98df";
+},
+{
+list =                 (
+{
+poi =                         {
+area =                             {
+id = 8798;
+name = "\U9f99\U95e8\U77f3\U7a9f";
+};
+id = 16;
+lat = "34.559499246124";
+lng = "112.46788156032";
+name = "\U9f99\U95e8\U77f3\U7a9f";
+rank = 4;
+tags =                             (
+{
+id = 13710;
+name = "\U5fc5\U6e38";
+},
+{
+id = 13713;
+name = "\U5b97\U6559\U573a\U6240";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5043620;
+logo = "http://file109.mafengwo.net/s2/M00/9C/99/wKgBpU5wNJv2HekqAAAIzEd8-5s43.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U51dd\U51b0\U98de\U96ea";
+},
+{
+id = 74712922;
+logo = "http://file102.mafengwo.net/s9/M00/63/A3/wKgBs1bHT2iAARxbAAFjwWBodZM73.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "One \U5143";
+},
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+},
+{
+id = 31940519;
+logo = "http://file111.mafengwo.net/s9/M00/1A/1A/wKgBs1bUNcCAJac5AAC1cMpQ-LU65.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\Ue030 \U660e\U767d";
+},
+{
+id = 61876614;
+logo = "http://file107.mafengwo.net/s9/M00/4B/BB/wKgBs1aUZ66AReikAAAvfpKNzr031.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8096\U743c";
+}
+);
+"user_number" = 37;
+},
+{
+poi =                         {
+area =                             {
+id = 11632;
+name = "\U767d\U9a6c\U5bfa";
+};
+id = 212;
+lat = "34.72579737535";
+lng = "112.60633540154";
+name = "\U6d1b\U9633\U767d\U9a6c\U5bfa";
+rank = 4;
+tags =                             (
+{
+id = 13710;
+name = "\U5fc5\U6e38";
+},
+{
+id = 13713;
+name = "\U5b97\U6559\U573a\U6240";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5043620;
+logo = "http://file109.mafengwo.net/s2/M00/9C/99/wKgBpU5wNJv2HekqAAAIzEd8-5s43.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U51dd\U51b0\U98de\U96ea";
+},
+{
+id = 74712922;
+logo = "http://file102.mafengwo.net/s9/M00/63/A3/wKgBs1bHT2iAARxbAAFjwWBodZM73.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "One \U5143";
+},
+{
+id = 5641992;
+logo = "http://file106.mafengwo.net/s5/M00/49/3C/wKgB3FFFpl-AJ-hIAAAeAPudKRY71.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = BrownPea;
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 77632188;
+logo = "http://file101.mafengwo.net/s8/M00/A8/C5/wKgBpVU0BAaAGhCSAABIliVl7QA28.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "~~";
+}
+);
+"user_number" = 33;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 211;
+lat = "34.681362658182";
+lng = "112.47129404545";
+name = "\U4e3d\U666f\U95e8";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 74712922;
+logo = "http://file102.mafengwo.net/s9/M00/63/A3/wKgBs1bHT2iAARxbAAFjwWBodZM73.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "One \U5143";
+},
+{
+id = 65440515;
+logo = "http://file106.mafengwo.net/s9/M00/35/70/wKgBs1aqJCaAfKcVAAAHRKaBa4I76.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "whatever\U6d0b";
+},
+{
+id = 5641992;
+logo = "http://file106.mafengwo.net/s5/M00/49/3C/wKgB3FFFpl-AJ-hIAAAeAPudKRY71.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = BrownPea;
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 87749959;
+logo = "http://file109.mafengwo.net/s9/M00/00/87/wKgBs1bkuYaABpifAAA-Lub4xHQ98.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = simone;
+}
+);
+"user_number" = 30;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 11826;
+lat = "34.731957455092";
+lng = "112.41550683975";
+name = "\U6d1b\U9633\U53e4\U5893\U535a\U7269\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+},
+{
+id = 65440515;
+logo = "http://file106.mafengwo.net/s9/M00/35/70/wKgBs1aqJCaAfKcVAAAHRKaBa4I76.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "whatever\U6d0b";
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 92955693;
+logo = "http://file107.mafengwo.net/s9/M00/0C/88/wKgBs1Z6CDmAFXlIAAAGUNhxojs74.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U968f\U4fbf\U53eb\U4ec0\U4e48\U540d\U5b57\U600e\U4e48\U6837";
+},
+{
+id = 91633357;
+logo = "http://file106.mafengwo.net/s9/M00/77/85/wKgBs1ZFOsGAKeAxAAAy1tsNPtM786.png?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "Dylan\U4e3602";
+}
+);
+"user_number" = 26;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 11825;
+lat = "34.681859";
+lng = "112.476458";
+name = "\U6d1b\U9633\U8001\U8857";
+rank = 4;
+tags =                             (
+{
+id = 20411;
+name = "\U7279\U8272\U8857\U533a";
+}
+);
+};
+"user_list" =                         (
+{
+id = 74712922;
+logo = "http://file102.mafengwo.net/s9/M00/63/A3/wKgBs1bHT2iAARxbAAFjwWBodZM73.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "One \U5143";
+},
+{
+id = 87749959;
+logo = "http://file109.mafengwo.net/s9/M00/00/87/wKgBs1bkuYaABpifAAA-Lub4xHQ98.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = simone;
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 63520881;
+logo = "http://file110.mafengwo.net/s9/M00/CD/6F/wKgBs1bkBL2AIvzPAAK2jx-Z0n853.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U5fc3\U60c5\U65c5\U884c";
+}
+);
+"user_number" = 22;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 28509;
+lat = "34.64200412969";
+lng = "112.45385410313";
+name = "\U6d1b\U9633\U535a\U7269\U9986\U65b0\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 65440515;
+logo = "http://file106.mafengwo.net/s9/M00/35/70/wKgBs1aqJCaAfKcVAAAHRKaBa4I76.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "whatever\U6d0b";
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 18;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 204;
+lat = "34.673425987243";
+lng = "112.44358181953";
+name = "\U6d1b\U9633\U5468\U738b\U57ce\U5929\U5b50\U9a7e\U516d\U535a\U7269\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13710;
+name = "\U5fc5\U6e38";
+},
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+}
+);
+};
+"user_list" =                         (
+{
+id = 65440515;
+logo = "http://file106.mafengwo.net/s9/M00/35/70/wKgBs1aqJCaAfKcVAAAHRKaBa4I76.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "whatever\U6d0b";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 15;
+},
+{
+poi =                         {
+area =                             {
+id = 8653;
+name = "\U9ad8\U94c1\U7ad9\U5468\U8fb9";
+};
+id = 203;
+lat = "34.607711669157";
+lng = "112.48335742951";
+name = "\U6d1b\U9633\U5173\U6797";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5043620;
+logo = "http://file109.mafengwo.net/s2/M00/9C/99/wKgBpU5wNJv2HekqAAAIzEd8-5s43.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U51dd\U51b0\U98de\U96ea";
+},
+{
+id = 74712922;
+logo = "http://file102.mafengwo.net/s9/M00/63/A3/wKgBs1bHT2iAARxbAAFjwWBodZM73.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "One \U5143";
+},
+{
+id = 83935143;
+logo = "http://file111.mafengwo.net/s8/M00/40/C7/wKgBpVYrMKSAa54sAAC7xaQuwnU64.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8d85\U7ea7\U65e0\U654c\U84d3\U96ea\U5927\U738b";
+}
+);
+"user_number" = 11;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 208;
+lat = "34.669075275001";
+lng = "112.42049978833";
+name = "\U738b\U57ce\U516c\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13710;
+name = "\U5fc5\U6e38";
+},
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+}
+);
+};
+"user_list" =                         (
+{
+id = 61494076;
+logo = "http://file106.mafengwo.net/s9/M00/67/E6/wKgBs1bnmS2AISoYAAC0hPyP0MY73.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U8682\U8702\U7a9d\U7528\U6237";
+}
+);
+"user_number" = 11;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 11843;
+lat = "34.706489722101";
+lng = "112.39971530437";
+name = "\U6d1b\U9633\U56fd\U5bb6\U7261\U4e39\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 10;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 5428350;
+lat = "34.68186";
+lng = "112.4447";
+name = "\U6d1b\U9633\U660e\U5802\U5929\U5802\U666f\U533a";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+},
+{
+id = 91468274;
+logo = "http://file103.mafengwo.net/s5/M00/B2/C8/wKgB3FYp9U2ATZU3AAC6xL-CiP031.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U6ee1\U5929\U90fd\U662f\U859b\U6676\U6676";
+}
+);
+"user_number" = 8;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 11836;
+lat = "34.633956522568";
+lng = "112.44548654556";
+name = "\U968b\U5510\U9057\U5740\U690d\U7269\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 7;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 6628580;
+lat = "34.680269";
+lng = "112.460234";
+name = "\U968b\U5510\U6d1b\U9633\U57ce\U9057\U5740";
+rank = 4;
+tags =                             (
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 7;
+},
+{
+poi =                         {
+area =                             {
+id = 11632;
+name = "\U767d\U9a6c\U5bfa";
+};
+id = 28507;
+lat = "34.723300933838";
+lng = "112.60399627686";
+name = "\U72c4\U4ec1\U6770\U5893";
+rank = 4;
+tags =                             (
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 5;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 28527;
+lat = "34.616968658855";
+lng = "112.45446166138";
+name = "\U5f00\U5143\U6e56\U97f3\U4e50\U55b7\U6cc9";
+rank = 4;
+tags =                             (
+{
+id = 16103;
+name = "\U5730\U6807";
+},
+{
+id = 16104;
+name = "\U5efa\U7b51";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 4;
+},
+{
+poi =                         {
+area =                             {
+id = 8798;
+name = "\U9f99\U95e8\U77f3\U7a9f";
+};
+id = 28537;
+lat = "34.579562005448";
+lng = "112.47579366138";
+name = "\U4e2d\U56fd\U56fd\U82b1\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 4;
+},
+{
+poi =                         {
+area =                             {
+id = 8653;
+name = "\U9ad8\U94c1\U7ad9\U5468\U8fb9";
+};
+id = 5423479;
+lat = "34.607851";
+lng = "112.483358";
+name = "\U5173\U6797\U5e99";
+rank = 4;
+tags =                             (
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 91633357;
+logo = "http://file106.mafengwo.net/s9/M00/77/85/wKgBs1ZFOsGAKeAxAAAy1tsNPtM786.png?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "Dylan\U4e3602";
+}
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 16;
+name = "\U9f99\U95e8\U77f3\U7a9f";
+};
+id = 11823;
+lat = "34.55916193704";
+lng = "112.4678401947";
+name = "\U767d\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+id = 1506871;
+lat = "34.659325";
+lng = "112.471375";
+name = "\U767d\U5c45\U6613\U6545\U5c45";
+rank = 4;
+tags =                             (
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+},
+{
+id = 13715;
+name = "\U540d\U4eba\U6545\U5c45";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+}
+);
+"user_number" = 3;
+},
+{
+poi =                         {
+area =                             {
+id = 16;
+name = "\U9f99\U95e8\U77f3\U7a9f";
+};
+id = 11822;
+lat = "34.55386632758";
+lng = "112.47946834565";
+name = "\U9999\U5c71\U5bfa";
+rank = 4;
+tags =                             (
+{
+id = 13713;
+name = "\U5b97\U6559\U573a\U6240";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 1503987;
+lat = "34.677051831236";
+lng = "112.46170561227";
+name = "\U6d1b\U9633\U90fd\U57ce\U535a\U7269\U9986";
+rank = 3;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+},
+{
+id = 13713;
+name = "\U5b97\U6559\U573a\U6240";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 28528;
+lat = "34.682651049017";
+lng = "112.48314118385";
+name = "\U949f\U9f13\U697c";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 11871;
+lat = "34.675701141357";
+lng = "112.46299743652";
+name = "\U6d1b\U9633\U5468\U516c\U5e99\U535a\U7269\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13713;
+name = "\U5b97\U6559\U573a\U6240";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 11839;
+lat = "34.665298461914";
+lng = "112.41999816895";
+name = "\U6c49\U5893\U58c1\U753b\U5730\U4e0b\U5c55\U5ba4";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+},
+{
+id = 13714;
+name = "\U9057\U5740\U9057\U8ff9";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 28522;
+lat = "34.680698394775";
+lng = "112.45899963379";
+name = "\U5510\U4e1c\U90fd\U660e\U5802\U9057\U5740";
+rank = 4;
+tags =                             (
+{
+id = 16104;
+name = "\U5efa\U7b51";
+},
+{
+id = 16264;
+name = "\U5bab\U6bbf\U57ce\U5821";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+};
+id = 5503759;
+lat = "34.724709026415";
+lng = "112.41939987887";
+name = "\U56fd\U9645\U7261\U4e39\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+},
+{
+id = 13716;
+name = "\U4eba\U5de5\U666f\U89c2";
+}
+);
+};
+"user_list" =                         (
+{
+id = 5130792;
+logo = "http://file103.mafengwo.net/s3/M00/83/EF/wKgBt09pYrTYKcUtAACM3BAb0mM04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = "\U59d7\U59d7dtmnt";
+},
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 2;
+},
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 207;
+lat = "34.679247894947";
+lng = "112.4889125824";
+name = "\U6d1b\U9633\U6c11\U4fd7\U535a\U7269\U9986";
+rank = 4;
+tags =                             (
+{
+id = 13711;
+name = "\U535a\U7269\U9986/\U5c55\U89c8\U9986/\U7eaa\U5ff5\U9986";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 11838;
+lat = "34.665599822998";
+lng = "112.42099761963";
+name = "\U5468\U738b\U57ce\U57ce\U5899\U9057\U5740";
+rank = 4;
+tags =                             (
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+};
+id = 28529;
+lat = "34.7320111";
+lng = "112.4155038";
+name = "\U9099\U5c71\U9675\U5893\U7fa4";
+rank = 4;
+tags =                             (
+{
+id = 20381;
+name = "\U81ea\U7136";
+}
+);
+};
+"user_list" =                         (
+{
+id = 19273201;
+logo = "http://file102.mafengwo.net/s5/M00/17/AC/wKgB21AaAi28s8QsAAIZpiKWK7g31.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%2148x48r%2Fgravity%2FCenter%2Fcrop%2F%2148x48%2Fquality%2F90";
+name = Hermit;
+}
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+};
+id = 5503696;
+lat = "34.73169";
+lng = "112.35146";
+name = "\U90c1\U91d1\U9999\U4e3b\U9898\U82b1\U56ed";
+rank = 4;
+tags =                             (
+{
+id = 13712;
+name = "\U516c\U56ed/\U82b1\U56ed";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+}
+);
+"poi_type_id" = 3;
+"poi_type_name" = "\U666f\U70b9";
+},
+{
+list =                 (
+{
+poi =                         {
+area =                             {
+id = 2132;
+name = "\U6d1b\U9633\U8001\U57ce";
+};
+id = 35603;
+lat = "34.681426957348";
+lng = "112.47139562667";
+name = "\U4e09\U5f69\U827a\U672f\U9986";
+rank = 4;
+tags =                             (
+{
+id = 7555;
+name = "\U7279\U4ea7/\U7eaa\U5ff5\U54c1";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+id = 6050965;
+lat = "34.662892";
+lng = "112.42143";
+name = "\U4e5d\U90fd\U724c\U5510\U4e09\U5f69\U9500\U552e\U4e2d\U5fc3";
+rank = 4;
+tags =                             (
+{
+id = 7555;
+name = "\U7279\U4ea7/\U7eaa\U5ff5\U54c1";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+},
+{
+poi =                         {
+area =                             {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+id = 35558;
+lat = "34.654079437256";
+lng = "112.40767669678";
+name = "\U4e07\U8fbe\U5e7f\U573a";
+rank = 4;
+tags =                             (
+{
+id = 7540;
+name = "\U5546\U573a";
+},
+{
+id = 7541;
+name = "\U8d2d\U7269\U8857\U533a";
+},
+{
+id = 16110;
+name = "\U8d2d\U7269\U4e2d\U5fc3";
+}
+);
+};
+"user_list" =                         (
+);
+"user_number" = 1;
+}
+);
+"poi_type_id" = 4;
+"poi_type_name" = "\U8d2d\U7269\U5730";
+}
+);
+mdd =         {
+id = 10094;
+lat = "34.618517213797";
+lng = "112.45330810547";
+name = "\U6d1b\U9633";
+};
+"user_number" = 621;
+};
+rc = 0;
+rm = "";
+}

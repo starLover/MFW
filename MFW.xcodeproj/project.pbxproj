@@ -22,7 +22,13 @@
 		0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0114455D1C9AC5300057E69F /* HeadViewController.m */; };
 		011445601C9AE5520057E69F /* Main.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0114455F1C9AE5520057E69F /* Main.plist */; };
 		011445631C9AE5CF0057E69F /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445621C9AE5CF0057E69F /* MainModel.m */; };
-		01AD7AAD1C9B970D003C336D /* TimeStamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AAC1C9B970D003C336D /* TimeStamp.m */; };
+		015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */; };
+		015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */; };
+		01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */; };
+		01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */; };
+		01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F95BDC1C9D481600CCD539 /* aaa.plist */; };
+		01F95BE01C9D4E6C00CCD539 /* SearchCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */; };
+		01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */; };
 		7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */; };
 		7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB133451C9ADF65002B0F94 /* LZ_Mine.storyboard */; };
 		7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */; };
@@ -36,9 +42,20 @@
 		7AB1337A1C9C03AD002B0F94 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB133791C9C03AD002B0F94 /* libWeChatSDK.a */; };
 		7AB1337C1C9C057F002B0F94 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB1337B1C9C057F002B0F94 /* CoreTelephony.framework */; };
 		EA637D993CACC04A8D70916F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527401B3CEFECDBDAE025B36 /* libPods.a */; };
+		F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30485C81C9E723A002751C4 /* AlubmViewController.m */; };
+		F3363BB21C9C32270001B82C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3363BB11C9C32270001B82C /* MapKit.framework */; };
+		F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631A1C9E86D90060F63F /* BLImageSize.m */; };
+		F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */; };
+		F33B63201C9E87B00060F63F /* Alubm.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33B631F1C9E87B00060F63F /* Alubm.plist */; };
+		F33B63231C9E8A3E0060F63F /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */; };
+		F3851EA51C9E9C9000F75EB7 /* AlubmModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */; };
 		F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F399E0231C9B82C000019B37 /* DestinationModel.m */; };
 		F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F399E0251C9BADF100019B37 /* CoreImage.framework */; };
 		F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39D7FDA1C9AD3C300F8D333 /* Destination.plist */; };
+		F39EF9A61C9CF43B00382A36 /* HeadImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */; };
+		F39EF9AA1C9CF48C00382A36 /* HeadImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F39EF9A81C9CF48C00382A36 /* HeadImageTableViewCell.m */; };
+		F39EF9AB1C9CF48C00382A36 /* HeadImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F39EF9A91C9CF48C00382A36 /* HeadImageTableViewCell.xib */; };
+		F39EF9AD1C9D209F00382A36 /* HeadImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39EF9AC1C9D209F00382A36 /* HeadImage.plist */; };
 		F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */; };
 		F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -69,8 +86,17 @@
 		0114455F1C9AE5520057E69F /* Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main.plist; sourceTree = "<group>"; };
 		011445611C9AE5CF0057E69F /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
 		011445621C9AE5CF0057E69F /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
-		01AD7AAB1C9B970D003C336D /* TimeStamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStamp.h; sourceTree = "<group>"; };
-		01AD7AAC1C9B970D003C336D /* TimeStamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStamp.m; sourceTree = "<group>"; };
+		015FCE301C9C28BF002C44FF /* SalesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesCollectionViewCell.h; sourceTree = "<group>"; };
+		015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesCollectionViewCell.m; sourceTree = "<group>"; };
+		015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalesCollectionViewCell.xib; sourceTree = "<group>"; };
+		01AD7AB01C9BD1A8003C336D /* CommonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCollectionViewCell.h; sourceTree = "<group>"; };
+		01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewCell.m; sourceTree = "<group>"; };
+		01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
+		01F95BDC1C9D481600CCD539 /* aaa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = aaa.plist; sourceTree = "<group>"; };
+		01F95BDE1C9D4E6C00CCD539 /* SearchCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityViewController.h; sourceTree = "<group>"; };
+		01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCityViewController.m; sourceTree = "<group>"; };
+		01F95BE11C9D51EE00CCD539 /* Find1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Find1ViewController.h; sourceTree = "<group>"; };
+		01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Find1ViewController.m; sourceTree = "<group>"; };
 		527401B3CEFECDBDAE025B36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB133421C9ADF46002B0F94 /* LZ_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_MineViewController.h; sourceTree = "<group>"; };
 		7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_MineViewController.m; sourceTree = "<group>"; };
@@ -94,10 +120,28 @@
 		7AB1337B1C9C057F002B0F94 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		A5326F219EB1AA51899CAB56 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F30485C71C9E723A002751C4 /* AlubmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlubmViewController.h; sourceTree = "<group>"; };
+		F30485C81C9E723A002751C4 /* AlubmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlubmViewController.m; sourceTree = "<group>"; };
+		F3363BB11C9C32270001B82C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F33B63191C9E86D90060F63F /* BLImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImageSize.h; sourceTree = "<group>"; };
+		F33B631A1C9E86D90060F63F /* BLImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImageSize.m; sourceTree = "<group>"; };
+		F33B631B1C9E86D90060F63F /* AoiroSoraLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AoiroSoraLayout.h; sourceTree = "<group>"; };
+		F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AoiroSoraLayout.m; sourceTree = "<group>"; };
+		F33B631F1C9E87B00060F63F /* Alubm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Alubm.plist; sourceTree = "<group>"; };
+		F33B63211C9E8A3E0060F63F /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		F3851EA31C9E9C9000F75EB7 /* AlubmModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlubmModel.h; sourceTree = "<group>"; };
+		F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlubmModel.m; sourceTree = "<group>"; };
 		F399E0221C9B82C000019B37 /* DestinationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationModel.h; sourceTree = "<group>"; };
 		F399E0231C9B82C000019B37 /* DestinationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationModel.m; sourceTree = "<group>"; };
 		F399E0251C9BADF100019B37 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		F39D7FDA1C9AD3C300F8D333 /* Destination.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destination.plist; sourceTree = "<group>"; };
+		F39EF9A41C9CF43B00382A36 /* HeadImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadImageViewController.h; sourceTree = "<group>"; };
+		F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadImageViewController.m; sourceTree = "<group>"; };
+		F39EF9A71C9CF48B00382A36 /* HeadImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadImageTableViewCell.h; sourceTree = "<group>"; };
+		F39EF9A81C9CF48C00382A36 /* HeadImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadImageTableViewCell.m; sourceTree = "<group>"; };
+		F39EF9A91C9CF48C00382A36 /* HeadImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadImageTableViewCell.xib; sourceTree = "<group>"; };
+		F39EF9AC1C9D209F00382A36 /* HeadImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HeadImage.plist; sourceTree = "<group>"; };
 		F3C874391C9AAE66006BD9AF /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
 		F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
@@ -116,6 +160,7 @@
 				7AB133651C9BF4E9002B0F94 /* libc++.tbd in Frameworks */,
 				7AB133611C9BF4BA002B0F94 /* libz.tbd in Frameworks */,
 				7AB1335F1C9BF4A8002B0F94 /* SystemConfiguration.framework in Frameworks */,
+				F3363BB21C9C32270001B82C /* MapKit.framework in Frameworks */,
 				F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */,
 				EA637D993CACC04A8D70916F /* libPods.a in Frameworks */,
 			);
@@ -194,6 +239,10 @@
 			children = (
 				0114454E1C9AA9E00057E69F /* DestinationViewController.h */,
 				0114454F1C9AA9E00057E69F /* DestinationViewController.m */,
+				F39EF9A41C9CF43B00382A36 /* HeadImageViewController.h */,
+				F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */,
+				F30485C71C9E723A002751C4 /* AlubmViewController.h */,
+				F30485C81C9E723A002751C4 /* AlubmViewController.m */,
 				F3C874391C9AAE66006BD9AF /* Define.h */,
 			);
 			path = Controllers;
@@ -205,6 +254,11 @@
 				011445511C9AA9F60057E69F /* Destination.storyboard */,
 				F3C8743D1C9AB790006BD9AF /* DestinationTableViewCell.h */,
 				F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */,
+				F39EF9A71C9CF48B00382A36 /* HeadImageTableViewCell.h */,
+				F39EF9A81C9CF48C00382A36 /* HeadImageTableViewCell.m */,
+				F39EF9A91C9CF48C00382A36 /* HeadImageTableViewCell.xib */,
+				F33B63211C9E8A3E0060F63F /* CollectionViewCell.h */,
+				F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +280,10 @@
 				0114454A1C9AA9860057E69F /* MainViewController.m */,
 				0114455C1C9AC5300057E69F /* HeadViewController.h */,
 				0114455D1C9AC5300057E69F /* HeadViewController.m */,
+				01F95BDE1C9D4E6C00CCD539 /* SearchCityViewController.h */,
+				01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */,
+				01F95BE11C9D51EE00CCD539 /* Find1ViewController.h */,
+				01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -236,6 +294,7 @@
 				0114455F1C9AE5520057E69F /* Main.plist */,
 				011445611C9AE5CF0057E69F /* MainModel.h */,
 				011445621C9AE5CF0057E69F /* MainModel.m */,
+				01F95BDC1C9D481600CCD539 /* aaa.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -244,6 +303,12 @@
 			isa = PBXGroup;
 			children = (
 				0114454C1C9AA99A0057E69F /* Main.storyboard */,
+				01AD7AB01C9BD1A8003C336D /* CommonCollectionViewCell.h */,
+				01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */,
+				01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */,
+				015FCE301C9C28BF002C44FF /* SalesCollectionViewCell.h */,
+				015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */,
+				015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -260,12 +325,14 @@
 		011445471C9AA8CC0057E69F /* HWTools */ = {
 			isa = PBXGroup;
 			children = (
-				01AD7AAB1C9B970D003C336D /* TimeStamp.h */,
-				01AD7AAC1C9B970D003C336D /* TimeStamp.m */,
 				011445481C9AA8EC0057E69F /* PrefixHeader.pch */,
 				F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */,
 				F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */,
 				0114455B1C9AB7130057E69F /* MainDefine.h */,
+				F33B63191C9E86D90060F63F /* BLImageSize.h */,
+				F33B631A1C9E86D90060F63F /* BLImageSize.m */,
+				F33B631B1C9E86D90060F63F /* AoiroSoraLayout.h */,
+				F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */,
 			);
 			path = HWTools;
 			sourceTree = "<group>";
@@ -292,6 +359,7 @@
 				7AB133621C9BF4CA002B0F94 /* libsqlite3.0.tbd */,
 				7AB133601C9BF4BA002B0F94 /* libz.tbd */,
 				7AB1335E1C9BF4A8002B0F94 /* SystemConfiguration.framework */,
+				F3363BB11C9C32270001B82C /* MapKit.framework */,
 				F399E0251C9BADF100019B37 /* CoreImage.framework */,
 				527401B3CEFECDBDAE025B36 /* libPods.a */,
 			);
@@ -351,8 +419,12 @@
 			isa = PBXGroup;
 			children = (
 				F39D7FDA1C9AD3C300F8D333 /* Destination.plist */,
+				F39EF9AC1C9D209F00382A36 /* HeadImage.plist */,
+				F33B631F1C9E87B00060F63F /* Alubm.plist */,
 				F399E0221C9B82C000019B37 /* DestinationModel.h */,
 				F399E0231C9B82C000019B37 /* DestinationModel.m */,
+				F3851EA31C9E9C9000F75EB7 /* AlubmModel.h */,
+				F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */,
 			);
 			name = Models;
 			path = Controllers/Models;
@@ -420,13 +492,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB1334D1C9B8795002B0F94 /* LZ_Mine_Head.xib in Resources */,
+				F39EF9AD1C9D209F00382A36 /* HeadImage.plist in Resources */,
 				0114454D1C9AA99A0057E69F /* Main.storyboard in Resources */,
 				7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */,
 				011445591C9AB1910057E69F /* blueArrowDown.png in Resources */,
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
+				F33B63201C9E87B00060F63F /* Alubm.plist in Resources */,
+				01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */,
+				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
+				F39EF9AB1C9CF48C00382A36 /* HeadImageTableViewCell.xib in Resources */,
 				011445321C9AA6A50057E69F /* LaunchScreen.storyboard in Resources */,
 				011445601C9AE5520057E69F /* Main.plist in Resources */,
+				01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */,
 				011445521C9AA9F60057E69F /* Destination.storyboard in Resources */,
 				F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */,
 				7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */,
@@ -488,21 +566,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */,
+				015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */,
 				7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */,
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
+				F39EF9AA1C9CF48C00382A36 /* HeadImageTableViewCell.m in Sources */,
 				F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */,
 				F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */,
 				0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */,
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
+				F3851EA51C9E9C9000F75EB7 /* AlubmModel.m in Sources */,
+				F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */,
 				0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */,
+				F33B63231C9E8A3E0060F63F /* CollectionViewCell.m in Sources */,
 				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
-				01AD7AAD1C9B970D003C336D /* TimeStamp.m in Sources */,
+				01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */,
 				011445271C9AA6A50057E69F /* main.m in Sources */,
+				F39EF9A61C9CF43B00382A36 /* HeadImageViewController.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
+				01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */,
 				7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */,
 				0114454B1C9AA9860057E69F /* MainViewController.m in Sources */,
+				F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */,
 				7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */,
+				01F95BE01C9D4E6C00CCD539 /* SearchCityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

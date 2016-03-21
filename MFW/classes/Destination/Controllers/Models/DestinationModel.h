@@ -3,7 +3,7 @@
 //  MFW
 //
 //  Created by scjy on 16/3/18.
-//  Copyright © 2016年 李志鹏. All rights reserved.
+//  Copyright © 2016年 马娟娟. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -19,10 +19,10 @@
 @property(nonatomic,copy)NSString *header_img;
 @property(nonatomic,copy)NSString *lat;
 @property(nonatomic,copy)NSString *lng;
-@property(nonatomic,copy)NSString *num_album;
-@property(nonatomic,copy)NSString *num;
+@property(nonatomic,copy)NSNumber *num_album;
+@property(nonatomic,copy)NSNumber *num;
 @property(nonatomic,copy)NSString *map_provider;
-
+@property(nonatomic,copy)NSString *user_number;
 
 
 @end

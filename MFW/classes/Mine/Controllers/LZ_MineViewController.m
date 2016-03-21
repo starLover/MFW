@@ -24,11 +24,11 @@
     [super loadView];
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.mineHead = [[LZ_Mine_Head alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 60)];
-    self.tableView.tableHeaderView = self.mineHead;
     
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.tableHeaderView = self.mineHead;
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:0 target:self action:@selector(login)];
     
     UIButton *headBtn = [UIButton buttonWithType:UIButtonTypeCustom];
