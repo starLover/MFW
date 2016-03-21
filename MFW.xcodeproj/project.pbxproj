@@ -19,13 +19,26 @@
 		011445581C9AB1910057E69F /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 011445541C9AB1910057E69F /* blueArrow.png */; };
 		011445591C9AB1910057E69F /* blueArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 011445551C9AB1910057E69F /* blueArrowDown.png */; };
 		0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445571C9AB1910057E69F /* PullingRefreshTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0114455D1C9AC5300057E69F /* HeadViewController.m */; };
+		011445601C9AE5520057E69F /* Main.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0114455F1C9AE5520057E69F /* Main.plist */; };
+		011445631C9AE5CF0057E69F /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445621C9AE5CF0057E69F /* MainModel.m */; };
+		01AD7AAD1C9B970D003C336D /* TimeStamp.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AAC1C9B970D003C336D /* TimeStamp.m */; };
 		7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */; };
 		7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB133451C9ADF65002B0F94 /* LZ_Mine.storyboard */; };
 		7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */; };
 		7AB1334D1C9B8795002B0F94 /* LZ_Mine_Head.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB1334C1C9B8795002B0F94 /* LZ_Mine_Head.xib */; };
 		7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133521C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m */; };
 		7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */; };
+		7AB1335F1C9BF4A8002B0F94 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB1335E1C9BF4A8002B0F94 /* SystemConfiguration.framework */; };
+		7AB133611C9BF4BA002B0F94 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB133601C9BF4BA002B0F94 /* libz.tbd */; };
+		7AB133651C9BF4E9002B0F94 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB133641C9BF4E9002B0F94 /* libc++.tbd */; };
+		7AB133781C9C01E7002B0F94 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB133621C9BF4CA002B0F94 /* libsqlite3.0.tbd */; };
+		7AB1337A1C9C03AD002B0F94 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB133791C9C03AD002B0F94 /* libWeChatSDK.a */; };
+		7AB1337C1C9C057F002B0F94 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB1337B1C9C057F002B0F94 /* CoreTelephony.framework */; };
 		EA637D993CACC04A8D70916F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527401B3CEFECDBDAE025B36 /* libPods.a */; };
+		F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F399E0231C9B82C000019B37 /* DestinationModel.m */; };
+		F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F399E0251C9BADF100019B37 /* CoreImage.framework */; };
+		F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39D7FDA1C9AD3C300F8D333 /* Destination.plist */; };
 		F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */; };
 		F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */; };
 /* End PBXBuildFile section */
@@ -51,6 +64,13 @@
 		011445561C9AB1910057E69F /* PullingRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingRefreshTableView.h; sourceTree = "<group>"; };
 		011445571C9AB1910057E69F /* PullingRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullingRefreshTableView.m; sourceTree = "<group>"; };
 		0114455B1C9AB7130057E69F /* MainDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainDefine.h; sourceTree = "<group>"; };
+		0114455C1C9AC5300057E69F /* HeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewController.h; sourceTree = "<group>"; };
+		0114455D1C9AC5300057E69F /* HeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadViewController.m; sourceTree = "<group>"; };
+		0114455F1C9AE5520057E69F /* Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main.plist; sourceTree = "<group>"; };
+		011445611C9AE5CF0057E69F /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
+		011445621C9AE5CF0057E69F /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
+		01AD7AAB1C9B970D003C336D /* TimeStamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeStamp.h; sourceTree = "<group>"; };
+		01AD7AAC1C9B970D003C336D /* TimeStamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeStamp.m; sourceTree = "<group>"; };
 		527401B3CEFECDBDAE025B36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AB133421C9ADF46002B0F94 /* LZ_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_MineViewController.h; sourceTree = "<group>"; };
 		7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_MineViewController.m; sourceTree = "<group>"; };
@@ -61,8 +81,23 @@
 		7AB133511C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_Mine_Head_DetailViewController.h; sourceTree = "<group>"; };
 		7AB133521C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_Mine_Head_DetailViewController.m; sourceTree = "<group>"; };
 		7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZ_Mine_Head_DetailViewController.xib; sourceTree = "<group>"; };
+		7AB1335E1C9BF4A8002B0F94 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7AB133601C9BF4BA002B0F94 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7AB133621C9BF4CA002B0F94 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		7AB133641C9BF4E9002B0F94 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7AB133661C9BF8F7002B0F94 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7AB133681C9BF957002B0F94 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		7AB133731C9BFA22002B0F94 /* WXApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		7AB133741C9BFA22002B0F94 /* WXApiObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		7AB133761C9C016B002B0F94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7AB133791C9C03AD002B0F94 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		7AB1337B1C9C057F002B0F94 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		A5326F219EB1AA51899CAB56 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F399E0221C9B82C000019B37 /* DestinationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationModel.h; sourceTree = "<group>"; };
+		F399E0231C9B82C000019B37 /* DestinationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationModel.m; sourceTree = "<group>"; };
+		F399E0251C9BADF100019B37 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		F39D7FDA1C9AD3C300F8D333 /* Destination.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destination.plist; sourceTree = "<group>"; };
 		F3C874391C9AAE66006BD9AF /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
 		F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
@@ -75,6 +110,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB1337C1C9C057F002B0F94 /* CoreTelephony.framework in Frameworks */,
+				7AB1337A1C9C03AD002B0F94 /* libWeChatSDK.a in Frameworks */,
+				7AB133781C9C01E7002B0F94 /* libsqlite3.0.tbd in Frameworks */,
+				7AB133651C9BF4E9002B0F94 /* libc++.tbd in Frameworks */,
+				7AB133611C9BF4BA002B0F94 /* libz.tbd in Frameworks */,
+				7AB1335F1C9BF4A8002B0F94 /* SystemConfiguration.framework in Frameworks */,
+				F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */,
 				EA637D993CACC04A8D70916F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +127,9 @@
 		011445191C9AA6A50057E69F = {
 			isa = PBXGroup;
 			children = (
+				7AB133791C9C03AD002B0F94 /* libWeChatSDK.a */,
+				7AB133731C9BFA22002B0F94 /* WXApi.h */,
+				7AB133741C9BFA22002B0F94 /* WXApiObject.h */,
 				011445241C9AA6A50057E69F /* MFW */,
 				011445231C9AA6A50057E69F /* Products */,
 				99A138365401B6E5B7BCC1DC /* Pods */,
@@ -137,8 +182,8 @@
 		0114453A1C9AA8CC0057E69F /* Destination */ = {
 			isa = PBXGroup;
 			children = (
+				F39D7FD91C9AD39F00F8D333 /* Models */,
 				0114453B1C9AA8CC0057E69F /* Controllers */,
-				0114453C1C9AA8CC0057E69F /* Models */,
 				0114453D1C9AA8CC0057E69F /* Views */,
 			);
 			path = Destination;
@@ -152,13 +197,6 @@
 				F3C874391C9AAE66006BD9AF /* Define.h */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		0114453C1C9AA8CC0057E69F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		0114453D1C9AA8CC0057E69F /* Views */ = {
@@ -186,6 +224,8 @@
 			children = (
 				011445491C9AA9860057E69F /* MainViewController.h */,
 				0114454A1C9AA9860057E69F /* MainViewController.m */,
+				0114455C1C9AC5300057E69F /* HeadViewController.h */,
+				0114455D1C9AC5300057E69F /* HeadViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +233,9 @@
 		011445401C9AA8CC0057E69F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0114455F1C9AE5520057E69F /* Main.plist */,
+				011445611C9AE5CF0057E69F /* MainModel.h */,
+				011445621C9AE5CF0057E69F /* MainModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,6 +260,8 @@
 		011445471C9AA8CC0057E69F /* HWTools */ = {
 			isa = PBXGroup;
 			children = (
+				01AD7AAB1C9B970D003C336D /* TimeStamp.h */,
+				01AD7AAC1C9B970D003C336D /* TimeStamp.m */,
 				011445481C9AA8EC0057E69F /* PrefixHeader.pch */,
 				F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */,
 				F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */,
@@ -239,6 +284,15 @@
 		2B49E7E20405D2E58579C53F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7AB1337B1C9C057F002B0F94 /* CoreTelephony.framework */,
+				7AB133761C9C016B002B0F94 /* Security.framework */,
+				7AB133681C9BF957002B0F94 /* AdSupport.framework */,
+				7AB133661C9BF8F7002B0F94 /* libsqlite3.tbd */,
+				7AB133641C9BF4E9002B0F94 /* libc++.tbd */,
+				7AB133621C9BF4CA002B0F94 /* libsqlite3.0.tbd */,
+				7AB133601C9BF4BA002B0F94 /* libz.tbd */,
+				7AB1335E1C9BF4A8002B0F94 /* SystemConfiguration.framework */,
+				F399E0251C9BADF100019B37 /* CoreImage.framework */,
 				527401B3CEFECDBDAE025B36 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -291,6 +345,17 @@
 				A5326F219EB1AA51899CAB56 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F39D7FD91C9AD39F00F8D333 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F39D7FDA1C9AD3C300F8D333 /* Destination.plist */,
+				F399E0221C9B82C000019B37 /* DestinationModel.h */,
+				F399E0231C9B82C000019B37 /* DestinationModel.m */,
+			);
+			name = Models;
+			path = Controllers/Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +426,9 @@
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
 				011445321C9AA6A50057E69F /* LaunchScreen.storyboard in Resources */,
+				011445601C9AE5520057E69F /* Main.plist in Resources */,
 				011445521C9AA9F60057E69F /* Destination.storyboard in Resources */,
+				F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */,
 				7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,8 +491,12 @@
 				7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */,
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
 				F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */,
+				F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */,
 				0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */,
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
+				0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */,
+				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
+				01AD7AAD1C9B970D003C336D /* TimeStamp.m in Sources */,
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
@@ -533,12 +604,40 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MFW/library/HWTools/PrefixHeader.pch";
 				INFOPLIST_FILE = MFW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MFW/library/SDK1.6.2",
+					WXApiObject.h,
+					WXApi.h,
+					libWeChatSDK.a,
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mangoinc.MFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -548,12 +647,40 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A5326F219EB1AA51899CAB56 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MFW/library/HWTools/PrefixHeader.pch";
 				INFOPLIST_FILE = MFW/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MFW/library/SDK1.6.2",
+					WXApiObject.h,
+					WXApi.h,
+					libWeChatSDK.a,
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"SDWebImage\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mangoinc.MFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
