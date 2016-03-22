@@ -51,9 +51,7 @@
  
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
-    
     [self requestModel];
-    
     
 }
 - (void)viewWillAppear:(BOOL)animated{
@@ -173,10 +171,9 @@
         DestinationModel *numModel = [[DestinationModel alloc]init];
         [numModel setValuesForKeysWithDictionary:num];
         [self.numUrlArray addObject:numModel];
-
         
-        [self configTableViewHeaderView];
         [self.tableView reloadData];
+        [self configTableViewHeaderView];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
