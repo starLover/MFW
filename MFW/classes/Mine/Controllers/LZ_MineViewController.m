@@ -9,6 +9,7 @@
 #import "LZ_MineViewController.h"
 #import "LZ_Mine_Head.h"
 #import "LZ_Mine_Head_DetailViewController.h"
+#import "WXApi.h"
 
 @interface LZ_MineViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -28,6 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.tableHeaderView = self.mineHead;
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:0 target:self action:@selector(login)];
+    
     UIButton *headBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     headBtn.frame = self.mineHead.frame;
     [headBtn addTarget:self action:@selector(headAction) forControlEvents:UIControlEventTouchUpInside];
@@ -44,6 +47,15 @@
     self.mineHead.imageView.clipsToBounds          = YES;
     self.mineHead.imageView.image = [UIImage imageWithContentsOfFile:kPath];
 
+}
+- (void)login{
+    //构造SendAuthReq结构体
+    SendAuthReq* req =[[SendAuthReq alloc ] init];
+    req.scope = @"snsapi_userinfo" ;
+    req.state = @"123" ;
+    //第三方向微信终端发送一个SendAuthReq消息结构
+    [WXApi sendReq:req];
+    
 }
 - (void)headAction{
     LZ_Mine_Head_DetailViewController *lz = [LZ_Mine_Head_DetailViewController new];
