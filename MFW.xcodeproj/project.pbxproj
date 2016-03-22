@@ -53,6 +53,7 @@
 		F39EF9AD1C9D209F00382A36 /* HeadImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39EF9AC1C9D209F00382A36 /* HeadImage.plist */; };
 		F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */; };
 		F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */; };
+		F3EA82D31C9F9CD60037B242 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA82D21C9F9CD60037B242 /* ScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +134,8 @@
 		F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
 		F3C8743D1C9AB790006BD9AF /* DestinationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationTableViewCell.h; sourceTree = "<group>"; };
 		F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationTableViewCell.m; sourceTree = "<group>"; };
+		F3EA82D11C9F9CD60037B242 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		F3EA82D21C9F9CD60037B242 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +223,8 @@
 				F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */,
 				F30485C71C9E723A002751C4 /* AlubmViewController.h */,
 				F30485C81C9E723A002751C4 /* AlubmViewController.m */,
+				F3EA82D11C9F9CD60037B242 /* ScrollViewController.h */,
+				F3EA82D21C9F9CD60037B242 /* ScrollViewController.m */,
 				F3C874391C9AAE66006BD9AF /* Define.h */,
 			);
 			path = Controllers;
@@ -430,9 +435,9 @@
 		0114451A1C9AA6A50057E69F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = LZ_Mine;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "李志鹏";
+				ORGANIZATIONNAME = "马娟娟";
 				TargetAttributes = {
 					011445211C9AA6A50057E69F = {
 						CreatedOnToolsVersion = 7.2;
@@ -558,6 +563,7 @@
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
 				01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */,
+				F3EA82D31C9F9CD60037B242 /* ScrollViewController.m in Sources */,
 				7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */,
 				0114454B1C9AA9860057E69F /* MainViewController.m in Sources */,
 				F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */,

@@ -17,6 +17,8 @@
 @property(nonatomic,copy)NSString *tn_uname;
 @property(nonatomic,copy)NSString *tn_url;
 @property(nonatomic,copy)NSString *width;
+//@property(nonatomic,copy)NSString *id;
+//@property(nonatomic,copy)NSString *tn_uname;
 
 
 @end
