@@ -12,6 +12,9 @@
 #import <AFNetworking/AFHTTPSessionManager.h>
 
 @interface ScrollViewController ()<UIScrollViewDelegate,UIGestureRecognizerDelegate>
+{
+    UIWebView *webView;
+}
 
 @property(nonatomic,strong)NSMutableArray *imageArray;
 @property(nonatomic,strong)UIScrollView *scrollView;
@@ -19,6 +22,8 @@
 @property(nonatomic,strong)UILabel *titleLabel;
 @property(nonatomic,strong)UILabel *autherLabel;
 @property(nonatomic,strong)UILabel *timeLabel;
+@property(nonatomic,strong)UILabel *pageLabel;
+@property(nonatomic,strong)UIButton *cilckBtn;
 
 @end
 
@@ -28,20 +33,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blackColor];
+    self.navigationController.navigationBar.backgroundColor = [UIColor blackColor];
     [self showBackBtn];
     self.tabBarController.tabBar.hidden = YES;
     [self requestModel];
-    NSLog(@"%lu",self.num);
+    
     
     
 }
 -(void)viewWillDisappear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;
+    
 }
 - (UIScrollView *)scrollView{
     if (!_scrollView) {
-        self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 64, kScreenWidth, kScreenHeight-150)];
-//        self.scrollView.backgroundColor = [UIColor cyanColor];//self.scrollView.frame.size.height
+        
+        self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-150)];
         AlubmModel *model = self.imageArray[0];
         self.scrollView.contentSize = CGSizeMake(kScreenWidth*self.imageArray.count, [model.height integerValue]);
         self.scrollView.pagingEnabled = YES;
@@ -88,33 +95,79 @@
 
 - (void)labelTextAndBtn{
     
-    AlubmModel *model = self.imageArray[0];
-    self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, kScreenHeight-76, kScreenWidth-80, 30)];
-    self.titleLabel.text = [NSString stringWithFormat:@"来自游记《%@》",model.tn_title];
+    NSInteger offset = self.scrollView.contentOffset.x/kScreenWidth;
+    AlubmModel *alubmModel = self.imageArray[offset];
     
+    self.titleLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, kScreenHeight-140, kScreenWidth-80, 30)];
     self.titleLabel.font = [UIFont systemFontOfSize:16];
     self.titleLabel.textColor = [UIColor orangeColor];
     [self.view addSubview:self.titleLabel];
-    self.autherLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, kScreenHeight-56, 60, 40)];
-    self.autherLabel.text = model.tn_uname;
+    
+    self.autherLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, kScreenHeight-120, 130, 40)];
     self.autherLabel.textColor = [UIColor whiteColor];
     self.autherLabel.font = [UIFont systemFontOfSize:14];
     [self.view addSubview:self.autherLabel];
     
-    self.timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(80, kScreenHeight-56, kScreenWidth-130, 40)];
-    self.timeLabel.text = [NSString stringWithFormat:@"摄于 %@",model.ptime];
+    self.timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(150, kScreenHeight-120, kScreenWidth-130, 40)];
     self.timeLabel.font = [UIFont systemFontOfSize:13];
     self.timeLabel.textColor = [UIColor grayColor];
     [self.view addSubview:self.timeLabel];
     
+    self.pageLabel = [[UILabel alloc]initWithFrame:CGRectMake(kScreenWidth-60, kScreenHeight-120, 60, 40)];
+    self.pageLabel.font = [UIFont systemFontOfSize:14];
+    self.pageLabel.textColor = [UIColor whiteColor];
+    [self.view addSubview:self.pageLabel];
+    
+    self.cilckBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.cilckBtn.frame = CGRectMake(20, kScreenHeight-140, kScreenWidth - 40, 76);
+    [self.cilckBtn addTarget:self action:@selector(detailAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.cilckBtn];
+    
+    
+    if (alubmModel.tn_title.length > 1) {
+        self.titleLabel.text = [NSString stringWithFormat:@"来自游记《%@》",alubmModel.tn_title];
+        self.autherLabel.text = alubmModel.tn_uname;
+        self.timeLabel.text = [NSString stringWithFormat:@"摄于 %@",alubmModel.ptime];
+        self.pageLabel.text = [NSString stringWithFormat:@" %lu/20",(long)offset+1];
+    }else{
+//        AlubmModel *alubmModel = self.imageArray[offset-1];
+//        self.titleLabel.text = [NSString stringWithFormat:@"来自游记《%@》",alubmModel.tn_title];
+        self.titleLabel.text = @"该游记不存在或已经删除";
+        self.autherLabel.text = alubmModel.tn_uname;
+        self.timeLabel.text = [NSString stringWithFormat:@"摄于 %@",alubmModel.ptime];
+        self.pageLabel.text = [NSString stringWithFormat:@" %lu/20",(long)offset+1];
+    }
+}
+- (void)detailAction{
+    
+    NSInteger offset = self.scrollView.contentOffset.x/kScreenWidth;
+    AlubmModel *detailModel = self.imageArray[offset];
+    if (detailModel.tn_title.length > 1) {
+        self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
+        self.view.backgroundColor = [UIColor whiteColor];
+        webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -95, kScreenWidth, kScreenHeight+64)];
+        webView.scrollView.bounces = NO;
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:detailModel.tn_url]];
+        [self.view addSubview:webView];
+        [webView loadRequest:request];
+    }else{
+    }
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
 //        self.titleLabel
-    NSInteger offset = scrollView.contentOffset.x;
+    NSInteger offset = scrollView.contentOffset.x/kScreenWidth;
     AlubmModel *model = self.imageArray[offset];
-    
-    self.titleLabel.text = model.tn_title;
-    
+    if (model.tn_title.length > 1) {
+        self.titleLabel.text = [NSString stringWithFormat:@"来自游记《%@》",model.tn_title];
+        self.autherLabel.text = model.tn_uname;
+        self.timeLabel.text = [NSString stringWithFormat:@"摄于 %@",model.ptime];
+        self.pageLabel.text = [NSString stringWithFormat:@" %lu/20",(long)offset+1];
+    }else{
+        self.titleLabel.text = @"该游记不存在或已经删除";
+        self.autherLabel.text = model.tn_uname;
+        self.timeLabel.text = [NSString stringWithFormat:@"摄于 %@",model.ptime];
+        self.pageLabel.text = [NSString stringWithFormat:@" %lu/20",(long)offset+1];
+    }
 }
 - (void)pinchAction:(UIPinchGestureRecognizer *)pinch{
     self.imageV.transform = CGAffineTransformScale(self.imageV.transform, pinch.scale, pinch.scale);
@@ -136,7 +189,6 @@
             [model setValuesForKeysWithDictionary:dic];
             [self.imageArray addObject:model];
 //            [self getImageWithURL:model.simg];
-//            [self.titleArray addObject:model.tn_title];
         }
         [self.view addSubview:self.scrollView];
         [self labelTextAndBtn];
