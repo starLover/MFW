@@ -7,8 +7,13 @@
 //
 
 #import "HotelViewController.h"
+//#import <AMapLocationKit/AMapLocationKit.h>
 
 @interface HotelViewController ()
+- (IBAction)locationAction:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *cityBtn;
+//@property(nonatomic, strong) AMapLocationManager *locationManager;
+- (IBAction)mapAction:(id)sender;
 
 @end
 
@@ -17,6 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +40,37 @@
 }
 */
 
+- (IBAction)locationAction:(id)sender {
+//    self.locationManager = [[AMapLocationManager alloc] init];
+//    // 带逆地理信息的一次定位（返回坐标和地址信息）
+//    [self.locationManager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
+//    //   定位超时时间，可修改，最小2s
+//    self.locationManager.locationTimeout = 3;
+//    //   逆地理请求超时时间，可修改，最小2s
+//    self.locationManager.reGeocodeTimeout = 3;
+//    
+//    // 带逆地理（返回坐标和地址信息）
+//    [self.locationManager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
+//        
+//        if (error)
+//        {
+//            NSLog(@"locError:{%ld - %@};", (long)error.code, error.localizedDescription);
+//            
+//            if (error.code == AMapLocationErrorLocateFailed)
+//            {
+//                return;
+//            }
+//        }
+//        NSLog(@"location:%@", location);
+//        
+//        if (regeocode)
+//        {
+//            NSLog(@"reGeocode:%@", regeocode);
+//            [self.cityBtn setTitle:regeocode.city forState:UIControlStateNormal];
+//        }
+//    }];
+}
+- (IBAction)mapAction:(id)sender {
+    
+}
 @end

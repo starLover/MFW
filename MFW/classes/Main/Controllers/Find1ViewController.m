@@ -10,6 +10,8 @@
 #import <AFHTTPSessionManager.h>
 #import <UIImageView+WebCache.h>
 #import "MainModel.h"
+#import "SearchCityViewController.h"
+#import "DestinationViewController.h"
 
 
 @interface Find1ViewController ()<UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate>
@@ -36,10 +38,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"找攻略";
+    theFirst = YES;
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier1"];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cellIdentifier2"];
     
-    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
     
     [self showBackBtn];
     [self request];
@@ -51,23 +53,32 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
-    if (self.countryArray.count > 0) {
+    if (self.countryNameArray.count > 0) {
         MainModel *model = self.countryNameArray[indexPath.row];
         cell.textLabel.text = model.name;
+        cell.textLabel.font = [UIFont systemFontOfSize:20.0];
     }
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.countryNameArray.count;
 }
+
 #pragma mark    --------------   UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return tableView.frame.size.width / 4 * 3;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
         theFirst = YES;
     } else {
         theFirst = NO;
-        select = indexPath.row + 1;
+        select = indexPath.row - 1;
+//        DestinationViewController *destinationVC = [[DestinationViewController alloc] init];
+        [self.navigationController popToRootViewControllerAnimated:NO];
     }
+    [self.collectionView reloadData];
 }
 
 #pragma mark    --------------   UICollectionViewDataSource
@@ -75,31 +86,54 @@
     if (theFirst) {
         static NSString *cellIdentifier = @"cellIdentifier1";
         UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+        for (id subview in cell.contentView.subviews) {
+            [subview removeFromSuperview];
+        }
         cell.layer.borderColor = [UIColor grayColor].CGColor;
         cell.layer.borderWidth = 1.0;
         cell.layer.cornerRadius = 20;
         cell.clipsToBounds = YES;
-        cell.backgroundColor = [UIColor greenColor];
+        NSArray *array = self.hotArray[indexPath.section];
+        MainModel *model = array[indexPath.row];
+        UILabel *label = [[UILabel alloc] initWithFrame:cell.contentView.frame];
+        label.text = model.name;
+        label.textAlignment = NSTextAlignmentCenter;
+        [cell.contentView addSubview:label];
+        return cell;
     }
     static NSString *cellIdentifier = @"cellIdentifier2";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
-//    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.width)];
-//    NSArray *array = self.bigArray[select];
-//    MainModel *model = array[indexPath.row];
-//    [imageView sd_setImageWithURL:[NSURL URLWithString:model.thumbnail]];
-//    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, cell.frame.size.width, cell.frame.size.width, 20)];
-//    label.text = model.name;
-//    [cell.contentView addSubview:imageView];
-//    [cell.contentView addSubview:label];
-    
+    for (id subview in cell.contentView.subviews) {
+        [subview removeFromSuperview];
+    }
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.width)];
+    NSArray *array = self.bigArray[select];
+    if (indexPath.row < array.count) {
+        MainModel *model = array[indexPath.row];
+        [imageView sd_setImageWithURL:[NSURL URLWithString:model.thumbnail]];
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, cell.frame.size.width, cell.frame.size.width, 20)];
+        label.font = [UIFont systemFontOfSize:15.0];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.text = model.name;
+        [cell.contentView addSubview:imageView];
+        [cell.contentView addSubview:label];
+    }
     return cell;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-//    NSArray *array = self.hotArray[section];
-    return 10;
+    NSArray *array = nil;
+    if (theFirst) {
+        array = self.hotArray[section];
+    } else {
+        array = self.bigArray[select];
+    }
+    return array.count;
 }
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    return 2;
+    if (theFirst) {
+        return self.hotArray.count;
+    }
+    return 1;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -122,21 +156,25 @@
     return 20;
 }
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
-    
-    UICollectionReusableView *headerView=[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
-    UILabel *label = [[UILabel alloc] initWithFrame:headerView.frame];
-    if (indexPath.section == 0) {
-        label.text = @"国内热门城市";
-    } else if(indexPath.section == 1) {
-        label.text = @"国外热门城市";
-        NSLog(@"ddd");
-    }
-    [headerView addSubview:label];
-    headerView.backgroundColor = [UIColor redColor];
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
+    UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
+        for (UIView *subView in headerView.subviews) {
+            [subView removeFromSuperview];
+        }
+        UILabel *label = [[UILabel alloc] initWithFrame:headerView.frame];
+        MainModel *model = self.hotNameArray[indexPath.section];
+        label.text = [NSString stringWithFormat:@"    %@", model.name];
+        [headerView addSubview:label];
+        headerView.backgroundColor = [UIColor redColor];
     return headerView;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    return CGSizeMake(collectionView.frame.size.width, 30);
+    if (theFirst) {
+        if (section < self.hotNameArray.count) {
+            return CGSizeMake(collectionView.frame.size.width, 30);
+        }
+    }
+    return CGSizeMake(0, 0);
 }
 #pragma mark    --------------   UICollectionViewDelegate
 
@@ -146,11 +184,8 @@
 - (void)request{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/html", nil];
-    NSLog(@"%@",kFindMap);
     [manager GET:kFindMap parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-        NSLog(@"52");
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@", responseObject); 
         NSDictionary *responseDic = responseObject;
         NSDictionary *dataDic = responseDic[@"data"];
         //热门
@@ -184,13 +219,13 @@
             [self.countryNameArray addObject:model];
             //每个国家的城市
             NSArray *childArray = dic[@"child_mdds"];
-            
+            NSMutableArray *countryArray = [NSMutableArray new];
             for (NSDictionary *detailDic in childArray) {
                 MainModel *chlidModel = [[MainModel alloc] init];
                 [chlidModel setValuesForKeysWithDictionary:detailDic];
-                [self.countryArray addObject:chlidModel];
+                [countryArray addObject:chlidModel];
             }
-            [self.bigArray addObject:self.countryArray];
+            [self.bigArray addObject:countryArray];
         }
         [self.leftTableView reloadData];
         [self.collectionView reloadData];
@@ -252,5 +287,7 @@
 */
 
 - (IBAction)searchAction:(id)sender {
+    SearchCityViewController *searchVC = [[SearchCityViewController alloc] init];
+    [self.navigationController pushViewController:searchVC animated:YES];
 }
 @end
