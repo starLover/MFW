@@ -41,7 +41,15 @@ THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-<<<<<<< HEAD
+			<string>Copyright &#169; 2014 AutoNavi. All Rights Reserved.
+</string>
+			<key>Title</key>
+			<string>AMap2DMap</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
 			<string>                    GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -719,12 +727,6 @@ Public License instead of this License.  But first, please read
 </string>
 			<key>Title</key>
 			<string>BmobSDK</string>
-=======
-			<string>Copyright &#169; 2014 AutoNavi. All Rights Reserved.
-</string>
-			<key>Title</key>
-			<string>AMap2DMap</string>
->>>>>>> 830e1fd67a9c164902e710f1dc63f64aff611c57
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
