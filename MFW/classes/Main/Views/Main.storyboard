@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHn-ss-f7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-593.5" y="-182.5"/>
+            <point key="canvasLocation" x="-547.5" y="-364.5"/>
         </scene>
         <!--Hotel View Controller-->
         <scene sceneID="QJv-4n-kyQ">
@@ -407,7 +407,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Di-ka-ead" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794.5" y="-297.5"/>
+            <point key="canvasLocation" x="-827.5" y="-386.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C27-gQ-Q3w">

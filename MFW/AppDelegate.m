@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DestinationViewController.h"
 #import "MainViewController.h"
+#import <MAMapKit/MAMapKit.h>
 
 @interface AppDelegate ()
 @property(nonatomic ,strong) UITabBarController *tabBar;
@@ -21,6 +22,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     [WXApi registerApp:@"wx34f61874c63efcbc"];
+    //高德地图API
+    [MAMapServices sharedServices].apiKey = @"347a662a9e7129f224a9840c18e3f744";
     
     UIStoryboard *MainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UINavigationController *mainNav = MainSB.instantiateInitialViewController;

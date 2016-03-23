@@ -27,6 +27,8 @@
 		015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */; };
 		01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */; };
 		01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */; };
+		01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F94A531CA22D26004A76C8 /* HotelMapViewController.m */; };
+		01F94A561CA245D3004A76C8 /* Map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F94A551CA245D3004A76C8 /* Map.plist */; };
 		01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F95BDC1C9D481600CCD539 /* aaa.plist */; };
 		01F95BE01C9D4E6C00CCD539 /* SearchCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */; };
 		01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */; };
@@ -96,6 +98,9 @@
 		01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewCell.m; sourceTree = "<group>"; };
 		01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
 		01E755FF1CA16F7600A4D72A /* MainDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDefine.h; sourceTree = "<group>"; };
+		01F94A521CA22D26004A76C8 /* HotelMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelMapViewController.h; sourceTree = "<group>"; };
+		01F94A531CA22D26004A76C8 /* HotelMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelMapViewController.m; sourceTree = "<group>"; };
+		01F94A551CA245D3004A76C8 /* Map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Map.plist; sourceTree = "<group>"; };
 		01F95BDC1C9D481600CCD539 /* aaa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = aaa.plist; sourceTree = "<group>"; };
 		01F95BDE1C9D4E6C00CCD539 /* SearchCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityViewController.h; sourceTree = "<group>"; };
 		01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCityViewController.m; sourceTree = "<group>"; };
@@ -294,6 +299,8 @@
 				01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */,
 				011190761C9FF231008E2F3D /* HotelViewController.h */,
 				011190771C9FF231008E2F3D /* HotelViewController.m */,
+				01F94A521CA22D26004A76C8 /* HotelMapViewController.h */,
+				01F94A531CA22D26004A76C8 /* HotelMapViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,6 +312,7 @@
 				011445611C9AE5CF0057E69F /* MainModel.h */,
 				011445621C9AE5CF0057E69F /* MainModel.m */,
 				01F95BDC1C9D481600CCD539 /* aaa.plist */,
+				01F94A551CA245D3004A76C8 /* Map.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -508,6 +516,7 @@
 				011445591C9AB1910057E69F /* blueArrowDown.png in Resources */,
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
 				F33B63201C9E87B00060F63F /* Alubm.plist in Resources */,
+				01F94A561CA245D3004A76C8 /* Map.plist in Resources */,
 				01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */,
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
@@ -592,6 +601,7 @@
 				F33B63231C9E8A3E0060F63F /* CollectionViewCell.m in Sources */,
 				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
 				01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */,
+				01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */,
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				F39EF9A61C9CF43B00382A36 /* HeadImageViewController.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,

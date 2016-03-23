@@ -22,6 +22,7 @@
     [self showBackBtn];
     [self.view addSubview:self.webView];
     [self.view addSubview:self.activityView];
+    
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView{
@@ -30,7 +31,6 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     [self.activityView stopAnimating];
 }
-
 
 #pragma mark     ----------- LazyLoading
 - (UIWebView *)webView{
