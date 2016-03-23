@@ -11,6 +11,7 @@
 #import "MainViewController.h"
 #import <BmobSDK/Bmob.h>
 #import <SMS_SDK/SMSSDK.h>
+#import <MAMapKit/MAMapKit.h>
 
 @interface AppDelegate ()
 @property(nonatomic ,strong) UITabBarController *tabBar;
@@ -28,6 +29,8 @@
     //注册需要短信验证的应用
     [SMSSDK registerApp:@"10c53ab490490" withSecret:@"6e235005cc25be3e4454c758fd9295bc"];
 
+    //高德地图API
+    [MAMapServices sharedServices].apiKey = @"347a662a9e7129f224a9840c18e3f744";
     
     UIStoryboard *MainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UINavigationController *mainNav = MainSB.instantiateInitialViewController;

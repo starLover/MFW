@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011190781C9FF231008E2F3D /* HotelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 011190771C9FF231008E2F3D /* HotelViewController.m */; };
 		011445271C9AA6A50057E69F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445261C9AA6A50057E69F /* main.m */; };
 		0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445291C9AA6A50057E69F /* AppDelegate.m */; };
 		0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0114452B1C9AA6A50057E69F /* MFW.xcdatamodeld */; };
@@ -26,6 +27,8 @@
 		015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */; };
 		01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */; };
 		01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */; };
+		01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F94A531CA22D26004A76C8 /* HotelMapViewController.m */; };
+		01F94A561CA245D3004A76C8 /* Map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F94A551CA245D3004A76C8 /* Map.plist */; };
 		01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F95BDC1C9D481600CCD539 /* aaa.plist */; };
 		01F95BE01C9D4E6C00CCD539 /* SearchCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */; };
 		01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */; };
@@ -73,11 +76,22 @@
 		F39EF9AA1C9CF48C00382A36 /* HeadImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F39EF9A81C9CF48C00382A36 /* HeadImageTableViewCell.m */; };
 		F39EF9AB1C9CF48C00382A36 /* HeadImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F39EF9A91C9CF48C00382A36 /* HeadImageTableViewCell.xib */; };
 		F39EF9AD1C9D209F00382A36 /* HeadImage.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39EF9AC1C9D209F00382A36 /* HeadImage.plist */; };
+		F3A987F81CA0DFC20074C624 /* HTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A987F71CA0DFC20074C624 /* HTools.m */; };
+		F3A987FB1CA1276A0074C624 /* StrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A987FA1CA1276A0074C624 /* StrategyViewController.m */; };
+		F3A987FE1CA129B80074C624 /* ScenicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A987FD1CA129B80074C624 /* ScenicViewController.m */; };
+		F3A988041CA12A0C0074C624 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A988031CA12A0C0074C624 /* FoodViewController.m */; };
+		F3A988071CA12DCF0074C624 /* GrogshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A988061CA12DCF0074C624 /* GrogshopViewController.m */; };
+		F3A988091CA131080074C624 /* Strategy.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3A988081CA131080074C624 /* Strategy.plist */; };
+		F3A9880C1CA13F1E0074C624 /* RightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A9880B1CA13F1E0074C624 /* RightTableViewCell.m */; };
+		F3A9880F1CA1416F0074C624 /* RightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A9880E1CA1416F0074C624 /* RightModel.m */; };
 		F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */; };
 		F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */; };
+		F3EA82D31C9F9CD60037B242 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA82D21C9F9CD60037B242 /* ScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		011190761C9FF231008E2F3D /* HotelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelViewController.h; sourceTree = "<group>"; };
+		011190771C9FF231008E2F3D /* HotelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelViewController.m; sourceTree = "<group>"; };
 		011445221C9AA6A50057E69F /* MFW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		011445261C9AA6A50057E69F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		011445281C9AA6A50057E69F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -97,7 +111,6 @@
 		011445551C9AB1910057E69F /* blueArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrowDown.png; sourceTree = "<group>"; };
 		011445561C9AB1910057E69F /* PullingRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingRefreshTableView.h; sourceTree = "<group>"; };
 		011445571C9AB1910057E69F /* PullingRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullingRefreshTableView.m; sourceTree = "<group>"; };
-		0114455B1C9AB7130057E69F /* MainDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainDefine.h; sourceTree = "<group>"; };
 		0114455C1C9AC5300057E69F /* HeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewController.h; sourceTree = "<group>"; };
 		0114455D1C9AC5300057E69F /* HeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadViewController.m; sourceTree = "<group>"; };
 		0114455F1C9AE5520057E69F /* Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main.plist; sourceTree = "<group>"; };
@@ -109,6 +122,10 @@
 		01AD7AB01C9BD1A8003C336D /* CommonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCollectionViewCell.h; sourceTree = "<group>"; };
 		01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewCell.m; sourceTree = "<group>"; };
 		01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
+		01E755FF1CA16F7600A4D72A /* MainDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDefine.h; sourceTree = "<group>"; };
+		01F94A521CA22D26004A76C8 /* HotelMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelMapViewController.h; sourceTree = "<group>"; };
+		01F94A531CA22D26004A76C8 /* HotelMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelMapViewController.m; sourceTree = "<group>"; };
+		01F94A551CA245D3004A76C8 /* Map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Map.plist; sourceTree = "<group>"; };
 		01F95BDC1C9D481600CCD539 /* aaa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = aaa.plist; sourceTree = "<group>"; };
 		01F95BDE1C9D4E6C00CCD539 /* SearchCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityViewController.h; sourceTree = "<group>"; };
 		01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCityViewController.m; sourceTree = "<group>"; };
@@ -186,11 +203,28 @@
 		F39EF9A81C9CF48C00382A36 /* HeadImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadImageTableViewCell.m; sourceTree = "<group>"; };
 		F39EF9A91C9CF48C00382A36 /* HeadImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeadImageTableViewCell.xib; sourceTree = "<group>"; };
 		F39EF9AC1C9D209F00382A36 /* HeadImage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = HeadImage.plist; sourceTree = "<group>"; };
+		F3A987F61CA0DFC20074C624 /* HTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTools.h; sourceTree = "<group>"; };
+		F3A987F71CA0DFC20074C624 /* HTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTools.m; sourceTree = "<group>"; };
+		F3A987F91CA1276A0074C624 /* StrategyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrategyViewController.h; sourceTree = "<group>"; };
+		F3A987FA1CA1276A0074C624 /* StrategyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyViewController.m; sourceTree = "<group>"; };
+		F3A987FC1CA129B80074C624 /* ScenicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenicViewController.h; sourceTree = "<group>"; };
+		F3A987FD1CA129B80074C624 /* ScenicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenicViewController.m; sourceTree = "<group>"; };
+		F3A988021CA12A0C0074C624 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
+		F3A988031CA12A0C0074C624 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
+		F3A988051CA12DCF0074C624 /* GrogshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrogshopViewController.h; sourceTree = "<group>"; };
+		F3A988061CA12DCF0074C624 /* GrogshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrogshopViewController.m; sourceTree = "<group>"; };
+		F3A988081CA131080074C624 /* Strategy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Strategy.plist; sourceTree = "<group>"; };
+		F3A9880A1CA13F1E0074C624 /* RightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightTableViewCell.h; sourceTree = "<group>"; };
+		F3A9880B1CA13F1E0074C624 /* RightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightTableViewCell.m; sourceTree = "<group>"; };
+		F3A9880D1CA1416E0074C624 /* RightModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightModel.h; sourceTree = "<group>"; };
+		F3A9880E1CA1416F0074C624 /* RightModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightModel.m; sourceTree = "<group>"; };
 		F3C874391C9AAE66006BD9AF /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Common.h"; sourceTree = "<group>"; };
 		F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
 		F3C8743D1C9AB790006BD9AF /* DestinationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationTableViewCell.h; sourceTree = "<group>"; };
 		F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationTableViewCell.m; sourceTree = "<group>"; };
+		F3EA82D11C9F9CD60037B242 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		F3EA82D21C9F9CD60037B242 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +329,16 @@
 				F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */,
 				F30485C71C9E723A002751C4 /* AlubmViewController.h */,
 				F30485C81C9E723A002751C4 /* AlubmViewController.m */,
+				F3EA82D11C9F9CD60037B242 /* ScrollViewController.h */,
+				F3EA82D21C9F9CD60037B242 /* ScrollViewController.m */,
+				F3A987F91CA1276A0074C624 /* StrategyViewController.h */,
+				F3A987FA1CA1276A0074C624 /* StrategyViewController.m */,
+				F3A987FC1CA129B80074C624 /* ScenicViewController.h */,
+				F3A987FD1CA129B80074C624 /* ScenicViewController.m */,
+				F3A988051CA12DCF0074C624 /* GrogshopViewController.h */,
+				F3A988061CA12DCF0074C624 /* GrogshopViewController.m */,
+				F3A988021CA12A0C0074C624 /* FoodViewController.h */,
+				F3A988031CA12A0C0074C624 /* FoodViewController.m */,
 				F3C874391C9AAE66006BD9AF /* Define.h */,
 			);
 			path = Controllers;
@@ -311,6 +355,8 @@
 				F39EF9A91C9CF48C00382A36 /* HeadImageTableViewCell.xib */,
 				F33B63211C9E8A3E0060F63F /* CollectionViewCell.h */,
 				F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */,
+				F3A9880A1CA13F1E0074C624 /* RightTableViewCell.h */,
+				F3A9880B1CA13F1E0074C624 /* RightTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -336,6 +382,10 @@
 				01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */,
 				01F95BE11C9D51EE00CCD539 /* Find1ViewController.h */,
 				01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */,
+				011190761C9FF231008E2F3D /* HotelViewController.h */,
+				011190771C9FF231008E2F3D /* HotelViewController.m */,
+				01F94A521CA22D26004A76C8 /* HotelMapViewController.h */,
+				01F94A531CA22D26004A76C8 /* HotelMapViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -347,6 +397,7 @@
 				011445611C9AE5CF0057E69F /* MainModel.h */,
 				011445621C9AE5CF0057E69F /* MainModel.m */,
 				01F95BDC1C9D481600CCD539 /* aaa.plist */,
+				01F94A551CA245D3004A76C8 /* Map.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -379,9 +430,12 @@
 		011445471C9AA8CC0057E69F /* HWTools */ = {
 			isa = PBXGroup;
 			children = (
+				01E755FF1CA16F7600A4D72A /* MainDefine.h */,
 				011445481C9AA8EC0057E69F /* PrefixHeader.pch */,
 				F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */,
 				F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */,
+				F3A987F61CA0DFC20074C624 /* HTools.h */,
+				F3A987F71CA0DFC20074C624 /* HTools.m */,
 				0114455B1C9AB7130057E69F /* MainDefine.h */,
 				F33B63191C9E86D90060F63F /* BLImageSize.h */,
 				F33B631A1C9E86D90060F63F /* BLImageSize.m */,
@@ -532,10 +586,13 @@
 				F39D7FDA1C9AD3C300F8D333 /* Destination.plist */,
 				F39EF9AC1C9D209F00382A36 /* HeadImage.plist */,
 				F33B631F1C9E87B00060F63F /* Alubm.plist */,
+				F3A988081CA131080074C624 /* Strategy.plist */,
 				F399E0221C9B82C000019B37 /* DestinationModel.h */,
 				F399E0231C9B82C000019B37 /* DestinationModel.m */,
 				F3851EA31C9E9C9000F75EB7 /* AlubmModel.h */,
 				F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */,
+				F3A9880D1CA1416E0074C624 /* RightModel.h */,
+				F3A9880E1CA1416F0074C624 /* RightModel.m */,
 			);
 			name = Models;
 			path = Controllers/Models;
@@ -570,9 +627,9 @@
 		0114451A1C9AA6A50057E69F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = LZ_Mine;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = "李志鹏";
+				ORGANIZATIONNAME = "马娟娟";
 				TargetAttributes = {
 					011445211C9AA6A50057E69F = {
 						CreatedOnToolsVersion = 7.2;
@@ -603,6 +660,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AB1334D1C9B8795002B0F94 /* LZ_Mine_Head.xib in Resources */,
+				F3A988091CA131080074C624 /* Strategy.plist in Resources */,
 				F39EF9AD1C9D209F00382A36 /* HeadImage.plist in Resources */,
 				0114454D1C9AA99A0057E69F /* Main.storyboard in Resources */,
 				7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */,
@@ -611,6 +669,7 @@
 				7A5FF3331CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib in Resources */,
 				F33B63201C9E87B00060F63F /* Alubm.plist in Resources */,
 				7A5FF2FA1CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.xib in Resources */,
+				01F94A561CA245D3004A76C8 /* Map.plist in Resources */,
 				01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */,
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
@@ -683,6 +742,8 @@
 				F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */,
 				015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */,
 				7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */,
+				011190781C9FF231008E2F3D /* HotelViewController.m in Sources */,
+				F3A987F81CA0DFC20074C624 /* HTools.m in Sources */,
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
 				F39EF9AA1C9CF48C00382A36 /* HeadImageTableViewCell.m in Sources */,
 				7A0DCFF71C9FE29100D316C0 /* VOIndicatorAnimation.m in Sources */,
@@ -700,14 +761,22 @@
 				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
 				7A0DCFF91C9FE29100D316C0 /* VOSegmentedControl.m in Sources */,
 				01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */,
+				01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */,
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				F39EF9A61C9CF43B00382A36 /* HeadImageViewController.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
+				F3A9880F1CA1416F0074C624 /* RightModel.m in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
+				F3A988041CA12A0C0074C624 /* FoodViewController.m in Sources */,
 				01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */,
+				F3EA82D31C9F9CD60037B242 /* ScrollViewController.m in Sources */,
+				F3A987FE1CA129B80074C624 /* ScenicViewController.m in Sources */,
+				F3A987FB1CA1276A0074C624 /* StrategyViewController.m in Sources */,
 				7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */,
+				F3A988071CA12DCF0074C624 /* GrogshopViewController.m in Sources */,
 				0114454B1C9AA9860057E69F /* MainViewController.m in Sources */,
 				F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */,
+				F3A9880C1CA13F1E0074C624 /* RightTableViewCell.m in Sources */,
 				7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */,
 				7A0DCFF61C9FE29100D316C0 /* VOContentLayer.m in Sources */,
 				7A0DCFF81C9FE29100D316C0 /* VOSegment.m in Sources */,
@@ -826,6 +895,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MFW/library/HWTools/PrefixHeader.pch";
 				INFOPLIST_FILE = MFW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -879,6 +949,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MFW/library/HWTools/PrefixHeader.pch";
 				INFOPLIST_FILE = MFW/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

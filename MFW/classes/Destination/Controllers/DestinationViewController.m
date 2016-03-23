@@ -14,6 +14,10 @@
 #import <MapKit/MKMapView.h>
 #import "HeadImageViewController.h"
 #import "AlubmViewController.h"
+#import "StrategyViewController.h"
+#import "ScenicViewController.h"
+#import "GrogshopViewController.h"
+#import "FoodViewController.h"
 @interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)UIView *tableViewHeaderView;
@@ -36,28 +40,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    //设置导航栏为全透明，且去掉边框黑线
+//    [self.navigationController.navigationBar setTranslucent:YES];
+//    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+//    //去黑线
+//    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+    
+    //导航栏的view
+//    UILabel *label = [[UILabel alloc]initWithFrame:self.navigationController.navigationBar.frame];
+//    label.backgroundColor = [UIColor yellowColor];
+//    [self.navigationController.view addSubview:label];
+
+ 
+    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    [self requestModel];
+    
+}
+- (void)viewWillAppear:(BOOL)animated{
+    self.tabBarController.tabBar.hidden = NO;
     //设置导航栏为全透明，且去掉边框黑线
     [self.navigationController.navigationBar setTranslucent:YES];
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     //去黑线
     self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
-    //导航栏的view
-//    UILabel *label = [[UILabel alloc]initWithFrame:self.navigationController.navigationBar.frame];
-//    label.backgroundColor = [UIColor yellowColor];
-//    [self.navigationController.view addSubview:label];
-    
-    
-    
- 
-    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-    
-    [self requestModel];
-    
-    
+
 }
-- (void)viewWillAppear:(BOOL)animated{
-    self.tabBarController.tabBar.hidden = NO;
+- (void)viewWillDisappear:(BOOL)animated{
+    //设置导航栏为全透明，且去掉边框黑线
+    [self.navigationController.navigationBar setTranslucent:NO];
+//    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+//    //去黑线
+//    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 }
 #pragma mark --------- UITableViewDataSource
 - (void)configTableViewHeaderView{
@@ -112,7 +126,6 @@
 #pragma mark --------- 
 #pragma mark ---------  CustomMethod
 - (void)firstCell{
-    
 
 }
 - (void)secondCell{
@@ -173,10 +186,9 @@
         DestinationModel *numModel = [[DestinationModel alloc]init];
         [numModel setValuesForKeysWithDictionary:num];
         [self.numUrlArray addObject:numModel];
-
         
-        [self configTableViewHeaderView];
         [self.tableView reloadData];
+        [self configTableViewHeaderView];
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
@@ -329,22 +341,26 @@
     switch (btn.tag - 100) {
         case 0:
         {
-            
+            StrategyViewController *stategyVC = [[StrategyViewController alloc]init];
+            [self.navigationController pushViewController:stategyVC animated:YES];
         }
             break;
         case 1:
         {
-            
+            ScenicViewController *scenicVC = [[ScenicViewController alloc]init];
+            [self.navigationController pushViewController:scenicVC animated:YES];
         }
             break;
         case 2:
         {
-            
+            GrogshopViewController *hotelVC = [[GrogshopViewController alloc]init];
+            [self.navigationController pushViewController:hotelVC animated:YES];
         }
             break;
         case 3:
         {
-            
+            FoodViewController *foodVC = [[FoodViewController alloc]init];
+            [self.navigationController pushViewController:foodVC animated:YES];
         }
             break;
         case 4:

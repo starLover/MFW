@@ -11,13 +11,13 @@
 #import "AoiroSoraLayout.h"
 #import "BLImageSize.h"
 #import "AlubmModel.h"
+#import "ScrollViewController.h"
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 @interface AlubmViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout,AoiroSoraLayoutDelegate>
 {
-    NSInteger *_offset;
+    NSInteger _offset;
 }
-@property(nonatomic,assign)NSInteger count;//一次刷新的个数
 @property(nonatomic,strong)UICollectionView *collectionView;
 @property(nonatomic,strong)NSMutableArray *heightArray;//存储图片高度
 @property(nonatomic,strong)UIImage *image; // 如果计算图片尺寸失败  则下载图片直接计算
@@ -31,11 +31,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _count = 30;
     _offset = 0;
     //注册
     [self.collectionView registerClass:[CollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
-//    [self.view addSubview:self.collectionView];
     [self showBackBtn];
     [self requestModel];
 }
@@ -95,15 +93,19 @@
     [self.heightArray addObject:number];
 }
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    ScrollViewController *scrollView = [[ScrollViewController alloc]init];
+//    AlubmModel *model = self.imageArray[indexPath.row];
+//    scrollView.data = [NSString stringWithFormat:@"%@,%@",model.bimg,kAlbum];
+    scrollView.num = indexPath.row;
+    [self.navigationController pushViewController:scrollView animated:NO];
     
 }
 #pragma mark --------- 网络请求
 - (void)requestModel{
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", nil];
-//    NSString *urlString = [NSString stringWithFormat:@"%@&offset=%lu",kAlbum,(long)_offset];
-//    NSString *url= [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//    NSString *url = [NSString stringWithFormat:@"%@&offset=%lu",kAlbum,(long)_offset];
+//    NSString *url = [NSString stringWithFormat:@"%@&%ld",kAlbum,_offset];
     [sessionManager GET:kAlbum parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *resultDic = responseObject;

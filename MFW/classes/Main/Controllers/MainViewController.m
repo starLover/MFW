@@ -14,6 +14,8 @@
 #import "SalesCollectionViewCell.h"
 #import "HeadViewController.h"
 #import "SearchCityViewController.h"
+#import "Find1ViewController.h"
+#import "HotelViewController.h"
 
 @interface MainViewController ()<UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
@@ -100,17 +102,17 @@
             [cell.contentView addSubview:collectionView];
         }
             break;
-                    case 2:
-                    {
-                        MainModel *mainModel = self.salesArray318[0];
-                        label.text = mainModel.title;
-                        [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
-                        section1 = 2;
-                        collectionView.tag = 2;
-                        [collectionView registerNib:[UINib nibWithNibName:@"SalesCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell2"];
-                        [cell.contentView addSubview:collectionView];
-                    }
-                        break;
+        case 2:
+        {
+            MainModel *mainModel = self.salesArray318[0];
+            label.text = mainModel.title;
+            [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
+            section1 = 2;
+            collectionView.tag = 2;
+            [collectionView registerNib:[UINib nibWithNibName:@"SalesCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell2"];
+            [cell.contentView addSubview:collectionView];
+        }
+            break;
         case 3:
         {
             
@@ -171,7 +173,7 @@
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     MainModel *mainModel = nil;
-
+    
     switch (collectionView.tag) {
         case 1:
         {
@@ -492,12 +494,58 @@
 }
 
 - (void)eightAction:(UIButton *)btn{
+    self.tabBarController.tabBar.hidden = YES;
     switch (btn.tag - 100) {
         case 0:
+        {
+            UIStoryboard *storboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            Find1ViewController *find1VC = [storboard instantiateViewControllerWithIdentifier:@"Find1"];
+            [self.navigationController pushViewController:find1VC animated:YES];
+        }
+            break;
+        case 1:
+        {
+            UIStoryboard *storboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            HotelViewController *hotelVC = [storboard instantiateViewControllerWithIdentifier:@"Hotel"];
+            [self.navigationController pushViewController:hotelVC animated:YES];
+        }
+            break;
+        case 2:
         {
             
         }
             break;
+        case 3:
+        {
+            
+        }
+            break;
+        case 4:
+        {
+            
+        }
+            break;
+        case 5:
+        {
+            
+        }
+            break;
+        case 6:
+        {
+            
+        }
+            break;
+        case 7:
+        {
+            
+        }
+            break;
+        case 8:
+        {
+            
+        }
+            break;
+            
             
         default:
             break;
@@ -506,7 +554,6 @@
 
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.tabBarController.tabBar.hidden = YES;
     [self.searchView removeFromSuperview];
 }
 - (void)viewWillAppear:(BOOL)animated{

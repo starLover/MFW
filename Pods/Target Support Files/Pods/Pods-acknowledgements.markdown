@@ -700,6 +700,11 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <http://www.gnu.org/philosophy/why-not-lgpl.html>.
+=======
+## AMap2DMap
+
+Copyright © 2014 AutoNavi. All Rights Reserved.
+>>>>>>> 830e1fd67a9c164902e710f1dc63f64aff611c57
 
 
 ## MBProgressHUD
