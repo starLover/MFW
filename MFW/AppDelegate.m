@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "DestinationViewController.h"
 #import "MainViewController.h"
+#import <BmobSDK/Bmob.h>
+#import <SMS_SDK/SMSSDK.h>
 
 @interface AppDelegate ()
 @property(nonatomic ,strong) UITabBarController *tabBar;
@@ -21,6 +23,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     [WXApi registerApp:@"wx34f61874c63efcbc"];
+    //bmob
+    [Bmob registerWithAppKey:@"b61a189d84ff12c210cf5f65cdebdcd5"];
+    //注册需要短信验证的应用
+    [SMSSDK registerApp:@"10c53ab490490" withSecret:@"6e235005cc25be3e4454c758fd9295bc"];
+
     
     UIStoryboard *MainSB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UINavigationController *mainNav = MainSB.instantiateInitialViewController;
