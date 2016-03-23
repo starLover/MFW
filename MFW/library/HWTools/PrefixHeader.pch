@@ -15,6 +15,7 @@
 
 #import "Define.h"
 #import "UIViewController+Common.h"
+#import "HTools.h"
 
 #ifdef DEBUG
 #   define fSLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
