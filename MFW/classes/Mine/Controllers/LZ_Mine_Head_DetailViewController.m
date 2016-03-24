@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.bUser = [BmobUser getCurrentUser];
-    self.imageView.layer.cornerRadius     = 40;
+    self.imageView.layer.cornerRadius     = 50;
     self.imageView.clipsToBounds          = YES;
     self.imageView.image = [UIImage imageWithContentsOfFile:kPath];
     [self.phoneNumber setTitle:self.bUser.username forState:UIControlStateNormal];
