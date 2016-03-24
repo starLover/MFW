@@ -63,7 +63,7 @@
     [self.navigationController.navigationBar setTranslucent:YES];
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
     //去黑线
-    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+//    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 
 }
 - (void)viewWillDisappear:(BOOL)animated{

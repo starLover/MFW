@@ -7,19 +7,10 @@
 //
 
 #import "LZ_Mine_Head.h"
-@interface LZ_Mine_Head()
 
-
-
-@end
 @implementation LZ_Mine_Head
-- (instancetype)initWithFrame:(CGRect)frame{
-    if ([super initWithFrame:frame]) {
-        self = [[[NSBundle mainBundle] loadNibNamed:@"LZ_Mine_Head" owner:self options:nil] lastObject];
-    }
-    
-    return self;
-}
+
+
 
 @end
 

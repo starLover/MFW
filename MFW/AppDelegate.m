@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "DestinationViewController.h"
 #import "MainViewController.h"
+#import <BmobSDK/Bmob.h>
+#import <SMS_SDK/SMSSDK.h>
 #import <MAMapKit/MAMapKit.h>
 
 @interface AppDelegate ()
@@ -22,6 +24,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     [WXApi registerApp:@"wx34f61874c63efcbc"];
+    //bmob
+    [Bmob registerWithAppKey:@"b61a189d84ff12c210cf5f65cdebdcd5"];
+    //注册需要短信验证的应用
+    [SMSSDK registerApp:@"10c53ab490490" withSecret:@"6e235005cc25be3e4454c758fd9295bc"];
+
     //高德地图API
     [MAMapServices sharedServices].apiKey = @"347a662a9e7129f224a9840c18e3f744";
     

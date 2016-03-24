@@ -10,5 +10,6 @@
 
 @interface LZ_Mine_Head : UIView
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
-
+@property (weak, nonatomic) IBOutlet UIButton *userName;
+//+ (instancetype)headTableView;
 @end
