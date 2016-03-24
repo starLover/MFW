@@ -25,8 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    UIView *rightView = [UIView alloc]initWithFrame:CGRectMake(, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>)
-    
+
     [self showBackBtn];
     [self.view addSubview:self.tableView];
 
@@ -39,50 +38,40 @@
         cell = [[RightTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
         
         RightModel *urlModel = self.itemArray[indexPath.row];
-        webV = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
-//        webV.delegate = self;
-//        webV.scrollView.bounces = NO;
+        webV = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-100)];
+        webV.delegate = self;
+        webV.scrollView.bounces = NO;
+//        webV.userInteractionEnabled = NO;
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:urlModel.url]];
         webV.backgroundColor = [UIColor yellowColor];
         [cell.contentView addSubview:webV];
         [webV loadRequest:request];
         NSLog(@"%@",urlModel.url);
-        
+        cell.backgroundColor = [[UIColor orangeColor] colorWithAlphaComponent:0.5];
+        UILabel *message = [[UILabel alloc]initWithFrame:CGRectMake(0, kScreenHeight-100, kScreenWidth, 40)];
+        message.text = @"划我进入下一页哦*…*";
+        message.textAlignment = NSTextAlignmentCenter;
+        [cell.contentView addSubview:message];
     }
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.itemArray.count;
 }
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-//    return self.itemArray.count;
-//}
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     //通过webView代理获取到高度后，将内容高度设置为cell的高
-    return webV.frame.size.height;
+    return webV.frame.size.height+40;
 }
-//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-//    RightModel *titleModel = self.itemArray[section];
-//    return titleModel.title;
-//}
 - (UITableView *)tableView{
     if (!_tableView) {
         self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight+60)];
-        self.tableView.backgroundColor = [UIColor cyanColor];
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
-//        self.tableView.rowHeight = 500;
     }
     return _tableView;
 }
-#pragma mark ----------- webView Delegate
-- (void)webViewDidFinishLoad:(UIWebView *)webView{
-    //获取到webView的高度
-    CGFloat height = [[webV stringByEvaluatingJavaScriptFromString:@"document.body.offsetHeight"] floatValue];
-    webV.frame = CGRectMake(webView.frame.origin.x,webView.frame.origin.y, kScreenWidth, height);
-    [self.tableView reloadData];
-}
 #pragma mark -----------
+
 #pragma mark -----------
 - (void)viewWillAppear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = YES;
@@ -103,7 +92,6 @@
             [titleModel setValuesForKeysWithDictionary:dic];
             [self.itemArray addObject:titleModel];
         }
-        
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     }];
