@@ -23,7 +23,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.bUser = [BmobUser getCurrentUser];
-    self.imageView.backgroundColor = [UIColor redColor];
     self.imageView.layer.cornerRadius     = 40;
     self.imageView.clipsToBounds          = YES;
     self.imageView.image = [UIImage imageWithContentsOfFile:kPath];
