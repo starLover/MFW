@@ -44,7 +44,6 @@
 		7AB1337C1C9C057F002B0F94 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB1337B1C9C057F002B0F94 /* CoreTelephony.framework */; };
 		EA637D993CACC04A8D70916F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527401B3CEFECDBDAE025B36 /* libPods.a */; };
 		F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30485C81C9E723A002751C4 /* AlubmViewController.m */; };
-		F3363BB21C9C32270001B82C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3363BB11C9C32270001B82C /* MapKit.framework */; };
 		F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631A1C9E86D90060F63F /* BLImageSize.m */; };
 		F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */; };
 		F33B63201C9E87B00060F63F /* Alubm.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33B631F1C9E87B00060F63F /* Alubm.plist */; };
@@ -67,6 +66,12 @@
 		F3A9880F1CA1416F0074C624 /* RightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A9880E1CA1416F0074C624 /* RightModel.m */; };
 		F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */; };
 		F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */; };
+		F3D803731CA24DC0003B9191 /* Scenic.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3D803721CA24DC0003B9191 /* Scenic.plist */; };
+		F3D803771CA26FF9003B9191 /* ScenicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D803751CA26FF9003B9191 /* ScenicTableViewCell.m */; };
+		F3D803781CA26FF9003B9191 /* ScenicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D803761CA26FF9003B9191 /* ScenicTableViewCell.xib */; };
+		F3D8037D1CA28981003B9191 /* ico_make.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D8037A1CA28981003B9191 /* ico_make.png */; };
+		F3D8037E1CA28981003B9191 /* JSDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D8037C1CA28981003B9191 /* JSDropDownMenu.m */; };
+		F3D803871CA2BBB0003B9191 /* ScenicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D803861CA2BBB0003B9191 /* ScenicModel.m */; };
 		F3EA82D31C9F9CD60037B242 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EA82D21C9F9CD60037B242 /* ScrollViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -134,7 +139,6 @@
 		ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F30485C71C9E723A002751C4 /* AlubmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlubmViewController.h; sourceTree = "<group>"; };
 		F30485C81C9E723A002751C4 /* AlubmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlubmViewController.m; sourceTree = "<group>"; };
-		F3363BB11C9C32270001B82C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F33B63191C9E86D90060F63F /* BLImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImageSize.h; sourceTree = "<group>"; };
 		F33B631A1C9E86D90060F63F /* BLImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImageSize.m; sourceTree = "<group>"; };
 		F33B631B1C9E86D90060F63F /* AoiroSoraLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AoiroSoraLayout.h; sourceTree = "<group>"; };
@@ -174,6 +178,15 @@
 		F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Common.m"; sourceTree = "<group>"; };
 		F3C8743D1C9AB790006BD9AF /* DestinationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationTableViewCell.h; sourceTree = "<group>"; };
 		F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationTableViewCell.m; sourceTree = "<group>"; };
+		F3D803721CA24DC0003B9191 /* Scenic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Scenic.plist; sourceTree = "<group>"; };
+		F3D803741CA26FF9003B9191 /* ScenicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenicTableViewCell.h; sourceTree = "<group>"; };
+		F3D803751CA26FF9003B9191 /* ScenicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenicTableViewCell.m; sourceTree = "<group>"; };
+		F3D803761CA26FF9003B9191 /* ScenicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScenicTableViewCell.xib; sourceTree = "<group>"; };
+		F3D8037A1CA28981003B9191 /* ico_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_make.png; sourceTree = "<group>"; };
+		F3D8037B1CA28981003B9191 /* JSDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDropDownMenu.h; sourceTree = "<group>"; };
+		F3D8037C1CA28981003B9191 /* JSDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDropDownMenu.m; sourceTree = "<group>"; };
+		F3D803851CA2BBB0003B9191 /* ScenicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenicModel.h; sourceTree = "<group>"; };
+		F3D803861CA2BBB0003B9191 /* ScenicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenicModel.m; sourceTree = "<group>"; };
 		F3EA82D11C9F9CD60037B242 /* ScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
 		F3EA82D21C9F9CD60037B242 /* ScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,7 +202,6 @@
 				7AB133651C9BF4E9002B0F94 /* libc++.tbd in Frameworks */,
 				7AB133611C9BF4BA002B0F94 /* libz.tbd in Frameworks */,
 				7AB1335F1C9BF4A8002B0F94 /* SystemConfiguration.framework in Frameworks */,
-				F3363BB21C9C32270001B82C /* MapKit.framework in Frameworks */,
 				F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */,
 				EA637D993CACC04A8D70916F /* libPods.a in Frameworks */,
 			);
@@ -300,6 +312,9 @@
 				F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */,
 				F3A9880A1CA13F1E0074C624 /* RightTableViewCell.h */,
 				F3A9880B1CA13F1E0074C624 /* RightTableViewCell.m */,
+				F3D803741CA26FF9003B9191 /* ScenicTableViewCell.h */,
+				F3D803751CA26FF9003B9191 /* ScenicTableViewCell.m */,
+				F3D803761CA26FF9003B9191 /* ScenicTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -359,6 +374,7 @@
 		011445461C9AA8CC0057E69F /* library */ = {
 			isa = PBXGroup;
 			children = (
+				F3D803791CA28981003B9191 /* JSDropDownMenu */,
 				011445531C9AB1910057E69F /* PullingRefreshTableView */,
 				011445471C9AA8CC0057E69F /* HWTools */,
 			);
@@ -372,12 +388,8 @@
 				011445481C9AA8EC0057E69F /* PrefixHeader.pch */,
 				F3C8743A1C9AB2E5006BD9AF /* UIViewController+Common.h */,
 				F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */,
-<<<<<<< HEAD
 				F3A987F61CA0DFC20074C624 /* HTools.h */,
 				F3A987F71CA0DFC20074C624 /* HTools.m */,
-				0114455B1C9AB7130057E69F /* MainDefine.h */,
-=======
->>>>>>> 4560fff7df43aacaa37191510f2e7a16cc202423
 				F33B63191C9E86D90060F63F /* BLImageSize.h */,
 				F33B631A1C9E86D90060F63F /* BLImageSize.m */,
 				F33B631B1C9E86D90060F63F /* AoiroSoraLayout.h */,
@@ -408,7 +420,6 @@
 				7AB133621C9BF4CA002B0F94 /* libsqlite3.0.tbd */,
 				7AB133601C9BF4BA002B0F94 /* libz.tbd */,
 				7AB1335E1C9BF4A8002B0F94 /* SystemConfiguration.framework */,
-				F3363BB11C9C32270001B82C /* MapKit.framework */,
 				F399E0251C9BADF100019B37 /* CoreImage.framework */,
 				527401B3CEFECDBDAE025B36 /* libPods.a */,
 			);
@@ -471,15 +482,28 @@
 				F39EF9AC1C9D209F00382A36 /* HeadImage.plist */,
 				F33B631F1C9E87B00060F63F /* Alubm.plist */,
 				F3A988081CA131080074C624 /* Strategy.plist */,
+				F3D803721CA24DC0003B9191 /* Scenic.plist */,
 				F399E0221C9B82C000019B37 /* DestinationModel.h */,
 				F399E0231C9B82C000019B37 /* DestinationModel.m */,
 				F3851EA31C9E9C9000F75EB7 /* AlubmModel.h */,
 				F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */,
 				F3A9880D1CA1416E0074C624 /* RightModel.h */,
 				F3A9880E1CA1416F0074C624 /* RightModel.m */,
+				F3D803851CA2BBB0003B9191 /* ScenicModel.h */,
+				F3D803861CA2BBB0003B9191 /* ScenicModel.m */,
 			);
 			name = Models;
 			path = Controllers/Models;
+			sourceTree = "<group>";
+		};
+		F3D803791CA28981003B9191 /* JSDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F3D8037A1CA28981003B9191 /* ico_make.png */,
+				F3D8037B1CA28981003B9191 /* JSDropDownMenu.h */,
+				F3D8037C1CA28981003B9191 /* JSDropDownMenu.m */,
+			);
+			path = JSDropDownMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,10 +571,13 @@
 				F3A988091CA131080074C624 /* Strategy.plist in Resources */,
 				F39EF9AD1C9D209F00382A36 /* HeadImage.plist in Resources */,
 				0114454D1C9AA99A0057E69F /* Main.storyboard in Resources */,
+				F3D803781CA26FF9003B9191 /* ScenicTableViewCell.xib in Resources */,
 				7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */,
 				011445591C9AB1910057E69F /* blueArrowDown.png in Resources */,
+				F3D803731CA24DC0003B9191 /* Scenic.plist in Resources */,
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
 				F33B63201C9E87B00060F63F /* Alubm.plist in Resources */,
+				F3D8037D1CA28981003B9191 /* ico_make.png in Resources */,
 				01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */,
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
@@ -641,8 +668,11 @@
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
 				F3A9880F1CA1416F0074C624 /* RightModel.m in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
+				F3D8037E1CA28981003B9191 /* JSDropDownMenu.m in Sources */,
 				F3A988041CA12A0C0074C624 /* FoodViewController.m in Sources */,
+				F3D803771CA26FF9003B9191 /* ScenicTableViewCell.m in Sources */,
 				01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */,
+				F3D803871CA2BBB0003B9191 /* ScenicModel.m in Sources */,
 				F3EA82D31C9F9CD60037B242 /* ScrollViewController.m in Sources */,
 				F3A987FE1CA129B80074C624 /* ScenicViewController.m in Sources */,
 				F3A987FB1CA1276A0074C624 /* StrategyViewController.m in Sources */,

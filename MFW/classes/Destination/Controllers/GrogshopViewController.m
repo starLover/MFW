@@ -7,7 +7,7 @@
 //
 
 #import "GrogshopViewController.h"
-
+#import <AFNetworking/AFHTTPSessionManager.h>
 @interface GrogshopViewController ()
 
 @end
@@ -18,12 +18,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showBackBtn];
+    [self loadData];
 }
 - (void)viewWillAppear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = YES;
 }
 - (void)viewWillDisappear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;
+}
+- (void)loadData{
+    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
+    sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json",nil];
+    [sessionManager GET:kScenic parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
