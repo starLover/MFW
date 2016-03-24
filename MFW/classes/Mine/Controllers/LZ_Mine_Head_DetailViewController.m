@@ -7,9 +7,14 @@
 //
 
 #import "LZ_Mine_Head_DetailViewController.h"
+#import <BmobSDK/Bmob.h>
 
 @interface LZ_Mine_Head_DetailViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UIButton *phoneNumber;
+
+/** <bmob> */
+@property (nonatomic, strong) BmobUser *bUser;
 
 @end
 
@@ -17,12 +22,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.imageView.layer.cornerRadius = 30;
-    self.imageView.clipsToBounds      = YES;
-    self.imageView.image              = [UIImage imageWithContentsOfFile:kPath];
-    UITapGestureRecognizer *tap       = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(open)];
-    [self.imageView addGestureRecognizer:tap];
-    [self.view addSubview:self.imageView];
+    self.bUser = [BmobUser getCurrentUser];
+    self.imageView.backgroundColor = [UIColor redColor];
+    self.imageView.layer.cornerRadius     = 40;
+    self.imageView.clipsToBounds          = YES;
+    self.imageView.image = [UIImage imageWithContentsOfFile:kPath];
+    [self.phoneNumber setTitle:self.bUser.username forState:UIControlStateNormal];
+    
+
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame = self.imageView.frame;
+    [btn addTarget:self action:@selector(open) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
     
 }
 - (void)viewWillAppear:(BOOL)animated{

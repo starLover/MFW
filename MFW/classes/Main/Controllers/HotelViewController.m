@@ -7,9 +7,12 @@
 //
 
 #import "HotelViewController.h"
+#import "HotelMapViewController.h"
 //#import <AMapLocationKit/AMapLocationKit.h>
 
 @interface HotelViewController ()
+
+
 - (IBAction)locationAction:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *cityBtn;
 //@property(nonatomic, strong) AMapLocationManager *locationManager;
@@ -71,6 +74,7 @@
 //    }];
 }
 - (IBAction)mapAction:(id)sender {
-    
+    HotelMapViewController *hotelMapVC = [[HotelMapViewController alloc] init];
+    [self.navigationController pushViewController:hotelMapVC animated:YES];
 }
 @end

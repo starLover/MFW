@@ -27,9 +27,28 @@
 		015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */; };
 		01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */; };
 		01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */; };
+		01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F94A531CA22D26004A76C8 /* HotelMapViewController.m */; };
+		01F94A561CA245D3004A76C8 /* Map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F94A551CA245D3004A76C8 /* Map.plist */; };
 		01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F95BDC1C9D481600CCD539 /* aaa.plist */; };
 		01F95BE01C9D4E6C00CCD539 /* SearchCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */; };
 		01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */; };
+		7A0DCFF61C9FE29100D316C0 /* VOContentLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DCFEF1C9FE29100D316C0 /* VOContentLayer.m */; };
+		7A0DCFF71C9FE29100D316C0 /* VOIndicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DCFF11C9FE29100D316C0 /* VOIndicatorAnimation.m */; };
+		7A0DCFF81C9FE29100D316C0 /* VOSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DCFF31C9FE29100D316C0 /* VOSegment.m */; };
+		7A0DCFF91C9FE29100D316C0 /* VOSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DCFF51C9FE29100D316C0 /* VOSegmentedControl.m */; };
+		7A5FF2F41CA0DE5400DEDF4C /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A5FF2F11CA0DE5400DEDF4C /* ProgressHUD.bundle */; };
+		7A5FF2F51CA0DE5400DEDF4C /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FF2F31CA0DE5400DEDF4C /* ProgressHUD.m */; };
+		7A5FF2F91CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FF2F71CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.m */; };
+		7A5FF2FA1CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A5FF2F81CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.xib */; };
+		7A5FF3231CA1288500DEDF4C /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5FF3221CA1288500DEDF4C /* libstdc++.tbd */; };
+		7A5FF3251CA128B800DEDF4C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5FF3241CA128B800DEDF4C /* JavaScriptCore.framework */; };
+		7A5FF3271CA128C200DEDF4C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5FF3261CA128C200DEDF4C /* MessageUI.framework */; };
+		7A5FF3291CA128F200DEDF4C /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5FF3281CA128F200DEDF4C /* libicucore.tbd */; };
+		7A5FF32D1CA1290E00DEDF4C /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5FF32B1CA1290E00DEDF4C /* MOBFoundation.framework */; };
+		7A5FF32E1CA1290E00DEDF4C /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5FF32C1CA1290E00DEDF4C /* SMS_SDK.framework */; };
+		7A5FF3321CA1558B00DEDF4C /* LZ_Mine_ResignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FF3301CA1558B00DEDF4C /* LZ_Mine_ResignViewController.m */; };
+		7A5FF3331CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A5FF3311CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib */; };
+		7A5FF43E1CA2A1C500DEDF4C /* libLZPValidate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5FF43D1CA2A1C500DEDF4C /* libLZPValidate.a */; };
 		7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */; };
 		7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB133451C9ADF65002B0F94 /* LZ_Mine.storyboard */; };
 		7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */; };
@@ -109,12 +128,42 @@
 		01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewCell.m; sourceTree = "<group>"; };
 		01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
 		01E755FF1CA16F7600A4D72A /* MainDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDefine.h; sourceTree = "<group>"; };
+		01F94A521CA22D26004A76C8 /* HotelMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelMapViewController.h; sourceTree = "<group>"; };
+		01F94A531CA22D26004A76C8 /* HotelMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelMapViewController.m; sourceTree = "<group>"; };
+		01F94A551CA245D3004A76C8 /* Map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Map.plist; sourceTree = "<group>"; };
 		01F95BDC1C9D481600CCD539 /* aaa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = aaa.plist; sourceTree = "<group>"; };
 		01F95BDE1C9D4E6C00CCD539 /* SearchCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityViewController.h; sourceTree = "<group>"; };
 		01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCityViewController.m; sourceTree = "<group>"; };
 		01F95BE11C9D51EE00CCD539 /* Find1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Find1ViewController.h; sourceTree = "<group>"; };
 		01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Find1ViewController.m; sourceTree = "<group>"; };
 		527401B3CEFECDBDAE025B36 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A0DCFEE1C9FE29000D316C0 /* VOContentLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOContentLayer.h; sourceTree = "<group>"; };
+		7A0DCFEF1C9FE29100D316C0 /* VOContentLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOContentLayer.m; sourceTree = "<group>"; };
+		7A0DCFF01C9FE29100D316C0 /* VOIndicatorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOIndicatorAnimation.h; sourceTree = "<group>"; };
+		7A0DCFF11C9FE29100D316C0 /* VOIndicatorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOIndicatorAnimation.m; sourceTree = "<group>"; };
+		7A0DCFF21C9FE29100D316C0 /* VOSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegment.h; sourceTree = "<group>"; };
+		7A0DCFF31C9FE29100D316C0 /* VOSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegment.m; sourceTree = "<group>"; };
+		7A0DCFF41C9FE29100D316C0 /* VOSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegmentedControl.h; sourceTree = "<group>"; };
+		7A0DCFF51C9FE29100D316C0 /* VOSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegmentedControl.m; sourceTree = "<group>"; };
+		7A5FF2F11CA0DE5400DEDF4C /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		7A5FF2F21CA0DE5400DEDF4C /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		7A5FF2F31CA0DE5400DEDF4C /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		7A5FF2F61CA0EBC600DEDF4C /* LZ_Mine_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_Mine_LoginViewController.h; sourceTree = "<group>"; };
+		7A5FF2F71CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_Mine_LoginViewController.m; sourceTree = "<group>"; };
+		7A5FF2F81CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZ_Mine_LoginViewController.xib; path = ../Controllers/LZ_Mine_LoginViewController.xib; sourceTree = "<group>"; };
+		7A5FF3221CA1288500DEDF4C /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		7A5FF3241CA128B800DEDF4C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		7A5FF3261CA128C200DEDF4C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		7A5FF3281CA128F200DEDF4C /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		7A5FF32B1CA1290E00DEDF4C /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		7A5FF32C1CA1290E00DEDF4C /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		7A5FF32F1CA1558B00DEDF4C /* LZ_Mine_ResignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_Mine_ResignViewController.h; sourceTree = "<group>"; };
+		7A5FF3301CA1558B00DEDF4C /* LZ_Mine_ResignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_Mine_ResignViewController.m; sourceTree = "<group>"; };
+		7A5FF3311CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZ_Mine_ResignViewController.xib; path = ../Controllers/LZ_Mine_ResignViewController.xib; sourceTree = "<group>"; };
+		7A5FF43D1CA2A1C500DEDF4C /* libLZPValidate.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLZPValidate.a; sourceTree = "<group>"; };
+		7A5FF43F1CA2A1D300DEDF4C /* LZPButtonTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPButtonTimer.h; sourceTree = "<group>"; };
+		7A5FF4401CA2A1D300DEDF4C /* LZPPooCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPPooCodeView.h; sourceTree = "<group>"; };
+		7A5FF4411CA2A1D300DEDF4C /* LZPValidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPValidate.h; sourceTree = "<group>"; };
 		7AB133421C9ADF46002B0F94 /* LZ_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_MineViewController.h; sourceTree = "<group>"; };
 		7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_MineViewController.m; sourceTree = "<group>"; };
 		7AB133451C9ADF65002B0F94 /* LZ_Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LZ_Mine.storyboard; sourceTree = "<group>"; };
@@ -123,7 +172,7 @@
 		7AB1334C1C9B8795002B0F94 /* LZ_Mine_Head.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZ_Mine_Head.xib; sourceTree = "<group>"; };
 		7AB133511C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_Mine_Head_DetailViewController.h; sourceTree = "<group>"; };
 		7AB133521C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_Mine_Head_DetailViewController.m; sourceTree = "<group>"; };
-		7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZ_Mine_Head_DetailViewController.xib; sourceTree = "<group>"; };
+		7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZ_Mine_Head_DetailViewController.xib; path = ../Controllers/LZ_Mine_Head_DetailViewController.xib; sourceTree = "<group>"; };
 		7AB1335E1C9BF4A8002B0F94 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7AB133601C9BF4BA002B0F94 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7AB133621C9BF4CA002B0F94 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
@@ -196,12 +245,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5FF3291CA128F200DEDF4C /* libicucore.tbd in Frameworks */,
+				7AB133611C9BF4BA002B0F94 /* libz.tbd in Frameworks */,
+				7A5FF3271CA128C200DEDF4C /* MessageUI.framework in Frameworks */,
+				7A5FF3251CA128B800DEDF4C /* JavaScriptCore.framework in Frameworks */,
+				7A5FF3231CA1288500DEDF4C /* libstdc++.tbd in Frameworks */,
 				7AB1337C1C9C057F002B0F94 /* CoreTelephony.framework in Frameworks */,
+				7A5FF43E1CA2A1C500DEDF4C /* libLZPValidate.a in Frameworks */,
+				7A5FF32D1CA1290E00DEDF4C /* MOBFoundation.framework in Frameworks */,
 				7AB1337A1C9C03AD002B0F94 /* libWeChatSDK.a in Frameworks */,
 				7AB133781C9C01E7002B0F94 /* libsqlite3.0.tbd in Frameworks */,
 				7AB133651C9BF4E9002B0F94 /* libc++.tbd in Frameworks */,
-				7AB133611C9BF4BA002B0F94 /* libz.tbd in Frameworks */,
 				7AB1335F1C9BF4A8002B0F94 /* SystemConfiguration.framework in Frameworks */,
+				F3363BB21C9C32270001B82C /* MapKit.framework in Frameworks */,
+				7A5FF32E1CA1290E00DEDF4C /* SMS_SDK.framework in Frameworks */,
 				F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */,
 				EA637D993CACC04A8D70916F /* libPods.a in Frameworks */,
 			);
@@ -216,6 +273,7 @@
 				7AB133791C9C03AD002B0F94 /* libWeChatSDK.a */,
 				7AB133731C9BFA22002B0F94 /* WXApi.h */,
 				7AB133741C9BFA22002B0F94 /* WXApiObject.h */,
+				7A5FF32A1CA1290E00DEDF4C /* SMS_SDK */,
 				011445241C9AA6A50057E69F /* MFW */,
 				011445231C9AA6A50057E69F /* Products */,
 				99A138365401B6E5B7BCC1DC /* Pods */,
@@ -342,6 +400,8 @@
 				01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */,
 				011190761C9FF231008E2F3D /* HotelViewController.h */,
 				011190771C9FF231008E2F3D /* HotelViewController.m */,
+				01F94A521CA22D26004A76C8 /* HotelMapViewController.h */,
+				01F94A531CA22D26004A76C8 /* HotelMapViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -353,6 +413,7 @@
 				011445611C9AE5CF0057E69F /* MainModel.h */,
 				011445621C9AE5CF0057E69F /* MainModel.m */,
 				01F95BDC1C9D481600CCD539 /* aaa.plist */,
+				01F94A551CA245D3004A76C8 /* Map.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -376,6 +437,8 @@
 			children = (
 				F3D803791CA28981003B9191 /* JSDropDownMenu */,
 				011445531C9AB1910057E69F /* PullingRefreshTableView */,
+				7A0DCFED1C9FE29000D316C0 /* VOSegmentedControl */,
+				7A5FF2F01CA0DE5400DEDF4C /* ProgressHUD */,
 				011445471C9AA8CC0057E69F /* HWTools */,
 			);
 			path = library;
@@ -390,6 +453,7 @@
 				F3C8743B1C9AB2E5006BD9AF /* UIViewController+Common.m */,
 				F3A987F61CA0DFC20074C624 /* HTools.h */,
 				F3A987F71CA0DFC20074C624 /* HTools.m */,
+				0114455B1C9AB7130057E69F /* MainDefine.h */,
 				F33B63191C9E86D90060F63F /* BLImageSize.h */,
 				F33B631A1C9E86D90060F63F /* BLImageSize.m */,
 				F33B631B1C9E86D90060F63F /* AoiroSoraLayout.h */,
@@ -412,6 +476,10 @@
 		2B49E7E20405D2E58579C53F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A5FF3281CA128F200DEDF4C /* libicucore.tbd */,
+				7A5FF3261CA128C200DEDF4C /* MessageUI.framework */,
+				7A5FF3241CA128B800DEDF4C /* JavaScriptCore.framework */,
+				7A5FF3221CA1288500DEDF4C /* libstdc++.tbd */,
 				7AB1337B1C9C057F002B0F94 /* CoreTelephony.framework */,
 				7AB133761C9C016B002B0F94 /* Security.framework */,
 				7AB133681C9BF957002B0F94 /* AdSupport.framework */,
@@ -426,9 +494,56 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7A0DCFED1C9FE29000D316C0 /* VOSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				7A0DCFEE1C9FE29000D316C0 /* VOContentLayer.h */,
+				7A0DCFEF1C9FE29100D316C0 /* VOContentLayer.m */,
+				7A0DCFF01C9FE29100D316C0 /* VOIndicatorAnimation.h */,
+				7A0DCFF11C9FE29100D316C0 /* VOIndicatorAnimation.m */,
+				7A0DCFF21C9FE29100D316C0 /* VOSegment.h */,
+				7A0DCFF31C9FE29100D316C0 /* VOSegment.m */,
+				7A0DCFF41C9FE29100D316C0 /* VOSegmentedControl.h */,
+				7A0DCFF51C9FE29100D316C0 /* VOSegmentedControl.m */,
+			);
+			name = VOSegmentedControl;
+			path = ../VOSegmentedControl;
+			sourceTree = "<group>";
+		};
+		7A5FF2F01CA0DE5400DEDF4C /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				7A5FF2F11CA0DE5400DEDF4C /* ProgressHUD.bundle */,
+				7A5FF2F21CA0DE5400DEDF4C /* ProgressHUD.h */,
+				7A5FF2F31CA0DE5400DEDF4C /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
+		7A5FF32A1CA1290E00DEDF4C /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				7A5FF32B1CA1290E00DEDF4C /* MOBFoundation.framework */,
+				7A5FF32C1CA1290E00DEDF4C /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
+			sourceTree = "<group>";
+		};
+		7A5FF42E1CA29E3000DEDF4C /* other */ = {
+			isa = PBXGroup;
+			children = (
+				7A5FF43F1CA2A1D300DEDF4C /* LZPButtonTimer.h */,
+				7A5FF4401CA2A1D300DEDF4C /* LZPPooCodeView.h */,
+				7A5FF4411CA2A1D300DEDF4C /* LZPValidate.h */,
+				7A5FF43D1CA2A1C500DEDF4C /* libLZPValidate.a */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
 		7AB1333E1C9ADF2E002B0F94 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				7A5FF42E1CA29E3000DEDF4C /* other */,
 				7AB1333F1C9ADF2E002B0F94 /* Controllers */,
 				7AB133401C9ADF2E002B0F94 /* Models */,
 				7AB133411C9ADF2E002B0F94 /* Views */,
@@ -443,7 +558,10 @@
 				7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */,
 				7AB133511C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.h */,
 				7AB133521C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m */,
-				7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */,
+				7A5FF32F1CA1558B00DEDF4C /* LZ_Mine_ResignViewController.h */,
+				7A5FF3301CA1558B00DEDF4C /* LZ_Mine_ResignViewController.m */,
+				7A5FF2F61CA0EBC600DEDF4C /* LZ_Mine_LoginViewController.h */,
+				7A5FF2F71CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -462,6 +580,9 @@
 				7AB133471C9AE57B002B0F94 /* LZ_Mine_Head.h */,
 				7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */,
 				7AB1334C1C9B8795002B0F94 /* LZ_Mine_Head.xib */,
+				7AB133531C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib */,
+				7A5FF3311CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib */,
+				7A5FF2F81CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -576,8 +697,11 @@
 				011445591C9AB1910057E69F /* blueArrowDown.png in Resources */,
 				F3D803731CA24DC0003B9191 /* Scenic.plist in Resources */,
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
+				7A5FF3331CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib in Resources */,
 				F33B63201C9E87B00060F63F /* Alubm.plist in Resources */,
 				F3D8037D1CA28981003B9191 /* ico_make.png in Resources */,
+				7A5FF2FA1CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.xib in Resources */,
+				01F94A561CA245D3004A76C8 /* Map.plist in Resources */,
 				01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */,
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
@@ -585,6 +709,7 @@
 				011445321C9AA6A50057E69F /* LaunchScreen.storyboard in Resources */,
 				011445601C9AE5520057E69F /* Main.plist in Resources */,
 				01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */,
+				7A5FF2F41CA0DE5400DEDF4C /* ProgressHUD.bundle in Resources */,
 				011445521C9AA9F60057E69F /* Destination.storyboard in Resources */,
 				F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */,
 				7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */,
@@ -653,16 +778,22 @@
 				F3A987F81CA0DFC20074C624 /* HTools.m in Sources */,
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
 				F39EF9AA1C9CF48C00382A36 /* HeadImageTableViewCell.m in Sources */,
+				7A0DCFF71C9FE29100D316C0 /* VOIndicatorAnimation.m in Sources */,
 				F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */,
 				F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */,
+				7A5FF2F91CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.m in Sources */,
 				0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */,
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
 				F3851EA51C9E9C9000F75EB7 /* AlubmModel.m in Sources */,
 				F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */,
+				7A5FF3321CA1558B00DEDF4C /* LZ_Mine_ResignViewController.m in Sources */,
+				7A5FF2F51CA0DE5400DEDF4C /* ProgressHUD.m in Sources */,
 				0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */,
 				F33B63231C9E8A3E0060F63F /* CollectionViewCell.m in Sources */,
 				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
+				7A0DCFF91C9FE29100D316C0 /* VOSegmentedControl.m in Sources */,
 				01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */,
+				01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */,
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				F39EF9A61C9CF43B00382A36 /* HeadImageViewController.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
@@ -682,6 +813,8 @@
 				F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */,
 				F3A9880C1CA13F1E0074C624 /* RightTableViewCell.m in Sources */,
 				7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */,
+				7A0DCFF61C9FE29100D316C0 /* VOContentLayer.m in Sources */,
+				7A0DCFF81C9FE29100D316C0 /* VOSegment.m in Sources */,
 				01F95BE01C9D4E6C00CCD539 /* SearchCityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -787,6 +920,12 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SMS_SDK",
+					"$(PROJECT_DIR)/MFW/classes/Mine/Controllers",
+					"$(PROJECT_DIR)/MFW/classes/Mine/Controllers/Release-iphoneos",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MFW/library/HWTools/PrefixHeader.pch";
@@ -800,6 +939,10 @@
 					WXApi.h,
 					libWeChatSDK.a,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MFW/classes/Mine/Controllers/Release-iphonesimulator",
+					"$(PROJECT_DIR)/MFW/classes/Mine/Controllers/Release-iphoneos",
+					"$(PROJECT_DIR)/MFW/classes/Mine/Controllers",
+					"$(PROJECT_DIR)/MFW/classes/Mine/other",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -831,6 +974,12 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SMS_SDK",
+					"$(PROJECT_DIR)/MFW/classes/Mine/Controllers",
+					"$(PROJECT_DIR)/MFW/classes/Mine/Controllers/Release-iphoneos",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MFW/library/HWTools/PrefixHeader.pch";
@@ -844,6 +993,10 @@
 					WXApi.h,
 					libWeChatSDK.a,
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MFW/classes/Mine/Controllers/Release-iphonesimulator",
+					"$(PROJECT_DIR)/MFW/classes/Mine/Controllers/Release-iphoneos",
+					"$(PROJECT_DIR)/MFW/classes/Mine/Controllers",
+					"$(PROJECT_DIR)/MFW/classes/Mine/other",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

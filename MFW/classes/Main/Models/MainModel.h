@@ -23,5 +23,10 @@
 @property (nonatomic, copy) NSString *price_suffix;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *logo;
+@property (nonatomic, copy) NSString *lat;
+@property (nonatomic, copy) NSString *lng;
+@property (nonatomic, copy) NSString *num_pois;
+
+
 
 @end
