@@ -23,12 +23,16 @@
 		0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0114455D1C9AC5300057E69F /* HeadViewController.m */; };
 		011445601C9AE5520057E69F /* Main.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0114455F1C9AE5520057E69F /* Main.plist */; };
 		011445631C9AE5CF0057E69F /* MainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445621C9AE5CF0057E69F /* MainModel.m */; };
+		01344F8F1CA2901A0018EF2B /* LookNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01344F8E1CA2901A0018EF2B /* LookNoteViewController.m */; };
+		01344F931CA291330018EF2B /* LookNoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01344F911CA291330018EF2B /* LookNoteTableViewCell.m */; };
+		01344F941CA291330018EF2B /* LookNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01344F921CA291330018EF2B /* LookNoteTableViewCell.xib */; };
+		0146F59C1CA2B94000A12F79 /* TravelWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */; };
+		0146F5A41CA2C22100A12F79 /* TravelWorldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */; };
 		015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */; };
 		015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */; };
 		01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */; };
 		01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */; };
 		01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F94A531CA22D26004A76C8 /* HotelMapViewController.m */; };
-		01F94A561CA245D3004A76C8 /* Map.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F94A551CA245D3004A76C8 /* Map.plist */; };
 		01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */ = {isa = PBXBuildFile; fileRef = 01F95BDC1C9D481600CCD539 /* aaa.plist */; };
 		01F95BE01C9D4E6C00CCD539 /* SearchCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */; };
 		01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F95BE21C9D51EE00CCD539 /* Find1ViewController.m */; };
@@ -121,6 +125,15 @@
 		0114455F1C9AE5520057E69F /* Main.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Main.plist; sourceTree = "<group>"; };
 		011445611C9AE5CF0057E69F /* MainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainModel.h; sourceTree = "<group>"; };
 		011445621C9AE5CF0057E69F /* MainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainModel.m; sourceTree = "<group>"; };
+		01344F8D1CA2901A0018EF2B /* LookNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookNoteViewController.h; sourceTree = "<group>"; };
+		01344F8E1CA2901A0018EF2B /* LookNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookNoteViewController.m; sourceTree = "<group>"; };
+		01344F901CA291330018EF2B /* LookNoteTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookNoteTableViewCell.h; sourceTree = "<group>"; };
+		01344F911CA291330018EF2B /* LookNoteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookNoteTableViewCell.m; sourceTree = "<group>"; };
+		01344F921CA291330018EF2B /* LookNoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LookNoteTableViewCell.xib; sourceTree = "<group>"; };
+		0146F59A1CA2B94000A12F79 /* TravelWorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelWorldViewController.h; sourceTree = "<group>"; };
+		0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelWorldViewController.m; sourceTree = "<group>"; };
+		0146F5A21CA2C22100A12F79 /* TravelWorldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelWorldTableViewCell.h; sourceTree = "<group>"; };
+		0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelWorldTableViewCell.m; sourceTree = "<group>"; };
 		015FCE301C9C28BF002C44FF /* SalesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesCollectionViewCell.h; sourceTree = "<group>"; };
 		015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesCollectionViewCell.m; sourceTree = "<group>"; };
 		015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalesCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -130,7 +143,6 @@
 		01E755FF1CA16F7600A4D72A /* MainDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainDefine.h; sourceTree = "<group>"; };
 		01F94A521CA22D26004A76C8 /* HotelMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelMapViewController.h; sourceTree = "<group>"; };
 		01F94A531CA22D26004A76C8 /* HotelMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelMapViewController.m; sourceTree = "<group>"; };
-		01F94A551CA245D3004A76C8 /* Map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Map.plist; sourceTree = "<group>"; };
 		01F95BDC1C9D481600CCD539 /* aaa.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = aaa.plist; sourceTree = "<group>"; };
 		01F95BDE1C9D4E6C00CCD539 /* SearchCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchCityViewController.h; sourceTree = "<group>"; };
 		01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchCityViewController.m; sourceTree = "<group>"; };
@@ -402,6 +414,10 @@
 				011190771C9FF231008E2F3D /* HotelViewController.m */,
 				01F94A521CA22D26004A76C8 /* HotelMapViewController.h */,
 				01F94A531CA22D26004A76C8 /* HotelMapViewController.m */,
+				01344F8D1CA2901A0018EF2B /* LookNoteViewController.h */,
+				01344F8E1CA2901A0018EF2B /* LookNoteViewController.m */,
+				0146F59A1CA2B94000A12F79 /* TravelWorldViewController.h */,
+				0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -413,7 +429,6 @@
 				011445611C9AE5CF0057E69F /* MainModel.h */,
 				011445621C9AE5CF0057E69F /* MainModel.m */,
 				01F95BDC1C9D481600CCD539 /* aaa.plist */,
-				01F94A551CA245D3004A76C8 /* Map.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -428,6 +443,11 @@
 				015FCE301C9C28BF002C44FF /* SalesCollectionViewCell.h */,
 				015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */,
 				015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */,
+				01344F901CA291330018EF2B /* LookNoteTableViewCell.h */,
+				01344F911CA291330018EF2B /* LookNoteTableViewCell.m */,
+				01344F921CA291330018EF2B /* LookNoteTableViewCell.xib */,
+				0146F5A21CA2C22100A12F79 /* TravelWorldTableViewCell.h */,
+				0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -702,6 +722,7 @@
 				7A5FF2FA1CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.xib in Resources */,
 				01F94A561CA245D3004A76C8 /* Map.plist in Resources */,
 				01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */,
+				01344F941CA291330018EF2B /* LookNoteTableViewCell.xib in Resources */,
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
 				F39EF9AB1C9CF48C00382A36 /* HeadImageTableViewCell.xib in Resources */,
@@ -770,6 +791,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01344F931CA291330018EF2B /* LookNoteTableViewCell.m in Sources */,
 				F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */,
 				015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */,
 				7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */,
@@ -796,12 +818,14 @@
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				F39EF9A61C9CF43B00382A36 /* HeadImageViewController.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
+				01344F8F1CA2901A0018EF2B /* LookNoteViewController.m in Sources */,
 				F3A9880F1CA1416F0074C624 /* RightModel.m in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
 				F3D8037E1CA28981003B9191 /* JSDropDownMenu.m in Sources */,
 				F3A988041CA12A0C0074C624 /* FoodViewController.m in Sources */,
 				F3D803771CA26FF9003B9191 /* ScenicTableViewCell.m in Sources */,
 				01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */,
+				0146F5A41CA2C22100A12F79 /* TravelWorldTableViewCell.m in Sources */,
 				F3D803871CA2BBB0003B9191 /* ScenicModel.m in Sources */,
 				F3EA82D31C9F9CD60037B242 /* ScrollViewController.m in Sources */,
 				F3A987FE1CA129B80074C624 /* ScenicViewController.m in Sources */,
@@ -811,6 +835,7 @@
 				0114454B1C9AA9860057E69F /* MainViewController.m in Sources */,
 				F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */,
 				F3A9880C1CA13F1E0074C624 /* RightTableViewCell.m in Sources */,
+				0146F59C1CA2B94000A12F79 /* TravelWorldViewController.m in Sources */,
 				7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */,
 				7A0DCFF61C9FE29100D316C0 /* VOContentLayer.m in Sources */,
 				7A0DCFF81C9FE29100D316C0 /* VOSegment.m in Sources */,

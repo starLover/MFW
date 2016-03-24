@@ -16,6 +16,8 @@
 #import "SearchCityViewController.h"
 #import "Find1ViewController.h"
 #import "HotelViewController.h"
+#import "LookNoteViewController.h"
+#import "TravelWorldViewController.h"
 
 @interface MainViewController ()<UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
@@ -522,12 +524,14 @@
             break;
         case 4:
         {
-            
+            LookNoteViewController *lookVC = [[LookNoteViewController alloc] init];
+            [self.navigationController pushViewController:lookVC animated:YES];
         }
             break;
         case 5:
         {
-            
+            TravelWorldViewController *travelVC = [[TravelWorldViewController alloc] init];
+            [self.navigationController pushViewController:travelVC animated:YES];
         }
             break;
         case 6:
