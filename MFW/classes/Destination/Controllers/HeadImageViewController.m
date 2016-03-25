@@ -22,6 +22,7 @@
 @property(nonatomic,strong)NSMutableArray *otherArray;
 @property(nonatomic,strong)NSMutableArray *userArray;
 @property(nonatomic,strong)NSMutableArray *dataArray;
+@property(nonatomic,copy)NSNumber *userNum;
 
 @end
 
@@ -30,7 +31,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self headViewAction];
+    
     //注册
     [self.tableView registerNib:[UINib nibWithNibName:@"HeadImageTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     [self.view addSubview:self.tableView];
@@ -47,20 +48,20 @@
 }
 #pragma mark --------- UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-       return self.itemArray.count;
-//    return 50;
+//       return self.itemArray.count;
+    return 50;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HeadImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-//    DestinationModel *itemModel = self.itemArray[indexPath.row];
-//    DestinationModel *poiModel = self.poiArray[indexPath.row];
-//    DestinationModel *areaModel = self.areaArray[indexPath.row];
-//    if (indexPath.row < self.itemArray.count && indexPath.row < self.poiArray.count && indexPath.row < self.areaArray.count) {
-//        
-//        cell.nameLabel.text = poiModel.name;
-//        cell.placeName.text = [NSString stringWithFormat:@"位于%@，距离nkm",areaModel.name];
-//    cell.userNum.text = [NSString stringWithFormat:@"今天有%@人浏览",itemModel.user_number];
-//    }
+    DestinationModel *itemModel = self.itemArray[indexPath.row];
+    DestinationModel *poiModel = self.poiArray[indexPath.row];
+    DestinationModel *areaModel = self.areaArray[indexPath.row];
+    if (indexPath.row < self.itemArray.count && indexPath.row < self.poiArray.count && indexPath.row < self.areaArray.count) {
+        
+        cell.nameLabel.text = poiModel.name;
+        cell.placeName.text = [NSString stringWithFormat:@"位于%@，距离nkm",areaModel.name];
+    cell.userNum.text = [NSString stringWithFormat:@"今天有%@人浏览",itemModel.user_number];
+    }
 //    NSLog(@"%@",poiModel.name);
 //    NSLog(@"%@",areaModel.name);
 //    NSLog(@"%@",itemModel.user_number);
@@ -78,29 +79,34 @@
 }
 #pragma mark --------- 自定义BlackView
 - (void)headViewAction{
+    //view
     UIView *blackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight/4)];
     blackView.backgroundColor = [UIColor blackColor] ;
     [self.view addSubview:blackView];
-    
+    //关闭按钮
     UIButton *numBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     numBtn.frame = CGRectMake(kScreenWidth-80, 20 , 40, 44);
     [numBtn setTitle:@"关闭" forState:UIControlStateNormal];
     [numBtn addTarget:self action:@selector(closeAction) forControlEvents:UIControlEventTouchUpInside];
     [blackView addSubview:numBtn];
-    
+    //时间label
     UILabel *timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 20, kScreenWidth/3, 40)];
     timeLabel.text = @"过去24小时,";
     timeLabel.textColor = [UIColor whiteColor];
     [blackView addSubview:timeLabel];
+    //人数Label
     UILabel *numLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 50, kScreenWidth/3, 50)];
-//    DestinationModel *numModel = self.dataArray[0];
-//    numLabel.text = numModel.user_number;
+    numLabel.text = [self.userNum stringValue];
     numLabel.textColor = [UIColor whiteColor];
     numLabel.font = [UIFont systemFontOfSize:26];
     [blackView addSubview:numLabel];
+    //地点Label
     UILabel *placeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20,80, kScreenWidth/2, 40)];
-//    DestinationModel *placeModel = self.otherArray[0];
-//    placeLabel.text = [NSString stringWithFormat:@"人，正在%@旅行",placeModel.name];
+    DestinationModel *placeModel = self.otherArray[0];
+    placeLabel.text = [NSString stringWithFormat:@"人，正在 %@ 旅行",placeModel.name];
+//    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:placeModel.name];
+//    [str addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:NSMakeRange(0, 2)];
+//    placeLabel.attributedText =[NSString stringWithFormat:@"人，正在 %@ 旅行",str];
     placeLabel.textColor = [UIColor grayColor];
     placeLabel.font = [UIFont systemFontOfSize:14];
     [blackView addSubview:placeLabel];
@@ -119,44 +125,46 @@
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *resultDic = responseObject;
         NSDictionary *dataDic = resultDic[@"data"];
-        DestinationModel *numModel = [[DestinationModel alloc]init];
-        [numModel setValuesForKeysWithDictionary:dataDic];
-        [self.dataArray addObject:numModel];
+        self.userNum = dataDic[@"user_number"];
         NSArray *blocks = dataDic[@"blocks"];
-        for (NSDictionary *dic in blocks) {
-//            NSDictionary *item = dic[@"item0"];
-            NSArray *listArray = dic[@"list"];
-            for (NSDictionary *dit in listArray) {
-                NSDictionary *poi = dit[@"poi"];
-                NSDictionary *area = poi[@"area"];
-                NSArray *user_list = dit[@"user_list"];
-                
-                DestinationModel *model = [[DestinationModel alloc]init];
-                [model setValuesForKeysWithDictionary:poi];
-                [self.poiArray addObject:model];
-                
-                DestinationModel *model1 = [[DestinationModel alloc]init];
-                [model1 setValuesForKeysWithDictionary:area];
-                [self.areaArray addObject:model1];
-                
-                for (NSDictionary *dict in user_list) {
-                    DestinationModel *bModel = [[DestinationModel alloc]init];
-                    [bModel setValuesForKeysWithDictionary:dict];
-                    [self.userArray addObject:bModel];
-                }
-            }
-        }
+//        for (NSDictionary *dic in blocks) {
+//            <#statements#>
+//        }
+        
+//        for (NSDictionary *dic in blocks) {
+////            NSDictionary *item = dic[@"item0"];
+//            NSArray *listArray = dic[@"list"];
+//            for (NSDictionary *dit in listArray) {
+//                NSDictionary *poi = dit[@"poi"];
+//                NSDictionary *area = poi[@"area"];
+//                NSArray *user_list = dit[@"user_list"];
+//                
+//                DestinationModel *model = [[DestinationModel alloc]init];
+//                [model setValuesForKeysWithDictionary:poi];
+//                [self.poiArray addObject:model];
+//                
+//                DestinationModel *model1 = [[DestinationModel alloc]init];
+//                [model1 setValuesForKeysWithDictionary:area];
+//                [self.areaArray addObject:model1];
+//                
+//                for (NSDictionary *dict in user_list) {
+//                    DestinationModel *bModel = [[DestinationModel alloc]init];
+//                    [bModel setValuesForKeysWithDictionary:dict];
+//                    [self.userArray addObject:bModel];
+//                }
+//            }
+//        }
         NSDictionary *mdd = dataDic[@"mdd"];
         DestinationModel *model = [[DestinationModel alloc]init];
         [model setValuesForKeysWithDictionary:mdd];
         [self.otherArray addObject:model];
-        
-        NSLog(@"%lu",self.areaArray.count);
-        NSLog(@"%lu",self.poiArray.count);
-        NSLog(@"%lu",self.userArray.count);
+        NSLog(@"%@",self.otherArray[0]);
+//        NSLog(@"%lu",self.areaArray.count);
+//        NSLog(@"%lu",self.poiArray.count);
+//        NSLog(@"%lu",self.userArray.count);
         
         [self.tableView reloadData];
-        
+        [self headViewAction];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     }];
 }

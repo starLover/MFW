@@ -75,10 +75,22 @@
                         <color key="textColor" red="0.99543815560000004" green="0.48729785840000001" blue="0.21620957169999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eI-mT-n93">
+                        <rect key="frame" x="286" y="72" width="65" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fSi-we-zTH"/>
+                            <constraint firstAttribute="width" constant="65" id="rVS-10-XKx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.99543815560000004" green="0.48729785840000001" blue="0.21620957169999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="bAE-yO-hck" secondAttribute="trailing" constant="117" id="8jr-5u-Ja3"/>
                     <constraint firstItem="e3A-qa-ciJ" firstAttribute="top" secondItem="YNo-4N-2qq" secondAttribute="bottom" constant="2" id="8vL-cp-nNk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="8eI-mT-n93" secondAttribute="trailing" constant="16" id="9Ae-Y3-28q"/>
+                    <constraint firstItem="8eI-mT-n93" firstAttribute="top" secondItem="e3A-qa-ciJ" secondAttribute="bottom" constant="8" id="9Ob-hp-pJq"/>
                     <constraint firstItem="9NT-VC-FtX" firstAttribute="leading" secondItem="bAE-yO-hck" secondAttribute="trailing" constant="36" id="9s1-WK-MVt"/>
                     <constraint firstAttribute="trailingMargin" secondItem="wgY-a9-goU" secondAttribute="trailing" constant="244" id="AWb-4T-XsI"/>
                     <constraint firstItem="wgY-a9-goU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="EPy-I2-OaT"/>
@@ -106,8 +118,9 @@
                 <outlet property="information" destination="kxr-gk-T7B" id="ne8-NA-mpv"/>
                 <outlet property="location" destination="bAE-yO-hck" id="unm-CL-QzI"/>
                 <outlet property="placeLabel" destination="YNo-4N-2qq" id="nsd-I1-gUS"/>
+                <outlet property="price" destination="8eI-mT-n93" id="1cb-7g-N8v"/>
             </connections>
-            <point key="canvasLocation" x="464.5" y="429"/>
+            <point key="canvasLocation" x="465.5" y="445"/>
         </tableViewCell>
     </objects>
 </document>

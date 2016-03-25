@@ -1,0 +1,608 @@
+data =     {
+"has_more" = 1;
+list =         (
+{
+area =                 {
+id = 12001;
+name = "\U4f0f\U725b\U5c71\U6ed1\U96ea\U4e50\U56ed";
+};
+comments =                 (
+{
+comment = "\U662f\U6d1b\U9633\U5e02\U6700\U597d\U7684\U6ed1\U96ea\U573a\U3002\U4e00\U5e74\U56db\U5b63\U90fd\U53ef\U4ee5\U6ed1\U96ea\U3002\U51ac\U5929\U7684\U65f6\U5019\U5728\U5ba4\U5916\U6ed1\U96ea\U573a\Uff0c\U5730\U65b9\U5f88\U5927\Uff0c\U6709\U4e09\U4e2a\U4e0d\U540c\U7684\U5761\U5ea6\Uff0c\U9002\U5408\U6ed1\U96ea\U4e0d\U540c\U719f\U7ec3\U7a0b\U5ea6\U7684\U4eba\U53bb\U6ed1\U3002\U4e0d\U5728\U4e0b\U96ea\U7684\U5b63\U8282\U53ef\U4ee5\U5728\U5ba4\U5185\U6ed1\U96ea\U573a\Uff0c\U5730\U65b9\U4e0d\U662f\U7279\U522b\U5927\Uff0c\U4f46\U53ef\U4ee5\U770b\U5ba4\U5185\U51b0\U96d5\Uff0c\U6240\U4ee5\U4e5f\U4e0d\U9519\U3002\U5ba4\U5916\U7684\U8bdd\U53ef\U4ee5\U6ed1\U8349\Uff0c\U79df\U7528\U8bbe\U5907\U5c31\U6210\U3002
+\n\U4e0d\U592a\U597d\U7684\U65b9\U9762\U5c31\U662f\U666f\U533a\U7684\U4ea4\U901a\U4e0d\U592a\U65b9\U4fbf\Uff0c\U6bd5\U7adf\U5728\U5c71\U4e0a\Uff0c\U8981\U8d70\U597d\U4e45\U7684\U5c71\U8def\Uff0c\U81ea\U9a7e\U7684\U8bdd\U8fd8\U884c\Uff0c\U5982\U679c\U65e2\U4e0d\U662f\U81ea\U9a7e\U4e5f\U6ca1\U6709\U62b1\U56e2\Uff0c\U53ef\U4ee5\U53bb\U53bf\U57ce\U5750\U8f66\Uff0c\U597d\U50cf\U4e00\U5929\U53ea\U6709\U4e00\U73ed\U3002\U4e0d\U8fc7\U771f\U4e0d\U884c\U7684\U8bdd\U4e5f\U53ef\U4ee5\U5305\U8f66\Uff0c\U6709\U5f88\U591a\U8fd9\U79cd\U5305\U8f66\U53f8\U673a\U7684\U3002";
+id = 28682680;
+owner =                         {
+id = 81501389;
+logo = "http://file101.mafengwo.net/s8/M00/42/68/wKgBpVXXHHuAA2VGAAA4BDDvnBU06.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U5ffd\U800c\U4eca\U590f";
+};
+rank = 5;
+}
+);
+"foreign_name" = "";
+honors =                 (
+{
+"s_icon_url" = "http://images.mafengwo.net/mobile/images/gonglve/ic_recommend.png";
+title = "\U63a8\U8350";
+}
+);
+id = 11899;
+lat = "33.750120000948";
+lng = "111.48318123314";
+name = "\U4f0f\U725b\U5c71\U6ed1\U96ea\U5ea6\U5047\U4e50\U56ed";
+"num_comment" = 22;
+"num_travelnote" = 3;
+price = 0;
+"price_type" = "";
+rank = 4;
+tags =                 (
+{
+id = 7609;
+name = "\U6237\U5916\U6d3b\U52a8";
+},
+{
+id = 16043;
+name = "\U6ed1\U96ea";
+}
+);
+thumbnail = "http://file102.mafengwo.net/s2/M00/B8/05/wKgBpU5gdajMTaP9AACH4N014jQ60.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+comments =                 (
+{
+comment = "\U4ee5\U524d\U98ce\U534e\U6b63\U8302\Uff0c\U73b0\U5728\U5df2\U7136\U5728\U4e07\U8fbe\U627e\U4e0d\U5230\U4e86\Uff0c\U4eba\U4eec\U7684\U5a31\U4e50\U6d88\U8d39\U591a\U6837\U5316\Uff0c80\U540e\U5df2\U7136\U544a\U522b\U4e86\U5531\U6b4c\U8fd9\U79cd\U5355\U4e00\U7684\U65b9\U5f0f\U4e86";
+id = 46341900;
+owner =                         {
+id = 90550356;
+logo = "http://file101.mafengwo.net/s9/M00/97/FF/wKgBs1aU-_mABJ-6AACJogZZE5E37.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U535a\U91d1\U4e4b\U604b";
+};
+rank = 2;
+}
+);
+"foreign_name" = "";
+honors =                 (
+{
+"s_icon_url" = "http://images.mafengwo.net/mobile/images/gonglve/ic_recommend.png";
+title = "\U63a8\U8350";
+}
+);
+id = 35582;
+lat = "34.654529571533";
+lng = "112.40882873535";
+name = "\U6d1b\U9633\U5927\U6b4c\U661fKTV";
+"num_comment" = 9;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 4;
+tags =                 (
+{
+id = 8315;
+name = KTV;
+}
+);
+thumbnail = "http://file112.mafengwo.net/s3/M00/ED/9A/wKgBjE850CHNn_xiAAFXXMx0tSs46.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+comments =                 (
+{
+comment = "\U9152\U5e97\U8ddd\U79bb\U9f99\U95e8\U77f3\U7a9f\U4e0d\U8fdc \U6211\U4eec\U5230\U9152\U5e97\U5df2\U7ecf\U5341\U70b9\U591a\U4e86 \U00a0\U6211\U4eec\U5b9a\U7684\U662f\U5c71\U5730\U6c64\U5c4b \U623f\U95f4\U90fd\U6709\U81ea\U5df1\U7684\U5ba4\U5916\U6e29\U6cc9\U6ce1\U6c60 \U6ce1\U6ce1\U6e29\U6cc9 \U786e\U5b9e\U611f\U89c9\U5f88\U653e\U677e \U7761\U5f97\U4e5f\U5f88\U8212\U670d\U00a0\U7279\U522b\U611f\U8c22\U9152\U5e97\U9001\U6765\U7684\U591c\U5bb5\U6c34\U679c\U548c\U6ce1\U6e29\U6cc9\U7528\U7684\U7eff\U8336\n\U9152\U5e97\U7684\U623f\U95f4\U4e5f\U662f\U4e0d\U9519\U7684 \U5927\U5e8a\U72ec\U7acb\U5367\U5ba4 \U8fdb\U95e8\U7684\U5c0f\U65b9\U5385\U8fd8\U6709\U81ea\U52a8\U9ebb\U5c06\U673a \U9152\U5e97\U7684\U65e9\U9910\U4e2d\U89c4\U4e2d\U77e9 \U54c1\U79cd\U4e0d\U662f\U5f88\U591a";
+id = 11666761;
+owner =                         {
+id = 32536398;
+logo = "http://file109.mafengwo.net/s6/M00/AD/CB/wKgB4lNLwlSADG7YAAEll3CoNfc26.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U5c0f\U4ecd\U4ecd";
+};
+rank = 5;
+}
+);
+"foreign_name" = "";
+honors =                 (
+{
+"s_icon_url" = "http://images.mafengwo.net/mobile/images/gonglve/ic_recommend.png";
+title = "\U63a8\U8350";
+}
+);
+id = 5428703;
+lat = "34.621080972099";
+lng = "112.34557284668";
+name = "\U9f99\U95e8\U51e4\U7fd4\U6e29\U6cc9\U65c5\U6e38\U5ea6\U5047\U533a";
+"num_comment" = 5;
+"num_travelnote" = 1;
+price = 0;
+"price_type" = "";
+rank = 5;
+tags =                 (
+{
+id = 7567;
+name = "\U6e29\U6cc9\U6c34\U7597";
+}
+);
+thumbnail = "http://file104.mafengwo.net/s3/M00/F0/9A/wKgBjE8514KeswXbAAEn4t1y93g39.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+comments =                 (
+{
+comment = "\U4e00\U591c\U4e4b\U95f4\Uff0cKTV\U4f3c\U4e4e\U4ece\U4eba\U4eec\U7684\U5a31\U4e50\U6a21\U5f0f\U4e2d\U4e00\U4e0b\U5b50\U88ab\U62b9\U53bb\U4e86\U3002";
+id = 48647968;
+owner =                         {
+id = 19519376;
+logo = "http://file103.mafengwo.net/s9/M00/83/3D/wKgBs1bFa4-AP-kwAAIvLuHbpPY78.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U81ea\U8a00\U81ea\U8bed\U7684\U6cf0\U8fea\U4f26";
+};
+rank = 4;
+}
+);
+"foreign_name" = "";
+honors =                 (
+{
+"s_icon_url" = "http://images.mafengwo.net/mobile/images/gonglve/ic_recommend.png";
+title = "\U63a8\U8350";
+}
+);
+id = 35583;
+lat = "34.639049530029";
+lng = "112.41062164307";
+name = "AGOGO\U81ea\U52a9KTV";
+"num_comment" = 5;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 4;
+tags =                 (
+{
+id = 8315;
+name = KTV;
+}
+);
+thumbnail = "http://file110.mafengwo.net/s3/M00/ED/3E/wKgBjE85ztyEEbbuAAGaCtgMI0k32.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+comments =                 (
+{
+comment = "\U6bd4\U8f83\U4e0d\U9519\U7684\U4e00\U5bb6\U4e3b\U9898\U5496\U5561\U5e97\Uff0c\U6700\U559c\U6b22\U7684\U662f\U91cc\U9762\U7684\U4e00\U4e9b\U5c0f\U70b9\U5fc3\Uff0c\U5f88\U7cbe\U81f4\Uff0c\U597d\U5403\Uff01\U636e\U8bf4\U73b0\U5728\U5173\U95e8\U4e86\U54e6\Uff01";
+id = 17697927;
+owner =                         {
+id = 41361333;
+logo = "http://file102.mafengwo.net/s9/M00/BF/54/wKgBs1aVr6-AZ87zAAeIsiN5qMs67.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U4eba\U6de1\U5982\U8336";
+};
+rank = 4;
+}
+);
+"foreign_name" = "";
+honors =                 (
+);
+id = 35568;
+lat = "34.671600341797";
+lng = "112.43299865723";
+name = "\U55b5\U8336\U4f1aACG\U4e3b\U9898\U5496\U5561\U5e97(\U6682\U505c\U8425\U4e1a)";
+"num_comment" = 4;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 5;
+tags =                 (
+{
+id = 7560;
+name = "\U5496\U5561\U5385";
+}
+);
+thumbnail = "http://file102.mafengwo.net/s3/M00/F4/6E/wKgBjE855-eoGM3gAADHVqBR9jY69.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+comments =                 (
+{
+comment = "\U5728\U4e07\U8fbe\U5e7f\U573a\U9644\U8fd1\Uff0c\U4eba\U7279\U591a\Uff0c\U6c14\U6c1b\U8fd8\U884c\U5427\Uff0c\U6cbb\U5b89\U4e5f\U8fd8\U884c\Uff0c\U9a7b\U5531\U6b4c\U624b\U5531\U7684\U4e00\U822c\U822c";
+id = 7923788;
+owner =                         {
+id = 17648988;
+logo = "http://file104.mafengwo.net/s5/M00/D5/F4/wKgB3FE4rG6AC-AkAAGcvSd8UHI02.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "Coral\U55b5\U9171\U266c";
+};
+rank = 4;
+}
+);
+"foreign_name" = "";
+honors =                 (
+{
+"s_icon_url" = "http://images.mafengwo.net/mobile/images/gonglve/ic_recommend.png";
+title = "\U63a8\U8350";
+}
+);
+id = 35561;
+lat = "34.656520843506";
+lng = "112.40038299561";
+name = "\U82cf\U8377\U9152\U5427";
+"num_comment" = 3;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 4;
+tags =                 (
+{
+id = 7558;
+name = "\U9152\U5427";
+}
+);
+thumbnail = "http://file101.mafengwo.net/s3/M00/F6/1C/wKgBjE857HSwJvr7AAELoj01nrc45.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+comments =                 (
+{
+comment = "\U548c\U522b\U7684\U9152\U5427\U6ca1\U6709\U4ec0\U4e48\U5206\U522b\Uff0c\U8fd9\U91cc\U4e5f\U4f1a\U6709\U4e00\U4e9b\U6d3b\U52a8\U4e4b\U7c7b\U7684\Uff0c\U603b\U4e4b\U611f\U89c9\U9152\U5427\U5927\U591a\U90fd\U662f\U4e00\U4e2a\U6837\Uff0c\U6ca1\U4ec0\U4e48\U7279\U522b\U7684\U5730\U65b9\U3002";
+id = 59958;
+owner =                         {
+id = 18004201;
+logo = "http://file105.mafengwo.net/s2/M00/34/3C/wKgBpU4yN8qmz1fVAAAKYlfjbck20.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U4ec0\U4e48\U7684\U4ec0\U4e48";
+};
+rank = 4;
+}
+);
+"foreign_name" = "";
+honors =                 (
+{
+"s_icon_url" = "http://images.mafengwo.net/mobile/images/gonglve/ic_recommend.png";
+title = "\U63a8\U8350";
+}
+);
+id = 35565;
+lat = "34.670325861141";
+lng = "112.4360319972";
+name = "\U7ea2\U573a\U9152\U5427";
+"num_comment" = 3;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 4;
+tags =                 (
+{
+id = 7558;
+name = "\U9152\U5427";
+}
+);
+thumbnail = "http://file109.mafengwo.net/s3/M00/F5/24/wKgBjE856fyKZQi4AAF56ZaFVWo96.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2134;
+name = "\U897f\U5de5\U533a";
+};
+comments =                 (
+{
+comment = "\U573a\U9986\U5f88\U5927\Uff0c\U79cd\U7c7b\U4e5f\U4e0d\U9519\Uff0c\U6e38\U6cf3\U9986\U7fbd\U6bdb\U7403\U9986\U7b49\U5f88\U4e0d\U9519\U7684\Uff0c\U6bcf\U9694\U4e00\U6bb5\U90fd\U4f1a\U6709\U660e\U661f\U6765\U5f00\U6f14\U5531\U4f1a\Uff0c\U603b\U7684\U6765\U8bf4\U4e0d\U9519";
+id = 47897465;
+owner =                         {
+id = 33439116;
+logo = "http://file111.mafengwo.net/s9/M00/B3/02/wKgBs1avoqGAGwxIAANIBaKxf6426.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U9ed1\U773c\U775b";
+};
+rank = 5;
+}
+);
+"foreign_name" = "";
+honors =                 (
+{
+"s_icon_url" = "http://images.mafengwo.net/mobile/images/gonglve/ic_recommend.png";
+title = "\U63a8\U8350";
+}
+);
+id = 6628584;
+lat = "34.665600116527";
+lng = "112.4510829803";
+name = "\U897f\U5de5\U4f53\U80b2\U573a";
+"num_comment" = 3;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 3;
+tags =                 (
+{
+id = 7609;
+name = "\U6237\U5916\U6d3b\U52a8";
+}
+);
+thumbnail = "http://file112.mafengwo.net/s6/M00/C9/40/wKgB4lNFCWKAYQpVAAA5UvmkXc076.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+comments =                 (
+{
+comment = "\U4e00\U822c\U822c\U7684\U6e29\U6cc9\U4f53\U9a8c\U5730\Uff0c\U4e0d\U5982\U5bf9\U9762\U7684\U51e4\U7fd4";
+id = 45390284;
+owner =                         {
+id = 10649538;
+logo = "http://file104.mafengwo.net/s8/M00/FB/00/wKgBpVYFeB-AVN0wAACfu6zaucg96.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U8d70\U7740\U77a7";
+};
+rank = 3;
+}
+);
+"foreign_name" = "";
+honors =                 (
+);
+id = 7047022;
+lat = "34.64613";
+lng = "112.39375";
+name = "\U94f6\U674f\U4ed9\U5e84\U5e1d\U90fd\U6e29\U6cc9";
+"num_comment" = 2;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 4;
+tags =                 (
+{
+id = 7567;
+name = "\U6e29\U6cc9\U6c34\U7597";
+}
+);
+thumbnail = "http://file110.mafengwo.net/s6/M00/20/EC/wKgB4lMC9N6AZvjlAACVOrTseyQ44.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+};
+comments =                 (
+{
+comment = "\U8fd9\U91cc\U662f\U4e00\U5904\U5f00\U53d1\U4e0d\U4e45\U7684\U666f\U70b9\Uff0c\U6240\U4ee5\U77e5\U9053\U7684\U4eba\U4e0d\U662f\U5f88\U591a\U3002\U7b2c\U4e8c\U6b21\U966a\U670b\U53cb\U53bb\U6d1b\U9633\Uff0c\U5df2\U7ecf\U4e34\U8fd1\U590f\U5929\Uff0c\U6240\U4ee5\U5929\U6c14\U6709\U4e9b\U70ed\U3002\U4e8e\U662f\U5f53\U5730\U4eba\U4e3a\U6211\U4eec\U63a8\U8350\U4e86\U8fd9\U5904\U6f02\U6d41\U666f\U70b9\U3002\U6050\U9f99\U8c37\U6f02\U6d41\U8ddd\U79bb\U6d1b\U9633\U8fd8\U662f\U6709\U4e00\U6bb5\U8ddd\U79bb\U7684\Uff0c\U6240\U4ee5\U6211\U4eec\U53ea\U80fd\U5148\U4e58\U5750\U957f\U9014\U6c7d\U8f66\U5230\U6c5d\U9633\U53bf\Uff0c\U518d\U6362\U4e58\U5230\U9773\U6751\U4e61\U7684\U8f66\U524d\U5f80\U666f\U533a\U3002\U5728\U95e8\U53e3\U8d2d\U4e70\U4e86158\U5143\U7684\U6f02\U6d41\U7968\U540e\Uff0c\U6211\U4eec\U624d\U771f\U6b63\U8fdb\U5165\U4e86\U666f\U533a\Uff0c\U53ef\U60dc\U6211\U4eec\U53ea\U6709\U51e0\U4e2a\U4eba\Uff0c\U5982\U679c\U662f10\U4eba\U4ee5\U4e0a\Uff0c\U8fd8\U53ef\U4ee5\U4e70\U56e2\U961f\U7968\Uff0c\U4f18\U60e0\U51e0\U5341\U5143\U3002\U5de5\U4f5c\U4eba\U5458\U544a\U8bc9\U6211\U4eec\Uff0c\U6050\U9f99\U8c37\U666f\U533a\U6709500\U591a\U6761\U6f02\U6d41\U8247\Uff0c\U4ee5\U6bcf\U82394\U4eba\U8ba1\U7b97\Uff0c\U6700\U591a\U53ef\U4ee5\U4fdd\U8bc12000\U4eba\U540c\U65f6\U8fdb\U884c\U6f02\U6d41\U3002\U4e0d\U8fc7\Uff0c\U9700\U8981\U7279\U522b\U6ce8\U610f\U7684\U662f\Uff0c\U8fd9\U91cc\U5e76\U4e0d\U662f\U6bcf\U5929\U90fd\U5f00\U653e\Uff0c\U53ea\U5728\U5468\U4e8c\U3001\U56db\U3001\U516d\U3001\U65e5\U4ee5\U53ca\U8282\U5047\U65e5\U5f00\U653e\Uff0c\U4f46\U6709\U65f6\U53c8\U4f1a\U56e0\U4e3a\U6c34\U91cf\U800c\U4e0d\U5f00\Uff0c\U6240\U4ee5\U5efa\U8bae\U5927\U5bb6\U53ef\U4ee5\U6253\U5f00\U5b83\U7684\U7f51\U9875\Uff0c\U62e8\U6253\U9884\U8ba2\U7535\U8bdd\U63d0\U524d\U8be2\U95ee\U3002";
+id = 22913017;
+owner =                         {
+id = 78285642;
+logo = "http://file104.mafengwo.net/s9/M00/EA/2F/wKgBs1aWAR6AeO43AAW6iuCe9pk65.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = mengxiaoni;
+};
+rank = 4;
+}
+);
+"foreign_name" = "";
+honors =                 (
+);
+id = 7690497;
+lat = "33.94668";
+lng = "112.278449";
+name = "\U6050\U9f99\U8c37\U6f02\U6d41";
+"num_comment" = 2;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 5;
+tags =                 (
+{
+id = 16065;
+name = "\U6f02\U6d41";
+}
+);
+thumbnail = "http://file110.mafengwo.net/s8/M00/AA/C5/wKgBpVUna3-AbjdOAANiDrajHSE11.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2133;
+name = "\U6da7\U897f\U533a";
+};
+comments =                 (
+{
+comment = "\U4e4b\U524d\U6709\U540c\U5b66\U5728\U90a3\U8fb9\U4e0a\U73ed\Uff0c\U9001\U4e86\U7968\Uff0c\U53bb\U8fc7\U4e24\U6b21\Uff0c\U5f88\U4e0d\U9519\U7684\U56fd\U5b66\U5723\U5267\U3002\U95e8\U7968\U4ece199-599\U5143\U4e0d\U7b49\Uff0c\U4e0d\U8fc7\U6709\U65f6\U5019\U53ef\U4ee5\U56e2\U8d2d\U7684\U3002\U6f14\U7684\U5f88\U6295\U5165\Uff0c\U90fd\U662f\U771f\U529f\U592b\Uff0c\U5f88\U8ba4\U771f\U5f88\U597d\U770b\U7684\U6f14\U51fa\Uff0c\U73b0\U573a\U7ba1\U7406\U4e5f\U76f8\U5bf9\U4e25\U8c28\Uff0c\U9700\U8981\U63d0\U524d\U534a\U5c0f\U65f6\U5de6\U53f3\U5165\U573a\Uff0c\U5f88\U591a\U65c5\U884c\U793e\U4f1a\U5e26\U56e2\U8fc7\U6765\U770b\U7684\U3002\U4e13\U5fc3\U6765\U770b\U7684\U8bdd\Uff0c\U53ef\U4ee5\U4e86\U89e3\U5230\U5f88\U591a\U4eba\U751f\U54f2\U7406\U3002\U6700\U559c\U6b22\U7af9\U6797\U7684\U90a3\U4e00\U573a\Uff0c\U5f88\U7a7a\U7075\U5f88\U5b89\U9759\U7684\U611f\U89c9\U3002\U53ef\U4ee5\U62cd\U7167\Uff0c\U4e0d\U8fc7\U73b0\U573a\U4e0d\U8ba9\U5f00\U95ea\U5149\U706f\Uff0c\U8981\U6ce8\U610f\U7279\U522b\U5b89\U9759\Uff0c\U6709\U5de5\U4f5c\U4eba\U5458\U4f1a\U4e00\U76f4\U5728\U7ef4\U6301\U79e9\U5e8f\U3002";
+id = 48658002;
+owner =                         {
+id = 83666035;
+logo = "http://file101.mafengwo.net/s9/M00/E0/60/wKgBs1bkJjmAb0OvAADc-gdX36M62.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U8fc7\U5ba2,\U5306\U5306";
+};
+rank = 5;
+}
+);
+"foreign_name" = "";
+honors =                 (
+);
+id = 7690536;
+lat = "34.675028170542";
+lng = "112.37005206953";
+name = "\U529f\U592b\U8bd7\U4e5d\U5377";
+"num_comment" = 2;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 5;
+tags =                 (
+{
+id = 7565;
+name = "\U5267\U573a";
+}
+);
+thumbnail = "http://file102.mafengwo.net/s8/M00/AB/9B/wKgBpVUna-qAMqlvAACOpyL8SMQ04.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 11058;
+name = "\U683e\U5ddd";
+};
+comments =                 (
+{
+comment = "\U5728\U53bf\U57ce\U7684\U65f6\U5019\U6ca1\U4e8b\U60f3\U4f11\U95f2\U53ef\U4ee5\U53bb\U8fd9\U91cc \U6e38\U6cf3\U5565\U7684 \U536b\U751f\U8fd8\U884c";
+id = 34299503;
+owner =                         {
+id = 5589018;
+logo = "http://file104.mafengwo.net/s8/M00/58/B9/wKgBpVYc7YeAV6O4AAa4hxVv4-A38.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U897f\U8d1d";
+};
+rank = 3;
+}
+);
+"foreign_name" = "";
+honors =                 (
+);
+id = 8077968;
+lat = "33.780924";
+lng = "111.601333";
+name = "\U6e29\U5ea6\U6c34\U57ce";
+"num_comment" = 1;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 3;
+tags =                 (
+{
+id = 7564;
+name = "\U6c34\U4e0a\U6d3b\U52a8";
+},
+{
+id = 20419;
+name = "\U5176\U4ed6";
+}
+);
+thumbnail = "http://file110.mafengwo.net/s3/M00/E2/A5/wKgBt09zEFHmz4CnAAHkdxOVMfs14.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+comments =                 (
+{
+comment = "\U4e0d\U9519\Uff0c\U53e3\U5473\U5f88\U597d\Uff0c\U6211\U7ecf\U5e38\U548c\U670b\U53cb\U8fc7\U6765\U8fd9\U8fb9\U3002";
+id = 59770;
+owner =                         {
+id = 18133114;
+logo = "http://file108.mafengwo.net/s2/M00/2D/1C/wKgBpU4yIhqlwe9TAAA43PmQSbk50.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U63d0\U62c9\U7c73\U82cf";
+};
+rank = 4;
+}
+);
+"foreign_name" = "";
+honors =                 (
+{
+"s_icon_url" = "http://images.mafengwo.net/mobile/images/gonglve/ic_recommend.png";
+title = "\U63a8\U8350";
+}
+);
+id = 35571;
+lat = "34.623882293701";
+lng = "112.43997955322";
+name = "\U8fea\U6b27\U5496\U5561(\U592a\U5eb7\U8def\U5e97)";
+"num_comment" = 1;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 4;
+tags =                 (
+{
+id = 7560;
+name = "\U5496\U5561\U5385";
+}
+);
+thumbnail = "http://file102.mafengwo.net/s3/M00/F3/90/wKgBjE855a6-61lHAAEjbDY-4JU15.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+id = 2135;
+name = "\U6d1b\U9633\U65b0\U57ce";
+};
+comments =                 (
+{
+comment = "\U4f1a\U6240\U73af\U5883\U5f88\U597d\Uff0c\U670d\U52a1\U4e5f\U4e0d\U9519\U3002\U505a\U4e00\U6b21spa\U90fd\U4f1a\U89c9\U5f97\U5168\U8eab\U5f88\U8f7b\U677e\Uff0c\U5de5\U4f5c\U7684\U75b2\U52b3\U4e5f\U4f1a\U51cf\U8f7b\U4e0d\U5c11\U3002";
+id = 59757;
+owner =                         {
+id = 18089284;
+logo = "http://file107.mafengwo.net/s2/M00/3D/BE/wKgBpU4yVVnciemcAAA1WTrw-pk54.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21120x120r%2Fgravity%2FCenter%2Fcrop%2F%21120x120%2Fquality%2F90";
+name = "\U72ac\U591c\U53c9\U7684\U6208\U8587";
+};
+rank = 5;
+}
+);
+"foreign_name" = "";
+honors =                 (
+{
+"s_icon_url" = "http://images.mafengwo.net/mobile/images/gonglve/ic_recommend.png";
+title = "\U63a8\U8350";
+}
+);
+id = 35584;
+lat = "34.62474822998";
+lng = "112.44179534912";
+name = "\U8c6a\U67cf\U56fd\U9645\U7f8e\U5bb9SPA\U517b\U751f\U4f1a\U6240";
+"num_comment" = 1;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 5;
+tags =                 (
+{
+id = 7566;
+name = "Spa\U6309\U6469";
+}
+);
+thumbnail = "http://file107.mafengwo.net/s3/M00/EC/E1/wKgBjE85zdvSnd5YAAFx5nY1FgA03.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+},
+{
+area =                 {
+};
+comments =                 (
+);
+"foreign_name" = "";
+honors =                 (
+);
+id = 7047046;
+lat = "34.69393";
+lng = "112.46287";
+name = "\U5f00\U5fc3\U8df3\U8df3\U5c9b\U513f\U7ae5\U4e50\U56ed";
+"num_comment" = 0;
+"num_travelnote" = 0;
+price = 0;
+"price_type" = "";
+rank = 0;
+tags =                 (
+);
+thumbnail = "http://file107.mafengwo.net/s6/M00/20/F2/wKgB4lMC9OCASyj2AACJH-h0dSM24.jpeg?imageMogr2%2Fstrip%7CimageMogr2%2Fthumbnail%2F%21240x240r%2Fgravity%2FCenter%2Fcrop%2F%21240x240%2Fquality%2F90";
+"type_id" = 5;
+}
+);
+"map_provider" = amap;
+offset = 15;
+};
+"is_array" = 1;
+rc = 0;
+rm = "";
+}

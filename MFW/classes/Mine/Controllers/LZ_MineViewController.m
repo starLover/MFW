@@ -48,7 +48,7 @@
 }
 - (void)makeImageWithName{
     self.bUser = [BmobUser getCurrentUser];
-    self.mineHead.imageView.layer.cornerRadius     = 40;
+    self.mineHead.imageView.layer.cornerRadius     = 50;
     self.mineHead.imageView.clipsToBounds          = YES;
     if (!self.bUser) {
         self.mineHead.imageView.image = [UIImage imageNamed:@"2"];
