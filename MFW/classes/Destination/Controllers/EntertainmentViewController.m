@@ -1,19 +1,19 @@
 //
-//  GrogshopViewController.m
+//  EntertainmentViewController.m
 //  MFW
 //
-//  Created by scjy on 16/3/22.
+//  Created by scjy on 16/3/24.
 //  Copyright © 2016年 马娟娟. All rights reserved.
 //
 
-#import "GrogshopViewController.h"
+#import "EntertainmentViewController.h"
 #import "ScenicTableViewCell.h"
 #import "JSDropDownMenu.h"
 #import "ScenicModel.h"
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <CoreLocation/CoreLocation.h>
-@interface GrogshopViewController ()<UITableViewDataSource,UITableViewDelegate,JSDropDownMenuDelegate,JSDropDownMenuDataSource>
+@interface EntertainmentViewController ()<UITableViewDataSource,UITableViewDelegate,JSDropDownMenuDataSource,JSDropDownMenuDelegate>
 {
     NSMutableArray *_data1;
     NSMutableArray *_data2;
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation GrogshopViewController
+@implementation EntertainmentViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -57,9 +57,10 @@
 #pragma mark ----------- UITableViewDataSource
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     ScenicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    
     //    cell.backgroundColor = [UIColor cyanColor];
     if (indexPath.row < self.itemArray.count && indexPath.row < self.areaArray.count && indexPath.row < self.commentArray.count) {
-        
+    
         ScenicModel *model = self.itemArray[indexPath.row];
         ScenicModel *areaModel = self.areaArray[indexPath.row];
         ScenicModel *commentModel = self.commentArray[indexPath.row];
@@ -68,7 +69,6 @@
         cell.commentLabel.text = [NSString stringWithFormat:@"%@条蜂评，%@篇游记提及",model.num_comment,model.num_travelnote];
         cell.location.text = [NSString stringWithFormat:@"位于%@",areaModel.name];
         cell.information.text = [NSString stringWithFormat:@"%@ ：%@",commentModel.name,commentModel.comment];
-        cell.price.text = [NSString stringWithFormat:@"¥%@起",model.price];
         //计算两个经纬度之间的距离
         double origLat = [[[NSUserDefaults standardUserDefaults] valueForKey:@"o_lat"] doubleValue];
         double origLng = [[[NSUserDefaults standardUserDefaults]valueForKey:@"o_lng"] doubleValue];
@@ -161,7 +161,7 @@
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json",nil];
     
-    [sessionManager GET:kGrogshop parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    [sessionManager GET:kEntertainment parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *resultDic = responseObject;
         NSDictionary *data = resultDic[@"data"];
@@ -176,16 +176,25 @@
             ScenicModel *areaModel = [[ScenicModel alloc]init];
             [areaModel setValuesForKeysWithDictionary:area];
             [self.areaArray addObject:areaModel];
+            
             //comment
-            NSDictionary *comment = dic[@"comments"][0];
+            NSArray *comment = dic[@"comments"];
             ScenicModel *commentModel = [[ScenicModel alloc]init];
-            [commentModel setValuesForKeysWithDictionary:comment];
-            //owner(name)
-            NSDictionary *owner = comment[@"owner"];
-            [commentModel setValuesForKeysWithDictionary:owner];
-
+            if (comment.count > 0) {
+                
+                [commentModel setValuesForKeysWithDictionary:comment[0]];
+                //owner(name)
+                NSDictionary *owner = comment[0][@"owner"];
+                [commentModel setValuesForKeysWithDictionary:owner];
+            }
+            //honors(title)
+            NSArray *title = dic[@"honors"];
+            if (title.count > 0) {
+                [commentModel setValuesForKeysWithDictionary:title[0]];
                 [self.commentArray addObject:commentModel];
+            }
         }
+        
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     }];
@@ -208,6 +217,7 @@
     }
     return _commentArray;
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

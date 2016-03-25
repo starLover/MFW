@@ -17,5 +17,8 @@
 @property(nonatomic,copy)NSString *comment;
 @property(nonatomic,copy)NSString *lat;
 @property(nonatomic,copy)NSString *lng;
-//@property(nonatomic,copy)NSString *
+@property(nonatomic,copy)NSString *price;
+@property(nonatomic,copy)NSString *num_visit;
+@property(nonatomic,copy)NSString *url;
+@property(nonatomic,copy)NSString *cover;
 @end

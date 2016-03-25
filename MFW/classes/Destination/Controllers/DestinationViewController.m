@@ -18,8 +18,14 @@
 #import "ScenicViewController.h"
 #import "GrogshopViewController.h"
 #import "FoodViewController.h"
+#import "ShoppingViewController.h"
+#import "EntertainmentViewController.h"
+#import "TravelogueViewController.h"
+#import "AnswerViewController.h"
 @interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property(nonatomic,retain)UIActivityIndicatorView *activityView;
+@property(nonatomic,copy)NSString *url;
 @property(nonatomic,strong)UIView *tableViewHeaderView;
 @property(nonatomic,strong)NSMutableArray *btnArray;
 @property(nonatomic,strong)NSMutableArray *listArray;
@@ -62,10 +68,12 @@
     //设置导航栏为全透明，且去掉边框黑线
     [self.navigationController.navigationBar setTranslucent:YES];
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    [self.activityView startAnimating];
     //去黑线
 //    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 
 }
+
 - (void)viewWillDisappear:(BOOL)animated{
     //设置导航栏为全透明，且去掉边框黑线
     [self.navigationController.navigationBar setTranslucent:NO];
@@ -151,6 +159,9 @@
         NSDictionary *resulltDic = responseObject;
         NSDictionary *dataDic = resulltDic[@"data"];
         NSArray *icons = dataDic[@"icons"];
+        NSDictionary *item5 = icons[5];
+        self.url = item5[@"jump_url"];
+        NSLog(@"!!!!!!!!%@",self.url);
         for (NSDictionary *dic in icons) {
              DestinationModel *model = [[DestinationModel alloc]init];
             [model setValuesForKeysWithDictionary:dic];
@@ -173,9 +184,9 @@
                 [self.itemArray addObject:cmodel];
             }
         }
-        NSLog(@"title = %lu",self.titleArray.count);
-        NSLog(@"list = %lu",self.listArray.count);
-        NSLog(@"item = %lu",self.itemArray.count);
+//        NSLog(@"title = %lu",self.titleArray.count);
+//        NSLog(@"list = %lu",self.listArray.count);
+//        NSLog(@"item = %lu",self.itemArray.count);
         NSDictionary *mdd = dataDic[@"mdd"];
         self.albumArray = mdd[@"album_example"];
         self.header_img = mdd[@"header_img"];
@@ -365,21 +376,30 @@
             break;
         case 4:
         {
+            TravelogueViewController *traverVC = [[TravelogueViewController alloc]init];
+            [self.navigationController pushViewController:traverVC animated:YES];
             
         }
             break;
         case 5:
         {
+            AnswerViewController *answer = [[AnswerViewController alloc]init];
+            answer.url = self.url;
+            [self.navigationController pushViewController:answer animated:YES];
             
         }
             break;
         case 6:
         {
+            ShoppingViewController *shopVC = [[ShoppingViewController alloc]init];
+            [self.navigationController pushViewController:shopVC animated:YES];
             
         }
             break;
         case 7:
         {
+            EntertainmentViewController *entertainmentVC = [[EntertainmentViewController alloc]init];
+            [self.navigationController pushViewController:entertainmentVC animated:YES];
             
         }
             break;
@@ -392,6 +412,15 @@
 
 
 #pragma mark --------- Lazy
+//菊花初始化
+- (UIActivityIndicatorView *)activityView{
+    if (!_activityView) {
+        self.activityView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        self.activityView.backgroundColor = [UIColor grayColor];
+        self.activityView.center = self.view.center;
+    }
+    return _activityView;
+}
 - (NSMutableArray *)btnArray{
     if (_btnArray == nil) {
         self.btnArray = [NSMutableArray new];

@@ -22,7 +22,7 @@
 @property(nonatomic,copy)NSNumber *num_album;
 @property(nonatomic,copy)NSNumber *num;
 @property(nonatomic,copy)NSString *map_provider;
-@property(nonatomic,copy)NSString *user_number;
+@property(nonatomic,copy)NSNumber *user_number;
 
 
 @end
