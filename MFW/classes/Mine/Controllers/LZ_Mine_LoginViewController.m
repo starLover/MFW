@@ -14,6 +14,7 @@
 #import "LZPButtonTimer.h"
 
 @interface LZ_Mine_LoginViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *phoneNumber;
 @property (weak, nonatomic) IBOutlet UITextField *passWord;
 @property (weak, nonatomic) IBOutlet UIButton * countdownButton;
@@ -33,6 +34,13 @@
     [self.btn addTarget:self action:@selector(maketimeout:) forControlEvents:UIControlEventTouchUpInside];
     [self.btn setTitle:@"获取验证码" forState:UIControlStateNormal];
     [self.countdownButton addSubview:self.btn];
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.phoneNumber becomeFirstResponder];
+    
 }
 - (BOOL)checkout {
     //用户名不能为空且不能为空格
@@ -41,7 +49,7 @@
         
         return NO;
     }
-    fSLog(@"%hhd",[LZPValidate validatePhoneNumber:self.phoneNumber.text]);
+
     if (![LZPValidate validatePhoneNumber:self.phoneNumber.text]) {
         return NO;
     }
@@ -56,7 +64,7 @@
 }
 
 - (void)maketimeout:(UIButton *)btn{
-    if ([LZPValidate validatePhoneNumber:self.phoneNumber.text])
+    if ([LZPValidate validatePhoneNumber:self.phoneNumber.text]){
     [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:self.phoneNumber.text zone:@"86" customIdentifier:@"" result:^(NSError *error) {
         if (!error) {
             fSLog(@"获取验证码成功");
@@ -67,7 +75,12 @@
         }
         [LZPButtonTimer buttonWithTimerButton:btn TimeOut:60 timeOutRem:61];
     }];
-
+    }else{
+        [ProgressHUD show:@"请输入正确的手机号!"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [ProgressHUD dismiss];
+        });
+    }
 }
 - (IBAction)bmobLogin:(id)sender {
     if (![self checkout]) {
@@ -82,9 +95,15 @@
             [bUser signUpInBackgroundWithBlock:^ (BOOL isSuccessful, NSError *error){
                 if (isSuccessful){
                     [ProgressHUD showSuccess:@"注册成功"];
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                        [ProgressHUD dismiss];
+                    });
                     [self.navigationController popToRootViewControllerAnimated:YES];
                 } else {
                     [ProgressHUD showError:@"注册失败"];
+                    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                        [ProgressHUD dismiss];
+                    });
                 }
             }];
 
@@ -99,7 +118,16 @@
     
     
 }
-
+//点击右下角回收键盘
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+//点击页面空白处回收键盘
+-(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
+    
+}
 
 @end
 

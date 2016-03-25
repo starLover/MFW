@@ -11,6 +11,9 @@
 @implementation MainModel
 
 - (void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    if ([key isEqualToString:@"id"]) {
+        self.myId = value;
+    }
 }
 
 @end

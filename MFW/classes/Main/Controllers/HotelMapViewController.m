@@ -64,8 +64,8 @@
         MAPolygonView *polygonView = [[MAPolygonView alloc] initWithPolygon:overlay];
         
         polygonView.lineWidth = 1.f;
-        polygonView.strokeColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:0.8];
-        polygonView.fillColor = [UIColor colorWithRed:0.77 green:0.88 blue:0.94 alpha:0.8];
+        polygonView.strokeColor = [[UIColor cyanColor] colorWithAlphaComponent:0.5];
+        polygonView.fillColor = [[UIColor orangeColor] colorWithAlphaComponent:0.5];
         polygonView.lineJoin = kCGLineJoinMiter;//连接类型
         
         return polygonView;
@@ -77,10 +77,9 @@
 - (void)request{
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", nil];
-    [manager GET:@"http://mapi.mafengwo.cn/travelguide/mdd/10065/areas?device_type=android&open_udid=68%3A3e%3A34%3A09%3Aa5%3A93&oauth_signature=McyssqeNIGpr1zVlBlHQhQZCk1Q%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1458703162&time_offset=480&sys_ver=5.1&screen_width=1080&oauth_token=0_0969044fd4edf59957f4a39bce9200c6&mfwsdk_ver=20140507&screen_scale=3.0&app_code=com.mfw.roadbook&x_auth_mode=client_auth&app_ver=6.4.3&screen_height=1920&oauth_consumer_key=5&oauth_version=1.0&oauth_nonce=b16e94b3-9e29-4dc2-9af3-637c8d084dbb&hardware_model=m2+note&device_id=68%3A3e%3A34%3A09%3Aa5%3A93&channel_id=WanDouJia&o_lat=34.612424&o_lng=112.420375&" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    [manager GET:myMapList parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         NSLog(@"%@", downloadProgress);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@", responseObject);
         NSDictionary *responseDic = responseObject;
         NSDictionary *dataDic = responseDic[@"data"];
         NSArray *listArray = dataDic[@"list"];

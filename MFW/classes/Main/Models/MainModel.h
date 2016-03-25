@@ -26,7 +26,15 @@
 @property (nonatomic, copy) NSString *lat;
 @property (nonatomic, copy) NSString *lng;
 @property (nonatomic, copy) NSString *num_pois;
-
-
+@property (nonatomic, copy) NSNumber *num_visit;
+@property (nonatomic, copy) NSString *myId;
+@property (nonatomic, copy) NSNumber *level;
+@property (nonatomic, copy) NSString *height;
+@property (nonatomic, copy) NSString *width;
+@property (nonatomic, copy) NSString *oimg;
+@property (nonatomic, copy) NSString *content;
+@property (nonatomic, copy) NSString *ctime;
+@property (nonatomic, copy) NSString *num_lbs_weng;
+@property (nonatomic, copy) NSString *num_fav;
 
 @end
