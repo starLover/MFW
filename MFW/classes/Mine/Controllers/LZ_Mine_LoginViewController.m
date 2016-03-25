@@ -94,11 +94,11 @@
             bUser.password = self.passWord.text;
             [bUser signUpInBackgroundWithBlock:^ (BOOL isSuccessful, NSError *error){
                 if (isSuccessful){
+                    [self.navigationController popToRootViewControllerAnimated:YES];
                     [ProgressHUD showSuccess:@"注册成功"];
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         [ProgressHUD dismiss];
                     });
-                    [self.navigationController popToRootViewControllerAnimated:YES];
                 } else {
                     [ProgressHUD showError:@"注册失败"];
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

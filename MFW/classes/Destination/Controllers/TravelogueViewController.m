@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [self showBackBtn];
     //注册
     [self.tableView registerNib:[UINib nibWithNibName:@"TravelTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     [self.view addSubview:self.tableView];
@@ -64,6 +64,12 @@
     ScenicModel *scModel = self.mainArray[indexPath.row];
     detailVC.url = scModel.url;
     [self.navigationController pushViewController:detailVC animated:YES];
+}
+- (void)viewWillAppear:(BOOL)animated{
+    self.tabBarController.tabBar.hidden = YES;
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    self.tabBarController.tabBar.hidden = NO;
 }
 #pragma mark ---------- 网络请求
 - (void)loadData{

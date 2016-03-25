@@ -12,7 +12,7 @@
 #import "WXApi.h"
 #import "MBProgressHUD.h"
 #import "ProgressHUD.h"
-#import "LZ_Mine_LoginViewController.h"
+
 #import <BmobSDK/Bmob.h>
 #import "LZ_Mine_ResignViewController.h"
 
@@ -32,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:0 target:self action:@selector(login:)];
+    
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.tableView.scrollEnabled = NO;
     self.List = @[@"蜜蜂商城",@"我的下载",@"我的收藏",@"我的订单",@"我的优惠券",@"我的点评",@"我的问答",@"我的活动",@"退出登录"];
@@ -57,20 +57,6 @@
         self.mineHead.imageView.image = [UIImage imageWithContentsOfFile:kPath];
         [self.mineHead.userName setTitle:_bUser.username forState:UIControlStateNormal];
     }
-}
-- (void)login:(UIButton *)button{
-    /*
-     
-     //构造SendAuthReq结构体
-     SendAuthReq* req =[[SendAuthReq alloc ] init];
-     req.scope = @"snsapi_userinfo" ;
-     req.state = @"123" ;
-     //第三方向微信终端发送一个SendAuthReq消息结构
-     [WXApi sendReq:req];
-     */
-    
-    LZ_Mine_LoginViewController *lz = [LZ_Mine_LoginViewController new];
-    [self.navigationController pushViewController:lz animated:YES];
 }
 - (void)headAction{
     if (!self.bUser) {
