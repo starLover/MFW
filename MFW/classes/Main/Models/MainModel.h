@@ -36,5 +36,6 @@
 @property (nonatomic, copy) NSString *ctime;
 @property (nonatomic, copy) NSString *num_lbs_weng;
 @property (nonatomic, copy) NSString *num_fav;
-
+@property (nonatomic, copy) NSString *anum;
+@property (nonatomic, copy) NSString *pv;
 @end

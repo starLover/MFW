@@ -12,6 +12,7 @@
 #import "ScenicModel.h"
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <CoreLocation/CoreLocation.h>
 @interface ScenicViewController ()<UITableViewDelegate,UITableViewDataSource,JSDropDownMenuDataSource,JSDropDownMenuDelegate>
 {
     NSMutableArray *_data1;
@@ -67,6 +68,13 @@
     cell.commentLabel.text = [NSString stringWithFormat:@"%@条蜂评，%@篇游记提及",model.num_comment,model.num_travelnote];
     cell.location.text = [NSString stringWithFormat:@"位于%@",areaModel.name];
     cell.information.text = [NSString stringWithFormat:@"%@ ：%@",commentModel.name,commentModel.comment];
+        //计算两个经纬度之间的距离
+        double origLat = [[[NSUserDefaults standardUserDefaults] valueForKey:@"o_lat"] doubleValue];
+        double origLng = [[[NSUserDefaults standardUserDefaults]valueForKey:@"o_lng"] doubleValue];
+        CLLocation *origloc = [[CLLocation alloc]initWithLatitude:origLat longitude:origLng];
+        CLLocation *disLoc = [[CLLocation alloc]initWithLatitude:[model.lat doubleValue] longitude:[model.lng doubleValue]];
+        CLLocationDistance distance = [origloc distanceFromLocation:disLoc];
+        cell.distanceLabel.text = [NSString stringWithFormat:@"%.fkm",distance];
         }
     return cell;
 }
@@ -151,6 +159,7 @@
 - (void)loadData{
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json",nil];
+    
     [sessionManager GET:kScenic parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *resultDic = responseObject;

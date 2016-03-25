@@ -1,19 +1,19 @@
 //
-//  GrogshopViewController.m
+//  ShoppingViewController.m
 //  MFW
 //
-//  Created by scjy on 16/3/22.
+//  Created by scjy on 16/3/24.
 //  Copyright © 2016年 马娟娟. All rights reserved.
 //
 
-#import "GrogshopViewController.h"
+#import "ShoppingViewController.h"
 #import "ScenicTableViewCell.h"
 #import "JSDropDownMenu.h"
 #import "ScenicModel.h"
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <CoreLocation/CoreLocation.h>
-@interface GrogshopViewController ()<UITableViewDataSource,UITableViewDelegate,JSDropDownMenuDelegate,JSDropDownMenuDataSource>
+@interface ShoppingViewController ()<JSDropDownMenuDelegate,JSDropDownMenuDataSource,UITableViewDataSource,UITableViewDelegate>
 {
     NSMutableArray *_data1;
     NSMutableArray *_data2;
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation GrogshopViewController
+@implementation ShoppingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -68,7 +68,6 @@
         cell.commentLabel.text = [NSString stringWithFormat:@"%@条蜂评，%@篇游记提及",model.num_comment,model.num_travelnote];
         cell.location.text = [NSString stringWithFormat:@"位于%@",areaModel.name];
         cell.information.text = [NSString stringWithFormat:@"%@ ：%@",commentModel.name,commentModel.comment];
-        cell.price.text = [NSString stringWithFormat:@"¥%@起",model.price];
         //计算两个经纬度之间的距离
         double origLat = [[[NSUserDefaults standardUserDefaults] valueForKey:@"o_lat"] doubleValue];
         double origLng = [[[NSUserDefaults standardUserDefaults]valueForKey:@"o_lng"] doubleValue];
@@ -161,7 +160,7 @@
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json",nil];
     
-    [sessionManager GET:kGrogshop parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    [sessionManager GET:kShopping parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *resultDic = responseObject;
         NSDictionary *data = resultDic[@"data"];
@@ -183,9 +182,14 @@
             //owner(name)
             NSDictionary *owner = comment[@"owner"];
             [commentModel setValuesForKeysWithDictionary:owner];
-
+            //honors(title)
+            NSArray *title = dic[@"honors"];
+            if (title.count > 0) {
+                [commentModel setValuesForKeysWithDictionary:title[0]];
                 [self.commentArray addObject:commentModel];
+            }
         }
+        
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     }];

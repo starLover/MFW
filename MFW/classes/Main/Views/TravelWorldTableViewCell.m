@@ -42,6 +42,7 @@
     [self addSubview:self.placeLabel];
     [self addSubview:self.latLngLabel];
     [self addSubview:self.hearLabel];
+    [self addSubview:self.contentLabel];
 }
 
 - (void)setMainModel:(MainModel *)mainModel{
@@ -75,7 +76,6 @@
     if (mainModel.content.length > 0) {
         self.contentLabel.frame = CGRectMake(30, kScreenWidth / ([mainModel.width doubleValue] / [mainModel.height doubleValue]) + 55 + 10 + 40, kScreenWidth - 60, [self getTextHeight:mainModel.content]);
         self.contentLabel.text = mainModel.content;
-        [self addSubview:self.contentLabel];
     }
 }
 

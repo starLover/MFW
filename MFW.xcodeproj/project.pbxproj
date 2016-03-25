@@ -28,8 +28,12 @@
 		01344F941CA291330018EF2B /* LookNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01344F921CA291330018EF2B /* LookNoteTableViewCell.xib */; };
 		0146F59C1CA2B94000A12F79 /* TravelWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */; };
 		0146F5A41CA2C22100A12F79 /* TravelWorldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */; };
+		015329491CA4CC1700EC328D /* Header1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015329481CA4CC1700EC328D /* Header1ViewController.m */; };
 		015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */; };
 		015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */; };
+		0176CA721CA3F3D100FB365C /* AnswerMyAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0176CA711CA3F3D100FB365C /* AnswerMyAppViewController.m */; };
+		0176CA7A1CA40CE300FB365C /* AnswerMyappTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0176CA781CA40CE300FB365C /* AnswerMyappTableViewCell.m */; };
+		0176CA7B1CA40CE300FB365C /* AnswerMyappTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0176CA791CA40CE300FB365C /* AnswerMyappTableViewCell.xib */; };
 		01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */; };
 		01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */; };
 		01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F94A531CA22D26004A76C8 /* HotelMapViewController.m */; };
@@ -71,7 +75,18 @@
 		F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */; };
 		F33B63201C9E87B00060F63F /* Alubm.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33B631F1C9E87B00060F63F /* Alubm.plist */; };
 		F33B63231C9E8A3E0060F63F /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */; };
+		F37E42F51CA5191900EF6C08 /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F37E42F41CA5191900EF6C08 /* GDViewController.m */; };
 		F3851EA51C9E9C9000F75EB7 /* AlubmModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */; };
+		F38DA14D1CA3C36400CA6932 /* Food.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38DA14C1CA3C36400CA6932 /* Food.plist */; };
+		F38DA1501CA3C49E00CA6932 /* ShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA14F1CA3C49E00CA6932 /* ShoppingViewController.m */; };
+		F38DA1531CA3C4CC00CA6932 /* EntertainmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA1521CA3C4CC00CA6932 /* EntertainmentViewController.m */; };
+		F38DA1551CA3D19F00CA6932 /* Entertainment.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38DA1541CA3D19F00CA6932 /* Entertainment.plist */; };
+		F38DA1571CA3D6C500CA6932 /* Grogshop.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38DA1561CA3D6C500CA6932 /* Grogshop.plist */; };
+		F38DA15A1CA3EDB700CA6932 /* TravelogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA1591CA3EDB700CA6932 /* TravelogueViewController.m */; };
+		F38DA15C1CA402EA00CA6932 /* Travel.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38DA15B1CA402EA00CA6932 /* Travel.plist */; };
+		F38DA1601CA4050300CA6932 /* TravelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA15E1CA4050300CA6932 /* TravelTableViewCell.m */; };
+		F38DA1611CA4050300CA6932 /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38DA15F1CA4050300CA6932 /* TravelTableViewCell.xib */; };
+		F38DA16D1CA4218300CA6932 /* TravelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA16C1CA4218300CA6932 /* TravelDetailViewController.m */; };
 		F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F399E0231C9B82C000019B37 /* DestinationModel.m */; };
 		F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F399E0251C9BADF100019B37 /* CoreImage.framework */; };
 		F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39D7FDA1C9AD3C300F8D333 /* Destination.plist */; };
@@ -134,9 +149,16 @@
 		0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelWorldViewController.m; sourceTree = "<group>"; };
 		0146F5A21CA2C22100A12F79 /* TravelWorldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelWorldTableViewCell.h; sourceTree = "<group>"; };
 		0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelWorldTableViewCell.m; sourceTree = "<group>"; };
+		015329471CA4CC1700EC328D /* Header1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header1ViewController.h; sourceTree = "<group>"; };
+		015329481CA4CC1700EC328D /* Header1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header1ViewController.m; sourceTree = "<group>"; };
 		015FCE301C9C28BF002C44FF /* SalesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesCollectionViewCell.h; sourceTree = "<group>"; };
 		015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesCollectionViewCell.m; sourceTree = "<group>"; };
 		015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalesCollectionViewCell.xib; sourceTree = "<group>"; };
+		0176CA701CA3F3D100FB365C /* AnswerMyAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerMyAppViewController.h; sourceTree = "<group>"; };
+		0176CA711CA3F3D100FB365C /* AnswerMyAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerMyAppViewController.m; sourceTree = "<group>"; };
+		0176CA771CA40CE300FB365C /* AnswerMyappTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerMyappTableViewCell.h; sourceTree = "<group>"; };
+		0176CA781CA40CE300FB365C /* AnswerMyappTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerMyappTableViewCell.m; sourceTree = "<group>"; };
+		0176CA791CA40CE300FB365C /* AnswerMyappTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerMyappTableViewCell.xib; sourceTree = "<group>"; };
 		01AD7AB01C9BD1A8003C336D /* CommonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCollectionViewCell.h; sourceTree = "<group>"; };
 		01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewCell.m; sourceTree = "<group>"; };
 		01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -207,8 +229,25 @@
 		F33B631F1C9E87B00060F63F /* Alubm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Alubm.plist; sourceTree = "<group>"; };
 		F33B63211C9E8A3E0060F63F /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		F37E42F31CA5191900EF6C08 /* GDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDViewController.h; sourceTree = "<group>"; };
+		F37E42F41CA5191900EF6C08 /* GDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDViewController.m; sourceTree = "<group>"; };
 		F3851EA31C9E9C9000F75EB7 /* AlubmModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlubmModel.h; sourceTree = "<group>"; };
 		F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlubmModel.m; sourceTree = "<group>"; };
+		F38DA14C1CA3C36400CA6932 /* Food.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Food.plist; sourceTree = "<group>"; };
+		F38DA14E1CA3C49E00CA6932 /* ShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingViewController.h; sourceTree = "<group>"; };
+		F38DA14F1CA3C49E00CA6932 /* ShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewController.m; sourceTree = "<group>"; };
+		F38DA1511CA3C4CC00CA6932 /* EntertainmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntertainmentViewController.h; sourceTree = "<group>"; };
+		F38DA1521CA3C4CC00CA6932 /* EntertainmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntertainmentViewController.m; sourceTree = "<group>"; };
+		F38DA1541CA3D19F00CA6932 /* Entertainment.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entertainment.plist; sourceTree = "<group>"; };
+		F38DA1561CA3D6C500CA6932 /* Grogshop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Grogshop.plist; sourceTree = "<group>"; };
+		F38DA1581CA3EDB700CA6932 /* TravelogueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelogueViewController.h; sourceTree = "<group>"; };
+		F38DA1591CA3EDB700CA6932 /* TravelogueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelogueViewController.m; sourceTree = "<group>"; };
+		F38DA15B1CA402EA00CA6932 /* Travel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Travel.plist; sourceTree = "<group>"; };
+		F38DA15D1CA4050300CA6932 /* TravelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelTableViewCell.h; sourceTree = "<group>"; };
+		F38DA15E1CA4050300CA6932 /* TravelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelTableViewCell.m; sourceTree = "<group>"; };
+		F38DA15F1CA4050300CA6932 /* TravelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
+		F38DA16B1CA4218300CA6932 /* TravelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelDetailViewController.h; sourceTree = "<group>"; };
+		F38DA16C1CA4218300CA6932 /* TravelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelDetailViewController.m; sourceTree = "<group>"; };
 		F399E0221C9B82C000019B37 /* DestinationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationModel.h; sourceTree = "<group>"; };
 		F399E0231C9B82C000019B37 /* DestinationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationModel.m; sourceTree = "<group>"; };
 		F399E0251C9BADF100019B37 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -349,6 +388,8 @@
 			children = (
 				0114454E1C9AA9E00057E69F /* DestinationViewController.h */,
 				0114454F1C9AA9E00057E69F /* DestinationViewController.m */,
+				F37E42F31CA5191900EF6C08 /* GDViewController.h */,
+				F37E42F41CA5191900EF6C08 /* GDViewController.m */,
 				F39EF9A41C9CF43B00382A36 /* HeadImageViewController.h */,
 				F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */,
 				F30485C71C9E723A002751C4 /* AlubmViewController.h */,
@@ -363,6 +404,14 @@
 				F3A988061CA12DCF0074C624 /* GrogshopViewController.m */,
 				F3A988021CA12A0C0074C624 /* FoodViewController.h */,
 				F3A988031CA12A0C0074C624 /* FoodViewController.m */,
+				F38DA1581CA3EDB700CA6932 /* TravelogueViewController.h */,
+				F38DA1591CA3EDB700CA6932 /* TravelogueViewController.m */,
+				F38DA16B1CA4218300CA6932 /* TravelDetailViewController.h */,
+				F38DA16C1CA4218300CA6932 /* TravelDetailViewController.m */,
+				F38DA14E1CA3C49E00CA6932 /* ShoppingViewController.h */,
+				F38DA14F1CA3C49E00CA6932 /* ShoppingViewController.m */,
+				F38DA1511CA3C4CC00CA6932 /* EntertainmentViewController.h */,
+				F38DA1521CA3C4CC00CA6932 /* EntertainmentViewController.m */,
 				F3C874391C9AAE66006BD9AF /* Define.h */,
 			);
 			path = Controllers;
@@ -384,6 +433,9 @@
 				F3D803741CA26FF9003B9191 /* ScenicTableViewCell.h */,
 				F3D803751CA26FF9003B9191 /* ScenicTableViewCell.m */,
 				F3D803761CA26FF9003B9191 /* ScenicTableViewCell.xib */,
+				F38DA15D1CA4050300CA6932 /* TravelTableViewCell.h */,
+				F38DA15E1CA4050300CA6932 /* TravelTableViewCell.m */,
+				F38DA15F1CA4050300CA6932 /* TravelTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -405,6 +457,8 @@
 				0114454A1C9AA9860057E69F /* MainViewController.m */,
 				0114455C1C9AC5300057E69F /* HeadViewController.h */,
 				0114455D1C9AC5300057E69F /* HeadViewController.m */,
+				015329471CA4CC1700EC328D /* Header1ViewController.h */,
+				015329481CA4CC1700EC328D /* Header1ViewController.m */,
 				01F95BDE1C9D4E6C00CCD539 /* SearchCityViewController.h */,
 				01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */,
 				01F95BE11C9D51EE00CCD539 /* Find1ViewController.h */,
@@ -417,6 +471,8 @@
 				01344F8E1CA2901A0018EF2B /* LookNoteViewController.m */,
 				0146F59A1CA2B94000A12F79 /* TravelWorldViewController.h */,
 				0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */,
+				0176CA701CA3F3D100FB365C /* AnswerMyAppViewController.h */,
+				0176CA711CA3F3D100FB365C /* AnswerMyAppViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -447,6 +503,9 @@
 				01344F921CA291330018EF2B /* LookNoteTableViewCell.xib */,
 				0146F5A21CA2C22100A12F79 /* TravelWorldTableViewCell.h */,
 				0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */,
+				0176CA771CA40CE300FB365C /* AnswerMyappTableViewCell.h */,
+				0176CA781CA40CE300FB365C /* AnswerMyappTableViewCell.m */,
+				0176CA791CA40CE300FB365C /* AnswerMyappTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -622,6 +681,10 @@
 				F33B631F1C9E87B00060F63F /* Alubm.plist */,
 				F3A988081CA131080074C624 /* Strategy.plist */,
 				F3D803721CA24DC0003B9191 /* Scenic.plist */,
+				F38DA14C1CA3C36400CA6932 /* Food.plist */,
+				F38DA1561CA3D6C500CA6932 /* Grogshop.plist */,
+				F38DA1541CA3D19F00CA6932 /* Entertainment.plist */,
+				F38DA15B1CA402EA00CA6932 /* Travel.plist */,
 				F399E0221C9B82C000019B37 /* DestinationModel.h */,
 				F399E0231C9B82C000019B37 /* DestinationModel.m */,
 				F3851EA31C9E9C9000F75EB7 /* AlubmModel.h */,
@@ -707,13 +770,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0176CA7B1CA40CE300FB365C /* AnswerMyappTableViewCell.xib in Resources */,
 				7AB1334D1C9B8795002B0F94 /* LZ_Mine_Head.xib in Resources */,
+				F38DA1571CA3D6C500CA6932 /* Grogshop.plist in Resources */,
 				F3A988091CA131080074C624 /* Strategy.plist in Resources */,
 				F39EF9AD1C9D209F00382A36 /* HeadImage.plist in Resources */,
 				0114454D1C9AA99A0057E69F /* Main.storyboard in Resources */,
 				F3D803781CA26FF9003B9191 /* ScenicTableViewCell.xib in Resources */,
 				7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */,
 				011445591C9AB1910057E69F /* blueArrowDown.png in Resources */,
+				F38DA15C1CA402EA00CA6932 /* Travel.plist in Resources */,
+				F38DA1611CA4050300CA6932 /* TravelTableViewCell.xib in Resources */,
 				F3D803731CA24DC0003B9191 /* Scenic.plist in Resources */,
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
 				7A5FF3331CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib in Resources */,
@@ -725,10 +792,12 @@
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
 				011445581C9AB1910057E69F /* blueArrow.png in Resources */,
 				F39EF9AB1C9CF48C00382A36 /* HeadImageTableViewCell.xib in Resources */,
+				F38DA14D1CA3C36400CA6932 /* Food.plist in Resources */,
 				011445321C9AA6A50057E69F /* LaunchScreen.storyboard in Resources */,
 				011445601C9AE5520057E69F /* Main.plist in Resources */,
 				01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */,
 				7A5FF2F41CA0DE5400DEDF4C /* ProgressHUD.bundle in Resources */,
+				F38DA1551CA3D19F00CA6932 /* Entertainment.plist in Resources */,
 				011445521C9AA9F60057E69F /* Destination.storyboard in Resources */,
 				F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */,
 				7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */,
@@ -793,10 +862,12 @@
 				01344F931CA291330018EF2B /* LookNoteTableViewCell.m in Sources */,
 				F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */,
 				015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */,
+				F38DA15A1CA3EDB700CA6932 /* TravelogueViewController.m in Sources */,
 				7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */,
 				011190781C9FF231008E2F3D /* HotelViewController.m in Sources */,
 				F3A987F81CA0DFC20074C624 /* HTools.m in Sources */,
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
+				0176CA7A1CA40CE300FB365C /* AnswerMyappTableViewCell.m in Sources */,
 				F39EF9AA1C9CF48C00382A36 /* HeadImageTableViewCell.m in Sources */,
 				7A0DCFF71C9FE29100D316C0 /* VOIndicatorAnimation.m in Sources */,
 				F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */,
@@ -806,9 +877,12 @@
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
 				F3851EA51C9E9C9000F75EB7 /* AlubmModel.m in Sources */,
 				F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */,
+				F37E42F51CA5191900EF6C08 /* GDViewController.m in Sources */,
 				7A5FF3321CA1558B00DEDF4C /* LZ_Mine_ResignViewController.m in Sources */,
+				F38DA1601CA4050300CA6932 /* TravelTableViewCell.m in Sources */,
 				7A5FF2F51CA0DE5400DEDF4C /* ProgressHUD.m in Sources */,
 				0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */,
+				F38DA1501CA3C49E00CA6932 /* ShoppingViewController.m in Sources */,
 				F33B63231C9E8A3E0060F63F /* CollectionViewCell.m in Sources */,
 				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
 				7A0DCFF91C9FE29100D316C0 /* VOSegmentedControl.m in Sources */,
@@ -817,9 +891,11 @@
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				F39EF9A61C9CF43B00382A36 /* HeadImageViewController.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
+				015329491CA4CC1700EC328D /* Header1ViewController.m in Sources */,
 				01344F8F1CA2901A0018EF2B /* LookNoteViewController.m in Sources */,
 				F3A9880F1CA1416F0074C624 /* RightModel.m in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
+				0176CA721CA3F3D100FB365C /* AnswerMyAppViewController.m in Sources */,
 				F3D8037E1CA28981003B9191 /* JSDropDownMenu.m in Sources */,
 				F3A988041CA12A0C0074C624 /* FoodViewController.m in Sources */,
 				F3D803771CA26FF9003B9191 /* ScenicTableViewCell.m in Sources */,
@@ -836,9 +912,11 @@
 				F3A9880C1CA13F1E0074C624 /* RightTableViewCell.m in Sources */,
 				0146F59C1CA2B94000A12F79 /* TravelWorldViewController.m in Sources */,
 				7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */,
+				F38DA16D1CA4218300CA6932 /* TravelDetailViewController.m in Sources */,
 				7A0DCFF61C9FE29100D316C0 /* VOContentLayer.m in Sources */,
 				7A0DCFF81C9FE29100D316C0 /* VOSegment.m in Sources */,
 				01F95BE01C9D4E6C00CCD539 /* SearchCityViewController.m in Sources */,
+				F38DA1531CA3C4CC00CA6932 /* EntertainmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
