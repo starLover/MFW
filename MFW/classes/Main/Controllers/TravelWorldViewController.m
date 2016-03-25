@@ -24,6 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"旅行直播";
     [self request];
     [self.view addSubview:self.tableView];
     [self showBackBtn];
@@ -71,7 +72,6 @@
     [manager GET:kTravelmyStar1 parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         NSLog(@"%@", downloadProgress);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@", responseObject);
         NSDictionary *responseDic = responseObject;
         NSDictionary *dataDic = responseDic[@"data"];
        //list

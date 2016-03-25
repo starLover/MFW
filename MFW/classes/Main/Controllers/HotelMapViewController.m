@@ -25,6 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self request];
+    [self showBackBtn];
     //配置用户Key
     [MAMapServices sharedServices].apiKey = @"347a662a9e7129f224a9840c18e3f744";
     

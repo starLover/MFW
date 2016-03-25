@@ -28,8 +28,12 @@
 		01344F941CA291330018EF2B /* LookNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01344F921CA291330018EF2B /* LookNoteTableViewCell.xib */; };
 		0146F59C1CA2B94000A12F79 /* TravelWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */; };
 		0146F5A41CA2C22100A12F79 /* TravelWorldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */; };
+		015329491CA4CC1700EC328D /* Header1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015329481CA4CC1700EC328D /* Header1ViewController.m */; };
 		015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */; };
 		015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */; };
+		0176CA721CA3F3D100FB365C /* AnswerMyAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0176CA711CA3F3D100FB365C /* AnswerMyAppViewController.m */; };
+		0176CA7A1CA40CE300FB365C /* AnswerMyappTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0176CA781CA40CE300FB365C /* AnswerMyappTableViewCell.m */; };
+		0176CA7B1CA40CE300FB365C /* AnswerMyappTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0176CA791CA40CE300FB365C /* AnswerMyappTableViewCell.xib */; };
 		01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */; };
 		01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */; };
 		01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F94A531CA22D26004A76C8 /* HotelMapViewController.m */; };
@@ -145,9 +149,16 @@
 		0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelWorldViewController.m; sourceTree = "<group>"; };
 		0146F5A21CA2C22100A12F79 /* TravelWorldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelWorldTableViewCell.h; sourceTree = "<group>"; };
 		0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelWorldTableViewCell.m; sourceTree = "<group>"; };
+		015329471CA4CC1700EC328D /* Header1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header1ViewController.h; sourceTree = "<group>"; };
+		015329481CA4CC1700EC328D /* Header1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header1ViewController.m; sourceTree = "<group>"; };
 		015FCE301C9C28BF002C44FF /* SalesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesCollectionViewCell.h; sourceTree = "<group>"; };
 		015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesCollectionViewCell.m; sourceTree = "<group>"; };
 		015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SalesCollectionViewCell.xib; sourceTree = "<group>"; };
+		0176CA701CA3F3D100FB365C /* AnswerMyAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerMyAppViewController.h; sourceTree = "<group>"; };
+		0176CA711CA3F3D100FB365C /* AnswerMyAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerMyAppViewController.m; sourceTree = "<group>"; };
+		0176CA771CA40CE300FB365C /* AnswerMyappTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerMyappTableViewCell.h; sourceTree = "<group>"; };
+		0176CA781CA40CE300FB365C /* AnswerMyappTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerMyappTableViewCell.m; sourceTree = "<group>"; };
+		0176CA791CA40CE300FB365C /* AnswerMyappTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerMyappTableViewCell.xib; sourceTree = "<group>"; };
 		01AD7AB01C9BD1A8003C336D /* CommonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCollectionViewCell.h; sourceTree = "<group>"; };
 		01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewCell.m; sourceTree = "<group>"; };
 		01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -446,6 +457,8 @@
 				0114454A1C9AA9860057E69F /* MainViewController.m */,
 				0114455C1C9AC5300057E69F /* HeadViewController.h */,
 				0114455D1C9AC5300057E69F /* HeadViewController.m */,
+				015329471CA4CC1700EC328D /* Header1ViewController.h */,
+				015329481CA4CC1700EC328D /* Header1ViewController.m */,
 				01F95BDE1C9D4E6C00CCD539 /* SearchCityViewController.h */,
 				01F95BDF1C9D4E6C00CCD539 /* SearchCityViewController.m */,
 				01F95BE11C9D51EE00CCD539 /* Find1ViewController.h */,
@@ -458,6 +471,8 @@
 				01344F8E1CA2901A0018EF2B /* LookNoteViewController.m */,
 				0146F59A1CA2B94000A12F79 /* TravelWorldViewController.h */,
 				0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */,
+				0176CA701CA3F3D100FB365C /* AnswerMyAppViewController.h */,
+				0176CA711CA3F3D100FB365C /* AnswerMyAppViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -488,6 +503,9 @@
 				01344F921CA291330018EF2B /* LookNoteTableViewCell.xib */,
 				0146F5A21CA2C22100A12F79 /* TravelWorldTableViewCell.h */,
 				0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */,
+				0176CA771CA40CE300FB365C /* AnswerMyappTableViewCell.h */,
+				0176CA781CA40CE300FB365C /* AnswerMyappTableViewCell.m */,
+				0176CA791CA40CE300FB365C /* AnswerMyappTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -751,6 +769,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0176CA7B1CA40CE300FB365C /* AnswerMyappTableViewCell.xib in Resources */,
 				7AB1334D1C9B8795002B0F94 /* LZ_Mine_Head.xib in Resources */,
 				F38DA1571CA3D6C500CA6932 /* Grogshop.plist in Resources */,
 				F3A988091CA131080074C624 /* Strategy.plist in Resources */,
@@ -847,6 +866,7 @@
 				011190781C9FF231008E2F3D /* HotelViewController.m in Sources */,
 				F3A987F81CA0DFC20074C624 /* HTools.m in Sources */,
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
+				0176CA7A1CA40CE300FB365C /* AnswerMyappTableViewCell.m in Sources */,
 				F39EF9AA1C9CF48C00382A36 /* HeadImageTableViewCell.m in Sources */,
 				7A0DCFF71C9FE29100D316C0 /* VOIndicatorAnimation.m in Sources */,
 				F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */,
@@ -870,9 +890,11 @@
 				011445271C9AA6A50057E69F /* main.m in Sources */,
 				F39EF9A61C9CF43B00382A36 /* HeadImageViewController.m in Sources */,
 				0114452D1C9AA6A50057E69F /* MFW.xcdatamodeld in Sources */,
+				015329491CA4CC1700EC328D /* Header1ViewController.m in Sources */,
 				01344F8F1CA2901A0018EF2B /* LookNoteViewController.m in Sources */,
 				F3A9880F1CA1416F0074C624 /* RightModel.m in Sources */,
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
+				0176CA721CA3F3D100FB365C /* AnswerMyAppViewController.m in Sources */,
 				F3D8037E1CA28981003B9191 /* JSDropDownMenu.m in Sources */,
 				F3A988041CA12A0C0074C624 /* FoodViewController.m in Sources */,
 				F3D803771CA26FF9003B9191 /* ScenicTableViewCell.m in Sources */,

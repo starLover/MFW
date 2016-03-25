@@ -22,6 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 //    NSString *value = [@"北京" stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    [self showBackBtn];
     [self.view addSubview:self.tableView];
     [self request];
 }
