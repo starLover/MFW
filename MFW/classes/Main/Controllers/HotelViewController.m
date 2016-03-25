@@ -25,7 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.title = @"订酒店";
+    [self showBackBtn];
 }
 
 - (void)didReceiveMemoryWarning {

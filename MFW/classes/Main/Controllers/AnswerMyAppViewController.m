@@ -26,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"问答人";
+    [self showBackBtn];
     [self request];
     [self.view addSubview:self.tableView];
     //注册cell

@@ -28,7 +28,6 @@
 		01344F941CA291330018EF2B /* LookNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01344F921CA291330018EF2B /* LookNoteTableViewCell.xib */; };
 		0146F59C1CA2B94000A12F79 /* TravelWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */; };
 		0146F5A41CA2C22100A12F79 /* TravelWorldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */; };
-		015329461CA4C01400EC328D /* VisaCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015329451CA4C01400EC328D /* VisaCountryViewController.m */; };
 		015329491CA4CC1700EC328D /* Header1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015329481CA4CC1700EC328D /* Header1ViewController.m */; };
 		015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 015FCE311C9C28BF002C44FF /* SalesCollectionViewCell.m */; };
 		015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 015FCE321C9C28BF002C44FF /* SalesCollectionViewCell.xib */; };
@@ -150,8 +149,6 @@
 		0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelWorldViewController.m; sourceTree = "<group>"; };
 		0146F5A21CA2C22100A12F79 /* TravelWorldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelWorldTableViewCell.h; sourceTree = "<group>"; };
 		0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelWorldTableViewCell.m; sourceTree = "<group>"; };
-		015329441CA4C01400EC328D /* VisaCountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisaCountryViewController.h; sourceTree = "<group>"; };
-		015329451CA4C01400EC328D /* VisaCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisaCountryViewController.m; sourceTree = "<group>"; };
 		015329471CA4CC1700EC328D /* Header1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header1ViewController.h; sourceTree = "<group>"; };
 		015329481CA4CC1700EC328D /* Header1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header1ViewController.m; sourceTree = "<group>"; };
 		015FCE301C9C28BF002C44FF /* SalesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesCollectionViewCell.h; sourceTree = "<group>"; };
@@ -476,8 +473,6 @@
 				0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */,
 				0176CA701CA3F3D100FB365C /* AnswerMyAppViewController.h */,
 				0176CA711CA3F3D100FB365C /* AnswerMyAppViewController.m */,
-				015329441CA4C01400EC328D /* VisaCountryViewController.h */,
-				015329451CA4C01400EC328D /* VisaCountryViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -912,7 +907,6 @@
 				7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */,
 				F3A988071CA12DCF0074C624 /* GrogshopViewController.m in Sources */,
 				0114454B1C9AA9860057E69F /* MainViewController.m in Sources */,
-				015329461CA4C01400EC328D /* VisaCountryViewController.m in Sources */,
 				F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */,
 				F3A9880C1CA13F1E0074C624 /* RightTableViewCell.m in Sources */,
 				0146F59C1CA2B94000A12F79 /* TravelWorldViewController.m in Sources */,

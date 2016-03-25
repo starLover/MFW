@@ -10,4 +10,5 @@
 
 @interface Header1ViewController : UIViewController
 @property(nonatomic, copy) NSString *urlString;
+@property(nonatomic, copy) NSString *myTitle;
 @end

@@ -22,6 +22,7 @@
 #import "Header1ViewController.h"
 #import "GrogshopViewController.h"
 
+
 @interface MainViewController ()<UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
     NSInteger section1;
@@ -523,7 +524,10 @@
             break;
         case 3:
         {
-            
+            Header1ViewController *headVC = [[Header1ViewController alloc] init];
+            headVC.urlString = @"http://m.mafengwo.cn/localdeals/10132/?cid=1301";
+            headVC.myTitle = @"当地游";
+            [self.navigationController pushViewController:headVC animated:YES];
         }
             break;
         case 4:
@@ -548,6 +552,7 @@
         {
             Header1ViewController *visaVC = [[Header1ViewController alloc] init];
             visaVC.urlString = @"http://www.mafengwo.cn/sales/0-0-0-4-0-0-0-0.html";
+            visaVC.myTitle = @"办签证";
             [self.navigationController pushViewController:visaVC animated:YES];
         }
             break;

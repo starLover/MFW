@@ -20,24 +20,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.tabBarController.tabBar.hidden = YES;
+    self.title = self.myTitle;
     [self showBackBtn];
     [self.view addSubview:self.webView];
     [self.view addSubview:self.activityView];
 }
 - (void)webViewDidStartLoad:(UIWebView *)webView{
     [self.activityView startAnimating];
+
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     [self.activityView stopAnimating];
 }
 
--(void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    CGPoint point = scrollView.contentOffset;
-    if (point.x > 0) {
-        scrollView.contentOffset = CGPointMake(0, point.y);//这里不要设置为CGPointMake(0, point.y)，这样我们在文章下面左右滑动的时候，就跳到文章的起始位置，不科学
-    }
-}
 
 #pragma mark     ----------- LazyLoading
 - (UIWebView *)webView{
@@ -45,7 +40,6 @@
         self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, -60, kScreenWidth, kScreenHeight + 44)];
         self.webView.scrollView.bounces = NO;
         self.webView.delegate = self;
-        self.webView.scalesPageToFit = NO;
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.urlString]];
         [request setTimeoutInterval:10.0];
         [self.webView loadRequest:request];
