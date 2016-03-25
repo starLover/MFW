@@ -82,12 +82,14 @@
         MainModel *mainModel = self.listArray318[0];
         label.text = mainModel.title;
         [cell.contentView addSubview:label];
-        lookMoreBtn.frame = CGRectMake(kScreenWidth / 3, kScreenHeight / 4 * 3 - 50, kScreenWidth / 3, 44);
+        lookMoreBtn.frame = CGRectMake(kScreenWidth / 3, kScreenHeight / 4 * 3 - 55, kScreenWidth / 3, 44);
         [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
         [lookMoreBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
         lookMoreBtn.layer.cornerRadius = 5;
         lookMoreBtn.layer.borderWidth = 1;
         lookMoreBtn.layer.borderColor = [UIColor orangeColor].CGColor;
+        lookMoreBtn.tag = indexPath.row;
+        [lookMoreBtn addTarget:self action:@selector(lookMoreAction:) forControlEvents:UIControlEventTouchUpInside];
         lookMoreBtn.clipsToBounds = YES;
         [cell.contentView addSubview:lookMoreBtn];
     }
@@ -104,7 +106,11 @@
         {
             section1 = 1;
             [collectionView registerNib:[UINib nibWithNibName:@"CommonCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell1"];
-            collectionView.tag = 1;
+            if (self.listArray318.count == 3) {
+                collectionView.tag = 1;
+            } else {
+                collectionView.tag = 2;
+            }
             [cell.contentView addSubview:collectionView];
         }
             break;
@@ -114,7 +120,11 @@
             label.text = mainModel.title;
             [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
             section1 = 2;
-            collectionView.tag = 2;
+            if (self.listArray318.count == 3) {
+                collectionView.tag = 2;
+            } else {
+                collectionView.tag = 3;
+            }
             [collectionView registerNib:[UINib nibWithNibName:@"SalesCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"collectionCell2"];
             [cell.contentView addSubview:collectionView];
         }
@@ -184,25 +194,30 @@
         case 1:
         {
             mainModel = self.commonArray[indexPath.row + 1];
+            HeadViewController *headVC = [[HeadViewController alloc] init];
+            headVC.urlString = mainModel.jump_url;
+            [self.navigationController pushViewController:headVC animated:YES];
         }
             break;
         case 2:
         {
-            mainModel = self.salesArray[indexPath.row];
+            Header1ViewController *headVC = [[Header1ViewController alloc] init];
+            headVC.urlString = @"https://m.mafengwo.cn/localdeals/?cid=1010402";
+            [self.navigationController pushViewController:headVC animated:YES];
         }
             break;
         case 3:
         {
-            mainModel = self.common4Array[indexPath.row];
+            HeadViewController *headVC = [[HeadViewController alloc] init];
+            headVC.urlString = @"https://m.mafengwo.cn/sales/";
+            [self.navigationController pushViewController:headVC animated:YES];
         }
             break;
             
         default:
             break;
     }
-    HeadViewController *headVC = [[HeadViewController alloc] init];
-    headVC.urlString = mainModel.jump_url;
-    [self.navigationController pushViewController:headVC animated:YES];
+    
 }
 
 #pragma mark    ---------------    UITableViewDelegate
@@ -471,6 +486,17 @@
     return _common4Array318;
 }
 #pragma mark   -------------   EightButton
+- (void)lookMoreAction:(UIButton *)btn{
+    if (btn.tag == 1) {
+        Header1ViewController *headVC = [[Header1ViewController alloc] init];
+        headVC.urlString = @"https://m.mafengwo.cn/localdeals/?cid=1010402";
+        [self.navigationController pushViewController:headVC animated:YES];
+    } else if (btn.tag == 2) {
+        HeadViewController *headVC = [[HeadViewController alloc] init];
+        headVC.urlString = @"https://m.mafengwo.cn/sales/";
+        [self.navigationController pushViewController:headVC animated:YES];
+    }
+}
 - (void)eightButton{
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenWidth / 2)];
     

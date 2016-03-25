@@ -13,7 +13,7 @@
 #import <SMS_SDK/SMSSDK.h>
 #import <MAMapKit/MAMapKit.h>
 
-@interface AppDelegate ()
+@interface AppDelegate ()<UITabBarControllerDelegate>
 @property(nonatomic ,strong) UITabBarController *tabBar;
 @end
 
@@ -50,10 +50,18 @@
     self.tabBar.tabBar.tintColor = [UIColor orangeColor];
     self.window.rootViewController = self.tabBar;
     
+    //注册通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changetabBar) name:@"backTabBar" object:nil];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
+
+//改变TabBar
+- (void)changetabBar{
+    self.tabBar.selectedIndex = 1;
+}
+
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     return  [WXApi handleOpenURL:url delegate:self];
 }
