@@ -10,6 +10,7 @@
 #import <BmobSDK/Bmob.h>
 #import "LZPPooCodeView.h"
 #import "ProgressHUD.h"
+#import "LZ_Mine_LoginViewController.h"
 
 
 @interface LZ_Mine_ResignViewController ()
@@ -29,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"登录";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:0 target:self action:@selector(login:)];
     _pooCodeView = [[LZPPooCodeView alloc] initWithFrame:CGRectMake(0, 0, 82, 34)];
     [self.vailDateView addSubview:_pooCodeView];
     //    self.vailDateView = _pooCodeView;
@@ -36,6 +38,21 @@
     [_pooCodeView addGestureRecognizer:tap];
 
 }
+- (void)login:(UIButton *)button{
+    /*
+     
+     //构造SendAuthReq结构体
+     SendAuthReq* req =[[SendAuthReq alloc ] init];
+     req.scope = @"snsapi_userinfo" ;
+     req.state = @"123" ;
+     //第三方向微信终端发送一个SendAuthReq消息结构
+     [WXApi sendReq:req];
+     */
+    
+    LZ_Mine_LoginViewController *lz = [LZ_Mine_LoginViewController new];
+    [self.navigationController pushViewController:lz animated:YES];
+}
+
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.phoneNumber becomeFirstResponder];

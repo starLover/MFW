@@ -44,6 +44,7 @@
 		7A0DCFF71C9FE29100D316C0 /* VOIndicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DCFF11C9FE29100D316C0 /* VOIndicatorAnimation.m */; };
 		7A0DCFF81C9FE29100D316C0 /* VOSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DCFF31C9FE29100D316C0 /* VOSegment.m */; };
 		7A0DCFF91C9FE29100D316C0 /* VOSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0DCFF51C9FE29100D316C0 /* VOSegmentedControl.m */; };
+		7A42C0671CA532CB0045F09C /* LZPValidate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42C0661CA532CB0045F09C /* LZPValidate.a */; };
 		7A5FF2F41CA0DE5400DEDF4C /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A5FF2F11CA0DE5400DEDF4C /* ProgressHUD.bundle */; };
 		7A5FF2F51CA0DE5400DEDF4C /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FF2F31CA0DE5400DEDF4C /* ProgressHUD.m */; };
 		7A5FF2F91CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FF2F71CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.m */; };
@@ -56,7 +57,6 @@
 		7A5FF32E1CA1290E00DEDF4C /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5FF32C1CA1290E00DEDF4C /* SMS_SDK.framework */; };
 		7A5FF3321CA1558B00DEDF4C /* LZ_Mine_ResignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5FF3301CA1558B00DEDF4C /* LZ_Mine_ResignViewController.m */; };
 		7A5FF3331CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A5FF3311CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib */; };
-		7A5FF43E1CA2A1C500DEDF4C /* libLZPValidate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5FF43D1CA2A1C500DEDF4C /* libLZPValidate.a */; };
 		7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133431C9ADF46002B0F94 /* LZ_MineViewController.m */; };
 		7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB133451C9ADF65002B0F94 /* LZ_Mine.storyboard */; };
 		7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB133481C9AE57B002B0F94 /* LZ_Mine_Head.m */; };
@@ -179,6 +179,7 @@
 		7A0DCFF31C9FE29100D316C0 /* VOSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegment.m; sourceTree = "<group>"; };
 		7A0DCFF41C9FE29100D316C0 /* VOSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VOSegmentedControl.h; sourceTree = "<group>"; };
 		7A0DCFF51C9FE29100D316C0 /* VOSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VOSegmentedControl.m; sourceTree = "<group>"; };
+		7A42C0661CA532CB0045F09C /* LZPValidate.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = LZPValidate.a; sourceTree = "<group>"; };
 		7A5FF2F11CA0DE5400DEDF4C /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		7A5FF2F21CA0DE5400DEDF4C /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		7A5FF2F31CA0DE5400DEDF4C /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
@@ -194,7 +195,6 @@
 		7A5FF32F1CA1558B00DEDF4C /* LZ_Mine_ResignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_Mine_ResignViewController.h; sourceTree = "<group>"; };
 		7A5FF3301CA1558B00DEDF4C /* LZ_Mine_ResignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_Mine_ResignViewController.m; sourceTree = "<group>"; };
 		7A5FF3311CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZ_Mine_ResignViewController.xib; path = ../Controllers/LZ_Mine_ResignViewController.xib; sourceTree = "<group>"; };
-		7A5FF43D1CA2A1C500DEDF4C /* libLZPValidate.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libLZPValidate.a; sourceTree = "<group>"; };
 		7A5FF43F1CA2A1D300DEDF4C /* LZPButtonTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPButtonTimer.h; sourceTree = "<group>"; };
 		7A5FF4401CA2A1D300DEDF4C /* LZPPooCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPPooCodeView.h; sourceTree = "<group>"; };
 		7A5FF4411CA2A1D300DEDF4C /* LZPValidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZPValidate.h; sourceTree = "<group>"; };
@@ -300,9 +300,9 @@
 				7AB133611C9BF4BA002B0F94 /* libz.tbd in Frameworks */,
 				7A5FF3271CA128C200DEDF4C /* MessageUI.framework in Frameworks */,
 				7A5FF3251CA128B800DEDF4C /* JavaScriptCore.framework in Frameworks */,
+				7A42C0671CA532CB0045F09C /* LZPValidate.a in Frameworks */,
 				7A5FF3231CA1288500DEDF4C /* libstdc++.tbd in Frameworks */,
 				7AB1337C1C9C057F002B0F94 /* CoreTelephony.framework in Frameworks */,
-				7A5FF43E1CA2A1C500DEDF4C /* libLZPValidate.a in Frameworks */,
 				7A5FF32D1CA1290E00DEDF4C /* MOBFoundation.framework in Frameworks */,
 				7AB1337A1C9C03AD002B0F94 /* libWeChatSDK.a in Frameworks */,
 				7AB133781C9C01E7002B0F94 /* libsqlite3.0.tbd in Frameworks */,
@@ -612,7 +612,7 @@
 				7A5FF43F1CA2A1D300DEDF4C /* LZPButtonTimer.h */,
 				7A5FF4401CA2A1D300DEDF4C /* LZPPooCodeView.h */,
 				7A5FF4411CA2A1D300DEDF4C /* LZPValidate.h */,
-				7A5FF43D1CA2A1C500DEDF4C /* libLZPValidate.a */,
+				7A42C0661CA532CB0045F09C /* LZPValidate.a */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -744,6 +744,7 @@
 					011445211C9AA6A50057E69F = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 6K2QGZ2A9Y;
+						DevelopmentTeam = JJL237F75C;
 					};
 				};
 			};

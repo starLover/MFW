@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LZ_Mine_LoginViewController">
@@ -52,13 +53,13 @@
                     </connections>
                 </button>
                 <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L3S-jz-XCV">
-                    <rect key="frame" x="207" y="102" width="167" height="34"/>
+                    <rect key="frame" x="247" y="102" width="127" height="34"/>
                     <state key="normal">
                         <attributedString key="attributedTitle"/>
                     </state>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="请输入短信验证码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4F9-Ia-y9V">
-                    <rect key="frame" x="0.0" y="102" width="167" height="30"/>
+                    <rect key="frame" x="0.0" y="102" width="207" height="30"/>
                     <attributedString key="attributedText"/>
                     <textInputTraits key="textInputTraits"/>
                     <connections>
@@ -68,22 +69,21 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="L3S-jz-XCV" firstAttribute="leading" secondItem="4F9-Ia-y9V" secondAttribute="trailing" constant="40" id="2Xl-Si-BBk"/>
                 <constraint firstAttribute="trailing" secondItem="nqF-kX-p5G" secondAttribute="trailing" id="8Bm-8E-1cN"/>
-                <constraint firstItem="4F9-Ia-y9V" firstAttribute="width" secondItem="L3S-jz-XCV" secondAttribute="width" id="Dzo-qK-qAI"/>
+                <constraint firstItem="4F9-Ia-y9V" firstAttribute="width" secondItem="nqF-kX-p5G" secondAttribute="width" multiplier="0.5" id="FOV-W5-GHK"/>
                 <constraint firstItem="nqF-kX-p5G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="H4y-Vb-3Q5"/>
-                <constraint firstItem="4F9-Ia-y9V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ieb-cu-Fiw"/>
-                <constraint firstItem="XJM-zr-KMy" firstAttribute="top" secondItem="Ecq-bn-6fW" secondAttribute="bottom" constant="8" id="J88-ht-SrS"/>
-                <constraint firstItem="4F9-Ia-y9V" firstAttribute="top" secondItem="nqF-kX-p5G" secondAttribute="bottom" constant="8" id="KPf-is-xn9"/>
-                <constraint firstItem="L3S-jz-XCV" firstAttribute="top" secondItem="nqF-kX-p5G" secondAttribute="bottom" constant="8" id="LtZ-Zt-rj6"/>
-                <constraint firstItem="Ecq-bn-6fW" firstAttribute="top" secondItem="L3S-jz-XCV" secondAttribute="bottom" constant="8" id="NMi-TZ-RNd"/>
-                <constraint firstAttribute="trailing" secondItem="XJM-zr-KMy" secondAttribute="trailing" constant="60" id="QZN-mZ-1CB"/>
-                <constraint firstItem="XJM-zr-KMy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="Vdy-11-5Kx"/>
-                <constraint firstItem="Ecq-bn-6fW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b0i-la-3sO"/>
-                <constraint firstAttribute="trailing" secondItem="L3S-jz-XCV" secondAttribute="trailing" constant="40" id="gXD-2D-ZNF"/>
+                <constraint firstAttribute="trailing" secondItem="XJM-zr-KMy" secondAttribute="trailing" constant="60" id="HsB-tv-Eee"/>
+                <constraint firstItem="XJM-zr-KMy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="KpE-DB-pkk"/>
+                <constraint firstItem="Ecq-bn-6fW" firstAttribute="top" secondItem="L3S-jz-XCV" secondAttribute="bottom" constant="8" id="Pj5-Y3-kDh"/>
+                <constraint firstAttribute="trailing" secondItem="L3S-jz-XCV" secondAttribute="trailing" constant="40" id="Tn7-L8-WSo"/>
+                <constraint firstItem="XJM-zr-KMy" firstAttribute="top" secondItem="Ecq-bn-6fW" secondAttribute="bottom" constant="8" id="V6x-Cw-vGw"/>
+                <constraint firstItem="L3S-jz-XCV" firstAttribute="leading" secondItem="4F9-Ia-y9V" secondAttribute="trailing" constant="40" id="ajp-3F-rBB"/>
+                <constraint firstItem="L3S-jz-XCV" firstAttribute="top" secondItem="nqF-kX-p5G" secondAttribute="bottom" constant="8" id="fLR-ZH-HVJ"/>
                 <constraint firstItem="nqF-kX-p5G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jjZ-NB-oWm"/>
-                <constraint firstAttribute="trailing" secondItem="Ecq-bn-6fW" secondAttribute="trailing" id="mco-C5-ODe"/>
-                <constraint firstItem="XJM-zr-KMy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vkC-qn-pIa"/>
+                <constraint firstItem="4F9-Ia-y9V" firstAttribute="top" secondItem="nqF-kX-p5G" secondAttribute="bottom" constant="8" id="nfC-xN-n8I"/>
+                <constraint firstAttribute="trailing" secondItem="Ecq-bn-6fW" secondAttribute="trailing" id="vdT-i2-Jd5"/>
+                <constraint firstItem="Ecq-bn-6fW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xX1-Mg-ZuM"/>
+                <constraint firstItem="4F9-Ia-y9V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yhb-e3-hpV"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
         </view>
