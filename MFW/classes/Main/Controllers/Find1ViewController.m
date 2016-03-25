@@ -53,6 +53,9 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
+//    cell.contentView.backgroundColor = [UIColor clearColor];
+    cell.selectionStyle = UITableViewCellSelectionStyleBlue;
+//    cell.selectedBackgroundView.backgroundColor = [UIColor redColor];
     if (self.countryNameArray.count > 0) {
         MainModel *model = self.countryNameArray[indexPath.row];
         cell.textLabel.text = model.name;
@@ -75,8 +78,6 @@
     } else {
         theFirst = NO;
         select = indexPath.row - 1;
-//        DestinationViewController *destinationVC = [[DestinationViewController alloc] init];
-        [self.navigationController popToRootViewControllerAnimated:NO];
     }
     [self.collectionView reloadData];
 }
@@ -156,16 +157,18 @@
     return 20;
 }
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
-    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
-    UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
-        for (UIView *subView in headerView.subviews) {
-            [subView removeFromSuperview];
-        }
-        UILabel *label = [[UILabel alloc] initWithFrame:headerView.frame];
-        MainModel *model = self.hotNameArray[indexPath.section];
-        label.text = [NSString stringWithFormat:@"    %@", model.name];
-        [headerView addSubview:label];
-        headerView.backgroundColor = [UIColor redColor];
+    [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
+    UICollectionReusableView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header" forIndexPath:indexPath];
+    for (UIView *subView in headerView.subviews) {
+        [subView removeFromSuperview];
+    }
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, collectionView.frame.size.width, 44)];
+    
+    MainModel *model = self.hotNameArray[indexPath.section];
+    label.textColor = [UIColor orangeColor];
+    label.backgroundColor = [UIColor grayColor];
+    label.text = [NSString stringWithFormat:@"    %@", model.name];
+    [headerView addSubview:label];
     return headerView;
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
@@ -177,8 +180,15 @@
     return CGSizeMake(0, 0);
 }
 #pragma mark    --------------   UICollectionViewDelegate
-
-
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    //发送通知
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"backTabBar" object:nil userInfo:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+- (void)dealloc{
+    //移除通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
 #pragma mark    --------------      网络请求
 
 - (void)request{
@@ -277,14 +287,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)searchAction:(id)sender {
     SearchCityViewController *searchVC = [[SearchCityViewController alloc] init];
