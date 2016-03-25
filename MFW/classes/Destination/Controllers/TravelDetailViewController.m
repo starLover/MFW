@@ -20,13 +20,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showBackBtn];
-    
     webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -95, kScreenWidth, kScreenHeight)];
     webView.scrollView.bounces = NO;
-    NSURLRequest *request = [[NSURLRequest alloc]initWithURL:[NSURL URLWithString:self.url]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.url]];
+    NSLog(@"###########%@",self.url);
     [self.view addSubview:webView];
     [webView loadRequest:request];
     
+}
+- (void)viewWillAppear:(BOOL)animated{
+    self.tabBarController.tabBar.hidden = YES;
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    self.tabBarController.tabBar.hidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {

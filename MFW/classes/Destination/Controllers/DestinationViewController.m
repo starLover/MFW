@@ -21,7 +21,8 @@
 #import "ShoppingViewController.h"
 #import "EntertainmentViewController.h"
 #import "TravelogueViewController.h"
-#import "AnswerViewController.h"
+#import "TravelDetailViewController.h"
+#import "GDViewController.h"
 @interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,retain)UIActivityIndicatorView *activityView;
@@ -313,6 +314,8 @@
     switch (btn.tag-100) {
         case 0:
         {
+            GDViewController *gdVC = [[GDViewController alloc]init];
+            [self.navigationController pushViewController:gdVC animated:YES];
         }
             break;
         case 1:
@@ -383,9 +386,9 @@
             break;
         case 5:
         {
-            AnswerViewController *answer = [[AnswerViewController alloc]init];
-            answer.url = self.url;
-            [self.navigationController pushViewController:answer animated:YES];
+            TravelDetailViewController *travelVC = [[TravelDetailViewController alloc]init];
+            travelVC.url = self.url;
+            [self.navigationController pushViewController:travelVC animated:YES];
             
         }
             break;

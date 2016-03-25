@@ -1,30 +1,22 @@
 //
-//  AnswerViewController.m
+//  GDViewController.m
 //  MFW
 //
-//  Created by scjy on 16/3/24.
+//  Created by scjy on 16/3/25.
 //  Copyright © 2016年 马娟娟. All rights reserved.
 //
 
-#import "AnswerViewController.h"
+#import "GDViewController.h"
 
-@interface AnswerViewController ()
-{
-    UIWebView *webView;
-}
+@interface GDViewController ()
+
 @end
 
-@implementation AnswerViewController
+@implementation GDViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self showBackBtn];
-    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -95, kScreenWidth, kScreenHeight)];
-    webView.scrollView.bounces = NO;
-    NSURLRequest *request = [[NSURLRequest alloc]initWithURL:[NSURL URLWithString:self.url]];
-    [self.view addSubview:webView];
-    [webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {

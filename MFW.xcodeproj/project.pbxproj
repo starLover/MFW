@@ -71,6 +71,7 @@
 		F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */; };
 		F33B63201C9E87B00060F63F /* Alubm.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33B631F1C9E87B00060F63F /* Alubm.plist */; };
 		F33B63231C9E8A3E0060F63F /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */; };
+		F37E42F51CA5191900EF6C08 /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F37E42F41CA5191900EF6C08 /* GDViewController.m */; };
 		F3851EA51C9E9C9000F75EB7 /* AlubmModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */; };
 		F38DA14D1CA3C36400CA6932 /* Food.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38DA14C1CA3C36400CA6932 /* Food.plist */; };
 		F38DA1501CA3C49E00CA6932 /* ShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA14F1CA3C49E00CA6932 /* ShoppingViewController.m */; };
@@ -82,7 +83,6 @@
 		F38DA1601CA4050300CA6932 /* TravelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA15E1CA4050300CA6932 /* TravelTableViewCell.m */; };
 		F38DA1611CA4050300CA6932 /* TravelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F38DA15F1CA4050300CA6932 /* TravelTableViewCell.xib */; };
 		F38DA16D1CA4218300CA6932 /* TravelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA16C1CA4218300CA6932 /* TravelDetailViewController.m */; };
-		F38DA1701CA426E300CA6932 /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA16F1CA426E300CA6932 /* AnswerViewController.m */; };
 		F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F399E0231C9B82C000019B37 /* DestinationModel.m */; };
 		F399E0261C9BADF100019B37 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F399E0251C9BADF100019B37 /* CoreImage.framework */; };
 		F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39D7FDA1C9AD3C300F8D333 /* Destination.plist */; };
@@ -218,6 +218,8 @@
 		F33B631F1C9E87B00060F63F /* Alubm.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Alubm.plist; sourceTree = "<group>"; };
 		F33B63211C9E8A3E0060F63F /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		F33B63221C9E8A3E0060F63F /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		F37E42F31CA5191900EF6C08 /* GDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDViewController.h; sourceTree = "<group>"; };
+		F37E42F41CA5191900EF6C08 /* GDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDViewController.m; sourceTree = "<group>"; };
 		F3851EA31C9E9C9000F75EB7 /* AlubmModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlubmModel.h; sourceTree = "<group>"; };
 		F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlubmModel.m; sourceTree = "<group>"; };
 		F38DA14C1CA3C36400CA6932 /* Food.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Food.plist; sourceTree = "<group>"; };
@@ -235,8 +237,6 @@
 		F38DA15F1CA4050300CA6932 /* TravelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TravelTableViewCell.xib; sourceTree = "<group>"; };
 		F38DA16B1CA4218300CA6932 /* TravelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelDetailViewController.h; sourceTree = "<group>"; };
 		F38DA16C1CA4218300CA6932 /* TravelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelDetailViewController.m; sourceTree = "<group>"; };
-		F38DA16E1CA426E300CA6932 /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
-		F38DA16F1CA426E300CA6932 /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
 		F399E0221C9B82C000019B37 /* DestinationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationModel.h; sourceTree = "<group>"; };
 		F399E0231C9B82C000019B37 /* DestinationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationModel.m; sourceTree = "<group>"; };
 		F399E0251C9BADF100019B37 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -377,6 +377,8 @@
 			children = (
 				0114454E1C9AA9E00057E69F /* DestinationViewController.h */,
 				0114454F1C9AA9E00057E69F /* DestinationViewController.m */,
+				F37E42F31CA5191900EF6C08 /* GDViewController.h */,
+				F37E42F41CA5191900EF6C08 /* GDViewController.m */,
 				F39EF9A41C9CF43B00382A36 /* HeadImageViewController.h */,
 				F39EF9A51C9CF43B00382A36 /* HeadImageViewController.m */,
 				F30485C71C9E723A002751C4 /* AlubmViewController.h */,
@@ -395,8 +397,6 @@
 				F38DA1591CA3EDB700CA6932 /* TravelogueViewController.m */,
 				F38DA16B1CA4218300CA6932 /* TravelDetailViewController.h */,
 				F38DA16C1CA4218300CA6932 /* TravelDetailViewController.m */,
-				F38DA16E1CA426E300CA6932 /* AnswerViewController.h */,
-				F38DA16F1CA426E300CA6932 /* AnswerViewController.m */,
 				F38DA14E1CA3C49E00CA6932 /* ShoppingViewController.h */,
 				F38DA14F1CA3C49E00CA6932 /* ShoppingViewController.m */,
 				F38DA1511CA3C4CC00CA6932 /* EntertainmentViewController.h */,
@@ -767,7 +767,6 @@
 				F33B63201C9E87B00060F63F /* Alubm.plist in Resources */,
 				F3D8037D1CA28981003B9191 /* ico_make.png in Resources */,
 				7A5FF2FA1CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.xib in Resources */,
-				01F94A561CA245D3004A76C8 /* Map.plist in Resources */,
 				01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */,
 				01344F941CA291330018EF2B /* LookNoteTableViewCell.xib in Resources */,
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
@@ -857,6 +856,7 @@
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
 				F3851EA51C9E9C9000F75EB7 /* AlubmModel.m in Sources */,
 				F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */,
+				F37E42F51CA5191900EF6C08 /* GDViewController.m in Sources */,
 				7A5FF3321CA1558B00DEDF4C /* LZ_Mine_ResignViewController.m in Sources */,
 				F38DA1601CA4050300CA6932 /* TravelTableViewCell.m in Sources */,
 				7A5FF2F51CA0DE5400DEDF4C /* ProgressHUD.m in Sources */,
@@ -876,7 +876,6 @@
 				F3D8037E1CA28981003B9191 /* JSDropDownMenu.m in Sources */,
 				F3A988041CA12A0C0074C624 /* FoodViewController.m in Sources */,
 				F3D803771CA26FF9003B9191 /* ScenicTableViewCell.m in Sources */,
-				F38DA1701CA426E300CA6932 /* AnswerViewController.m in Sources */,
 				01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */,
 				0146F5A41CA2C22100A12F79 /* TravelWorldTableViewCell.m in Sources */,
 				F3D803871CA2BBB0003B9191 /* ScenicModel.m in Sources */,
