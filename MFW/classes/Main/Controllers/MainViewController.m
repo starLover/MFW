@@ -18,6 +18,9 @@
 #import "HotelViewController.h"
 #import "LookNoteViewController.h"
 #import "TravelWorldViewController.h"
+#import "AnswerMyAppViewController.h"
+#import "Header1ViewController.h"
+#import "GrogshopViewController.h"
 
 @interface MainViewController ()<UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
@@ -514,7 +517,8 @@
             break;
         case 2:
         {
-            
+            GrogshopViewController *grogVC = [[GrogshopViewController alloc] init];
+            [self.navigationController pushViewController:grogVC animated:YES];
         }
             break;
         case 3:
@@ -536,20 +540,17 @@
             break;
         case 6:
         {
-            
+            AnswerMyAppViewController *answerVC = [[AnswerMyAppViewController alloc] init];
+            [self.navigationController pushViewController:answerVC animated:YES];
         }
             break;
         case 7:
         {
-            
+            Header1ViewController *visaVC = [[Header1ViewController alloc] init];
+            visaVC.urlString = @"http://www.mafengwo.cn/sales/0-0-0-4-0-0-0-0.html";
+            [self.navigationController pushViewController:visaVC animated:YES];
         }
             break;
-        case 8:
-        {
-            
-        }
-            break;
-            
             
         default:
             break;
