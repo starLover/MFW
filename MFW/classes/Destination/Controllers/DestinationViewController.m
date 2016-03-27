@@ -23,6 +23,7 @@
 #import "TravelogueViewController.h"
 #import "TravelDetailViewController.h"
 #import "GDViewController.h"
+#import "AnswerMyAppViewController.h"
 @interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,retain)UIActivityIndicatorView *activityView;
@@ -170,7 +171,7 @@
         NSArray *icons = dataDic[@"icons"];
         NSDictionary *item5 = icons[5];
         self.url = item5[@"jump_url"];
-        NSLog(@"!!!!!!!!%@",self.url);
+        
         for (NSDictionary *dic in icons) {
              DestinationModel *model = [[DestinationModel alloc]init];
             [model setValuesForKeysWithDictionary:dic];
@@ -396,10 +397,11 @@
             break;
         case 5:
         {
-            TravelDetailViewController *travelVC = [[TravelDetailViewController alloc]init];
-            travelVC.url = self.url;
-            [self.navigationController pushViewController:travelVC animated:YES];
-            
+            AnswerMyAppViewController *answerVC = [[AnswerMyAppViewController alloc]init];
+            [self.navigationController pushViewController:answerVC animated:YES];
+//            TravelDetailViewController *travelVC = [[TravelDetailViewController alloc]init];
+//            travelVC.url = self.url;
+//            [self.navigationController pushViewController:travelVC animated:YES];
         }
             break;
         case 6:

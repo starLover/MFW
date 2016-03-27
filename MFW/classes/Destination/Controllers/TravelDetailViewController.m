@@ -25,7 +25,9 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.url]];
     NSLog(@"###########%@",self.url);
     [self.view addSubview:webView];
+    [webView reload];
     [webView loadRequest:request];
+    
     
 }
 - (void)viewWillAppear:(BOOL)animated{
