@@ -29,23 +29,24 @@
     _mapView.showsUserLocation = YES;
     [self.view.superview addSubview:_mapView];
     //地图跟着位置移动
-    [_mapView setUserTrackingMode:MAUserTrackingModeFollow animated:YES];
-    [_mapView setZoomLevel:16.1 animated:YES];
+    [_mapView setUserTrackingMode:MAUserTrackingModeFollow animated:NO];
+    [_mapView setZoomLevel:40.1 animated:NO];
 }
-//- (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
+//- (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatin gLocation{
 //    if (updatingLocation) {
 //        NSLog(@"latitude:%f,lng:%f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
 //    }
 //}
 - (void)mapView:(MAMapView *)mapView didAddAnnotationViews:(NSArray *)views{
     MAAnnotationView *view = views[0];
+    view.enabled = NO;
     // 放到该方法中用以保证userlocation的annotationView已经添加到地图上了。
     if ([view.annotation isKindOfClass:[MAUserLocation class]]) {
         MAUserLocationRepresentation *pre = [[MAUserLocationRepresentation alloc]init];
-        pre.fillColor = [UIColor colorWithRed:0.9 green:0.1 blue:0.1 alpha:0.3];
-        pre.strokeColor = [UIColor colorWithRed:0.1 green:0.1 blue:0.9 alpha:1.0];
+        pre.fillColor = [UIColor clearColor];
+        pre.strokeColor = [UIColor orangeColor];
         pre.image = [UIImage imageNamed:@"ic_topbar_location"];
-        pre.lineWidth = 3;
+        pre.lineWidth = 2;
         pre.lineDashPattern = @[@6,@3];
         [_mapView updateUserLocationRepresentation:pre];
         view.calloutOffset = CGPointMake(0, 0);
