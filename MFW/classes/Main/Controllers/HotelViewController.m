@@ -8,15 +8,19 @@
 
 #import "HotelViewController.h"
 #import "HotelMapViewController.h"
-//#import <AMapLocationKit/AMapLocationKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 
-@interface HotelViewController ()
-
+@interface HotelViewController ()<CLLocationManagerDelegate>
+{
+    CLLocationManager *_locationManager;
+    CLGeocoder *_geocoder;
+}
 
 - (IBAction)locationAction:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *cityBtn;
-//@property(nonatomic, strong) AMapLocationManager *locationManager;
+
 - (IBAction)mapAction:(id)sender;
 
 @end
@@ -28,6 +32,10 @@
     // Do any additional setup after loading the view.
     self.title = @"订酒店";
     [self showBackBtn];
+    
+    _locationManager = [[CLLocationManager alloc] init];
+    _locationManager.delegate = self;
+    _geocoder = [[CLGeocoder alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,35 +54,46 @@
 */
 
 - (IBAction)locationAction:(id)sender {
-//    self.locationManager = [[AMapLocationManager alloc] init];
-//    // 带逆地理信息的一次定位（返回坐标和地址信息）
-//    [self.locationManager setDesiredAccuracy:kCLLocationAccuracyHundredMeters];
-//    //   定位超时时间，可修改，最小2s
-//    self.locationManager.locationTimeout = 3;
-//    //   逆地理请求超时时间，可修改，最小2s
-//    self.locationManager.reGeocodeTimeout = 3;
-//    
-//    // 带逆地理（返回坐标和地址信息）
-//    [self.locationManager requestLocationWithReGeocode:YES completionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
-//        
-//        if (error)
-//        {
-//            NSLog(@"locError:{%ld - %@};", (long)error.code, error.localizedDescription);
-//            
-//            if (error.code == AMapLocationErrorLocateFailed)
-//            {
-//                return;
-//            }
-//        }
-//        NSLog(@"location:%@", location);
-//        
-//        if (regeocode)
-//        {
-//            NSLog(@"reGeocode:%@", regeocode);
-//            [self.cityBtn setTitle:regeocode.city forState:UIControlStateNormal];
-//        }
-//    }];
+    if (!([CLLocationManager locationServicesEnabled])) {
+        NSLog(@"用户位置服务不可用");
+    }
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+        [_locationManager requestWhenInUseAuthorization];
+    } else if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse){
+        _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        CLLocationDistance distance = 100.0;
+        _locationManager.distanceFilter = distance;
+        [_locationManager startUpdatingLocation];
+        [self.cityBtn setTitle:@"定位中..." forState:UIControlStateNormal];
+    }
+    
 }
+
+#pragma mark  -------- CLLocationManagerDelegate
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
+    CLLocation *location = [locations lastObject];
+    CLLocationCoordinate2D coordinate = location.coordinate;
+    
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    [userDefault setValue:[NSNumber numberWithDouble:coordinate.latitude] forKey:@"lat"];
+    [userDefault setValue:[NSNumber numberWithDouble:coordinate.longitude] forKey:@"lng"];
+    
+    NSLog(@"纬度:%f 经度:%f 海拔:%f 航向:%f 行走速度:%f", coordinate.latitude, coordinate.longitude, location.altitude, location.course, location.speed);
+    
+    [_geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        CLPlacemark *placeMark = [placemarks lastObject];
+        
+        [[NSUserDefaults standardUserDefaults] setValue:placeMark.addressDictionary[@"City"] forKey:@"city"];
+        //保存
+        [userDefault synchronize];
+        [self.cityBtn setTitle:placeMark.addressDictionary[@"City"] forState:UIControlStateNormal];
+    }];
+    //如果不需要使用定位服务的时候,及时关闭定位服务
+    [manager stopUpdatingLocation];
+
+}
+
+
 - (IBAction)mapAction:(id)sender {
     HotelMapViewController *hotelMapVC = [[HotelMapViewController alloc] init];
     [self.navigationController pushViewController:hotelMapVC animated:YES];
