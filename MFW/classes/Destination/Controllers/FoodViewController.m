@@ -66,6 +66,7 @@
         ScenicModel *areaModel = self.areaArray[indexPath.row];
         ScenicModel *commentModel = self.commentArray[indexPath.row];
         [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.thumbnail] placeholderImage:[UIImage imageNamed:@"coffee"]];
+        cell.imageV.contentMode = UIViewContentModeScaleAspectFit;
         cell.placeLabel.text = model.name;
         cell.commentLabel.text = [NSString stringWithFormat:@"%@条蜂评，%@篇游记提及",model.num_comment,model.num_travelnote];
         cell.location.text = [NSString stringWithFormat:@"位于%@",areaModel.name];

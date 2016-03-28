@@ -16,7 +16,6 @@
 		0114454B1C9AA9860057E69F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0114454A1C9AA9860057E69F /* MainViewController.m */; };
 		0114454D1C9AA99A0057E69F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0114454C1C9AA99A0057E69F /* Main.storyboard */; };
 		011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0114454F1C9AA9E00057E69F /* DestinationViewController.m */; };
-		011445521C9AA9F60057E69F /* Destination.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011445511C9AA9F60057E69F /* Destination.storyboard */; };
 		011445581C9AB1910057E69F /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 011445541C9AB1910057E69F /* blueArrow.png */; };
 		011445591C9AB1910057E69F /* blueArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 011445551C9AB1910057E69F /* blueArrowDown.png */; };
 		0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 011445571C9AB1910057E69F /* PullingRefreshTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -72,6 +71,8 @@
 		7AB1337C1C9C057F002B0F94 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AB1337B1C9C057F002B0F94 /* CoreTelephony.framework */; };
 		EA637D993CACC04A8D70916F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 527401B3CEFECDBDAE025B36 /* libPods.a */; };
 		F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30485C81C9E723A002751C4 /* AlubmViewController.m */; };
+		F31A6EE71CA8DEA200E22654 /* ScenicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F31A6EE61CA8DEA200E22654 /* ScenicTableViewCell.xib */; };
+		F31A6EE91CA8DFA400E22654 /* Destination.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31A6EE81CA8DFA400E22654 /* Destination.storyboard */; };
 		F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631A1C9E86D90060F63F /* BLImageSize.m */; };
 		F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */; };
 		F33B63201C9E87B00060F63F /* Alubm.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33B631F1C9E87B00060F63F /* Alubm.plist */; };
@@ -107,7 +108,6 @@
 		F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */; };
 		F3D803731CA24DC0003B9191 /* Scenic.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3D803721CA24DC0003B9191 /* Scenic.plist */; };
 		F3D803771CA26FF9003B9191 /* ScenicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D803751CA26FF9003B9191 /* ScenicTableViewCell.m */; };
-		F3D803781CA26FF9003B9191 /* ScenicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3D803761CA26FF9003B9191 /* ScenicTableViewCell.xib */; };
 		F3D8037D1CA28981003B9191 /* ico_make.png in Resources */ = {isa = PBXBuildFile; fileRef = F3D8037A1CA28981003B9191 /* ico_make.png */; };
 		F3D8037E1CA28981003B9191 /* JSDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D8037C1CA28981003B9191 /* JSDropDownMenu.m */; };
 		F3D803871CA2BBB0003B9191 /* ScenicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D803861CA2BBB0003B9191 /* ScenicModel.m */; };
@@ -131,7 +131,6 @@
 		0114454C1C9AA99A0057E69F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0114454E1C9AA9E00057E69F /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
 		0114454F1C9AA9E00057E69F /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; };
-		011445511C9AA9F60057E69F /* Destination.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Destination.storyboard; sourceTree = "<group>"; };
 		011445541C9AB1910057E69F /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
 		011445551C9AB1910057E69F /* blueArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrowDown.png; sourceTree = "<group>"; };
 		011445561C9AB1910057E69F /* PullingRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullingRefreshTableView.h; sourceTree = "<group>"; };
@@ -224,6 +223,8 @@
 		ACE5DD482037E023CE9241F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F30485C71C9E723A002751C4 /* AlubmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlubmViewController.h; sourceTree = "<group>"; };
 		F30485C81C9E723A002751C4 /* AlubmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlubmViewController.m; sourceTree = "<group>"; };
+		F31A6EE61CA8DEA200E22654 /* ScenicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScenicTableViewCell.xib; sourceTree = "<group>"; };
+		F31A6EE81CA8DFA400E22654 /* Destination.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Destination.storyboard; sourceTree = "<group>"; };
 		F33B63191C9E86D90060F63F /* BLImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImageSize.h; sourceTree = "<group>"; };
 		F33B631A1C9E86D90060F63F /* BLImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImageSize.m; sourceTree = "<group>"; };
 		F33B631B1C9E86D90060F63F /* AoiroSoraLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AoiroSoraLayout.h; sourceTree = "<group>"; };
@@ -283,7 +284,6 @@
 		F3D803721CA24DC0003B9191 /* Scenic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Scenic.plist; sourceTree = "<group>"; };
 		F3D803741CA26FF9003B9191 /* ScenicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenicTableViewCell.h; sourceTree = "<group>"; };
 		F3D803751CA26FF9003B9191 /* ScenicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenicTableViewCell.m; sourceTree = "<group>"; };
-		F3D803761CA26FF9003B9191 /* ScenicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScenicTableViewCell.xib; sourceTree = "<group>"; };
 		F3D8037A1CA28981003B9191 /* ico_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_make.png; sourceTree = "<group>"; };
 		F3D8037B1CA28981003B9191 /* JSDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDropDownMenu.h; sourceTree = "<group>"; };
 		F3D8037C1CA28981003B9191 /* JSDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDropDownMenu.m; sourceTree = "<group>"; };
@@ -423,7 +423,8 @@
 		0114453D1C9AA8CC0057E69F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				011445511C9AA9F60057E69F /* Destination.storyboard */,
+				F31A6EE81CA8DFA400E22654 /* Destination.storyboard */,
+				F31A6EE61CA8DEA200E22654 /* ScenicTableViewCell.xib */,
 				F3C8743D1C9AB790006BD9AF /* DestinationTableViewCell.h */,
 				F3C8743E1C9AB790006BD9AF /* DestinationTableViewCell.m */,
 				F39EF9A71C9CF48B00382A36 /* HeadImageTableViewCell.h */,
@@ -435,7 +436,6 @@
 				F3A9880B1CA13F1E0074C624 /* RightTableViewCell.m */,
 				F3D803741CA26FF9003B9191 /* ScenicTableViewCell.h */,
 				F3D803751CA26FF9003B9191 /* ScenicTableViewCell.m */,
-				F3D803761CA26FF9003B9191 /* ScenicTableViewCell.xib */,
 				F38DA15D1CA4050300CA6932 /* TravelTableViewCell.h */,
 				F38DA15E1CA4050300CA6932 /* TravelTableViewCell.m */,
 				F38DA15F1CA4050300CA6932 /* TravelTableViewCell.xib */,
@@ -780,7 +780,7 @@
 				F3A988091CA131080074C624 /* Strategy.plist in Resources */,
 				F39EF9AD1C9D209F00382A36 /* HeadImage.plist in Resources */,
 				0114454D1C9AA99A0057E69F /* Main.storyboard in Resources */,
-				F3D803781CA26FF9003B9191 /* ScenicTableViewCell.xib in Resources */,
+				F31A6EE71CA8DEA200E22654 /* ScenicTableViewCell.xib in Resources */,
 				7AB133551C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.xib in Resources */,
 				011445591C9AB1910057E69F /* blueArrowDown.png in Resources */,
 				F38DA15C1CA402EA00CA6932 /* Travel.plist in Resources */,
@@ -788,6 +788,7 @@
 				F3D803731CA24DC0003B9191 /* Scenic.plist in Resources */,
 				0114452F1C9AA6A50057E69F /* Assets.xcassets in Resources */,
 				7A5FF3331CA1558B00DEDF4C /* LZ_Mine_ResignViewController.xib in Resources */,
+				F31A6EE91CA8DFA400E22654 /* Destination.storyboard in Resources */,
 				F33B63201C9E87B00060F63F /* Alubm.plist in Resources */,
 				F3D8037D1CA28981003B9191 /* ico_make.png in Resources */,
 				7A5FF2FA1CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.xib in Resources */,
@@ -802,7 +803,6 @@
 				01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */,
 				7A5FF2F41CA0DE5400DEDF4C /* ProgressHUD.bundle in Resources */,
 				F38DA1551CA3D19F00CA6932 /* Entertainment.plist in Resources */,
-				011445521C9AA9F60057E69F /* Destination.storyboard in Resources */,
 				F39D7FDB1C9AD3C300F8D333 /* Destination.plist in Resources */,
 				7AB133461C9ADF65002B0F94 /* LZ_Mine.storyboard in Resources */,
 			);

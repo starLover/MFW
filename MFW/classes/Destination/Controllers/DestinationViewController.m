@@ -21,15 +21,14 @@
 #import "ShoppingViewController.h"
 #import "EntertainmentViewController.h"
 #import "TravelogueViewController.h"
-#import "TravelDetailViewController.h"
 #import "GDViewController.h"
 #import "AnswerMyAppViewController.h"
 @interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property(nonatomic,strong)UIImageView *imageview;
 @property(nonatomic,retain)UIActivityIndicatorView *activityView;
 @property(nonatomic,copy)NSString *url;
 @property(nonatomic,strong)UIView *tableViewHeaderView;
-@property(nonatomic,strong)UIImageView *imageview;
 @property(nonatomic,strong)NSMutableArray *btnArray;
 @property(nonatomic,strong)NSMutableArray *listArray;
 @property(nonatomic,strong)NSMutableArray *albumArray;
@@ -80,7 +79,17 @@
 //    //设置导航栏为全透明，且去掉边框黑线
 //    [self.navigationController.navigationBar setTranslucent:NO];
 //    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+//    [self.activityView startAnimating];
 //    //去黑线
+////    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+//}
+//
+//- (void)viewWillDisappear:(BOOL)animated{
+//    //设置导航栏为全透明，且去掉边框黑线
+//    [self.navigationController.navigationBar setTranslucent:NO];
+////    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+////    //去黑线
+////    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 //    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 //}
 #pragma mark --------- UITableViewDataSource
@@ -139,6 +148,7 @@
         [self.navigationController pushViewController:gdVC animated:YES];
     }
 }
+
 #pragma mark ---------
 #pragma mark --------- 
 #pragma mark --------- 
@@ -274,9 +284,12 @@
     
     //图片集
     for (int i = 0; i < self.albumArray.count; i++) {
-            UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*i,self.imageview.frame.size.height*1/2, (kScreenWidth-60)/3,self.imageview.frame.size.height/2-10)];
-            [imageV sd_setImageWithURL:[NSURL URLWithString:self.albumArray[i]] placeholderImage:nil];
-            [self.imageview addSubview:imageV];
+        UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*i,self.imageview.frame.size.height*1/2, (kScreenWidth-60)/3,self.imageview.frame.size.height/2-10)];
+        [imageV sd_setImageWithURL:[NSURL URLWithString:self.albumArray[i]] placeholderImage:nil];
+        [self.imageview addSubview:imageV];
+//            UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*i,self.imageview.frame.size.height*1/2, (kScreenWidth-60)/3,self.imageview.frame.size.height/2-10)];
+//            [imageV sd_setImageWithURL:[NSURL URLWithString:self.albumArray[i]] placeholderImage:nil];
+//            [self.imageview addSubview:imageV];
         UIButton *imageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         imageBtn.frame = CGRectMake(20+(((kScreenWidth-60)/3)+10)*i,self.imageview.frame.size.height*1/2, (kScreenWidth-60)/3,self.imageview.frame.size.height/2-10);
         imageBtn.tag = 103+i;
@@ -298,6 +311,7 @@
     much.text = @"张照片";
     [self.imageview addSubview:much];
     
+        
     for (NSInteger i = 0; i < 2; i++) {
         for (NSInteger j = 0; j < 4; j++) {
             DestinationModel *btnModel = self.btnArray[i * 4 + j];
@@ -402,6 +416,7 @@
 //            TravelDetailViewController *travelVC = [[TravelDetailViewController alloc]init];
 //            travelVC.url = self.url;
 //            [self.navigationController pushViewController:travelVC animated:YES];
+            
         }
             break;
         case 6:

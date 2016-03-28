@@ -41,6 +41,7 @@
         cell.headImage.layer.masksToBounds = YES;
         cell.headImage.layer.cornerRadius = 20;
         [cell.headImage sd_setImageWithURL:[NSURL URLWithString:self.logoArray[indexPath.row]] placeholderImage:nil];
+        cell.headImage.contentMode = UIViewContentModeScaleAspectFit;
         cell.titleLabel.text = model.title;
         cell.numLabel.text = [NSString stringWithFormat:@"%@人浏览",model.num_visit];
         [cell.mainImage sd_setImageWithURL:[NSURL URLWithString:model.cover] placeholderImage:nil];
