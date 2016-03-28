@@ -23,7 +23,7 @@
     webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -95, kScreenWidth, kScreenHeight)];
     webView.scrollView.bounces = NO;
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.url]];
-    NSLog(@"###########%@",self.url);
+//    NSLog(@"###########%@",self.url);
     [self.view addSubview:webView];
     [webView loadRequest:request];
     
