@@ -9,12 +9,19 @@
 #import "GDViewController.h"
 #import <MAMapKit/MAMapKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
-@interface GDViewController ()<MAMapViewDelegate,AMapSearchDelegate>
+
+@interface GDViewController ()<MAMapViewDelegate,AMapSearchDelegate,MAAnnotation,CLLocationManagerDelegate>
 {
     MAMapView *_mapView;
     AMapSearchAPI *_search;
-    
+    // 地理位置解码编码器
+    CLGeocoder *_geo;
 }
+@property(nonatomic,readonly,strong)AMapAOI *poi;
+@property(nonatomic,strong)MAPointAnnotation *pointAnnotation;
+@property(nonatomic,assign) CGFloat lat;
+@property(nonatomic,assign) CGFloat lng;
+
 @end
 
 @implementation GDViewController
@@ -31,18 +38,31 @@
     //定位,YES为打开定位，NO为关闭定位
     _mapView.showsUserLocation = YES;
     [self.view.superview addSubview:_mapView];
+    CLLocationManager *_locationManager;
+    _locationManager.delegate = self;
     //地图跟着位置移动
     [_mapView setUserTrackingMode:MAUserTrackingModeFollow animated:NO];
-    [_mapView setZoomLevel:40.1 animated:NO];
+    [_mapView setZoomLevel:16.1 animated:NO];
     //定位精度
     _mapView.desiredAccuracy = kCLLocationAccuracyBest;
+    
+}
+- (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
+    if (updatingLocation) {
+        self.lat = userLocation.location.coordinate.latitude;
+        self.lng = userLocation.location.coordinate.longitude;
+    }
     //周边搜索
     [self searchAction];
 }
-//- (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatin gLocation{
-//    if (updatingLocation) {
-//        NSLog(@"latitude:%f,lng:%f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
-//    }
+//- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
+//    CLLocation *loc = [locations objectAtIndex:0];
+//    [_geo reverseGeocodeLocation:loc completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+////       NSString *lat = [NSString stringWithFormat:@"%f",loc.coordinate.latitude];
+////       NSString *lng = [NSString stringWithFormat:@"%f",loc.coordinate.longitude];
+//        
+//        
+//    }];
 //}
 - (void)mapView:(MAMapView *)mapView didAddAnnotationViews:(NSArray *)views{
     MAAnnotationView *view = views[0];
@@ -61,17 +81,15 @@
         view.calloutOffset = CGPointMake(0, 0);
     }
 }
-- (void)viewDidAppear:(BOOL)animated{
-    MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc]init];
-    pointAnnotation.coordinate = CLLocationCoordinate2DMake(39.989631, 116.48);
-    
-    pointAnnotation.title = @"洛阳";
-    pointAnnotation.subtitle = @"龙门";
-    [_mapView addAnnotation:pointAnnotation];
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
+    self.pointAnnotation = [[MAPointAnnotation alloc]init];
+    [_mapView addAnnotation:self.pointAnnotation];
+    [manager stopUpdatingLocation];
+    [self searchAction];
 }
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation{
     if ([annotation isKindOfClass:[MAPointAnnotation class]]) {
-        static NSString *pointReuseIndentifier = @"";
+        static NSString *pointReuseIndentifier = @"poiId";
         MAPinAnnotationView *annotationView = (MAPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pointReuseIndentifier];
         if (annotationView == nil) {
             annotationView = [[MAPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:pointReuseIndentifier];
@@ -89,10 +107,12 @@
     [AMapSearchServices sharedServices].apiKey = kGDKey;
     //初始化检索对象
     _search = [[AMapSearchAPI alloc]init];
+    _search.timeout = 0;
     _search.delegate = self;
     //构造AMapPOIAroundSearchRequest对象，设置周边请求参数
     AMapPOIAroundSearchRequest *request = [[AMapPOIAroundSearchRequest alloc] init];
-    request.location = [AMapGeoPoint locationWithLatitude:39.990459 longitude:116.481476];
+
+    request.location = [AMapGeoPoint locationWithLatitude:self.lat longitude:self.lng];
     request.keywords = self.string;
     // types属性表示限定搜索POI的类别，默认为：餐饮服务|商务住宅|生活服务
     // POI的类型共分为20种大类别，分别为：
@@ -113,17 +133,57 @@
     {
         return;
     }
-    
     //通过 AMapPOISearchResponse 对象处理搜索结果
     NSString *strCount = [NSString stringWithFormat:@"count: %d",response.count];
     NSString *strSuggestion = [NSString stringWithFormat:@"Suggestion: %@", response.suggestion];
     NSString *strPoi = @"";
     for (AMapPOI *p in response.pois) {
         strPoi = [NSString stringWithFormat:@"%@\nPOI: %@", strPoi, p.description];
+//        NSLog(@"city = %@ adress = %@",p.city,p.address);
+        
+        self.pointAnnotation.coordinate = CLLocationCoordinate2DMake(p.location.latitude, p.location.longitude);
+        self.pointAnnotation.title = p.name;
+        self.pointAnnotation.subtitle = p.address;
+        
     }
     NSString *result = [NSString stringWithFormat:@"%@ \n %@ \n %@", strCount, strSuggestion, strPoi];
     NSLog(@"Place: %@", result);
-}
+    
+    
+    }
+#pragma mark - AMapSearchDelegate
+
+///* POI 搜索回调. */
+//- (void)onPOISearchDone:(AMapPOISearchBaseRequest *)request response:(AMapPOISearchResponse *)response
+//{
+//    if (response.pois.count == 0)
+//    {
+//        return;
+//    }
+//    
+//    NSMutableArray *poiAnnotations = [NSMutableArray arrayWithCapacity:response.pois.count];
+//    
+//    [response.pois enumerateObjectsUsingBlock:^(AMapPOI *obj, NSUInteger idx, BOOL *stop) {
+//        
+//        [poiAnnotations addObject:[[MAPointAnnotation alloc]initWithPOI:obj]];
+//        
+//    }];
+//    
+//    /* 将结果以annotation的形式加载到地图上. */
+//    [_mapView addAnnotations:poiAnnotations];
+//    
+//    /* 如果只有一个结果，设置其为中心点. */
+//    if (poiAnnotations.count == 1)
+//    {
+//        [_mapView setCenterCoordinate:[poiAnnotations[0] coordinate]];
+//    }
+//    /* 如果有多个结果, 设置地图使所有的annotation都可见. */
+//    else
+//    {
+//        [_mapView showAnnotations:poiAnnotations animated:NO];
+//    }
+//}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -29,6 +29,8 @@
 @property(nonatomic,retain)UIActivityIndicatorView *activityView;
 @property(nonatomic,strong)UITextField *searchFiled;
 @property(nonatomic,strong)UIImageView *searchImage;
+@property(nonatomic,assign)CGFloat lat;
+@property(nonatomic,assign)CGFloat lng;
 @property(nonatomic,copy)NSString *url;
 @property(nonatomic,strong)UIView *tableViewHeaderView;
 @property(nonatomic,strong)NSMutableArray *btnArray;
@@ -84,7 +86,9 @@
     [self.view resignFirstResponder];
     GDViewController *cgVC = [[GDViewController alloc]init];
     cgVC.string = self.searchFiled.text;
+    if (cgVC.string.length > 0) {
     [self.navigationController pushViewController:cgVC animated:YES];
+    }
     return YES;
 }
 
@@ -110,6 +114,13 @@
     [self.tableViewHeaderView addSubview:self.imageview];
     self.tableView.tableHeaderView = self.tableViewHeaderView;
     [self navBarBtn];
+}
+-(void)latlng{
+
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:self.lat longitude:self.lng];
+    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
+    
+
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     DestinationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];

@@ -10,5 +10,7 @@
 
 @interface GDViewController : UIViewController
 
-@property(nonatomic,strong)NSString *string;
+@property(nonatomic,copy)NSString *string;
+@property(nonatomic,copy)NSString *location;
+
 @end
