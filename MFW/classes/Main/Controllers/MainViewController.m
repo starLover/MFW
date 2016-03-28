@@ -21,8 +21,9 @@
 #import "AnswerMyAppViewController.h"
 #import "Header1ViewController.h"
 #import "GrogshopViewController.h"
+#import <Masonry.h>
 
-
+#define WS(weakSelf) __weak typeof(self)weakSelf = self;
 @interface MainViewController ()<UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 {
     NSInteger section1;
@@ -49,6 +50,7 @@
 @implementation MainViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.view addSubview:self.tableView];
@@ -82,7 +84,7 @@
         MainModel *mainModel = self.listArray318[0];
         label.text = mainModel.title;
         [cell.contentView addSubview:label];
-        lookMoreBtn.frame = CGRectMake(kScreenWidth / 3, kScreenHeight / 4 * 3 - 55, kScreenWidth / 3, 44);
+        lookMoreBtn.frame = CGRectMake(kScreenWidth / 3 - 15, kScreenHeight / 4 * 3 - 15, kScreenWidth / 3 + 30, 44);
         [lookMoreBtn setTitle:mainModel.sub_title_text forState:UIControlStateNormal];
         [lookMoreBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
         lookMoreBtn.layer.cornerRadius = 5;
@@ -165,7 +167,6 @@
         return cell;
     } else if (section1 == 3) {
         CommonCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collectionCell3" forIndexPath:indexPath];
-        
         cell.mainModel = self.common4Array[indexPath.row];
         return cell;
     }
@@ -226,7 +227,7 @@
     if (indexPath.row == 0) {
         return kScreenHeight / 3 * 2 - 30;
     }
-    return kScreenHeight / 4 * 3;
+    return kScreenHeight / 4 * 3 + 40;
 }
 
 
@@ -273,24 +274,43 @@
     [imageView sd_setImageWithURL:[NSURL URLWithString:noteModel.thumbnail]];
     [self.todayView addSubview:imageView];
     
+    
     UIImageView *headImage = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth / 2 - 25, kScreenWidth / 2 + 60, 50, 50)];
     MainModel *userModel = self.userArray[0];
     headImage.layer.cornerRadius = 25;
     headImage.clipsToBounds = YES;
     [headImage sd_setImageWithURL:[NSURL URLWithString:userModel.logo]];
     [self.todayView addSubview:headImage];
+    WS(ws);
     
-    UILabel *placeLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, kScreenWidth / 2 + 125 , kScreenWidth - 40, 30)];
+    UILabel *placeLabel = [UILabel new];
     placeLabel.textColor = [UIColor orangeColor];
     placeLabel.textAlignment = NSTextAlignmentCenter;
     MainModel *mddsModel = self.mddsArray[0];
     placeLabel.text = [NSString stringWithFormat:@"%@在%@", userModel.name, mddsModel.name];
     [self.todayView addSubview:placeLabel];
     
-    UILabel *lifeLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, kScreenWidth / 2 + 160 , kScreenWidth - 40, 60)];
+    UILabel *lifeLabel = [UILabel new];
     lifeLabel.text = noteModel.title;
     lifeLabel.textAlignment = NSTextAlignmentCenter;
     [self.todayView addSubview:lifeLabel];
+    //
+    [placeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(headImage.mas_bottom).offset(5);
+        make.centerX.equalTo(ws.todayView.mas_centerX);
+        make.width.equalTo(ws.todayView);
+        make.height.equalTo(lifeLabel);
+        make.bottom.equalTo(lifeLabel.mas_top).offset(-5);
+    }];
+    [lifeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(placeLabel.mas_bottom);
+        make.centerX.equalTo(ws.todayView.mas_centerX);
+        make.width.equalTo(ws.todayView);
+        make.height.equalTo(placeLabel);
+        make.bottom.equalTo(ws.todayView.mas_bottom).offset(-25);
+    }];
+    
+    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.tag = 100;
     btn.frame = self.todayView.frame;
