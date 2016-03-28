@@ -236,15 +236,16 @@
     //导航栏搜索
     self.searchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 44)];
     [self.navigationController.navigationBar addSubview:self.searchView];
-    UIImageView *headImageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, 5, 34, 34)];
+    UIImageView *headImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 5, 34, 34)];
     headImageView.image = [UIImage imageNamed:@"common_loading_logo"];
     [self.searchView addSubview:headImageView];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(40, 0, kScreenWidth / 4, 44)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(35, 0, kScreenWidth / 4, 44)];
+    label.font = [UIFont systemFontOfSize:16.0];
     label.text = @"小蜜蜂";
     label.textAlignment = NSTextAlignmentCenter;
     [self.searchView addSubview:label];
-    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth / 3 - 10, 0, kScreenWidth / 3 * 2, 44)];
+    UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth / 3 - 5, 0, kScreenWidth / 3 * 2, 44)];
     imageView.image = [UIImage imageNamed:@"5E0492E0-20B3-46C8-8E56-8BB964210ECC"];
     [self.searchView addSubview:imageView];
     

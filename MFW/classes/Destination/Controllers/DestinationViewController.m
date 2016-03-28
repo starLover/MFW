@@ -59,7 +59,6 @@
 //    label.backgroundColor = [UIColor yellowColor];
 //    [self.navigationController.view addSubview:label];
 
- 
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
     [self requestModel];
@@ -73,6 +72,16 @@
 //    [self.activityView startAnimating];
 //    //去黑线
 ////    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+//
+//}
+
+//- (void)viewWillDisappear:(BOOL)animated{
+//    //设置导航栏为全透明，且去掉边框黑线
+//    [self.navigationController.navigationBar setTranslucent:NO];
+//    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+//    [self.activityView startAnimating];
+//    //去黑线
+////    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 //}
 //
 //- (void)viewWillDisappear:(BOOL)animated{
@@ -81,6 +90,7 @@
 ////    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
 ////    //去黑线
 ////    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+//    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 //}
 #pragma mark --------- UITableViewDataSource
 - (void)configTableViewHeaderView{
@@ -130,6 +140,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 60;
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
         GDViewController *gdVC = [[GDViewController alloc]init];
@@ -170,6 +181,7 @@
         NSArray *icons = dataDic[@"icons"];
         NSDictionary *item5 = icons[5];
         self.url = item5[@"jump_url"];
+        
         for (NSDictionary *dic in icons) {
              DestinationModel *model = [[DestinationModel alloc]init];
             [model setValuesForKeysWithDictionary:dic];
@@ -219,6 +231,7 @@
     //左边栏按钮
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     backBtn.frame = CGRectMake(0, 0, 30, 44);
+    [backBtn setBackgroundColor:[UIColor orangeColor]];
     [backBtn setImage:[UIImage imageNamed:@"left"] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *leftBarBtn = [[UIBarButtonItem alloc]initWithCustomView:backBtn];
@@ -227,6 +240,7 @@
     //收藏按钮
     UIButton *collectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     collectBtn.frame = CGRectMake(30, 0, 30, 44);
+    [collectBtn setBackgroundColor:[UIColor orangeColor]];
     [collectBtn setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
     [collectBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
     collectBtn.tag = 101;
@@ -273,6 +287,9 @@
         UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*i,self.imageview.frame.size.height*1/2, (kScreenWidth-60)/3,self.imageview.frame.size.height/2-10)];
         [imageV sd_setImageWithURL:[NSURL URLWithString:self.albumArray[i]] placeholderImage:nil];
         [self.imageview addSubview:imageV];
+//            UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*i,self.imageview.frame.size.height*1/2, (kScreenWidth-60)/3,self.imageview.frame.size.height/2-10)];
+//            [imageV sd_setImageWithURL:[NSURL URLWithString:self.albumArray[i]] placeholderImage:nil];
+//            [self.imageview addSubview:imageV];
         UIButton *imageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         imageBtn.frame = CGRectMake(20+(((kScreenWidth-60)/3)+10)*i,self.imageview.frame.size.height*1/2, (kScreenWidth-60)/3,self.imageview.frame.size.height/2-10);
         imageBtn.tag = 103+i;
@@ -294,8 +311,7 @@
     much.text = @"张照片";
     [self.imageview addSubview:much];
     
-    
-    
+        
     for (NSInteger i = 0; i < 2; i++) {
         for (NSInteger j = 0; j < 4; j++) {
             DestinationModel *btnModel = self.btnArray[i * 4 + j];
