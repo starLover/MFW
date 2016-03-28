@@ -31,8 +31,8 @@
     
     _mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds))];
     _mapView.delegate = self;
-    //    _mapView.showsUserLocation = YES;
-    //    _mapView.showTraffic = YES;
+    _mapView.showsUserLocation = YES;
+    _mapView.showTraffic = YES;
     [self.view addSubview:_mapView];
 }
 #pragma mark   ----------  MAMapViewDelegate
@@ -127,7 +127,7 @@
             MainModel *model = array[i];
             coordinates[i].latitude = [model.lat floatValue];
             coordinates[i].longitude = [model.lng floatValue];
-
+            
         }
         MAPolygon *polygon = [MAPolygon polygonWithCoordinates:coordinates count:array.count];
         //在地图上添加多边形对象
