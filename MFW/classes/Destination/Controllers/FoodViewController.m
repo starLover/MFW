@@ -88,7 +88,7 @@
         self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 40, kScreenWidth, kScreenHeight-108)];
         self.tableView.delegate =self;
         self.tableView.dataSource = self;
-        self.tableView.rowHeight = kScreenHeight/3;
+        self.tableView.rowHeight = 220;
     }
     return _tableView;
 }

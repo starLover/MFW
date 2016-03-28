@@ -2,47 +2,29 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aLW-iu-zC1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Destination View Controller-->
         <scene sceneID="AW3-Kz-OHz">
             <objects>
                 <viewController storyboardIdentifier="DestionaryVC" id="deN-t8-6vx" customClass="DestinationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JMe-6j-H4U"/>
-                        <viewControllerLayoutGuide type="bottom" id="7dz-jP-JBr"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="d1u-cx-IRL">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HKU-Y8-7SO">
-                                <rect key="frame" x="-4" y="-64" width="383" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="deN-t8-6vx" id="hR5-0H-NjX"/>
-                                    <outlet property="delegate" destination="deN-t8-6vx" id="vO7-Nl-8CX"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="HKU-Y8-7SO" firstAttribute="leading" secondItem="d1u-cx-IRL" secondAttribute="leadingMargin" constant="-20" id="7Nf-a8-41L"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HKU-Y8-7SO" secondAttribute="trailing" constant="-20" id="99c-td-MCA"/>
-                            <constraint firstItem="7dz-jP-JBr" firstAttribute="top" secondItem="HKU-Y8-7SO" secondAttribute="bottom" id="Rm8-PX-CDY"/>
-                            <constraint firstItem="HKU-Y8-7SO" firstAttribute="top" secondItem="JMe-6j-H4U" secondAttribute="bottom" constant="-64" id="dp8-J7-TFh"/>
-                        </constraints>
-                    </view>
                     <navigationItem key="navigationItem" id="Kbc-Sw-jxa"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="tableView" destination="HKU-Y8-7SO" id="fIO-fP-K6I"/>
+                        <outlet property="searchDisplayController" destination="mzQ-sd-fF8" id="TbF-k6-ZRa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HpZ-Wg-9kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="mzQ-sd-fF8">
+                    <connections>
+                        <outlet property="delegate" destination="deN-t8-6vx" id="IbB-EF-4os"/>
+                        <outlet property="searchContentsController" destination="deN-t8-6vx" id="3nS-Jj-hrd"/>
+                        <outlet property="searchResultsDataSource" destination="deN-t8-6vx" id="uKM-Up-vTQ"/>
+                        <outlet property="searchResultsDelegate" destination="deN-t8-6vx" id="b1E-MN-7Ns"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1021.5" y="375.5"/>
+            <point key="canvasLocation" x="839.5" y="375.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6LT-YO-YG3">
@@ -61,7 +43,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kYq-K1-07t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="605.5" y="375.5"/>
+            <point key="canvasLocation" x="700.5" y="375.5"/>
         </scene>
     </scenes>
 </document>
