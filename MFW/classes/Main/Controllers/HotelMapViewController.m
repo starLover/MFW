@@ -8,12 +8,14 @@
 
 #import "HotelMapViewController.h"
 #import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
 #import <AFHTTPSessionManager.h>
 #import "MainModel.h"
 
-@interface HotelMapViewController ()<MAMapViewDelegate>
+@interface HotelMapViewController ()<MAMapViewDelegate, AMapSearchDelegate>
 {
     MAMapView *_mapView;
+    AMapSearchAPI *_search;
 }
 @property(nonatomic, strong) NSMutableArray *hotelTitle;
 @property(nonatomic, strong) NSMutableArray *outlineArray;
@@ -27,14 +29,54 @@
     [self request];
     [self showBackBtn];
     //配置用户Key
+    [AMapSearchServices sharedServices].apiKey = @"347a662a9e7129f224a9840c18e3f744";
+//    [self searchAction];
     [MAMapServices sharedServices].apiKey = @"347a662a9e7129f224a9840c18e3f744";
     
     _mapView = [[MAMapView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds))];
     _mapView.delegate = self;
-    //    _mapView.showsUserLocation = YES;
-    //    _mapView.showTraffic = YES;
+    _mapView.showsUserLocation = YES;
+    _mapView.showTraffic = YES;
     [self.view addSubview:_mapView];
 }
+
+
+#pragma mark    ------------ searchAction
+- (void)searchAction{
+    //初始化检索对象
+    _search = [[AMapSearchAPI alloc] init];
+    _search.delegate = self;
+    
+    //构造AMapDrivingRouteSearchRequest对象，设置驾车路径规划请求参数
+    AMapDrivingRouteSearchRequest *request = [[AMapDrivingRouteSearchRequest alloc] init];
+    request.origin = [AMapGeoPoint locationWithLatitude:39.994949 longitude:116.447265];
+    request.destination = [AMapGeoPoint locationWithLatitude:39.990459 longitude:116.481476];
+    request.strategy = 2;//距离优先
+    request.requireExtension = YES;
+    
+//    AMapDrivingRouteSearchRequest *naviRequest = [[AMapDrivingRouteSearchRequest alloc] init];
+//    naviRequest.requireExtension = YES;
+//    naviRequest.originId = @"洛阳理工学院开元校区";
+//    naviRequest.destinationId = @"郑州大学";
+//    naviRequest.strategy = 3;
+    
+    //发起路径搜索
+    [_search AMapDrivingRouteSearch:request];
+}
+//实现路径搜索的回调函数
+- (void)onRouteSearchDone:(AMapRouteSearchBaseRequest *)request response:(AMapRouteSearchResponse *)response
+{
+    if(response.route == nil)
+    {
+        return;
+    }
+    
+    //通过AMapNavigationSearchResponse对象处理搜索结果
+    NSString *route = [NSString stringWithFormat:@"Navi: %f", response.route.taxiCost];
+    NSLog(@"%@", route);
+}
+
+
 #pragma mark   ----------  MAMapViewDelegate
 
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation{
@@ -127,7 +169,7 @@
             MainModel *model = array[i];
             coordinates[i].latitude = [model.lat floatValue];
             coordinates[i].longitude = [model.lng floatValue];
-
+            
         }
         MAPolygon *polygon = [MAPolygon polygonWithCoordinates:coordinates count:array.count];
         //在地图上添加多边形对象
