@@ -23,10 +23,12 @@
 #import "TravelogueViewController.h"
 #import "GDViewController.h"
 #import "AnswerMyAppViewController.h"
-@interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate>
+@interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)UIImageView *imageview;
 @property(nonatomic,retain)UIActivityIndicatorView *activityView;
+@property(nonatomic,strong)UITextField *searchFiled;
+@property(nonatomic,strong)UIImageView *searchImage;
 @property(nonatomic,copy)NSString *url;
 @property(nonatomic,strong)UIView *tableViewHeaderView;
 @property(nonatomic,strong)NSMutableArray *btnArray;
@@ -58,40 +60,41 @@
 //    UILabel *label = [[UILabel alloc]initWithFrame:self.navigationController.navigationBar.frame];
 //    label.backgroundColor = [UIColor yellowColor];
 //    [self.navigationController.view addSubview:label];
+    //添加UIsearchBar
 
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
     [self requestModel];
     
 }
-//- (void)viewWillAppear:(BOOL)animated{
-//    self.tabBarController.tabBar.hidden = NO;
-//    //设置导航栏为全透明，且去掉边框黑线
-//    [self.navigationController.navigationBar setTranslucent:YES];
-//    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-//    [self.activityView startAnimating];
-//    //去黑线
-////    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
-//
-//}
+- (void)searchAction{
+    self.searchFiled = [[UITextField alloc]initWithFrame:CGRectMake(60, 30, kScreenWidth-120, 30)];
+    self.searchFiled.placeholder = @"搜索目的地";
+    self.searchFiled.keyboardType = UIKeyboardTypeWebSearch;
+    self.searchFiled.borderStyle = UITextBorderStyleRoundedRect;
+    self.searchFiled.delegate = self;
+    [self.navigationController.view addSubview:self.searchFiled];
+    self.searchImage = [[UIImageView alloc]initWithFrame:CGRectMake(kScreenWidth-90, 35, 20, 20)];
+    self.searchImage.image = [UIImage imageNamed:@"cityselect_search_icon"];
+    [self.navigationController.view addSubview:self.searchImage];
+    
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    [self.view resignFirstResponder];
+    GDViewController *cgVC = [[GDViewController alloc]init];
+    cgVC.string = self.searchFiled.text;
+    [self.navigationController pushViewController:cgVC animated:YES];
+    return YES;
+}
 
-//- (void)viewWillDisappear:(BOOL)animated{
-//    //设置导航栏为全透明，且去掉边框黑线
-//    [self.navigationController.navigationBar setTranslucent:NO];
-//    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-//    [self.activityView startAnimating];
-//    //去黑线
-////    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
-//}
-//
-//- (void)viewWillDisappear:(BOOL)animated{
-//    //设置导航栏为全透明，且去掉边框黑线
-//    [self.navigationController.navigationBar setTranslucent:NO];
-////    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
-////    //去黑线
-////    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
-//    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
-//}
+- (void)viewWillAppear:(BOOL)animated{
+    [self searchAction];
+}
+- (void)viewWillDisappear:(BOOL)animated{
+    [self.searchFiled removeFromSuperview];
+    [self.searchImage removeFromSuperview];
+}
 #pragma mark --------- UITableViewDataSource
 - (void)configTableViewHeaderView{
     
@@ -230,7 +233,7 @@
 - (void)navBarBtn{
     //左边栏按钮
     UIButton *backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    backBtn.frame = CGRectMake(0, 0, 30, 44);
+    backBtn.frame = CGRectMake(0, 30, 30, 30);
     [backBtn setBackgroundColor:[UIColor orangeColor]];
     [backBtn setImage:[UIImage imageNamed:@"left"] forState:UIControlStateNormal];
     [backBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -239,7 +242,7 @@
     self.navigationItem.leftBarButtonItem = leftBarBtn;
     //收藏按钮
     UIButton *collectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    collectBtn.frame = CGRectMake(30, 0, 30, 44);
+    collectBtn.frame = CGRectMake(30, 30, 30, 30);
     [collectBtn setBackgroundColor:[UIColor orangeColor]];
     [collectBtn setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
     [collectBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];

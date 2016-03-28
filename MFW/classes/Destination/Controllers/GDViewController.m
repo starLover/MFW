@@ -64,6 +64,7 @@
 - (void)viewDidAppear:(BOOL)animated{
     MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc]init];
     pointAnnotation.coordinate = CLLocationCoordinate2DMake(39.989631, 116.48);
+    
     pointAnnotation.title = @"洛阳";
     pointAnnotation.subtitle = @"龙门";
     [_mapView addAnnotation:pointAnnotation];
@@ -92,7 +93,7 @@
     //构造AMapPOIAroundSearchRequest对象，设置周边请求参数
     AMapPOIAroundSearchRequest *request = [[AMapPOIAroundSearchRequest alloc] init];
     request.location = [AMapGeoPoint locationWithLatitude:39.990459 longitude:116.481476];
-    request.keywords = @"方恒";
+    request.keywords = self.string;
     // types属性表示限定搜索POI的类别，默认为：餐饮服务|商务住宅|生活服务
     // POI的类型共分为20种大类别，分别为：
     // 汽车服务|汽车销售|汽车维修|摩托车服务|餐饮服务|购物服务|生活服务|体育休闲服务|

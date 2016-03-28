@@ -10,4 +10,5 @@
 
 @interface GDViewController : UIViewController
 
+@property(nonatomic,strong)NSString *string;
 @end
