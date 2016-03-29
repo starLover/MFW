@@ -39,6 +39,7 @@
     _mapView.showsUserLocation = YES;
     [self.view.superview addSubview:_mapView];
     CLLocationManager *_locationManager;
+    _locationManager = [[CLLocationManager alloc]init];
     _locationManager.delegate = self;
     //地图跟着位置移动
     [_mapView setUserTrackingMode:MAUserTrackingModeFollow animated:NO];
