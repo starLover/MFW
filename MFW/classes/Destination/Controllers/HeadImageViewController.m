@@ -53,15 +53,15 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HeadImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    DestinationModel *itemModel = self.itemArray[indexPath.row];
-    DestinationModel *poiModel = self.poiArray[indexPath.row];
-    DestinationModel *areaModel = self.areaArray[indexPath.row];
-    if (indexPath.row < self.itemArray.count && indexPath.row < self.poiArray.count && indexPath.row < self.areaArray.count) {
-        
-        cell.nameLabel.text = poiModel.name;
-        cell.placeName.text = [NSString stringWithFormat:@"位于%@，距离nkm",areaModel.name];
-    cell.userNum.text = [NSString stringWithFormat:@"今天有%@人浏览",itemModel.user_number];
-    }
+//    DestinationModel *itemModel = self.itemArray[indexPath.row];
+//    DestinationModel *poiModel = self.poiArray[indexPath.row];
+//    DestinationModel *areaModel = self.areaArray[indexPath.row];
+//    if (indexPath.row < self.itemArray.count && indexPath.row < self.poiArray.count && indexPath.row < self.areaArray.count) {
+//        
+//        cell.nameLabel.text = poiModel.name;
+//        cell.placeName.text = [NSString stringWithFormat:@"位于%@，距离nkm",areaModel.name];
+//    cell.userNum.text = [NSString stringWithFormat:@"今天有%@人浏览",itemModel.user_number];
+//    }
 //    NSLog(@"%@",poiModel.name);
 //    NSLog(@"%@",areaModel.name);
 //    NSLog(@"%@",itemModel.user_number);
@@ -104,6 +104,7 @@
     UILabel *placeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20,80, kScreenWidth/2, 40)];
     DestinationModel *placeModel = self.otherArray[0];
     placeLabel.text = [NSString stringWithFormat:@"人，正在 %@ 旅行",placeModel.name];
+    //label富文本文件
 //    NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:placeModel.name];
 //    [str addAttribute:NSForegroundColorAttributeName value:[UIColor orangeColor] range:NSMakeRange(0, 2)];
 //    placeLabel.attributedText =[NSString stringWithFormat:@"人，正在 %@ 旅行",str];
@@ -127,9 +128,9 @@
         NSDictionary *dataDic = resultDic[@"data"];
         self.userNum = dataDic[@"user_number"];
         NSArray *blocks = dataDic[@"blocks"];
-//        for (NSDictionary *dic in blocks) {
-//            <#statements#>
-//        }
+        for (NSDictionary *dic in blocks) {
+            
+        }
         
 //        for (NSDictionary *dic in blocks) {
 ////            NSDictionary *item = dic[@"item0"];

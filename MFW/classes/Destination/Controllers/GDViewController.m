@@ -10,12 +10,12 @@
 #import <MAMapKit/MAMapKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
 
-@interface GDViewController ()<MAMapViewDelegate,AMapSearchDelegate,MAAnnotation,CLLocationManagerDelegate>
+@interface GDViewController ()<MAMapViewDelegate,AMapSearchDelegate,MAAnnotation>
 {
     MAMapView *_mapView;
     AMapSearchAPI *_search;
-    // 地理位置解码编码器
-    CLGeocoder *_geo;
+//    // 地理位置解码编码器
+//    CLGeocoder *_geo;
 }
 @property(nonatomic,readonly,strong)AMapAOI *poi;
 @property(nonatomic,strong)MAPointAnnotation *pointAnnotation;
@@ -38,9 +38,7 @@
     //定位,YES为打开定位，NO为关闭定位
     _mapView.showsUserLocation = YES;
     [self.view.superview addSubview:_mapView];
-    CLLocationManager *_locationManager;
-    _locationManager = [[CLLocationManager alloc]init];
-    _locationManager.delegate = self;
+
     //地图跟着位置移动
     [_mapView setUserTrackingMode:MAUserTrackingModeFollow animated:NO];
     [_mapView setZoomLevel:16.1 animated:NO];
@@ -55,16 +53,11 @@
     }
     //周边搜索
     [self searchAction];
+    //云周边搜索
+//    [self cloudSearchAction];
+    _mapView.showsUserLocation = NO;
 }
-//- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
-//    CLLocation *loc = [locations objectAtIndex:0];
-//    [_geo reverseGeocodeLocation:loc completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
-////       NSString *lat = [NSString stringWithFormat:@"%f",loc.coordinate.latitude];
-////       NSString *lng = [NSString stringWithFormat:@"%f",loc.coordinate.longitude];
-//        
-//        
-//    }];
-//}
+
 - (void)mapView:(MAMapView *)mapView didAddAnnotationViews:(NSArray *)views{
     MAAnnotationView *view = views[0];
     view.enabled = NO;
@@ -82,12 +75,7 @@
         view.calloutOffset = CGPointMake(0, 0);
     }
 }
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations{
-    self.pointAnnotation = [[MAPointAnnotation alloc]init];
-    [_mapView addAnnotation:self.pointAnnotation];
-    [manager stopUpdatingLocation];
-    [self searchAction];
-}
+
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id<MAAnnotation>)annotation{
     if ([annotation isKindOfClass:[MAPointAnnotation class]]) {
         static NSString *pointReuseIndentifier = @"poiId";
@@ -120,7 +108,7 @@
     // 汽车服务|汽车销售|汽车维修|摩托车服务|餐饮服务|购物服务|生活服务|体育休闲服务|
     // 医疗保健服务|住宿服务|风景名胜|商务住宅|政府机构及社会团体|科教文化服务|
     // 交通设施服务|金融保险服务|公司企业|道路附属设施|地名地址信息|公共设施
-    request.types = @"餐饮服务|生活服务|风景名胜";
+    request.types = @"餐饮服务|生活服务|风景名胜|体育休闲服务|住宿服务|地名地址信息";
     request.sortrule = 0;
     request.requireExtension = YES;
     
@@ -136,55 +124,59 @@
     }
     //通过 AMapPOISearchResponse 对象处理搜索结果
     NSString *strCount = [NSString stringWithFormat:@"count: %d",response.count];
-    NSString *strSuggestion = [NSString stringWithFormat:@"Suggestion: %@", response.suggestion];
-    NSString *strPoi = @"";
     for (AMapPOI *p in response.pois) {
-        strPoi = [NSString stringWithFormat:@"%@\nPOI: %@", strPoi, p.description];
-//        NSLog(@"city = %@ adress = %@",p.city,p.address);
-        
+        NSLog(@"city = %@ adress = %@",p.city,p.address);
+        self.pointAnnotation = [[MAPointAnnotation alloc]init];
         self.pointAnnotation.coordinate = CLLocationCoordinate2DMake(p.location.latitude, p.location.longitude);
         self.pointAnnotation.title = p.name;
         self.pointAnnotation.subtitle = p.address;
-        
+        [_mapView addAnnotation:self.pointAnnotation];
     }
-    NSString *result = [NSString stringWithFormat:@"%@ \n %@ \n %@", strCount, strSuggestion, strPoi];
-    NSLog(@"Place: %@", result);
-    
-    
-    }
-#pragma mark - AMapSearchDelegate
+    NSLog(@"Place: %@", strCount);
+}
 
-///* POI 搜索回调. */
-//- (void)onPOISearchDone:(AMapPOISearchBaseRequest *)request response:(AMapPOISearchResponse *)response
-//{
-//    if (response.pois.count == 0)
-//    {
+- (void)cloudSearchAction{
+    //配置用户Key
+    [AMapSearchServices sharedServices].apiKey = kGDKey;
+    
+    //初始化检索对象
+    _search = [[AMapSearchAPI alloc] init];
+    _search.delegate = self;
+    
+    //构造AMapCloudPOIAroundSearchRequest对象，设置云周边检索请求参数
+    AMapCloudPOIAroundSearchRequest *request = [[AMapCloudPOIAroundSearchRequest alloc]init];
+    request.tableID = kTableID;//在数据管理台获得
+    request.center = [AMapGeoPoint locationWithLatitude:self.lat longitude:self.lng];
+    request.radius = 5000;
+    request.keywords = self.string;
+    
+    //发起云周边搜索
+    [_search AMapCloudPOIAroundSearch:request];
+}
+//实现云检索对应的回调函数
+- (void)onCloudSearchDone:(AMapCloudSearchBaseRequest *)request response:(AMapCloudPOISearchResponse *)response{
+//    if (response.POIs.count == 0) {
 //        return;
 //    }
-//    
-//    NSMutableArray *poiAnnotations = [NSMutableArray arrayWithCapacity:response.pois.count];
-//    
-//    [response.pois enumerateObjectsUsingBlock:^(AMapPOI *obj, NSUInteger idx, BOOL *stop) {
-//        
-//        [poiAnnotations addObject:[[MAPointAnnotation alloc]initWithPOI:obj]];
-//        
-//    }];
-//    
-//    /* 将结果以annotation的形式加载到地图上. */
-//    [_mapView addAnnotations:poiAnnotations];
-//    
-//    /* 如果只有一个结果，设置其为中心点. */
-//    if (poiAnnotations.count == 1)
-//    {
-//        [_mapView setCenterCoordinate:[poiAnnotations[0] coordinate]];
-//    }
-//    /* 如果有多个结果, 设置地图使所有的annotation都可见. */
-//    else
-//    {
-//        [_mapView showAnnotations:poiAnnotations animated:NO];
-//    }
-//}
-
+    NSString *strCount = [NSString stringWithFormat:@"count: %d",response.count];
+    NSLog(@"%@",strCount);
+    NSMutableArray *annotations = [[NSMutableArray alloc]init];
+    for (AMapCloudPOI *p in response.POIs) {
+        //        strPoi = [NSString stringWithFormat:@"%@\nPOI: %@", strPoi, p.description];
+//        NSLog(@"city = %@ adress = %@",p.name,p.address);
+//        self.pointAnnotation = [[MAPointAnnotation alloc]init];
+//        self.pointAnnotation.coordinate = CLLocationCoordinate2DMake(p.location.latitude, p.location.longitude);
+//        self.pointAnnotation.title = p.name;
+//        self.pointAnnotation.subtitle = p.address;
+//        [_mapView addAnnotation:self.pointAnnotation];
+        AMapGeoPoint *point = p.location;
+        self.pointAnnotation = [[MAPointAnnotation alloc]init];
+        self.pointAnnotation.coordinate = CLLocationCoordinate2DMake(self.lat, self.lng);
+        [annotations addObject:point];
+    }
+    [_mapView addAnnotations:[annotations copy]];
+    [_mapView showAnnotations:annotations animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

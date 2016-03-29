@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface GDViewController : UIViewController
 
 @property(nonatomic,copy)NSString *string;

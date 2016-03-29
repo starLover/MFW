@@ -20,7 +20,7 @@
 #import "TravelWorldViewController.h"
 #import "AnswerMyAppViewController.h"
 #import "Header1ViewController.h"
-#import "GrogshopViewController.h"
+#import "Grogshop2ViewController.h"
 #import <Masonry.h>
 
 #define WS(weakSelf) __weak typeof(self)weakSelf = self;
@@ -565,7 +565,7 @@
             break;
         case 2:
         {
-            GrogshopViewController *grogVC = [[GrogshopViewController alloc] init];
+            Grogshop2ViewController *grogVC = [[Grogshop2ViewController alloc] init];
             [self.navigationController pushViewController:grogVC animated:YES];
         }
             break;

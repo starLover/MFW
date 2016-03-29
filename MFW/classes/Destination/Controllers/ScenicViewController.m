@@ -10,6 +10,7 @@
 #import "ScenicTableViewCell.h"
 #import "JSDropDownMenu.h"
 #import "ScenicModel.h"
+#import "Scenic2ViewController.h"
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <CoreLocation/CoreLocation.h>
@@ -91,6 +92,12 @@
     }
     return _tableView;
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {
+        Scenic2ViewController *sciVC = [[Scenic2ViewController alloc]init];
+        [self.navigationController pushViewController:sciVC animated:YES];
+    }
+}
 #pragma mark ----------- JSDropDownMenuDataSource
 - (NSInteger)numberOfColumnsInMenu:(JSDropDownMenu *)menu{
     return 2;
@@ -150,17 +157,17 @@
         _currentData2Index = indexPath.row;
     }
 }
-#pragma mark -----------   网络请求
+#pragma mark -----------   view
 - (void)viewWillAppear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = YES;
 }
 - (void)viewWillDisappear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;
 }
+#pragma mark -----------   网络请求
 - (void)loadData{
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json",nil];
-    
     [sessionManager GET:kScenic parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *resultDic = responseObject;
@@ -190,7 +197,6 @@
             [self.commentArray addObject:commentModel];
              }
         }
-        
         [self.tableView reloadData];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     }];

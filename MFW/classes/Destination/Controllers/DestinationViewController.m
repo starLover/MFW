@@ -15,14 +15,14 @@
 #import "HeadImageViewController.h"
 #import "AlubmViewController.h"
 #import "StrategyViewController.h"
-#import "ScenicViewController.h"
-#import "GrogshopViewController.h"
-#import "FoodViewController.h"
-#import "ShoppingViewController.h"
-#import "EntertainmentViewController.h"
+#import "Scenic2ViewController.h"
+#import "Grogshop2ViewController.h"
+#import "Food2ViewController.h"
+#import "Shopping2ViewController.h"
+#import "Entertain2ViewController.h"
 #import "TravelogueViewController.h"
 #import "GDViewController.h"
-#import "AnswerMyAppViewController.h"
+#import "AnswerViewController.h"
 @interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic,strong)UIImageView *imageview;
@@ -71,7 +71,7 @@
 }
 - (void)searchAction{
     self.searchFiled = [[UITextField alloc]initWithFrame:CGRectMake(60, 30, kScreenWidth-120, 30)];
-    self.searchFiled.placeholder = @"搜索目的地";
+    self.searchFiled.placeholder = @"搜周边";
     self.searchFiled.keyboardType = UIKeyboardTypeWebSearch;
     self.searchFiled.borderStyle = UITextBorderStyleRoundedRect;
     self.searchFiled.delegate = self;
@@ -219,7 +219,6 @@
                 
             }
         }
-        NSLog(@"%@",self.itemArray);
 //        NSLog(@"title = %lu",self.titleArray.count);
 //        NSLog(@"list = %lu",self.listArray.count);
 //        NSLog(@"item = %lu",self.itemArray.count);
@@ -285,12 +284,12 @@
     numLabel.textColor = [UIColor whiteColor];
     numLabel.font = [UIFont systemFontOfSize:24];
     [self.imageview addSubview:numLabel];
-    //地方按钮
+    //背景图按钮
     UIButton *numBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    numBtn.frame = CGRectMake(20, 20, kScreenWidth-40,100);
+    numBtn.frame = CGRectMake(20, 0, kScreenWidth-40,self.imageview.frame.size.height/2-10);
     numBtn.tag = 102;
     [numBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.imageview addSubview:numBtn];
+    [self.tableViewHeaderView addSubview:numBtn];
     
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(kScreenWidth-40, 40, 40, 40)];
     imageView.image = [UIImage imageNamed:@"icon_back_nromal"];
@@ -301,9 +300,6 @@
         UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*i,self.imageview.frame.size.height*1/2, (kScreenWidth-60)/3,self.imageview.frame.size.height/2-10)];
         [imageV sd_setImageWithURL:[NSURL URLWithString:self.albumArray[i]] placeholderImage:nil];
         [self.imageview addSubview:imageV];
-//            UIImageView *imageV = [[UIImageView alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*i,self.imageview.frame.size.height*1/2, (kScreenWidth-60)/3,self.imageview.frame.size.height/2-10)];
-//            [imageV sd_setImageWithURL:[NSURL URLWithString:self.albumArray[i]] placeholderImage:nil];
-//            [self.imageview addSubview:imageV];
         UIButton *imageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         imageBtn.frame = CGRectMake(20+(((kScreenWidth-60)/3)+10)*i,self.imageview.frame.size.height*1/2, (kScreenWidth-60)/3,self.imageview.frame.size.height/2-10);
         imageBtn.tag = 103+i;
@@ -400,19 +396,19 @@
             break;
         case 1:
         {
-            ScenicViewController *scenicVC = [[ScenicViewController alloc]init];
+            Scenic2ViewController *scenicVC = [[Scenic2ViewController alloc]init];
             [self.navigationController pushViewController:scenicVC animated:YES];
         }
             break;
         case 2:
         {
-            GrogshopViewController *hotelVC = [[GrogshopViewController alloc]init];
+            Grogshop2ViewController *hotelVC = [[Grogshop2ViewController alloc]init];
             [self.navigationController pushViewController:hotelVC animated:YES];
         }
             break;
         case 3:
         {
-            FoodViewController *foodVC = [[FoodViewController alloc]init];
+            Food2ViewController *foodVC = [[Food2ViewController alloc]init];
             [self.navigationController pushViewController:foodVC animated:YES];
         }
             break;
@@ -425,7 +421,7 @@
             break;
         case 5:
         {
-            AnswerMyAppViewController *answerVC = [[AnswerMyAppViewController alloc]init];
+            AnswerViewController *answerVC = [[AnswerViewController alloc]init];
             [self.navigationController pushViewController:answerVC animated:YES];
 //            TravelDetailViewController *travelVC = [[TravelDetailViewController alloc]init];
 //            travelVC.url = self.url;
@@ -435,14 +431,14 @@
             break;
         case 6:
         {
-            ShoppingViewController *shopVC = [[ShoppingViewController alloc]init];
+            Shopping2ViewController *shopVC = [[Shopping2ViewController alloc]init];
             [self.navigationController pushViewController:shopVC animated:YES];
             
         }
             break;
         case 7:
         {
-            EntertainmentViewController *entertainmentVC = [[EntertainmentViewController alloc]init];
+            Entertain2ViewController *entertainmentVC = [[Entertain2ViewController alloc]init];
             [self.navigationController pushViewController:entertainmentVC animated:YES];
             
         }
