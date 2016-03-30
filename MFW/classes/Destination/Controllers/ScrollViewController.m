@@ -145,7 +145,7 @@
     if (detailModel.tn_title.length > 1) {
         self.navigationController.navigationBar.backgroundColor = [UIColor whiteColor];
         self.view.backgroundColor = [UIColor whiteColor];
-        webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -95, kScreenWidth, kScreenHeight+64)];
+        webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -140, kScreenWidth, kScreenHeight+152)];
         webView.scrollView.bounces = NO;
         NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:detailModel.tn_url]];
         [self.view addSubview:webView];

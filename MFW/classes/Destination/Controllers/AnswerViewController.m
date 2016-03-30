@@ -1,42 +1,38 @@
 //
-//  TravelDetailViewController.m
-//  MFW
+//  AnswerViewController.m
+//  
 //
-//  Created by scjy on 16/3/24.
-//  Copyright © 2016年 马娟娟. All rights reserved.
+//  Created by scjy on 16/3/29.
+//
 //
 
-#import "TravelDetailViewController.h"
+#import "AnswerViewController.h"
 
-@interface TravelDetailViewController ()
+@interface AnswerViewController ()
 {
     UIWebView *webView;
 }
 @end
 
-@implementation TravelDetailViewController
+@implementation AnswerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showBackBtn];
-    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -140, kScreenWidth, kScreenHeight+195)];
+    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -95, kScreenWidth, kScreenHeight+130)];
     webView.scrollView.bounces = NO;
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.url]];
-//    NSLog(@"###########%@",self.url);
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.mafengwo.cn/wenda/area-10094.html?sFrom=mdd"]];
     [self.view addSubview:webView];
-    [webView reload];
     [webView loadRequest:request];
-    
-    
 }
+#pragma mark -----------   view
 - (void)viewWillAppear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = YES;
 }
 - (void)viewWillDisappear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

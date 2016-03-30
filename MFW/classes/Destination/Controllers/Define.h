@@ -42,4 +42,5 @@
 #define kAnswer @"http://m.mafengwo.cn/nb/wenda/get_question.php"
 
 #define kGDKey @"5bb6beb52d3ab9601330c9b80dc47e35"
+#define kTableID @"56f9f226305a2a3288313808"
 #endif /* Define_h */

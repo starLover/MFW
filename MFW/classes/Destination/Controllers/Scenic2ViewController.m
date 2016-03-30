@@ -1,42 +1,39 @@
 //
-//  TravelDetailViewController.m
+//  Scenic2ViewController.m
 //  MFW
 //
-//  Created by scjy on 16/3/24.
+//  Created by scjy on 16/3/29.
 //  Copyright © 2016年 马娟娟. All rights reserved.
 //
 
-#import "TravelDetailViewController.h"
+#import "Scenic2ViewController.h"
 
-@interface TravelDetailViewController ()
+@interface Scenic2ViewController ()
 {
     UIWebView *webView;
 }
 @end
 
-@implementation TravelDetailViewController
+@implementation Scenic2ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showBackBtn];
-    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -140, kScreenWidth, kScreenHeight+195)];
+    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -145, kScreenWidth, kScreenHeight+130)];
     webView.scrollView.bounces = NO;
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.url]];
-//    NSLog(@"###########%@",self.url);
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.mafengwo.cn/travel-scenic-spot/mafengwo/10094.html"]];
     [self.view addSubview:webView];
-    [webView reload];
     [webView loadRequest:request];
     
-    
 }
+#pragma mark -----------   view
 - (void)viewWillAppear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = YES;
 }
 - (void)viewWillDisappear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

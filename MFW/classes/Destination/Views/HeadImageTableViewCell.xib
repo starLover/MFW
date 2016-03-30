@@ -47,11 +47,13 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="autherImage" destination="Ka3-Zh-NEm" id="Adl-bp-r5P"/>
                 <outlet property="nameLabel" destination="ss9-Ps-9sF" id="r9Y-C6-T9s"/>
                 <outlet property="placeName" destination="epR-3l-VZM" id="5g7-Wy-RgW"/>
+                <outlet property="sortLabel" destination="Pcj-g1-Zed" id="k89-hQ-MfY"/>
                 <outlet property="userNum" destination="Hpa-2G-8ct" id="gel-B4-J2F"/>
             </connections>
-            <point key="canvasLocation" x="386.5" y="335"/>
+            <point key="canvasLocation" x="496.5" y="338"/>
         </tableViewCell>
     </objects>
     <resources>

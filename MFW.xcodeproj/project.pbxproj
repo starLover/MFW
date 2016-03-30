@@ -80,6 +80,12 @@
 		F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30485C81C9E723A002751C4 /* AlubmViewController.m */; };
 		F31A6EE71CA8DEA200E22654 /* ScenicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F31A6EE61CA8DEA200E22654 /* ScenicTableViewCell.xib */; };
 		F31A6EE91CA8DFA400E22654 /* Destination.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F31A6EE81CA8DFA400E22654 /* Destination.storyboard */; };
+		F32BBC4A1CAA9CBD00A8A267 /* Scenic2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32BBC491CAA9CBD00A8A267 /* Scenic2ViewController.m */; };
+		F32BBC4D1CAAAA0400A8A267 /* Grogshop2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32BBC4C1CAAAA0400A8A267 /* Grogshop2ViewController.m */; };
+		F32BBC501CAAAA1100A8A267 /* Food2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32BBC4F1CAAAA1100A8A267 /* Food2ViewController.m */; };
+		F32BBC531CAAAA3700A8A267 /* Shopping2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32BBC521CAAAA3700A8A267 /* Shopping2ViewController.m */; };
+		F32BBC561CAAAA5500A8A267 /* Entertain2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32BBC551CAAAA5500A8A267 /* Entertain2ViewController.m */; };
+		F32BBC591CAAAACE00A8A267 /* AnswerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F32BBC581CAAAACE00A8A267 /* AnswerViewController.m */; };
 		F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631A1C9E86D90060F63F /* BLImageSize.m */; };
 		F33B631E1C9E86D90060F63F /* AoiroSoraLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B631C1C9E86D90060F63F /* AoiroSoraLayout.m */; };
 		F33B63201C9E87B00060F63F /* Alubm.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33B631F1C9E87B00060F63F /* Alubm.plist */; };
@@ -87,8 +93,6 @@
 		F37E42F51CA5191900EF6C08 /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F37E42F41CA5191900EF6C08 /* GDViewController.m */; };
 		F3851EA51C9E9C9000F75EB7 /* AlubmModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */; };
 		F38DA14D1CA3C36400CA6932 /* Food.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38DA14C1CA3C36400CA6932 /* Food.plist */; };
-		F38DA1501CA3C49E00CA6932 /* ShoppingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA14F1CA3C49E00CA6932 /* ShoppingViewController.m */; };
-		F38DA1531CA3C4CC00CA6932 /* EntertainmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA1521CA3C4CC00CA6932 /* EntertainmentViewController.m */; };
 		F38DA1551CA3D19F00CA6932 /* Entertainment.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38DA1541CA3D19F00CA6932 /* Entertainment.plist */; };
 		F38DA1571CA3D6C500CA6932 /* Grogshop.plist in Resources */ = {isa = PBXBuildFile; fileRef = F38DA1561CA3D6C500CA6932 /* Grogshop.plist */; };
 		F38DA15A1CA3EDB700CA6932 /* TravelogueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F38DA1591CA3EDB700CA6932 /* TravelogueViewController.m */; };
@@ -106,8 +110,6 @@
 		F3A987F81CA0DFC20074C624 /* HTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A987F71CA0DFC20074C624 /* HTools.m */; };
 		F3A987FB1CA1276A0074C624 /* StrategyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A987FA1CA1276A0074C624 /* StrategyViewController.m */; };
 		F3A987FE1CA129B80074C624 /* ScenicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A987FD1CA129B80074C624 /* ScenicViewController.m */; };
-		F3A988041CA12A0C0074C624 /* FoodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A988031CA12A0C0074C624 /* FoodViewController.m */; };
-		F3A988071CA12DCF0074C624 /* GrogshopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A988061CA12DCF0074C624 /* GrogshopViewController.m */; };
 		F3A988091CA131080074C624 /* Strategy.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3A988081CA131080074C624 /* Strategy.plist */; };
 		F3A9880C1CA13F1E0074C624 /* RightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A9880B1CA13F1E0074C624 /* RightTableViewCell.m */; };
 		F3A9880F1CA1416F0074C624 /* RightModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A9880E1CA1416F0074C624 /* RightModel.m */; };
@@ -243,6 +245,18 @@
 		F30485C81C9E723A002751C4 /* AlubmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlubmViewController.m; sourceTree = "<group>"; };
 		F31A6EE61CA8DEA200E22654 /* ScenicTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScenicTableViewCell.xib; sourceTree = "<group>"; };
 		F31A6EE81CA8DFA400E22654 /* Destination.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Destination.storyboard; sourceTree = "<group>"; };
+		F32BBC481CAA9CBD00A8A267 /* Scenic2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scenic2ViewController.h; sourceTree = "<group>"; };
+		F32BBC491CAA9CBD00A8A267 /* Scenic2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scenic2ViewController.m; sourceTree = "<group>"; };
+		F32BBC4B1CAAAA0400A8A267 /* Grogshop2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grogshop2ViewController.h; sourceTree = "<group>"; };
+		F32BBC4C1CAAAA0400A8A267 /* Grogshop2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grogshop2ViewController.m; sourceTree = "<group>"; };
+		F32BBC4E1CAAAA1100A8A267 /* Food2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Food2ViewController.h; sourceTree = "<group>"; };
+		F32BBC4F1CAAAA1100A8A267 /* Food2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Food2ViewController.m; sourceTree = "<group>"; };
+		F32BBC511CAAAA3700A8A267 /* Shopping2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shopping2ViewController.h; sourceTree = "<group>"; };
+		F32BBC521CAAAA3700A8A267 /* Shopping2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shopping2ViewController.m; sourceTree = "<group>"; };
+		F32BBC541CAAAA5500A8A267 /* Entertain2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entertain2ViewController.h; sourceTree = "<group>"; };
+		F32BBC551CAAAA5500A8A267 /* Entertain2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entertain2ViewController.m; sourceTree = "<group>"; };
+		F32BBC571CAAAACE00A8A267 /* AnswerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerViewController.h; sourceTree = "<group>"; };
+		F32BBC581CAAAACE00A8A267 /* AnswerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerViewController.m; sourceTree = "<group>"; };
 		F33B63191C9E86D90060F63F /* BLImageSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLImageSize.h; sourceTree = "<group>"; };
 		F33B631A1C9E86D90060F63F /* BLImageSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLImageSize.m; sourceTree = "<group>"; };
 		F33B631B1C9E86D90060F63F /* AoiroSoraLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AoiroSoraLayout.h; sourceTree = "<group>"; };
@@ -255,10 +269,6 @@
 		F3851EA31C9E9C9000F75EB7 /* AlubmModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlubmModel.h; sourceTree = "<group>"; };
 		F3851EA41C9E9C9000F75EB7 /* AlubmModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlubmModel.m; sourceTree = "<group>"; };
 		F38DA14C1CA3C36400CA6932 /* Food.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Food.plist; sourceTree = "<group>"; };
-		F38DA14E1CA3C49E00CA6932 /* ShoppingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingViewController.h; sourceTree = "<group>"; };
-		F38DA14F1CA3C49E00CA6932 /* ShoppingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingViewController.m; sourceTree = "<group>"; };
-		F38DA1511CA3C4CC00CA6932 /* EntertainmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntertainmentViewController.h; sourceTree = "<group>"; };
-		F38DA1521CA3C4CC00CA6932 /* EntertainmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntertainmentViewController.m; sourceTree = "<group>"; };
 		F38DA1541CA3D19F00CA6932 /* Entertainment.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entertainment.plist; sourceTree = "<group>"; };
 		F38DA1561CA3D6C500CA6932 /* Grogshop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Grogshop.plist; sourceTree = "<group>"; };
 		F38DA1581CA3EDB700CA6932 /* TravelogueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelogueViewController.h; sourceTree = "<group>"; };
@@ -285,10 +295,6 @@
 		F3A987FA1CA1276A0074C624 /* StrategyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrategyViewController.m; sourceTree = "<group>"; };
 		F3A987FC1CA129B80074C624 /* ScenicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScenicViewController.h; sourceTree = "<group>"; };
 		F3A987FD1CA129B80074C624 /* ScenicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScenicViewController.m; sourceTree = "<group>"; };
-		F3A988021CA12A0C0074C624 /* FoodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodViewController.h; sourceTree = "<group>"; };
-		F3A988031CA12A0C0074C624 /* FoodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodViewController.m; sourceTree = "<group>"; };
-		F3A988051CA12DCF0074C624 /* GrogshopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrogshopViewController.h; sourceTree = "<group>"; };
-		F3A988061CA12DCF0074C624 /* GrogshopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrogshopViewController.m; sourceTree = "<group>"; };
 		F3A988081CA131080074C624 /* Strategy.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Strategy.plist; sourceTree = "<group>"; };
 		F3A9880A1CA13F1E0074C624 /* RightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightTableViewCell.h; sourceTree = "<group>"; };
 		F3A9880B1CA13F1E0074C624 /* RightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightTableViewCell.m; sourceTree = "<group>"; };
@@ -421,18 +427,22 @@
 				F3A987FA1CA1276A0074C624 /* StrategyViewController.m */,
 				F3A987FC1CA129B80074C624 /* ScenicViewController.h */,
 				F3A987FD1CA129B80074C624 /* ScenicViewController.m */,
-				F3A988051CA12DCF0074C624 /* GrogshopViewController.h */,
-				F3A988061CA12DCF0074C624 /* GrogshopViewController.m */,
-				F3A988021CA12A0C0074C624 /* FoodViewController.h */,
-				F3A988031CA12A0C0074C624 /* FoodViewController.m */,
+				F32BBC481CAA9CBD00A8A267 /* Scenic2ViewController.h */,
+				F32BBC491CAA9CBD00A8A267 /* Scenic2ViewController.m */,
+				F32BBC4B1CAAAA0400A8A267 /* Grogshop2ViewController.h */,
+				F32BBC4C1CAAAA0400A8A267 /* Grogshop2ViewController.m */,
+				F32BBC4E1CAAAA1100A8A267 /* Food2ViewController.h */,
+				F32BBC4F1CAAAA1100A8A267 /* Food2ViewController.m */,
 				F38DA1581CA3EDB700CA6932 /* TravelogueViewController.h */,
 				F38DA1591CA3EDB700CA6932 /* TravelogueViewController.m */,
 				F38DA16B1CA4218300CA6932 /* TravelDetailViewController.h */,
 				F38DA16C1CA4218300CA6932 /* TravelDetailViewController.m */,
-				F38DA14E1CA3C49E00CA6932 /* ShoppingViewController.h */,
-				F38DA14F1CA3C49E00CA6932 /* ShoppingViewController.m */,
-				F38DA1511CA3C4CC00CA6932 /* EntertainmentViewController.h */,
-				F38DA1521CA3C4CC00CA6932 /* EntertainmentViewController.m */,
+				F32BBC571CAAAACE00A8A267 /* AnswerViewController.h */,
+				F32BBC581CAAAACE00A8A267 /* AnswerViewController.m */,
+				F32BBC511CAAAA3700A8A267 /* Shopping2ViewController.h */,
+				F32BBC521CAAAA3700A8A267 /* Shopping2ViewController.m */,
+				F32BBC541CAAAA5500A8A267 /* Entertain2ViewController.h */,
+				F32BBC551CAAAA5500A8A267 /* Entertain2ViewController.m */,
 				F3C874391C9AAE66006BD9AF /* Define.h */,
 			);
 			path = Controllers;
@@ -911,6 +921,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F32BBC4A1CAA9CBD00A8A267 /* Scenic2ViewController.m in Sources */,
 				01344F931CA291330018EF2B /* LookNoteTableViewCell.m in Sources */,
 				F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */,
 				01809B311CAAB8DA000FDA29 /* ZFChooseTimeViewController.m in Sources */,
@@ -918,6 +929,7 @@
 				F38DA15A1CA3EDB700CA6932 /* TravelogueViewController.m in Sources */,
 				7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */,
 				011190781C9FF231008E2F3D /* HotelViewController.m in Sources */,
+				F32BBC501CAAAA1100A8A267 /* Food2ViewController.m in Sources */,
 				F3A987F81CA0DFC20074C624 /* HTools.m in Sources */,
 				0114452A1C9AA6A50057E69F /* AppDelegate.m in Sources */,
 				0176CA7A1CA40CE300FB365C /* AnswerMyappTableViewCell.m in Sources */,
@@ -926,6 +938,8 @@
 				01809B321CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.m in Sources */,
 				F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */,
 				F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */,
+				F32BBC4D1CAAAA0400A8A267 /* Grogshop2ViewController.m in Sources */,
+				F32BBC591CAAAACE00A8A267 /* AnswerViewController.m in Sources */,
 				7A5FF2F91CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.m in Sources */,
 				0114455A1C9AB1910057E69F /* PullingRefreshTableView.m in Sources */,
 				011445501C9AA9E00057E69F /* DestinationViewController.m in Sources */,
@@ -953,7 +967,7 @@
 				F3C8743F1C9AB790006BD9AF /* DestinationTableViewCell.m in Sources */,
 				0176CA721CA3F3D100FB365C /* AnswerMyAppViewController.m in Sources */,
 				F3D8037E1CA28981003B9191 /* JSDropDownMenu.m in Sources */,
-				F3A988041CA12A0C0074C624 /* FoodViewController.m in Sources */,
+				F32BBC531CAAAA3700A8A267 /* Shopping2ViewController.m in Sources */,
 				F3D803771CA26FF9003B9191 /* ScenicTableViewCell.m in Sources */,
 				01F95BE31C9D51EE00CCD539 /* Find1ViewController.m in Sources */,
 				0146F5A41CA2C22100A12F79 /* TravelWorldTableViewCell.m in Sources */,
@@ -962,17 +976,16 @@
 				F3A987FE1CA129B80074C624 /* ScenicViewController.m in Sources */,
 				F3A987FB1CA1276A0074C624 /* StrategyViewController.m in Sources */,
 				7AB133541C9B9BD2002B0F94 /* LZ_Mine_Head_DetailViewController.m in Sources */,
-				F3A988071CA12DCF0074C624 /* GrogshopViewController.m in Sources */,
 				0114454B1C9AA9860057E69F /* MainViewController.m in Sources */,
 				F33B631D1C9E86D90060F63F /* BLImageSize.m in Sources */,
 				F3A9880C1CA13F1E0074C624 /* RightTableViewCell.m in Sources */,
+				F32BBC561CAAAA5500A8A267 /* Entertain2ViewController.m in Sources */,
 				0146F59C1CA2B94000A12F79 /* TravelWorldViewController.m in Sources */,
 				7AB133441C9ADF46002B0F94 /* LZ_MineViewController.m in Sources */,
 				F38DA16D1CA4218300CA6932 /* TravelDetailViewController.m in Sources */,
 				7A0DCFF61C9FE29100D316C0 /* VOContentLayer.m in Sources */,
 				7A0DCFF81C9FE29100D316C0 /* VOSegment.m in Sources */,
 				01F95BE01C9D4E6C00CCD539 /* SearchCityViewController.m in Sources */,
-				F38DA1531CA3C4CC00CA6932 /* EntertainmentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
