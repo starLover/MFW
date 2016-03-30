@@ -147,16 +147,6 @@
                                         <color key="textColor" red="1" green="0.42966642129999999" blue="0.23581978100000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j19-ZG-Tcx">
-                                        <rect key="frame" x="155" y="63" width="24" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="pn0-Uz-Het"/>
-                                            <constraint firstAttribute="width" constant="24" id="tdc-Yz-SLw"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="周三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTE-Bd-iTi">
                                         <rect key="frame" x="304" y="63" width="63" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -175,7 +165,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="03-22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdq-WZ-Mem">
                                         <rect key="frame" x="4" y="45" width="91" height="58"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -191,7 +181,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="03-23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INs-5A-6Z3">
                                         <rect key="frame" x="187" y="54" width="109" height="40"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -205,16 +195,26 @@
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j19-ZG-Tcx">
+                                        <rect key="frame" x="155" y="63" width="24" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="pn0-Uz-Het"/>
+                                            <constraint firstAttribute="width" constant="31" id="tdc-Yz-SLw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Vdq-WZ-Mem" firstAttribute="leading" secondItem="sfv-Lh-nLo" secondAttribute="leading" constant="4" id="1d4-4m-zoF"/>
                                     <constraint firstAttribute="trailing" secondItem="aOj-yW-y7a" secondAttribute="trailing" constant="79" id="3bC-UC-6fc"/>
-                                    <constraint firstItem="INs-5A-6Z3" firstAttribute="leading" secondItem="j19-ZG-Tcx" secondAttribute="trailing" constant="8" id="6Kx-rK-iD3"/>
+                                    <constraint firstItem="INs-5A-6Z3" firstAttribute="leading" secondItem="j19-ZG-Tcx" secondAttribute="trailing" constant="12" id="6Kx-rK-iD3"/>
                                     <constraint firstAttribute="trailing" secondItem="aIy-8J-Sg9" secondAttribute="trailing" id="A0O-VW-y6j"/>
                                     <constraint firstItem="INs-5A-6Z3" firstAttribute="height" secondItem="Vdq-WZ-Mem" secondAttribute="height" id="DTU-rU-HBw"/>
                                     <constraint firstItem="36R-QB-prS" firstAttribute="leading" secondItem="sfv-Lh-nLo" secondAttribute="leading" constant="8" id="E3a-Ej-eeT"/>
                                     <constraint firstItem="j19-ZG-Tcx" firstAttribute="centerY" secondItem="BCE-bK-lGr" secondAttribute="centerY" id="F1a-E7-Rsw"/>
-                                    <constraint firstItem="mTE-Bd-iTi" firstAttribute="leading" secondItem="INs-5A-6Z3" secondAttribute="trailing" constant="8" id="IHR-nf-asO"/>
+                                    <constraint firstItem="mTE-Bd-iTi" firstAttribute="leading" secondItem="INs-5A-6Z3" secondAttribute="trailing" constant="15" id="IHR-nf-asO"/>
                                     <constraint firstItem="36R-QB-prS" firstAttribute="top" secondItem="sfv-Lh-nLo" secondAttribute="top" constant="8" id="LFJ-5e-EtU"/>
                                     <constraint firstAttribute="trailing" secondItem="mTE-Bd-iTi" secondAttribute="trailing" constant="8" id="OGL-eq-BM3"/>
                                     <constraint firstItem="BCE-bK-lGr" firstAttribute="leading" secondItem="Vdq-WZ-Mem" secondAttribute="trailing" constant="8" id="P8N-2b-ZdT"/>
@@ -329,6 +329,9 @@
                                         <state key="normal" title="管理我的酒店订单">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="managerHotel:" destination="IRu-jG-NZs" eventType="touchUpInside" id="ICu-cr-1YT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -433,12 +436,17 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="allTimeLabel" destination="j19-ZG-Tcx" id="7E1-mC-2Tg"/>
                         <outlet property="cityBtn" destination="p9Y-I3-yWA" id="vAy-N1-tjB"/>
+                        <outlet property="endDateLabel" destination="INs-5A-6Z3" id="6A3-Xf-QZL"/>
+                        <outlet property="endweekLabel" destination="mTE-Bd-iTi" id="gqF-Vu-UOg"/>
+                        <outlet property="startDateLabel" destination="Vdq-WZ-Mem" id="8fJ-ir-fVH"/>
+                        <outlet property="startweekLabel" destination="BCE-bK-lGr" id="SVZ-jg-LAk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Di-ka-ead" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1772.5" y="-528.5"/>
+            <point key="canvasLocation" x="-2188.5" y="-649.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C27-gQ-Q3w">

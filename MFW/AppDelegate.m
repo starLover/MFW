@@ -60,6 +60,7 @@
 //改变TabBar
 - (void)changetabBar{
     self.tabBar.selectedIndex = 1;
+    self.tabBar.tabBar.hidden = NO;
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
