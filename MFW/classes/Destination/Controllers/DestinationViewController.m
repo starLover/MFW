@@ -398,6 +398,7 @@
         {
             Scenic2ViewController *scenicVC = [[Scenic2ViewController alloc]init];
             [self.navigationController pushViewController:scenicVC animated:YES];
+            
         }
             break;
         case 2:

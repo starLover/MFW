@@ -10,7 +10,7 @@
 #import "HeadImageTableViewCell.h"
 #import "DestinationViewController.h"
 #import "DestinationModel.h"
-
+#import <SDWebImage/UIImageView+WebCache.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
 
 @interface HeadImageViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -18,10 +18,14 @@
 @property(nonatomic,strong)UISegmentedControl *segmentControl;
 @property(nonatomic,strong)NSMutableArray *poiArray;
 @property(nonatomic,strong)NSMutableArray *areaArray;
-@property(nonatomic,strong)NSMutableArray *itemArray;
+@property(nonatomic,strong)NSMutableArray *item0Array;
+@property(nonatomic,strong)NSMutableArray *item1Array;
+@property(nonatomic,strong)NSMutableArray *item2Array;
 @property(nonatomic,strong)NSMutableArray *otherArray;
 @property(nonatomic,strong)NSMutableArray *userArray;
 @property(nonatomic,strong)NSMutableArray *dataArray;
+@property(nonatomic,strong)NSMutableArray *logoArray;
+@property(nonatomic, strong)NSMutableArray *outLogoArray;
 @property(nonatomic,copy)NSNumber *userNum;
 
 @end
@@ -48,29 +52,48 @@
 }
 #pragma mark --------- UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//       return self.itemArray.count;
-    return 50;
+       return self.poiArray.count;
+//    return 50;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HeadImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-//    DestinationModel *itemModel = self.itemArray[indexPath.row];
-//    DestinationModel *poiModel = self.poiArray[indexPath.row];
-//    DestinationModel *areaModel = self.areaArray[indexPath.row];
-//    if (indexPath.row < self.itemArray.count && indexPath.row < self.poiArray.count && indexPath.row < self.areaArray.count) {
-//        
-//        cell.nameLabel.text = poiModel.name;
-//        cell.placeName.text = [NSString stringWithFormat:@"位于%@，距离nkm",areaModel.name];
-//    cell.userNum.text = [NSString stringWithFormat:@"今天有%@人浏览",itemModel.user_number];
-//    }
-//    NSLog(@"%@",poiModel.name);
-//    NSLog(@"%@",areaModel.name);
-//    NSLog(@"%@",itemModel.user_number);
-    
+
+    DestinationModel *poiModel = self.poiArray[indexPath.row];
+    cell.nameLabel.text = poiModel.name;
+    DestinationModel *areaModel = self.areaArray[indexPath.row];
+    cell.placeName.text = [NSString stringWithFormat:@"位于 %@",areaModel.name];
+    DestinationModel *userNumModel = self.userArray[indexPath.row];
+    cell.userNum.text = [NSString stringWithFormat:@"今天有 %@ 人浏览",userNumModel.user_number];
+    //序号
+    if (indexPath.row<9) {
+    cell.sortLabel.text = [NSString stringWithFormat:@"0%lu",(long)indexPath.row+1];
+        if (indexPath.row<3) {
+            cell.sortLabel.backgroundColor = [UIColor redColor];
+            cell.sortLabel.textColor = [UIColor whiteColor];
+        }else{
+        cell.sortLabel.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.3];
+        cell.sortLabel.textColor = [UIColor redColor];
+        }
+    }else{
+    cell.sortLabel.text = [NSString stringWithFormat:@"%lu",(long)indexPath.row+1];
+    }
+  //logo
+    NSArray *array = self.outLogoArray[indexPath.row];
+    if (array.count > 0) {
+        for (NSInteger i = 0; i<array.count; i++) {
+            DestinationModel *logoModel = array[i];
+            UIImageView *logoImage = [[UIImageView alloc]initWithFrame:CGRectMake(20+i*((kScreenWidth-150)/6 + 10), 61, (kScreenWidth-130)/6, (kScreenWidth-130)/6)];
+            logoImage.layer.masksToBounds = YES;
+            logoImage.layer.cornerRadius = (kScreenWidth-130)/12;
+            [logoImage sd_setImageWithURL:[NSURL URLWithString:logoModel.logo] placeholderImage:nil];
+            [cell.contentView addSubview:logoImage];
+        }
+    }
     return cell;
 }
 - (UITableView *)tableView{
     if (!_tableView) {
-        self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kScreenHeight/4, kScreenWidth, kScreenHeight-kScreenHeight/4)];
+        self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kScreenHeight/4, kScreenWidth, kScreenHeight-kScreenHeight/4+54)];
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         self.tableView.rowHeight = kScreenHeight/6;
@@ -128,42 +151,54 @@
         NSDictionary *dataDic = resultDic[@"data"];
         self.userNum = dataDic[@"user_number"];
         NSArray *blocks = dataDic[@"blocks"];
-        for (NSDictionary *dic in blocks) {
-            
+        //餐厅
+        NSDictionary *item0 = blocks[0];
+        NSArray *list = item0[@"list"];
+        for (NSDictionary *dic in list) {
+            NSDictionary *poi = dic[@"poi"];
+            NSDictionary *area = poi[@"area"];
+            DestinationModel *poiModel = [[DestinationModel alloc]init];
+            [poiModel setValuesForKeysWithDictionary:poi];
+            [self.poiArray addObject:poiModel];
+            DestinationModel *model = [[DestinationModel alloc]init];
+            [model setValuesForKeysWithDictionary:area];
+            [self.areaArray addObject:model];
+            NSArray *array = dic[@"user_list"];
+            NSMutableArray *outArray = [NSMutableArray new];
+            if (array.count > 0) {
+                for (NSDictionary *dit in array) {
+                    DestinationModel *model = [[DestinationModel alloc] init];
+                    [model setValuesForKeysWithDictionary:dit];
+                    [outArray addObject:model];
+                }
+            }
+            [self.outLogoArray addObject:outArray];
+            //
+            DestinationModel *userModel = [[DestinationModel alloc]init];
+            [userModel setValuesForKeysWithDictionary:dic];
+            [self.userArray addObject:userModel];
         }
-        
-//        for (NSDictionary *dic in blocks) {
-////            NSDictionary *item = dic[@"item0"];
-//            NSArray *listArray = dic[@"list"];
-//            for (NSDictionary *dit in listArray) {
-//                NSDictionary *poi = dit[@"poi"];
-//                NSDictionary *area = poi[@"area"];
-//                NSArray *user_list = dit[@"user_list"];
-//                
-//                DestinationModel *model = [[DestinationModel alloc]init];
-//                [model setValuesForKeysWithDictionary:poi];
-//                [self.poiArray addObject:model];
-//                
-//                DestinationModel *model1 = [[DestinationModel alloc]init];
-//                [model1 setValuesForKeysWithDictionary:area];
-//                [self.areaArray addObject:model1];
-//                
-//                for (NSDictionary *dict in user_list) {
-//                    DestinationModel *bModel = [[DestinationModel alloc]init];
-//                    [bModel setValuesForKeysWithDictionary:dict];
-//                    [self.userArray addObject:bModel];
-//                }
-//            }
-//        }
+        //景点
+        NSDictionary *item1 = blocks[1];
+        NSArray *list1 = item1[@"list"];
+        for (NSDictionary *dic in list1) {
+            DestinationModel *model = [[DestinationModel alloc]init];
+            [model setValuesForKeysWithDictionary:dic];
+            [self.item1Array addObject:model];
+        }
+        //购物
+        NSDictionary *item2 = blocks[2];
+        NSArray *list2 = item2[@"list"];
+        for (NSDictionary *dic in list2) {
+            DestinationModel *model = [[DestinationModel alloc]init];
+            [model setValuesForKeysWithDictionary:dic];
+            [self.item2Array addObject:model];
+        }
         NSDictionary *mdd = dataDic[@"mdd"];
         DestinationModel *model = [[DestinationModel alloc]init];
         [model setValuesForKeysWithDictionary:mdd];
         [self.otherArray addObject:model];
         NSLog(@"%@",self.otherArray[0]);
-//        NSLog(@"%lu",self.areaArray.count);
-//        NSLog(@"%lu",self.poiArray.count);
-//        NSLog(@"%lu",self.userArray.count);
-        
         [self.tableView reloadData];
         [self headViewAction];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -204,17 +239,35 @@
     }
     return _poiArray;
 }
-- (NSMutableArray *)itemArray{
-    if (!_itemArray) {
-        self.itemArray = [NSMutableArray new];
+- (NSMutableArray *)item0Array{
+    if (!_item0Array) {
+        self.item0Array = [NSMutableArray new];
     }
-    return _itemArray;
+    return _item0Array;
+}
+- (NSMutableArray *)item1Array{
+    if (!_item1Array) {
+        self.item1Array = [NSMutableArray new];
+    }
+    return _item1Array;
+}
+- (NSMutableArray *)item2Array{
+    if (!_item2Array) {
+        self.item2Array = [NSMutableArray new];
+    }
+    return _item2Array;
 }
 - (NSMutableArray *)areaArray{
     if (!_areaArray) {
         self.areaArray = [NSMutableArray new];
     }
     return _areaArray;
+}
+- (NSMutableArray *)logoArray{
+    if (!_logoArray) {
+        self.logoArray = [NSMutableArray new];
+    }
+    return _logoArray;
 }
 - (NSMutableArray *)otherArray{
     if (!_otherArray) {
@@ -233,6 +286,12 @@
         self.dataArray = [NSMutableArray new];
     }
     return _dataArray;
+}
+- (NSMutableArray *)outLogoArray{
+    if (!_outLogoArray) {
+        self.outLogoArray = [NSMutableArray new];
+    }
+    return _outLogoArray;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

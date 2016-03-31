@@ -23,6 +23,6 @@
 @property(nonatomic,copy)NSNumber *num;
 @property(nonatomic,copy)NSString *map_provider;
 @property(nonatomic,copy)NSNumber *user_number;
-
+@property(nonatomic,copy)NSString *logo;
 
 @end

@@ -12,7 +12,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sortLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *autherImage;
-
 @property (weak, nonatomic) IBOutlet UILabel *placeName;
 @property (weak, nonatomic) IBOutlet UILabel *userNum;
 

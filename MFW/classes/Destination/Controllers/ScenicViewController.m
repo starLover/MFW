@@ -201,6 +201,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
     }];
 }
+
 - (NSMutableArray *)itemArray{
     if (!_itemArray) {
         self.itemArray = [NSMutableArray new];
