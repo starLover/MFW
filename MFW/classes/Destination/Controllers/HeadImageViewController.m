@@ -57,18 +57,6 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HeadImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    if (cell == nil) {
-        cell = [[HeadImageTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    } else {
-    
-        if (indexPath.row >= 3) {
-            while ([cell.contentView.subviews lastObject] != nil)
-            {
-                [(UIView*)[cell.contentView.subviews lastObject] removeFromSuperview];
-            }
-
-        }
-           }
 
     DestinationModel *poiModel = self.poiArray[indexPath.row];
     cell.nameLabel.text = poiModel.name;
@@ -76,13 +64,20 @@
     cell.placeName.text = [NSString stringWithFormat:@"位于 %@",areaModel.name];
     DestinationModel *userNumModel = self.userArray[indexPath.row];
     cell.userNum.text = [NSString stringWithFormat:@"今天有 %@ 人浏览",userNumModel.user_number];
-    
+    //序号
     if (indexPath.row<9) {
     cell.sortLabel.text = [NSString stringWithFormat:@"0%lu",(long)indexPath.row+1];
+        if (indexPath.row<3) {
+            cell.sortLabel.backgroundColor = [UIColor redColor];
+            cell.sortLabel.textColor = [UIColor whiteColor];
+        }else{
+        cell.sortLabel.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.3];
+        cell.sortLabel.textColor = [UIColor redColor];
+        }
     }else{
     cell.sortLabel.text = [NSString stringWithFormat:@"%lu",(long)indexPath.row+1];
     }
-  
+  //logo
     NSArray *array = self.outLogoArray[indexPath.row];
     if (array.count > 0) {
         for (NSInteger i = 0; i<array.count; i++) {
@@ -98,7 +93,7 @@
 }
 - (UITableView *)tableView{
     if (!_tableView) {
-        self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kScreenHeight/4, kScreenWidth, kScreenHeight-kScreenHeight/4)];
+        self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kScreenHeight/4, kScreenWidth, kScreenHeight-kScreenHeight/4+54)];
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         self.tableView.rowHeight = kScreenHeight/6;
