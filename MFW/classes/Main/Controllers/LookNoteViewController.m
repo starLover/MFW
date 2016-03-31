@@ -50,7 +50,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     HeadViewController *headVC = [[HeadViewController alloc] init];
     MainModel *model = self.idArray[indexPath.row];
-    NSLog(@"%@", model.myId);
     headVC.urlString = [NSString stringWithFormat:@"http://m.mafengwo.cn/i/%@.html", model.myId];
     [self.navigationController pushViewController:headVC animated:YES];
 }

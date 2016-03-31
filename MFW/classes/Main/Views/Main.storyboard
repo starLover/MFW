@@ -235,6 +235,9 @@
                                 <state key="normal" title="  价格/星级">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="managerHotel:" destination="IRu-jG-NZs" eventType="touchUpInside" id="LZ0-xZ-iSQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tA-3R-cfz">
                                 <rect key="frame" x="0.0" y="239" width="375" height="105"/>
@@ -242,6 +245,9 @@
                                 <state key="normal" title="  关键字/商圈/景点">
                                     <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="managerHotel:" destination="IRu-jG-NZs" eventType="touchUpInside" id="jQy-hA-eFa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6k-6G-FT4" userLabel="bbb">
                                 <rect key="frame" x="0.0" y="342" width="375" height="1"/>
@@ -284,6 +290,9 @@
                                         <state key="normal" title="查找酒店">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="managerHotel:" destination="IRu-jG-NZs" eventType="touchUpInside" id="G9L-bM-JUu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

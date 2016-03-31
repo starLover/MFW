@@ -20,6 +20,7 @@
     CLGeocoder *_geocoder;
 }
 
+
 - (IBAction)locationAction:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *cityBtn;
 - (IBAction)managerHotel:(id)sender;
@@ -143,6 +144,8 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
 
 - (IBAction)locationAction:(id)sender {
     if (!([CLLocationManager locationServicesEnabled])) {
