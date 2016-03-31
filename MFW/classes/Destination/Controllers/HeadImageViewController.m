@@ -27,6 +27,7 @@
 @property(nonatomic, strong)NSMutableArray *outLogoArray;
 @property(nonatomic,copy)NSNumber *userNum;
 
+
 @end
 
 @implementation HeadImageViewController

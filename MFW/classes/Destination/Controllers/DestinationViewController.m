@@ -163,26 +163,6 @@
     }
 }
 
-#pragma mark ---------
-#pragma mark --------- 
-#pragma mark --------- 
-#pragma mark ---------  CustomMethod
-- (void)firstCell{
-
-}
-- (void)secondCell{
-    
-}
-
-- (void)thirdCell{
-    
-}
-
-- (void)forthCell{
-    
-}
-
-
 #pragma mark --------- 网络请求
 - (void)requestModel{
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
@@ -219,9 +199,7 @@
                 
             }
         }
-//        NSLog(@"title = %lu",self.titleArray.count);
-//        NSLog(@"list = %lu",self.listArray.count);
-//        NSLog(@"item = %lu",self.itemArray.count);
+
         NSDictionary *mdd = dataDic[@"mdd"];
         self.albumArray = mdd[@"album_example"];
         self.header_img = mdd[@"header_img"];
@@ -232,10 +210,8 @@
         DestinationModel *numModel = [[DestinationModel alloc]init];
         [numModel setValuesForKeysWithDictionary:num];
         [self.numUrlArray addObject:numModel];
-        
         [self.tableView reloadData];
         [self configTableViewHeaderView];
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
     }];
@@ -305,7 +281,6 @@
         imageBtn.tag = 103+i;
         [imageBtn addTarget:self action:@selector(goAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.tableViewHeaderView addSubview:imageBtn];
-        
     }
     UILabel *more = [[UILabel alloc]initWithFrame:CGRectMake(20+(((kScreenWidth-60)/3)+10)*2, self.imageview.frame.size.height/2, (kScreenWidth-60)/3+2,self.imageview.frame.size.height/2-10)];
     more.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
@@ -321,7 +296,6 @@
     much.text = @"张照片";
     [self.imageview addSubview:much];
     
-        
     for (NSInteger i = 0; i < 2; i++) {
         for (NSInteger j = 0; j < 4; j++) {
             DestinationModel *btnModel = self.btnArray[i * 4 + j];
@@ -343,7 +317,6 @@
             [self.tableViewHeaderView addSubview:btn];
         }
     }
-    
 }
 - (void)goAction:(UIButton *)btn{
     switch (btn.tag-100) {
