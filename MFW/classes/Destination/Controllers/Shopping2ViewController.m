@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self showBackBtn];
-    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -54, kScreenWidth, kScreenHeight+65)];
+    webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -93, kScreenWidth, kScreenHeight+65)];
     webView.scrollView.bounces = NO;
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.mafengwo.cn/localdeals/mdd_10094/?sFrom=mdd"]];
     [self.view addSubview:webView];
