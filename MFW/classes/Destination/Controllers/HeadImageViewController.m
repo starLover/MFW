@@ -14,17 +14,16 @@
 #import <AFNetworking/AFHTTPSessionManager.h>
 
 @interface HeadImageViewController ()<UITableViewDataSource,UITableViewDelegate>
+{
+    NSInteger num;
+}
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)UISegmentedControl *segmentControl;
 @property(nonatomic,strong)NSMutableArray *poiArray;
 @property(nonatomic,strong)NSMutableArray *areaArray;
-@property(nonatomic,strong)NSMutableArray *item0Array;
-@property(nonatomic,strong)NSMutableArray *item1Array;
-@property(nonatomic,strong)NSMutableArray *item2Array;
 @property(nonatomic,strong)NSMutableArray *otherArray;
 @property(nonatomic,strong)NSMutableArray *userArray;
-@property(nonatomic,strong)NSMutableArray *dataArray;
-@property(nonatomic,strong)NSMutableArray *logoArray;
+@property(nonatomic,strong)NSDictionary *dataDic;
 @property(nonatomic, strong)NSMutableArray *outLogoArray;
 @property(nonatomic,copy)NSNumber *userNum;
 
@@ -57,39 +56,41 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HeadImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-
-    DestinationModel *poiModel = self.poiArray[indexPath.row];
-    cell.nameLabel.text = poiModel.name;
-    DestinationModel *areaModel = self.areaArray[indexPath.row];
-    cell.placeName.text = [NSString stringWithFormat:@"位于 %@",areaModel.name];
-    DestinationModel *userNumModel = self.userArray[indexPath.row];
-    cell.userNum.text = [NSString stringWithFormat:@"今天有 %@ 人浏览",userNumModel.user_number];
-    //序号
-    if (indexPath.row<9) {
-    cell.sortLabel.text = [NSString stringWithFormat:@"0%lu",(long)indexPath.row+1];
-        if (indexPath.row<3) {
-            cell.sortLabel.backgroundColor = [UIColor redColor];
-            cell.sortLabel.textColor = [UIColor whiteColor];
+    if (indexPath.row < self.poiArray.count) {
+        DestinationModel *poiModel = self.poiArray[indexPath.row];
+        cell.nameLabel.text = poiModel.name;
+        DestinationModel *areaModel = self.areaArray[indexPath.row];
+        cell.placeName.text = [NSString stringWithFormat:@"位于 %@",areaModel.name];
+        DestinationModel *userNumModel = self.userArray[indexPath.row];
+        cell.userNum.text = [NSString stringWithFormat:@"今天有 %@ 人浏览",userNumModel.user_number];
+        //序号
+        if (indexPath.row<9) {
+            cell.sortLabel.text = [NSString stringWithFormat:@"0%lu",(long)indexPath.row+1];
+            if (indexPath.row<3) {
+                cell.sortLabel.backgroundColor = [UIColor redColor];
+                cell.sortLabel.textColor = [UIColor whiteColor];
+            }else{
+                cell.sortLabel.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.3];
+                cell.sortLabel.textColor = [UIColor redColor];
+            }
         }else{
-        cell.sortLabel.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.3];
-        cell.sortLabel.textColor = [UIColor redColor];
+            cell.sortLabel.text = [NSString stringWithFormat:@"%lu",(long)indexPath.row+1];
         }
-    }else{
-    cell.sortLabel.text = [NSString stringWithFormat:@"%lu",(long)indexPath.row+1];
-    }
-  //logo
-    NSArray *array = self.outLogoArray[indexPath.row];
-    if (array.count > 0) {
-        for (NSInteger i = 0; i<array.count; i++) {
-            DestinationModel *logoModel = array[i];
-            UIImageView *logoImage = [[UIImageView alloc]initWithFrame:CGRectMake(20+i*((kScreenWidth-150)/6 + 10), 61, (kScreenWidth-130)/6, (kScreenWidth-130)/6)];
-            logoImage.layer.masksToBounds = YES;
-            logoImage.layer.cornerRadius = (kScreenWidth-130)/12;
-            [logoImage sd_setImageWithURL:[NSURL URLWithString:logoModel.logo] placeholderImage:nil];
-            [cell.contentView addSubview:logoImage];
+        //logo
+        NSArray *array = self.outLogoArray[indexPath.row];
+        if (array.count > 0) {
+            for (NSInteger i = 0; i<array.count; i++) {
+                DestinationModel *logoModel = array[i];
+                UIImageView *logoImage = [[UIImageView alloc]initWithFrame:CGRectMake(20+i*((kScreenWidth-150)/6 + 10), 61, (kScreenWidth-130)/6, (kScreenWidth-130)/6)];
+                logoImage.layer.masksToBounds = YES;
+                logoImage.layer.cornerRadius = (kScreenWidth-130)/12;
+                [logoImage sd_setImageWithURL:[NSURL URLWithString:logoModel.logo] placeholderImage:nil];
+                [cell.contentView addSubview:logoImage];
+
+            }
         }
     }
-    return cell;
+        return cell;
 }
 - (UITableView *)tableView{
     if (!_tableView) {
@@ -150,50 +151,36 @@
         NSDictionary *resultDic = responseObject;
         NSDictionary *dataDic = resultDic[@"data"];
         self.userNum = dataDic[@"user_number"];
-        NSArray *blocks = dataDic[@"blocks"];
-        //餐厅
-        NSDictionary *item0 = blocks[0];
-        NSArray *list = item0[@"list"];
-        for (NSDictionary *dic in list) {
-            NSDictionary *poi = dic[@"poi"];
-            NSDictionary *area = poi[@"area"];
-            DestinationModel *poiModel = [[DestinationModel alloc]init];
-            [poiModel setValuesForKeysWithDictionary:poi];
-            [self.poiArray addObject:poiModel];
-            DestinationModel *model = [[DestinationModel alloc]init];
-            [model setValuesForKeysWithDictionary:area];
-            [self.areaArray addObject:model];
-            NSArray *array = dic[@"user_list"];
-            NSMutableArray *outArray = [NSMutableArray new];
-            if (array.count > 0) {
-                for (NSDictionary *dit in array) {
-                    DestinationModel *model = [[DestinationModel alloc] init];
-                    [model setValuesForKeysWithDictionary:dit];
-                    [outArray addObject:model];
+        NSArray *blocksArray = dataDic[@"blocks"];
+        
+            self.dataDic = blocksArray[num];
+            NSArray *list = self.dataDic[@"list"];
+            for (NSDictionary *dic in list) {
+                NSDictionary *poi = dic[@"poi"];
+                NSDictionary *area = poi[@"area"];
+                DestinationModel *poiModel = [[DestinationModel alloc]init];
+                [poiModel setValuesForKeysWithDictionary:poi];
+                [self.poiArray addObject:poiModel];
+                DestinationModel *model = [[DestinationModel alloc]init];
+                [model setValuesForKeysWithDictionary:area];
+                [self.areaArray addObject:model];
+                NSArray *array = dic[@"user_list"];
+                
+                NSMutableArray *outArray = [NSMutableArray new];
+                if (array.count > 0) {
+                    for (NSDictionary *dit in array) {
+                        DestinationModel *logoModel = [[DestinationModel alloc] init];
+                        [logoModel setValuesForKeysWithDictionary:dit];
+                        [outArray addObject:logoModel];
+                    }
                 }
+                [self.outLogoArray addObject:outArray];
+                //
+                DestinationModel *userModel = [[DestinationModel alloc]init];
+                [userModel setValuesForKeysWithDictionary:dic];
+                [self.userArray addObject:userModel];
             }
-            [self.outLogoArray addObject:outArray];
-            //
-            DestinationModel *userModel = [[DestinationModel alloc]init];
-            [userModel setValuesForKeysWithDictionary:dic];
-            [self.userArray addObject:userModel];
-        }
-        //景点
-        NSDictionary *item1 = blocks[1];
-        NSArray *list1 = item1[@"list"];
-        for (NSDictionary *dic in list1) {
-            DestinationModel *model = [[DestinationModel alloc]init];
-            [model setValuesForKeysWithDictionary:dic];
-            [self.item1Array addObject:model];
-        }
-        //购物
-        NSDictionary *item2 = blocks[2];
-        NSArray *list2 = item2[@"list"];
-        for (NSDictionary *dic in list2) {
-            DestinationModel *model = [[DestinationModel alloc]init];
-            [model setValuesForKeysWithDictionary:dic];
-            [self.item2Array addObject:model];
-        }
+
         NSDictionary *mdd = dataDic[@"mdd"];
         DestinationModel *model = [[DestinationModel alloc]init];
         [model setValuesForKeysWithDictionary:mdd];
@@ -215,47 +202,33 @@
     return _segmentControl;
 }
 - (void)segmentControlChangeAction:(UISegmentedControl *)segment{
-    switch (segment.selectedSegmentIndex) {
-        case 0:
-        {
-        }
-            break;
-        case 1:
-        {
-        }
-            break;
-        case 2:
-        {
-        }
-            break;
-        default:
-            break;
+    num = segment.selectedSegmentIndex;
+    if (self.poiArray.count > 0) {
+        [self.poiArray removeAllObjects];
     }
-}
-#pragma mark --------- Lazy
+    if (self.areaArray.count > 0) {
+        [self.areaArray removeAllObjects];
+    }
+    if (self.userArray .count > 0) {
+        [self.userArray removeAllObjects];
+    }
+    if (self.outLogoArray.count > 0) {
+        [self.outLogoArray removeAllObjects];
+    }
+    [self requestModel];
+    }
+#pragma mark --------------- Lazy
 - (NSMutableArray *)poiArray{
     if (!_poiArray) {
         self.poiArray = [NSMutableArray new];
     }
     return _poiArray;
 }
-- (NSMutableArray *)item0Array{
-    if (!_item0Array) {
-        self.item0Array = [NSMutableArray new];
+- (NSMutableArray *)userArray{
+    if (_userArray == nil) {
+        self.userArray = [NSMutableArray new];
     }
-    return _item0Array;
-}
-- (NSMutableArray *)item1Array{
-    if (!_item1Array) {
-        self.item1Array = [NSMutableArray new];
-    }
-    return _item1Array;
-}
-- (NSMutableArray *)item2Array{
-    if (!_item2Array) {
-        self.item2Array = [NSMutableArray new];
-    }
-    return _item2Array;
+    return _userArray;
 }
 - (NSMutableArray *)areaArray{
     if (!_areaArray) {
@@ -263,35 +236,18 @@
     }
     return _areaArray;
 }
-- (NSMutableArray *)logoArray{
-    if (!_logoArray) {
-        self.logoArray = [NSMutableArray new];
+
+- (NSMutableArray *)outLogoArray{
+    if (!_outLogoArray) {
+        self.outLogoArray = [NSMutableArray new];
     }
-    return _logoArray;
+    return _outLogoArray;
 }
 - (NSMutableArray *)otherArray{
     if (!_otherArray) {
         self.otherArray = [NSMutableArray new];
     }
     return _otherArray;
-}
-- (NSMutableArray *)userArray{
-    if (!_userArray) {
-        self.userArray = [NSMutableArray new];
-    }
-    return _userArray;
-}
-- (NSMutableArray *)dataArray{
-    if (!_dataArray) {
-        self.dataArray = [NSMutableArray new];
-    }
-    return _dataArray;
-}
-- (NSMutableArray *)outLogoArray{
-    if (!_outLogoArray) {
-        self.outLogoArray = [NSMutableArray new];
-    }
-    return _outLogoArray;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
