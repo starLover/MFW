@@ -225,7 +225,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        return kScreenHeight / 3 * 2 - 30;
+        return kScreenHeight / 3 * 2;
     }
     return kScreenHeight / 4 * 3 + 40;
 }
@@ -264,7 +264,7 @@
 }
 
 - (void)firstCellView{
-    self.todayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight / 3 * 2)];
+    self.todayView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight / 3 * 2 + 20)];
     UILabel *todayLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, kScreenWidth / 3, 40)];
     MainModel *todayModel = self.todayArray[0];
     todayLabel.text = todayModel.title;

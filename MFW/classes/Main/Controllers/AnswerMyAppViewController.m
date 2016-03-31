@@ -11,6 +11,7 @@
 #import "AnswerMyappTableViewCell.h"
 #import "MainModel.h"
 #import <UIImageView+WebCache.h>
+#import "LZ_Mine_LoginViewController.h"
 
 @interface AnswerMyAppViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property(nonatomic, strong) UITableView *tableView;
@@ -58,10 +59,11 @@
 }
 #pragma mark  ---------------  UITableViewDelegate
 
-
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    LZ_Mine_LoginViewController *lzVC = [[LZ_Mine_LoginViewController alloc] init];
+    [self.navigationController pushViewController:lzVC animated:YES];
 }
+
 
 #pragma mark  ---------------  request
 

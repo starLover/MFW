@@ -104,8 +104,6 @@
     }
     
     
-    
-    
     if ([annotation isKindOfClass:[MAPointAnnotation class]])
     {
         static NSString *pointReuseIndentifier = @"pointReuseIndentifier";
@@ -123,7 +121,6 @@
     }
     return nil;
 }
-
 
 
 #pragma mark      -------------    request
