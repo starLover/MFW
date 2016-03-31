@@ -10,7 +10,6 @@
 #import "LZ_Mine_Head.h"
 #import "LZ_Mine_Head_DetailViewController.h"
 #import "WXApi.h"
-#import "MBProgressHUD.h"
 #import "ProgressHUD.h"
 
 #import <BmobSDK/Bmob.h>
