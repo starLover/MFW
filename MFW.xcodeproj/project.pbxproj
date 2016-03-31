@@ -34,6 +34,13 @@
 		0176CA721CA3F3D100FB365C /* AnswerMyAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0176CA711CA3F3D100FB365C /* AnswerMyAppViewController.m */; };
 		0176CA7A1CA40CE300FB365C /* AnswerMyappTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0176CA781CA40CE300FB365C /* AnswerMyappTableViewCell.m */; };
 		0176CA7B1CA40CE300FB365C /* AnswerMyappTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0176CA791CA40CE300FB365C /* AnswerMyappTableViewCell.xib */; };
+		01809B2F1CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01809B241CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.m */; };
+		01809B301CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01809B251CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.xib */; };
+		01809B311CAAB8DA000FDA29 /* ZFChooseTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01809B271CAAB8DA000FDA29 /* ZFChooseTimeViewController.m */; };
+		01809B321CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01809B291CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.m */; };
+		01809B331CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01809B2A1CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.xib */; };
+		01809B341CAAB8DA000FDA29 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 01809B2C1CAAB8DA000FDA29 /* SVProgressHUD.bundle */; };
+		01809B351CAAB8DA000FDA29 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 01809B2E1CAAB8DA000FDA29 /* SVProgressHUD.m */; };
 		01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */; };
 		01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */; };
 		01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F94A531CA22D26004A76C8 /* HotelMapViewController.m */; };
@@ -162,6 +169,17 @@
 		0176CA771CA40CE300FB365C /* AnswerMyappTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerMyappTableViewCell.h; sourceTree = "<group>"; };
 		0176CA781CA40CE300FB365C /* AnswerMyappTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerMyappTableViewCell.m; sourceTree = "<group>"; };
 		0176CA791CA40CE300FB365C /* AnswerMyappTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnswerMyappTableViewCell.xib; sourceTree = "<group>"; };
+		01809B231CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFChooseTimeCollectionViewCell.h; sourceTree = "<group>"; };
+		01809B241CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFChooseTimeCollectionViewCell.m; sourceTree = "<group>"; };
+		01809B251CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZFChooseTimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		01809B261CAAB8DA000FDA29 /* ZFChooseTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFChooseTimeViewController.h; sourceTree = "<group>"; };
+		01809B271CAAB8DA000FDA29 /* ZFChooseTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFChooseTimeViewController.m; sourceTree = "<group>"; };
+		01809B281CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTimerCollectionReusableView.h; sourceTree = "<group>"; };
+		01809B291CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTimerCollectionReusableView.m; sourceTree = "<group>"; };
+		01809B2A1CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZFTimerCollectionReusableView.xib; sourceTree = "<group>"; };
+		01809B2C1CAAB8DA000FDA29 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		01809B2D1CAAB8DA000FDA29 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		01809B2E1CAAB8DA000FDA29 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		01AD7AB01C9BD1A8003C336D /* CommonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonCollectionViewCell.h; sourceTree = "<group>"; };
 		01AD7AB11C9BD1A8003C336D /* CommonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonCollectionViewCell.m; sourceTree = "<group>"; };
 		01AD7AB21C9BD1A8003C336D /* CommonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommonCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -526,6 +544,8 @@
 		011445461C9AA8CC0057E69F /* library */ = {
 			isa = PBXGroup;
 			children = (
+				01809B221CAAB8DA000FDA29 /* 时间选择器 */,
+				01809B2B1CAAB8DA000FDA29 /* SVProgressHUD */,
 				F3D803791CA28981003B9191 /* JSDropDownMenu */,
 				011445531C9AB1910057E69F /* PullingRefreshTableView */,
 				7A0DCFED1C9FE29000D316C0 /* VOSegmentedControl */,
@@ -561,6 +581,31 @@
 				011445571C9AB1910057E69F /* PullingRefreshTableView.m */,
 			);
 			path = PullingRefreshTableView;
+			sourceTree = "<group>";
+		};
+		01809B221CAAB8DA000FDA29 /* 时间选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				01809B231CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.h */,
+				01809B241CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.m */,
+				01809B251CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.xib */,
+				01809B261CAAB8DA000FDA29 /* ZFChooseTimeViewController.h */,
+				01809B271CAAB8DA000FDA29 /* ZFChooseTimeViewController.m */,
+				01809B281CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.h */,
+				01809B291CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.m */,
+				01809B2A1CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.xib */,
+			);
+			path = "时间选择器";
+			sourceTree = "<group>";
+		};
+		01809B2B1CAAB8DA000FDA29 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				01809B2C1CAAB8DA000FDA29 /* SVProgressHUD.bundle */,
+				01809B2D1CAAB8DA000FDA29 /* SVProgressHUD.h */,
+				01809B2E1CAAB8DA000FDA29 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		2B49E7E20405D2E58579C53F /* Frameworks */ = {
@@ -757,7 +802,7 @@
 				TargetAttributes = {
 					011445211C9AA6A50057E69F = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 6K2QGZ2A9Y;
+						DevelopmentTeam = 5H5Q884XQE;
 					};
 				};
 			};
@@ -802,6 +847,8 @@
 				F33B63201C9E87B00060F63F /* Alubm.plist in Resources */,
 				F3D8037D1CA28981003B9191 /* ico_make.png in Resources */,
 				7A5FF2FA1CA0EBC700DEDF4C /* LZ_Mine_LoginViewController.xib in Resources */,
+				01809B301CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.xib in Resources */,
+				01809B341CAAB8DA000FDA29 /* SVProgressHUD.bundle in Resources */,
 				01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */,
 				01344F941CA291330018EF2B /* LookNoteTableViewCell.xib in Resources */,
 				015FCE341C9C28BF002C44FF /* SalesCollectionViewCell.xib in Resources */,
@@ -810,6 +857,7 @@
 				F38DA14D1CA3C36400CA6932 /* Food.plist in Resources */,
 				011445321C9AA6A50057E69F /* LaunchScreen.storyboard in Resources */,
 				011445601C9AE5520057E69F /* Main.plist in Resources */,
+				01809B331CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.xib in Resources */,
 				01AD7AB41C9BD1A8003C336D /* CommonCollectionViewCell.xib in Resources */,
 				7A5FF2F41CA0DE5400DEDF4C /* ProgressHUD.bundle in Resources */,
 				F38DA1551CA3D19F00CA6932 /* Entertainment.plist in Resources */,
@@ -876,6 +924,7 @@
 				F32BBC4A1CAA9CBD00A8A267 /* Scenic2ViewController.m in Sources */,
 				01344F931CA291330018EF2B /* LookNoteTableViewCell.m in Sources */,
 				F30485C91C9E723A002751C4 /* AlubmViewController.m in Sources */,
+				01809B311CAAB8DA000FDA29 /* ZFChooseTimeViewController.m in Sources */,
 				015FCE331C9C28BF002C44FF /* SalesCollectionViewCell.m in Sources */,
 				F38DA15A1CA3EDB700CA6932 /* TravelogueViewController.m in Sources */,
 				7AB133491C9AE57B002B0F94 /* LZ_Mine_Head.m in Sources */,
@@ -886,6 +935,7 @@
 				0176CA7A1CA40CE300FB365C /* AnswerMyappTableViewCell.m in Sources */,
 				F39EF9AA1C9CF48C00382A36 /* HeadImageTableViewCell.m in Sources */,
 				7A0DCFF71C9FE29100D316C0 /* VOIndicatorAnimation.m in Sources */,
+				01809B321CAAB8DA000FDA29 /* ZFTimerCollectionReusableView.m in Sources */,
 				F3C8743C1C9AB2E5006BD9AF /* UIViewController+Common.m in Sources */,
 				F399E0241C9B82C000019B37 /* DestinationModel.m in Sources */,
 				F32BBC4D1CAAAA0400A8A267 /* Grogshop2ViewController.m in Sources */,
@@ -900,8 +950,11 @@
 				F38DA1601CA4050300CA6932 /* TravelTableViewCell.m in Sources */,
 				7A5FF2F51CA0DE5400DEDF4C /* ProgressHUD.m in Sources */,
 				0114455E1C9AC5300057E69F /* HeadViewController.m in Sources */,
+				F38DA1501CA3C49E00CA6932 /* ShoppingViewController.m in Sources */,
+				01809B2F1CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.m in Sources */,
 				F33B63231C9E8A3E0060F63F /* CollectionViewCell.m in Sources */,
 				011445631C9AE5CF0057E69F /* MainModel.m in Sources */,
+				01809B351CAAB8DA000FDA29 /* SVProgressHUD.m in Sources */,
 				7A0DCFF91C9FE29100D316C0 /* VOSegmentedControl.m in Sources */,
 				01AD7AB31C9BD1A8003C336D /* CommonCollectionViewCell.m in Sources */,
 				01F94A541CA22D27004A76C8 /* HotelMapViewController.m in Sources */,
@@ -1081,7 +1134,7 @@
 					"\"SystemConfiguration\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Mangoinc.MFW;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mangoios.MFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1138,7 +1191,7 @@
 					"\"SystemConfiguration\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Mangoinc.MFW;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mangoios.MFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

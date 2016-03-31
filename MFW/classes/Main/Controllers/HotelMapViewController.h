@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface HotelMapViewController : UIViewController
-
+@property(nonatomic, copy) NSString *cityName;
 @end
