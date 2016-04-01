@@ -12,7 +12,7 @@
 {
     UIWebView *webView;
 }
-@property(nonatomic,retain)UIActivityIndicatorView *activityView;
+@property(nonatomic,strong)UIActivityIndicatorView *activityView;
 @end
 
 @implementation Scenic2ViewController

@@ -17,7 +17,7 @@
 @property(nonatomic,strong)UITableView *tableView;
 
 @property(nonatomic,strong)NSMutableArray *itemArray;
-
+@property(nonatomic,strong)UIActivityIndicatorView *activityView;
 @end
 
 @implementation StrategyViewController
@@ -28,9 +28,11 @@
 
     [self showBackBtn];
     [self.view addSubview:self.tableView];
-
+    
     [self loadData];
 }
+
+
 #pragma mark ----------- UITableViewDataSource
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     RightTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
