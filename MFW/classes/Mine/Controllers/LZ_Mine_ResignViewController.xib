@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="passWord" destination="lMH-8J-oRi" id="OVm-f2-DLh"/>
                 <outlet property="phoneNumber" destination="CUw-b8-SOg" id="fvT-7t-g9n"/>
+                <outlet property="shareButton" destination="l8o-hx-RIA" id="elj-s9-G3P"/>
                 <outlet property="vailDateView" destination="uf4-c1-hBK" id="Kb9-yF-RCC"/>
                 <outlet property="validate" destination="hLD-Pp-uQW" id="Z9Q-qH-UIN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -67,12 +68,36 @@
                         <outlet property="delegate" destination="i5M-Pr-FkT" id="Ljm-wQ-Pka"/>
                     </connections>
                 </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fll-uR-9Vq">
+                    <rect key="frame" x="153" y="235" width="109" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="109" id="ZGU-SN-VxU"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="其他登录方式">
+                            <attributes>
+                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <font key="NSFont" size="17" name="PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont_weibo_selet" translatesAutoresizingMaskIntoConstraints="NO" id="l8o-hx-RIA">
+                    <rect key="frame" x="167" y="267" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="HUI-w0-sAP"/>
+                        <constraint firstAttribute="height" constant="80" id="eDS-E3-MzN"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="lMH-8J-oRi" secondAttribute="trailing" id="4dz-yQ-evs"/>
                 <constraint firstItem="hLD-Pp-uQW" firstAttribute="width" secondItem="lMH-8J-oRi" secondAttribute="width" multiplier="0.5" id="7Sb-JG-P2S"/>
                 <constraint firstItem="hLD-Pp-uQW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="A12-PN-TFY"/>
+                <constraint firstItem="fll-uR-9Vq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Av3-ch-Xpa"/>
                 <constraint firstAttribute="trailing" secondItem="uf4-c1-hBK" secondAttribute="trailing" constant="55" id="MmO-Xc-thU"/>
                 <constraint firstItem="CUw-b8-SOg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mo6-Cd-z89"/>
                 <constraint firstItem="hLD-Pp-uQW" firstAttribute="top" secondItem="lMH-8J-oRi" secondAttribute="bottom" constant="8" id="WKz-FE-c0l"/>
@@ -83,9 +108,15 @@
                 <constraint firstItem="CUw-b8-SOg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="jMW-PO-oPc"/>
                 <constraint firstItem="SJF-fp-AJP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="mZm-rF-MtC"/>
                 <constraint firstItem="uf4-c1-hBK" firstAttribute="top" secondItem="lMH-8J-oRi" secondAttribute="bottom" constant="8" id="r2d-gh-gI8"/>
+                <constraint firstItem="l8o-hx-RIA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="s75-vy-Duv"/>
                 <constraint firstItem="SJF-fp-AJP" firstAttribute="top" secondItem="lMH-8J-oRi" secondAttribute="bottom" constant="58" id="sBd-HN-0eh"/>
+                <constraint firstItem="l8o-hx-RIA" firstAttribute="top" secondItem="fll-uR-9Vq" secondAttribute="bottom" constant="8" id="sFB-mG-4An"/>
+                <constraint firstItem="fll-uR-9Vq" firstAttribute="top" secondItem="SJF-fp-AJP" secondAttribute="bottom" constant="8" id="usM-ox-s1J"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
         </view>
     </objects>
+    <resources>
+        <image name="iconfont_weibo_selet" width="40" height="40"/>
+    </resources>
 </document>
