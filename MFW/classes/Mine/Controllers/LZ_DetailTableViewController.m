@@ -74,8 +74,7 @@
     [self.tableView registerClass:[LZ_DetailBobyTableViewCell class] forCellReuseIdentifier:@"reuseIdentifier"];
 
 
-    //在导航栏右边添加编辑按钮
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
     
     
 }
@@ -191,6 +190,7 @@
     return YES;
 }
 */
+/*
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return UITableViewCellEditingStyleDelete;
@@ -200,6 +200,7 @@
     fSLog(@"%@",indexPath);
     [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
+*/
 /*
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -202,21 +202,21 @@
 		7A58A0A91CADF6C4008E114D /* LZ_DetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_DetailTableViewController.m; sourceTree = "<group>"; };
 		7A58A0AA1CADF6C4008E114D /* LZ_Mine_Head_DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_Mine_Head_DetailViewController.h; sourceTree = "<group>"; };
 		7A58A0AB1CADF6C4008E114D /* LZ_Mine_Head_DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_Mine_Head_DetailViewController.m; sourceTree = "<group>"; };
-		7A58A0AC1CADF6C4008E114D /* LZ_Mine_Head_DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZ_Mine_Head_DetailViewController.xib; sourceTree = "<group>"; };
+		7A58A0AC1CADF6C4008E114D /* LZ_Mine_Head_DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZ_Mine_Head_DetailViewController.xib; path = ../Controllers/LZ_Mine_Head_DetailViewController.xib; sourceTree = "<group>"; };
 		7A58A0AD1CADF6C4008E114D /* LZ_Mine_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_Mine_LoginViewController.h; sourceTree = "<group>"; };
 		7A58A0AE1CADF6C4008E114D /* LZ_Mine_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_Mine_LoginViewController.m; sourceTree = "<group>"; };
-		7A58A0AF1CADF6C4008E114D /* LZ_Mine_LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZ_Mine_LoginViewController.xib; sourceTree = "<group>"; };
+		7A58A0AF1CADF6C4008E114D /* LZ_Mine_LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZ_Mine_LoginViewController.xib; path = ../Controllers/LZ_Mine_LoginViewController.xib; sourceTree = "<group>"; };
 		7A58A0B01CADF6C4008E114D /* LZ_Mine_ResignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_Mine_ResignViewController.h; sourceTree = "<group>"; };
 		7A58A0B11CADF6C4008E114D /* LZ_Mine_ResignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_Mine_ResignViewController.m; sourceTree = "<group>"; };
-		7A58A0B21CADF6C4008E114D /* LZ_Mine_ResignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZ_Mine_ResignViewController.xib; sourceTree = "<group>"; };
+		7A58A0B21CADF6C4008E114D /* LZ_Mine_ResignViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LZ_Mine_ResignViewController.xib; path = ../Controllers/LZ_Mine_ResignViewController.xib; sourceTree = "<group>"; };
 		7A58A0B31CADF6C4008E114D /* LZ_MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_MineViewController.h; sourceTree = "<group>"; };
 		7A58A0B41CADF6C4008E114D /* LZ_MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_MineViewController.m; sourceTree = "<group>"; };
 		7A58A0B51CADF6C4008E114D /* LZ_showLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZ_showLiveViewController.h; sourceTree = "<group>"; };
 		7A58A0B61CADF6C4008E114D /* LZ_showLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZ_showLiveViewController.m; sourceTree = "<group>"; };
 		7A58A0B71CADF6C4008E114D /* LZOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZOAuthViewController.h; sourceTree = "<group>"; };
 		7A58A0B81CADF6C4008E114D /* LZOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZOAuthViewController.m; sourceTree = "<group>"; };
-		7A58A0B91CADF6C4008E114D /* YMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMTextView.h; sourceTree = "<group>"; };
-		7A58A0BA1CADF6C4008E114D /* YMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMTextView.m; sourceTree = "<group>"; };
+		7A58A0B91CADF6C4008E114D /* YMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YMTextView.h; path = ../Controllers/YMTextView.h; sourceTree = "<group>"; };
+		7A58A0BA1CADF6C4008E114D /* YMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YMTextView.m; path = ../Controllers/YMTextView.m; sourceTree = "<group>"; };
 		7A58A0BC1CADF6C4008E114D /* File.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = File.plist; sourceTree = "<group>"; };
 		7A58A0BD1CADF6C4008E114D /* HWAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWAccount.h; sourceTree = "<group>"; };
 		7A58A0BE1CADF6C4008E114D /* HWAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWAccount.m; sourceTree = "<group>"; };
@@ -648,9 +648,9 @@
 		7A58A0A61CADF6C4008E114D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				7A58A0C51CADF6C4008E114D /* other */,
 				7A58A0A71CADF6C4008E114D /* Controllers */,
 				7A58A0BB1CADF6C4008E114D /* Models */,
-				7A58A0C51CADF6C4008E114D /* other */,
 				7A58A0DA1CADF6C4008E114D /* Views */,
 			);
 			path = Mine;
@@ -663,21 +663,16 @@
 				7A58A0A91CADF6C4008E114D /* LZ_DetailTableViewController.m */,
 				7A58A0AA1CADF6C4008E114D /* LZ_Mine_Head_DetailViewController.h */,
 				7A58A0AB1CADF6C4008E114D /* LZ_Mine_Head_DetailViewController.m */,
-				7A58A0AC1CADF6C4008E114D /* LZ_Mine_Head_DetailViewController.xib */,
 				7A58A0AD1CADF6C4008E114D /* LZ_Mine_LoginViewController.h */,
 				7A58A0AE1CADF6C4008E114D /* LZ_Mine_LoginViewController.m */,
-				7A58A0AF1CADF6C4008E114D /* LZ_Mine_LoginViewController.xib */,
 				7A58A0B01CADF6C4008E114D /* LZ_Mine_ResignViewController.h */,
 				7A58A0B11CADF6C4008E114D /* LZ_Mine_ResignViewController.m */,
-				7A58A0B21CADF6C4008E114D /* LZ_Mine_ResignViewController.xib */,
 				7A58A0B31CADF6C4008E114D /* LZ_MineViewController.h */,
 				7A58A0B41CADF6C4008E114D /* LZ_MineViewController.m */,
 				7A58A0B51CADF6C4008E114D /* LZ_showLiveViewController.h */,
 				7A58A0B61CADF6C4008E114D /* LZ_showLiveViewController.m */,
 				7A58A0B71CADF6C4008E114D /* LZOAuthViewController.h */,
 				7A58A0B81CADF6C4008E114D /* LZOAuthViewController.m */,
-				7A58A0B91CADF6C4008E114D /* YMTextView.h */,
-				7A58A0BA1CADF6C4008E114D /* YMTextView.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -735,6 +730,8 @@
 		7A58A0DA1CADF6C4008E114D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7A58A0B91CADF6C4008E114D /* YMTextView.h */,
+				7A58A0BA1CADF6C4008E114D /* YMTextView.m */,
 				7A58A0DB1CADF6C4008E114D /* LZ_DetailBobyTableViewCell.h */,
 				7A58A0DC1CADF6C4008E114D /* LZ_DetailBobyTableViewCell.m */,
 				7A58A0DD1CADF6C4008E114D /* LZ_DetailHeadTableViewCell.h */,
@@ -743,6 +740,9 @@
 				7A58A0E01CADF6C4008E114D /* LZ_Mine_Head.h */,
 				7A58A0E11CADF6C4008E114D /* LZ_Mine_Head.m */,
 				7A58A0E21CADF6C4008E114D /* LZ_Mine_Head.xib */,
+				7A58A0AC1CADF6C4008E114D /* LZ_Mine_Head_DetailViewController.xib */,
+				7A58A0AF1CADF6C4008E114D /* LZ_Mine_LoginViewController.xib */,
+				7A58A0B21CADF6C4008E114D /* LZ_Mine_ResignViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";

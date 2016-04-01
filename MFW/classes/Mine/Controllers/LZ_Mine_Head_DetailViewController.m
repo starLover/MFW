@@ -44,12 +44,11 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    
-    
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = self.imageView.frame;
     [btn addTarget:self action:@selector(open) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
 }
 -(void)open{
     UIImagePickerController *pickerImage=[[UIImagePickerController alloc]init];
