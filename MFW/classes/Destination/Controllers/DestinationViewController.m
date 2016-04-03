@@ -22,6 +22,7 @@
 #import "Entertain2ViewController.h"
 #import "TravelogueViewController.h"
 #import "GDViewController.h"
+#import "LZ_Mine_ResignViewController.h"
 #import "AnswerViewController.h"
 @interface DestinationViewController ()<UITableViewDataSource,UITableViewDelegate,MKMapViewDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -328,6 +329,8 @@
             break;
         case 1:
         {
+            LZ_Mine_ResignViewController *loginVC = [[LZ_Mine_ResignViewController alloc]init];
+            [self.navigationController pushViewController:loginVC animated:YES];
         }
             break;
         case 2:

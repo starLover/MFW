@@ -158,6 +158,7 @@
 //    if (response.POIs.count == 0) {
 //        return;
 //    }
+    
     NSString *strCount = [NSString stringWithFormat:@"count: %d",response.count];
     NSLog(@"%@",strCount);
     NSMutableArray *annotations = [[NSMutableArray alloc]init];

@@ -186,7 +186,6 @@
         DestinationModel *model = [[DestinationModel alloc]init];
         [model setValuesForKeysWithDictionary:mdd];
         [self.otherArray addObject:model];
-        NSLog(@"%@",self.otherArray[0]);
         [self.tableView reloadData];
         [self headViewAction];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

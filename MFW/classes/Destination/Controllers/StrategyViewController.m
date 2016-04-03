@@ -48,7 +48,6 @@
         webV.backgroundColor = [UIColor yellowColor];
         [cell.contentView addSubview:webV];
         [webV loadRequest:request];
-        NSLog(@"%@",urlModel.url);
         cell.backgroundColor = [[UIColor orangeColor] colorWithAlphaComponent:0.5];
         UILabel *message = [[UILabel alloc]initWithFrame:CGRectMake(0, kScreenHeight-100, kScreenWidth, 40)];
         message.text = @"划我进入下一页哦*…*";
