@@ -18,6 +18,10 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>兰亭黑_GBK.TTF</string>
+	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

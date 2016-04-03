@@ -18,6 +18,7 @@ PODS:
   - AMapSearch (3.3.0)
   - BmobSDK (1.6.7)
   - Masonry (0.6.4)
+  - SDAutoLayout (1.50)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -28,6 +29,7 @@ DEPENDENCIES:
   - AMapSearch
   - BmobSDK
   - Masonry
+  - SDAutoLayout
   - SDWebImage
 
 SPEC CHECKSUMS:
@@ -36,6 +38,7 @@ SPEC CHECKSUMS:
   AMapSearch: cff4faf59c007f7d1f2bae2d7170c3912783981a
   BmobSDK: ae6abd7f08a8150668687c880ac9ec93f1bf25b6
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  SDAutoLayout: 88b539a0c6204787d8e4084ef1b0db250241cc47
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
 COCOAPODS: 0.39.0

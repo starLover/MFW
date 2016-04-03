@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *SecurityCode;
 /** <button> */
 @property (nonatomic, strong) UIButton *btn;
+;
+
 @end
 
 @implementation LZ_Mine_LoginViewController
@@ -39,7 +41,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.phoneNumber becomeFirstResponder];
+//    [self.phoneNumber becomeFirstResponder];
     
 }
 - (BOOL)checkout {
