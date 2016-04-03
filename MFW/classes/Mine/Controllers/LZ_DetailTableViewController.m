@@ -3,7 +3,7 @@
 //  MFW
 //
 //  Created by scjy on 16/3/29.
-//  Copyright © 2016年 马娟娟. All rights reserved.
+//  Copyright © 2016年 李志鹏. All rights reserved.
 //
 
 #import "LZ_DetailTableViewController.h"
@@ -85,6 +85,8 @@
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     UIButton *buttonView = [UIButton buttonWithType:UIButtonTypeCustom];
     buttonView.frame = CGRectMake(SCREEN_WIDTH - 60, SCREEN_HEIGHT - 60, 40, 40);
+    [buttonView setImage:[UIImage imageNamed:@"tabbar_compose_icon_add"] forState:UIControlStateNormal];
+    [buttonView setImage:[UIImage imageNamed:@"tabbar_compose_icon_add_highlighted"] forState:UIControlStateSelected];
     buttonView.layer.cornerRadius     = 20;
     buttonView.clipsToBounds          = YES;
     buttonView.backgroundColor = [UIColor redColor];

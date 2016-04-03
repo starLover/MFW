@@ -659,16 +659,16 @@
 		7A58A0A71CADF6C4008E114D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7A58A0A81CADF6C4008E114D /* LZ_DetailTableViewController.h */,
-				7A58A0A91CADF6C4008E114D /* LZ_DetailTableViewController.m */,
+				7A58A0B31CADF6C4008E114D /* LZ_MineViewController.h */,
+				7A58A0B41CADF6C4008E114D /* LZ_MineViewController.m */,
 				7A58A0AA1CADF6C4008E114D /* LZ_Mine_Head_DetailViewController.h */,
 				7A58A0AB1CADF6C4008E114D /* LZ_Mine_Head_DetailViewController.m */,
 				7A58A0AD1CADF6C4008E114D /* LZ_Mine_LoginViewController.h */,
 				7A58A0AE1CADF6C4008E114D /* LZ_Mine_LoginViewController.m */,
 				7A58A0B01CADF6C4008E114D /* LZ_Mine_ResignViewController.h */,
 				7A58A0B11CADF6C4008E114D /* LZ_Mine_ResignViewController.m */,
-				7A58A0B31CADF6C4008E114D /* LZ_MineViewController.h */,
-				7A58A0B41CADF6C4008E114D /* LZ_MineViewController.m */,
+				7A58A0A81CADF6C4008E114D /* LZ_DetailTableViewController.h */,
+				7A58A0A91CADF6C4008E114D /* LZ_DetailTableViewController.m */,
 				7A58A0B51CADF6C4008E114D /* LZ_showLiveViewController.h */,
 				7A58A0B61CADF6C4008E114D /* LZ_showLiveViewController.m */,
 				7A58A0B71CADF6C4008E114D /* LZOAuthViewController.h */,
