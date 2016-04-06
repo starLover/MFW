@@ -48,7 +48,6 @@
     //    _mapView.desiredAccuracy = kCLLocationAccuracyBest;
     //导航栏搜索
     [self.navigationController.view addSubview:self.navigationView];
-    [self navigationSearch];
     _mapView.delegate = self;
     _mapView.showsUserLocation = YES;
     [self.view addSubview:_mapView];
