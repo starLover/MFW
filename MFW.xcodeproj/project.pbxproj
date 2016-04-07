@@ -23,6 +23,7 @@
 		01344F931CA291330018EF2B /* LookNoteTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01344F911CA291330018EF2B /* LookNoteTableViewCell.m */; };
 		01344F941CA291330018EF2B /* LookNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01344F921CA291330018EF2B /* LookNoteTableViewCell.xib */; };
 		0140254C1CA676B500AD13A3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0140254B1CA676B500AD13A3 /* CoreLocation.framework */; };
+		014320641CB4C13E002A46E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014320631CB4C13E002A46E6 /* Images.xcassets */; };
 		0146F59C1CA2B94000A12F79 /* TravelWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */; };
 		0146F5A41CA2C22100A12F79 /* TravelWorldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0146F5A31CA2C22100A12F79 /* TravelWorldTableViewCell.m */; };
 		015329491CA4CC1700EC328D /* Header1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015329481CA4CC1700EC328D /* Header1ViewController.m */; };
@@ -161,6 +162,7 @@
 		01344F911CA291330018EF2B /* LookNoteTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookNoteTableViewCell.m; sourceTree = "<group>"; };
 		01344F921CA291330018EF2B /* LookNoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LookNoteTableViewCell.xib; sourceTree = "<group>"; };
 		0140254B1CA676B500AD13A3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		014320631CB4C13E002A46E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0146F59A1CA2B94000A12F79 /* TravelWorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelWorldViewController.h; sourceTree = "<group>"; };
 		0146F59B1CA2B94000A12F79 /* TravelWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TravelWorldViewController.m; sourceTree = "<group>"; };
 		0146F5A21CA2C22100A12F79 /* TravelWorldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TravelWorldTableViewCell.h; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 				011445301C9AA6A50057E69F /* LaunchScreen.storyboard */,
 				011445331C9AA6A50057E69F /* Info.plist */,
 				0114452B1C9AA6A50057E69F /* MFW.xcdatamodeld */,
+				014320631CB4C13E002A46E6 /* Images.xcassets */,
 				011445251C9AA6A50057E69F /* Supporting Files */,
 			);
 			path = MFW;
@@ -888,6 +891,7 @@
 				F33B63201C9E87B00060F63F /* Alubm.plist in Resources */,
 				F3D8037D1CA28981003B9191 /* ico_make.png in Resources */,
 				01809B301CAAB8DA000FDA29 /* ZFChooseTimeCollectionViewCell.xib in Resources */,
+				014320641CB4C13E002A46E6 /* Images.xcassets in Resources */,
 				01809B341CAAB8DA000FDA29 /* SVProgressHUD.bundle in Resources */,
 				01F95BDD1C9D481600CCD539 /* aaa.plist in Resources */,
 				01344F941CA291330018EF2B /* LookNoteTableViewCell.xib in Resources */,
@@ -1141,6 +1145,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
@@ -1198,6 +1203,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = YES;
