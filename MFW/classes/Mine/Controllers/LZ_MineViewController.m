@@ -19,12 +19,13 @@
 #import <AFNetworking/AFHTTPSessionManager.h>
 #import <SDWebImage/SDImageCache.h>
 #import <UIImageView+WebCache.h>
-
+#import <SystemConfiguration/CaptiveNetwork.h>
+#import <MessageUI/MessageUI.h>
 
 @interface LZ_MineViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-/** <LIST> */
-@property (nonatomic, strong) NSArray *List;
+/** <List> */
+@property (nonatomic, strong) NSMutableArray *List;
 /** <head> */
 @property (nonatomic, strong) LZ_Mine_Head *mineHead;
 /** <bmob> */
@@ -41,7 +42,7 @@
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
 //    self.tableView.scrollEnabled = NO;
-    self.List = @[@"蜜蜂商城",@"我的下载",@"我的收藏",@"我的订单",@"我的优惠券",@"我的点评",@"我的问答",@"我的活动",@"退出登录"];
+    self.List = [NSMutableArray arrayWithObjects:@"未连接WIFI",@"打开WIFI",@"清除缓存",@"用户反馈", @"退出登录",nil];;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
     
@@ -57,9 +58,38 @@
             scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
         }
 }
-
+- (NSString *)GetCurrentWifiHotSpotName {
+    NSString *wifiName = nil;
+    NSArray *ifs = (__bridge_transfer id)CNCopySupportedInterfaces();
+    for (NSString *ifnam in ifs) {
+        NSDictionary *info = (__bridge_transfer id)CNCopyCurrentNetworkInfo((__bridge CFStringRef)ifnam);
+        if (info[@"SSID"]) {
+            wifiName = info[@"SSID"];
+            return wifiName;
+        }
+    }
+    
+    return nil;
+}
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
+    if ([self GetCurrentWifiHotSpotName] != nil) {
+        fSLog(@"%@",[self GetCurrentWifiHotSpotName]);
+        [self.List replaceObjectAtIndex:0 withObject:[NSString stringWithFormat:@"已连接 %@",[self GetCurrentWifiHotSpotName]]];
+    }else{
+        [self.List replaceObjectAtIndex:0 withObject:@"未连接WIFI"];
+        
+    }
+    NSIndexPath *indexPathWifi = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView reloadRowsAtIndexPaths:@[indexPathWifi] withRowAnimation:UITableViewRowAnimationAutomatic];
+    
+    SDImageCache *cache = [SDImageCache sharedImageCache];
+    NSInteger cacheSize = [cache getSize];
+    NSString *cacheStr = [NSString stringWithFormat:@"清除图片缓存(%.02fM)", (double)cacheSize / 1024 / 1024];
+    [self.List replaceObjectAtIndex:2 withObject:cacheStr];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:2 inSection:0];
+    [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     [self makeImageWithName];
     
 }
@@ -92,8 +122,6 @@
         LZ_Mine_ResignViewController *lz = [LZ_Mine_ResignViewController new];
         [self.navigationController pushViewController:lz animated:YES];
     }else{
-//    LZ_Mine_Head_DetailViewController *lz = [LZ_Mine_Head_DetailViewController new];
-        //    [self.navigationController pushViewController:lz animated:YES];
         LZ_DetailTableViewController *lz = [LZ_DetailTableViewController new];
         [self.navigationController pushViewController:lz animated:YES];
     }
@@ -133,8 +161,33 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    if (indexPath.row == 8) {
+    if (indexPath.row == 0) {
+        
+    }
+    else if (indexPath.row == 1) {
+        NSURL *url = [NSURL URLWithString:@"prefs:root=WIFI"];
+        if ([[UIApplication sharedApplication] canOpenURL:url])
+        {
+            [[UIApplication sharedApplication] openURL:url];
+        }
+        else
+        {
+            NSURL *url2 = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+            [[UIApplication sharedApplication] openURL:url2];
+        }
+    }
+    else if (indexPath.row == 2) {
+        //清除缓存
+        SDImageCache *cache = [SDImageCache sharedImageCache];
+        [cache clearDisk];
+        [self.List replaceObjectAtIndex:2 withObject:@"清除缓存"];
+        [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        
+    }
+    else if (indexPath.row == 3) {
+        [self sendEmail];
+    }
+    else  {
         self.bUser = [BmobUser getCurrentUser];
         [BmobUser logout];
         NSUserDefaults *userDefatluts = [NSUserDefaults standardUserDefaults];
@@ -153,27 +206,65 @@
             [ProgressHUD dismiss];
         });
         [self makeImageWithName];
-    }else if (!self.bUser) {
-        LZ_Mine_ResignViewController *lz = [LZ_Mine_ResignViewController new];
-        [self.navigationController pushViewController:lz animated:YES];
-    }else{
-//        LZ_Mine_Head_DetailViewController *lz = [LZ_Mine_Head_DetailViewController new];
-//        [self.navigationController pushViewController:lz animated:YES];
-        
-        LZ_DetailTableViewController *lz = [LZ_DetailTableViewController new];
-        [self.navigationController pushViewController:lz animated:YES];
     }
     
     
 }
+- (void)sendEmail{
+    Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
+    if (mailClass != nil) {
+        if ([MFMailComposeViewController canSendMail]) {
+            //初始化
+            MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+            //设置代理
+            picker.mailComposeDelegate = self;
+            //设置主题
+            [picker setSubject:@"用户反馈"];
+            //设置收件人
+            NSArray *recive = [NSArray arrayWithObjects:@"1713396133@qq.com", nil];
+            [picker setToRecipients:recive];
+            //设置发送内容
+            NSString *text = @"请留下您宝贵的意见";
+            [picker setMessageBody:text isHTML:NO];
+            //推出视图
+            [self presentViewController:picker animated:YES completion:nil];
+        } else {
+            fSLog(@"未配置邮箱账号");
+        }
+    } else {
+        fSLog(@"当前设备不能发送");
+    }
+    
+}
+//邮件发送完成调用的方法
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled: //取消
+            fSLog(@"MFMailComposeResultCancelled-取消");
+            break;
+        case MFMailComposeResultSaved: // 保存
+            fSLog(@"MFMailComposeResultSaved-保存邮件");
+            break;
+        case MFMailComposeResultSent: // 发送
+            fSLog(@"MFMailComposeResultSent-发送邮件");
+            break;
+        case MFMailComposeResultFailed: // 尝试保存或发送邮件失败
+            fSLog(@"MFMailComposeResultFailed: %@...",[error localizedDescription]);
+            break;
+    }
+    //关闭邮件发送窗口
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)userlogout{
     // 1.请求管理者
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     sessionManager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/plain"];
     // 2.拼接请求参数
-    NSString *URLString = @"https://api.weibo.com/oauth2/revokeoauth2?";
+    NSString *URListring = @"https://api.weibo.com/oauth2/revokeoauth2?";
     // 3.发送请求
-    [sessionManager GET:[NSString stringWithFormat:@"%@access_token=%@",URLString,self.account.access_token] parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+    [sessionManager GET:[NSString stringWithFormat:@"%@access_token=%@",URListring,self.account.access_token] parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         fSLog(@"%@",responseObject);
