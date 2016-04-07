@@ -10,6 +10,9 @@
 #import "HeadImageTableViewCell.h"
 #import "DestinationViewController.h"
 #import "DestinationModel.h"
+#import "Scenic2ViewController.h"
+#import "Food2ViewController.h"
+#import "Entertain2ViewController.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
 
@@ -141,6 +144,20 @@
 }
 - (void)closeAction{
      [self.navigationController popViewControllerAnimated:YES];
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    num = self.segmentControl.selectedSegmentIndex;
+    if (num == 0) {
+        Food2ViewController *foodVC = [[Food2ViewController alloc]init];
+        [self.navigationController pushViewController:foodVC animated:NO];
+    }else if (num == 1){
+        Scenic2ViewController *scenicVC = [[Scenic2ViewController alloc]init];
+        [self.navigationController pushViewController:scenicVC animated:NO];
+    }else{
+        Entertain2ViewController *enterVC = [[Entertain2ViewController alloc]init];
+        [self.navigationController pushViewController:enterVC animated:NO];
+    }
+    
 }
 #pragma mark ---------  网络请求
 - (void)requestModel{

@@ -109,20 +109,14 @@
     self.imageview = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, self.tableViewHeaderView.frame.size.height/2)];
     [self.imageview sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",self.header_img]] placeholderImage:nil];
     UILabel *back = [[UILabel alloc]initWithFrame:self.imageview.frame];
-    back.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.2];
+    back.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:0.4];
     [self.imageview addSubview:back];
     
     [self.tableViewHeaderView addSubview:self.imageview];
     self.tableView.tableHeaderView = self.tableViewHeaderView;
     [self navBarBtn];
 }
--(void)latlng{
 
-    CLLocation *location = [[CLLocation alloc] initWithLatitude:self.lat longitude:self.lng];
-    CLGeocoder *geocoder = [[CLGeocoder alloc]init];
-    
-
-}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     DestinationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (cell == nil) {
