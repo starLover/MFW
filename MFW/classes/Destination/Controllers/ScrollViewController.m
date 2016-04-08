@@ -103,12 +103,12 @@
     self.titleLabel.textColor = [UIColor orangeColor];
     [self.view addSubview:self.titleLabel];
     
-    self.autherLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, kScreenHeight-120, 130, 40)];
+    self.autherLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, kScreenHeight-120, 80, 40)];
     self.autherLabel.textColor = [UIColor whiteColor];
     self.autherLabel.font = [UIFont systemFontOfSize:14];
     [self.view addSubview:self.autherLabel];
     
-    self.timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(150, kScreenHeight-120, kScreenWidth-130, 40)];
+    self.timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(100, kScreenHeight-120, kScreenWidth-130, 40)];
     self.timeLabel.font = [UIFont systemFontOfSize:13];
     self.timeLabel.textColor = [UIColor grayColor];
     [self.view addSubview:self.timeLabel];
