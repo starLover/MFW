@@ -27,6 +27,7 @@
     webView.delegate = self;
     [self.view addSubview:webView];
     [webView loadRequest:request];
+    
     [self.view addSubview:self.activityView];
 }
 #pragma mark -----------   view

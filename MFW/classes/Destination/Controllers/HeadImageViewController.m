@@ -16,12 +16,14 @@
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
 
+
 @interface HeadImageViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     NSInteger num;
 }
 @property(nonatomic,strong)UITableView *tableView;
 @property(nonatomic,strong)UISegmentedControl *segmentControl;
+@property(nonatomic,strong)UIView *blackView;
 @property(nonatomic,strong)NSMutableArray *poiArray;
 @property(nonatomic,strong)NSMutableArray *areaArray;
 @property(nonatomic,strong)NSMutableArray *otherArray;
@@ -98,7 +100,7 @@
 }
 - (UITableView *)tableView{
     if (!_tableView) {
-        self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kScreenHeight/4, kScreenWidth, kScreenHeight-kScreenHeight/4+54)];
+        self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, kScreenHeight/4-20, kScreenWidth, kScreenHeight-kScreenHeight/4+54)];
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
         self.tableView.rowHeight = kScreenHeight/6;
@@ -107,29 +109,30 @@
 }
 #pragma mark --------- 自定义BlackView
 - (void)headViewAction{
+    
     //view
-    UIView *blackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight/4)];
-    blackView.backgroundColor = [UIColor blackColor] ;
-    [self.view addSubview:blackView];
+    self.blackView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight/4)];
+    self.blackView.backgroundColor = [UIColor blackColor] ;
+    [self.view addSubview:self.blackView];
     //关闭按钮
     UIButton *numBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    numBtn.frame = CGRectMake(kScreenWidth-80, 20 , 40, 44);
+    numBtn.frame = CGRectMake(kScreenWidth-80, 10 , 40, 30);
     [numBtn setTitle:@"关闭" forState:UIControlStateNormal];
     [numBtn addTarget:self action:@selector(closeAction) forControlEvents:UIControlEventTouchUpInside];
-    [blackView addSubview:numBtn];
+    [self.blackView addSubview:numBtn];
     //时间label
-    UILabel *timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 20, kScreenWidth/3, 40)];
+    UILabel *timeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 10, kScreenWidth/3, 30)];
     timeLabel.text = @"过去24小时,";
     timeLabel.textColor = [UIColor whiteColor];
-    [blackView addSubview:timeLabel];
+    [self.blackView addSubview:timeLabel];
     //人数Label
-    UILabel *numLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 50, kScreenWidth/3, 50)];
+    UILabel *numLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, timeLabel.frame.size.height, kScreenWidth/3, 50)];
     numLabel.text = [self.userNum stringValue];
     numLabel.textColor = [UIColor whiteColor];
     numLabel.font = [UIFont systemFontOfSize:26];
-    [blackView addSubview:numLabel];
+    [self.blackView addSubview:numLabel];
     //地点Label
-    UILabel *placeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20,80, kScreenWidth/2, 40)];
+    UILabel *placeLabel = [[UILabel alloc]initWithFrame:CGRectMake(20,numLabel.frame.size.height+10, kScreenWidth/2, 40)];
     DestinationModel *placeModel = self.otherArray[0];
     placeLabel.text = [NSString stringWithFormat:@"人，正在 %@ 旅行",placeModel.name];
     //label富文本文件
@@ -138,8 +141,8 @@
 //    placeLabel.attributedText =[NSString stringWithFormat:@"人，正在 %@ 旅行",str];
     placeLabel.textColor = [UIColor grayColor];
     placeLabel.font = [UIFont systemFontOfSize:14];
-    [blackView addSubview:placeLabel];
-    [blackView addSubview:self.segmentControl];
+    [self.blackView addSubview:placeLabel];
+    [self.blackView addSubview:self.segmentControl];
     
 }
 - (void)closeAction{
@@ -212,7 +215,7 @@
 - (UISegmentedControl *)segmentControl{
     if (!_segmentControl) {
         self.segmentControl = [[UISegmentedControl alloc]initWithItems:@[@"餐厅",@"景点",@"购物"]];
-        self.segmentControl.frame = CGRectMake(40, 120, kScreenWidth-80, 40);
+        self.segmentControl.frame = CGRectMake(40, self.blackView.frame.size.height-50, kScreenWidth-80, 40);
         self.segmentControl.tintColor = [UIColor orangeColor];
         [self.segmentControl addTarget:self action:@selector(segmentControlChangeAction:) forControlEvents:UIControlEventValueChanged];
     }
