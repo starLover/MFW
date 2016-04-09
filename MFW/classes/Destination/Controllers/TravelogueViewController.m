@@ -24,6 +24,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"游记";
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:[UIColor orangeColor] forKey:UITextAttributeTextColor];
+    self.navigationController.navigationBar.titleTextAttributes = dic;
     [self showBackBtn];
     //注册
     [self.tableView registerNib:[UINib nibWithNibName:@"TravelTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];

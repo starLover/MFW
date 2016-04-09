@@ -38,8 +38,6 @@
     self.tabBarController.tabBar.hidden = YES;
     [self requestModel];
     
-    
-    
 }
 -(void)viewWillDisappear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;

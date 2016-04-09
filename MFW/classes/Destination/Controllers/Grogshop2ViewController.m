@@ -20,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"酒店";
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:[UIColor orangeColor] forKey:UITextAttributeTextColor];
+    self.navigationController.navigationBar.titleTextAttributes = dic;
     [self showBackBtn];
     webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -180, kScreenWidth, kScreenHeight+165)];
     webView.scrollView.bounces = NO;
@@ -36,12 +39,12 @@
 - (void)viewWillDisappear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;
 }
-- (void)webViewDidStartLoad:(UIWebView *)webView{
-    [self.activityView startAnimating];
-}
-- (void)webViewDidFinishLoad:(UIWebView *)webView{
-    [self.activityView stopAnimating];
-}
+//- (void)webViewDidStartLoad:(UIWebView *)webView{
+//    [self.activityView startAnimating];
+//}
+//- (void)webViewDidFinishLoad:(UIWebView *)webView{
+//    [self.activityView stopAnimating];
+//}
 
 - (UIActivityIndicatorView *)activityView{
     if (_activityView == nil) {

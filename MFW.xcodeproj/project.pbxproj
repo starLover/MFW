@@ -848,7 +848,7 @@
 				TargetAttributes = {
 					011445211C9AA6A50057E69F = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = CCQ5LLLX4L;
+						DevelopmentTeam = 6K2QGZ2A9Y;
 					};
 				};
 			};
@@ -1192,7 +1192,7 @@
 					"\"SystemConfiguration\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Mango.MFW;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mangoinc.MFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1249,7 +1249,7 @@
 					"\"SystemConfiguration\"",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Mango.MFW;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mangoinc.MFW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

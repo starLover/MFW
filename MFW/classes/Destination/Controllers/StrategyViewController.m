@@ -25,7 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.title = @"攻略";
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:[UIColor orangeColor] forKey:UITextAttributeTextColor];
+    self.navigationController.navigationBar.titleTextAttributes = dic;
     [self showBackBtn];
     [self.view addSubview:self.tableView];
     

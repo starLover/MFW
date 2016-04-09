@@ -21,8 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"美食";
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:[UIColor orangeColor] forKey:UITextAttributeTextColor];
+    self.navigationController.navigationBar.titleTextAttributes = dic;
     [self showBackBtn];
-    http://www.mafengwo.cn/cy/11527/gonglve.html
+    //http:www.mafengwo.cn/cy/11527/gonglve.html
     webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -145, kScreenWidth, kScreenHeight+130)];
     webView.scrollView.bounces = NO;
     webView.delegate = self;

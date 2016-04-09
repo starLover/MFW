@@ -63,10 +63,10 @@
 //    UILabel *label = [[UILabel alloc]initWithFrame:self.navigationController.navigationBar.frame];
 //    label.backgroundColor = [UIColor yellowColor];
 //    [self.navigationController.view addSubview:label];
+    
     //添加UIsearchBar
-
-    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
-        self.edgesForExtendedLayout = UIRectEdgeNone;
+//    if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
+//        self.edgesForExtendedLayout = UIRectEdgeNone;
     [self requestModel];
     
 }

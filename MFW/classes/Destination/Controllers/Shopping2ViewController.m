@@ -20,6 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"当地游";
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:[UIColor orangeColor] forKey:UITextAttributeTextColor];
+    self.navigationController.navigationBar.titleTextAttributes = dic;
     [self showBackBtn];
     webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, -93, kScreenWidth, kScreenHeight+65)];
     webView.scrollView.bounces = NO;
